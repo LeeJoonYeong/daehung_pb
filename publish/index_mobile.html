@@ -1,0 +1,424 @@
+﻿<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>대흥소프트밀</title>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="fonts/font.css" />
+    <style>
+        body {
+            font-family: 'Noto Sans CJK KR Regular', 'Malgun Gothic', '맑은 고딕', 돋움, Dotum, 굴림, Gulim, AppleSDGothicNeo, Droid Sans, arial, sans-serif !important;
+            font-size: 20px;
+            margin: 20px;
+            padding: 0;
+        }
+        
+        h1 {
+            margin: 20px 0;
+            font-size: 20px;
+        }
+        
+        h1 strong {
+            color: #000000;
+            font-weight: 500;
+            font-size: 60px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        ul,
+        li {
+            list-style: none
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            font-size: 20px;
+        }
+        
+        table th,
+        strong {
+            font-weight: normal;
+        }
+        
+        .list_w table {
+            width: 100%;
+            margin: 26px auto;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        
+        em{
+            color: coral;
+            font-style: normal;
+        }
+
+        .list_w table tr:hover {
+            background: #f3f3f3;
+        }
+        
+        .list_w table tr.bdt td {
+            border-top: 1px solid #FF5F00
+        }
+        
+        .list_w table th {
+            padding: 20px 0;
+            border: solid 1px #ddd;
+            background: #efefef;
+            vertical-align: middle;
+        }
+        
+        .list_w table td {
+            padding: 20px 20px;
+            border: 1px solid #e6e6e6;
+        }
+        
+        .list_w table td a {
+            color: #FF5F00;
+            border: 1px solid #FF5F00;
+            padding: 10px;
+        }
+        
+        .list_w table tr.on td {
+            background: #ffcc99;
+        }
+        
+        .list_w table tr.title th {
+            background: #FF5F00;
+            color: #fff;
+            font-size: 15px;
+            border: 0;
+            padding: 5px 0 5px 10px;
+            font-weight: bold;
+            text-align: left;
+        }
+        
+        .aj_menu {
+            padding: 20px 0;
+        }
+        
+        .aj_menu li {
+            display: inline-block;
+        }
+        
+        .aj_menu li>a {
+            background: #FF5F00;
+            padding: 20px 30px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .aj_menu li>a.now {
+            background: #000000;
+            border: 1px solid #000;
+            color: #fff;
+        }
+        .aj_menu li>a.nows {
+            background: #ffffff;
+            border: 1px solid #000;
+            color: #000;
+        }
+        
+        .top_menu li {
+            margin-right: 2px;
+            float: left;
+        }
+        
+        .top_menu li a {
+            width: 200px;
+            height: 50px;
+            line-height: 35px;
+            text-align: center;
+            font-weight: 500;
+            color: #fff;
+            font-size: 20px;
+            display: inline-block;
+            background: #27a0b2;
+        }
+        
+        .q_top {
+            display: inline-block;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            z-index: 99
+        }
+        
+        .q_top a {
+            display: inline-block;
+            background: #ccc;
+            opacity: 0.5;
+            padding: 10px;
+            color: #000;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .week1 {
+            background: #aaa;
+        }
+        
+        .week2 {
+            background: #bbbbbb;
+        }
+        
+        .week3 {
+            background: #818181;
+        }
+        
+        .week4 {
+            background: #595959;
+        }
+        
+        .week5 {
+            background: #333;
+            color: #fff
+        }
+        
+        .tmenu {
+            display: inline-block;
+            padding: 0 10px;
+            height: 35px;
+            line-height: 35px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body id="guide">
+
+
+    <div id="guide_wrap">
+        <div class="header">
+            <h1><strong>대흥소프트밀 프론트(Mobile) 퍼블리싱</strong></h1>
+            <hr />
+        </div>
+
+        <ul class="aj_menu">
+            <li><a href="index.html" class="nows">PC Page List</a><a href="index_mobile.html" class="now">Mobile Page List</a><a href="index_admin.html" class="nows">Admin Page List</a></li>
+        </ul>
+        <div class="list_w">
+
+
+            <table class="codinglist">
+                <colgroup>
+                    <col width="20%" />
+                    <col width="25%" />
+                    <col width="30%" />
+                    <col width="*" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>1depth</th>
+                        <th>2depth</th>
+                        <th>3depth</th>
+                        <th>MOBILE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>메인</td>
+                        <td>메인</td>
+                        <td><em>메뉴적용</em></td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/main/main.html', '_blank', 'width=375 height=800')">자세히보기</a> <span></span></td>
+                    </tr>
+                    <tr>
+                        <td>제품</td>
+                        <td>리스트</td>
+                        <td></td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/product/product_oven.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>상세</td>
+                        <td></td>
+                        
+                        <td><a href="#" onclick="window.open('softmill_mobile/product/product_oven_detail.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td>회사소개</td>
+                        <td>소프트밀 소개</td>
+                        <td>기업개요(TAB)</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/company/about.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>경영이념(TAB)</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/company/philosophy.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>CEO메시지(TAB)</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/company/ceo.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>연혁(TAB)</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/company/history.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>CI소개(TAB)</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/company/ci.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>명장기술교육원</td>
+                        <td>교육원소개(TAB)</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/education/education.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>교육 성과(TAB)</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/education/confirm.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>ESG</td>
+                        <td>개요(TAB)</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/esg/esg_about.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>환경(TAB)</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/esg/esg_environment.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>사회(TAB)</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/esg/esg_social.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>지배구조(TAB)</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/esg/esg_structure.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>새소식</td>
+                        <td>리스트</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/news/board.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>상세</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/news/board_view.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>주요고객사</td>
+                        <td></td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/news/client.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>오시는 길</td>
+                        <td></td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/news/location.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td>기술연구</td>
+                        <td>기술연구소</td>
+                        <td></td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/skill/rnd.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>보유기술</td>
+                        <td>오븐시리즈</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/skill/skill_oven.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>도우컨디셔너</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/skill/skill_dou.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>미니시리즈</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/skill/skill_mini.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td>고객지원</td>
+                        <td>견적문의</td>
+                        <td>문의내용</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/service/contact.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>제품선택팝업</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/service/contact_pop.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>완료팝업</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/service/contact_pop2.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>설치사례</td>
+                        <td>리스트</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/service/reward.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>상세</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/service/reward_view.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>자료실</td>
+                        <td>사용설명서(TAB)</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/service/library.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>카탈로그(TAB)</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/service/catalog.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>공식대리점</td>
+                        <td>리스트</td>
+                        <td><a href="#" onclick="window.open('softmill_mobile/service/agency.html', '_blank', 'width=375 height=800')">자세히보기</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+        </div>
+    </div>
+    <!-- top menu -->
+    <div class="q_top"><a href="#">▲ TOP</a></div>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<script type="text/javascript">function showMenu(){$("#background-cover, #hamburger-menu").addClass("active").removeClass("inactive")}function hideMenu(){$("#hamburger-menu, #background-cover").removeClass("active").addClass("inactive")}function updateMenuButton(){0<$(".active .footer-style.slide").length||0<$(".active .fullwidth-style.slide").length?$(".hamburger-menu-button").hasClass("light")||$(".hamburger-menu-button").addClass("light"):$(".hamburger-menu-button").removeClass("light")}function scrollToAnchor(e){var n=$("a[name='"+e+"']");$("html,body").animate({scrollTop:n.offset().top},500)}window._AD_MobileBreakpoint=640,causeRepaintsOn=$("h1, h2, h3, p"),$(window).resize(function(){causeRepaintsOn.css("z-index",1)}),$(document).ready(function(){})
+</script>
+<div id="background-cover" onclick="hideMenu()" class="inactive"></div>
+<div id="hamburger-menu" class="inactive">
+    <div class="menu-container">
+        <img class="close-btn" onclick="hideMenu()" src="/pkn/img/close-menu.png" width="40" height="40">
+        <!--div class="mlogs"><a href="index.html"><img alt="Peaknic Design Logo" src="img/peak_mlogo.png"></a></div-->
+        <ul>
+            <li><a href="/pkn/page/work_main.html">프로젝트<span class="under"></span></a></li>
+            <li><a href="/pkn/page/company.html">피크닉은<span class="under"></span></a></li>
+            <!--li><a onclick="hideMenu()" href="#">우리는</a></li-->
+            <li><a href="/pkn/page/contact.html">문의하기<span class="under"></span></a></li>
+            <li><a href="/pkn/page/careers.html">지원하기<span class="under"></span></a></li>
+        </ul>
+        <div  class="welcome">
+            <li>
+                <p class="tit">A D D R E S S</p>
+                <p class="text">경기도 성남시 분당구 판교역로 182<br>한국 반도체 산업협회 8층 805호</p>
+            </li>
+            <li>
+                <p class="tit">C O N T A C T</p>
+                <p class="text">white@peak-nic.com<br>031.713.5007</p>
+            </li>
+            <li>
+                <p class="tit">C H A N N E L</p>
+                <p class="text">Facebook<br>Instagram</p>
+            </li>
+        </div>    
+        <div class="copyright">© 2020 Peaknic All Rights Reserved.</div>
+    </div>    
+</div>

@@ -1,0 +1,867 @@
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>제품_제품 관리_등록_add_product_management</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div>
+            <header class="GNB">
+                <div class="GNB_area">
+                    <div class="GNB_logo"><img src="../images/logo.svg"></div>
+                    <div class="GNB_menu">
+                        <ul class="GNB_list">
+                            <li>
+                                <a>메인</a>
+                            </li>
+                            <li>
+                                <a>제품</a>
+                            </li>
+                            <li>
+                                <a>회사소개</a>
+                            </li>
+                            <li>
+                                <a>고객지원</a>
+                            </li>
+                            <li>
+                                <a>카테고리 관리</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="GNB_info">
+                        <div class="login_text">
+                            <div>운영자님,</div>
+                            <div>안녕하세요</div>
+                        </div>
+                        <div class="shortcut">
+                            <div class="website_link">
+                                <a>홈페이지</a><img src="../images/svg01.svg">
+                            </div>
+                            <button class="log_out">로그아웃</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="wrap">
+                    <nav class="LNB">
+                        <div class="LNB_title">
+                            <h2>제품</h2>
+                        </div>
+                        <ul>
+                            <li class="selected">
+                                <a>제품 관리
+                                    <div class="select_icon">
+                                        <img src="../images/arrow_black_icon.svg">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    제품 관리
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="content">
+                        <div class="page_title">
+                            <h1>제품 등록</h1>
+                        </div>
+                        <div class="info_path">
+                            <ul>
+                                <li>
+                                    <a>
+                                        제품
+                                    </a>
+                                </li>
+                                <span>
+                                    <img src="../images/next_icon.svg">
+                                </span>
+                                <li>
+                                    <a>
+                                        제품 관리
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category_subtitle">
+                            <h2>제품 개요</h2>
+                            <p>
+                                <strong>
+                                    *
+                                </strong>
+                                필수 입력
+                            </p>
+                        </div>
+                        <div class="table_wrap">
+                            <table class="category_02">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="table_whether">노출여부</th>
+                                        <th class="input_area">
+                                            <input
+                                                class="magic_radio"
+                                                type="radio"
+                                                name="exposure00"
+                                                id="2"
+                                                value="option1">
+                                            <label for="2" class="magic_radio_label">
+                                                노출
+                                            </label>
+                                            <input
+                                                class="magic_radio"
+                                                type="radio"
+                                                name="exposure00"
+                                                id="2"
+                                                value="option1">
+                                            <label for="2" class="magic_radio_label">
+                                                노출안함
+                                            </label>
+                                        </th>
+                                        <th scope="row" class="table_date">
+                                            등록일
+                                        </th>
+                                        <th class="input_area none w35">2022/08/08 18:30
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="table_whether">
+                                            카테고리 선택
+                                            <strong>
+                                                *
+                                            </strong>
+                                        </th>
+                                        <th class="input_area" colspan="3">
+                                            <select name="items2">
+                                                <option value="HTML">오픈시리즈</option>
+                                                <option value="자바스크립트">내용</option>
+                                                <option value="CSS">제목+내용</option>
+                                            </select>
+                                            <select name="items2">
+                                                <option value="HTML">데크오븐</option>
+                                                <option value="자바스크립트">내용</option>
+                                                <option value="CSS">제목+내용</option>
+                                            </select>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" class="table_name" rowspan="2">
+                                            제품명
+                                            <strong>
+                                                *
+                                            </strong>
+                                        </td>
+                                        <td class="text_input_1line h58" colspan="3">
+                                            <label>한글</label>
+                                            <input type="text" name="" id="" value="" placeholder="" title="한글 카테고리명">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text_input_1line h58" colspan="3">
+                                            <label>영어</label>
+                                            <input type="text" name="" id="" value="" placeholder="" title="영문 카테고리명">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" class="table_name">모델명</td>
+                                        <td class="text_input_1line pr18 h58" colspan="3">
+                                            <input
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 카테고리명"
+                                                class="mg0 w100">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" class="table_name">주요 사양</td>
+                                        <td class="text_input_1line pr0" colspan="3">
+                                            <table class="category_03 mg_b10 bt_0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="td_title h58 bt_1_9">
+                                                            규격(mm)
+                                                        </td>
+                                                        <td class="btn_attach_area pr0 h58 bt_1_b">
+                                                            <label class="mg0">
+                                                                한글
+                                                            </label>
+                                                            <input
+                                                                class="btn_attach_input w40"
+                                                                type="text"
+                                                                name=""
+                                                                id=""
+                                                                value=""
+                                                                placeholder=""
+                                                                title="한글 파일첨부">
+                                                            <label class="pl_20 mg0 pl_12">영어</label>
+                                                            <input
+                                                                class="btn_attach_input w40"
+                                                                type="text"
+                                                                name=""
+                                                                id=""
+                                                                value=""
+                                                                placeholder=""
+                                                                title="한글 파일첨부">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_title h58">
+                                                            수용능력
+                                                        </td>
+                                                        <td class="btn_attach_area pr0 h58 bt_1_b">
+                                                            <label class="mg0">
+                                                                한글
+                                                            </label>
+                                                            <input
+                                                                class="btn_attach_input w40"
+                                                                type="text"
+                                                                name=""
+                                                                id=""
+                                                                value=""
+                                                                placeholder=""
+                                                                title="한글 파일첨부">
+                                                            <label class="pl_20 mg0 pl_12">영어</label>
+                                                            <input
+                                                                class="btn_attach_input w40"
+                                                                type="text"
+                                                                name=""
+                                                                id=""
+                                                                value=""
+                                                                placeholder=""
+                                                                title="한글 파일첨부">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_title h58">사용전력</td>
+                                                        <td class="btn_attach_area pr0 h58 bt_1_b">
+                                                            <label class="mg0">
+                                                                한글
+                                                            </label>
+                                                            <input
+                                                                class="btn_attach_input w40"
+                                                                type="text"
+                                                                name=""
+                                                                id=""
+                                                                value=""
+                                                                placeholder=""
+                                                                title="한글 파일첨부">
+                                                            <label class="pl_20 mg0 pl_12">영어</label>
+                                                            <input
+                                                                class="btn_attach_input w40"
+                                                                type="text"
+                                                                name=""
+                                                                id=""
+                                                                value=""
+                                                                placeholder=""
+                                                                title="한글 파일첨부">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" class="table_description" rowspan="2">
+                                            주요 특징
+                                        </td>
+                                        <td class="text_input_2line" colspan="3">
+                                            <label>
+                                                한글</label>
+                                            <textarea name="Text1" cols="40" rows="5" title="한글 카테고리설명" class="h188"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text_input_2line" colspan="3">
+                                            <label>
+                                                영어
+                                            </label>
+                                            <textarea name="Text1" cols="40" rows="5" title="영문 카테고리설명" class="h188"></textarea>
+                                        </td>
+                                    </tr>
+                                    <!-- 설명문구 -->
+                                    <tr>
+                                        <td scope="row" class="table_name" rowspan="2">
+                                            카탈로그 등록<strong>
+                                                *
+                                            </strong>
+                                        </td>
+                                        <td class="text_input_1line pt_10 pb_10" colspan="3">
+                                            <div class="int_btn">
+                                                <title>한글</title>
+                                                <input class="upload-name" value="파일첨부" disabled="disabled">
+                                                <label for="ex_filename" class="btn_text">파일첨부</label>
+                                                <input type="file" id="ex_filename" class="upload-hidden">
+                                            </div>
+                                            <p class="mg_l44">
+                                                등록 파일: 1M 이하 / pdf
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text_input_1line pt_10 pb_10" colspan="3">
+                                            <div class="int_btn">
+                                                <title>영어</title>
+                                                <input class="upload-name" value="파일첨부" disabled="disabled">
+                                                <label for="ex_filename" class="btn_text">파일첨부</label>
+                                                <input type="file" id="ex_filename" class="upload-hidden">
+                                            </div>
+                                            <p class="mg_l44">
+                                                등록 파일: 1M 이하 / pdf
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" class="table_name" rowspan="2">
+                                            사용설명서 등록
+                                            <strong>
+                                                *
+                                            </strong>
+                                        </td>
+                                        <td class="text_input_1line pt_10 pb_10" colspan="3">
+                                            <div class="int_btn">
+                                                <title>한글</title>
+                                                <input class="upload-name" value="파일첨부" disabled="disabled">
+                                                <label for="ex_filename" class="btn_text">파일첨부</label>
+                                                <input type="file" id="ex_filename" class="upload-hidden">
+                                            </div>
+                                            <p class="mg_l44">
+                                                등록 파일: 1M 이하 / pdf
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text_input_1line pt_10 pb_10" colspan="3">
+                                            <div class="int_btn">
+                                                <title>영어</title>
+                                                <input class="upload-name" value="파일첨부" disabled="disabled">
+                                                <label for="ex_filename" class="btn_text">파일첨부</label>
+                                                <input type="file" id="ex_filename" class="upload-hidden">
+                                            </div>
+                                            <p class="mg_l44">
+                                                등록 파일: 1M 이하 / pdf
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="category_subtitle">
+                            <h2>이미지 등록</h2>
+                            <p>
+                                <strong>
+                                    *
+                                </strong>
+                                필수 입력
+                            </p>
+                        </div>
+                        <div class="table_wrap">
+                            <table class="category_03">
+                                <tbody>
+                                    <tr class="b_b1 h58">
+                                        <th class="left_title b_b1_9" scope="row">이미지</th>
+                                        <td class="p_l18">
+                                            <table class="category_03 mg_b10 bt_0">
+                                                <tbody>
+                                                    <tr class="b_b1 bt_1_b h168">
+                                                        <td class="td_title h_a">
+                                                            대표이미지(상세이미지 1)
+                                                            <strong>
+                                                                *
+                                                            </strong>
+                                                        </td>
+                                                        <td class="exposure_area">
+                                                            <div class="int_btn">
+                                                                <input class="upload-name w87 mg_l0" value="파일첨부" disabled="disabled">
+                                                                <label for="ex_filename" class="btn_text l0">파일첨부</label>
+                                                                <input type="file" id="ex_filename" class="upload-hidden">
+                                                                <button class="btn_add r_0">
+                                                                    <img src="../images/plus_icon.svg">
+                                                                    추가
+                                                                </button>
+                                                            </div>
+                                                            <p class="pl_0">ⓘ 권장 이미지 사이즈(크게보기, PC): 가로 612px * 세로 724px로 리사이징 됩니다.</p>
+                                                            <p class="p_00011">
+                                                                크게 보기(Mobile) 이미지: 가로 300px * 세로 358px로 리사이징 됩니다.
+                                                            </p>
+                                                            <p class="p_00011">
+                                                                제품 상세(PC) 이미지: 가로 502px * 세로 594px로 리사이징 됩니다.</p>
+                                                            <p class="p_00011">
+                                                                제품 상세(Mobile) 이미지: 가로 252px * 세로 300px로 리사이징 됩니다.
+                                                            </p>
+                                                            <p class="p_00011">
+                                                                제품 리스트(PC) 이미지: 가로 264px * 세로 312px로 리사이징 됩니다.
+                                                            </p>
+                                                            <p class="p_00011">
+                                                                제품 리스트(Mobile) / 설치 제품 사례(Mobile) 이미지: 가로 110px * 세로 130px로 리사이징 됩니다.
+                                                            </p>
+                                                            <p class="p_00011">
+                                                                설치 제품 사례(PC): 가로 177px * 세로 210px로 리사이징 됩니다.
+                                                            </p>
+                                                            <p class="p_00011">
+                                                                견적문의 팝업(PC) / 견적문의 팝업(Mobile): 가로 64px * 세로 76px로 리사이징 됩니다.
+                                                            </p>
+                                                            <p class="p_00011">
+                                                                GNB 제품 리스트(PC): 가로 160px * 세로 190px로 리사이징 됩니다.
+                                                            </p>
+                                                            <p class="p_00011">
+                                                                제품 상세 썸네일(PC): 가로 56px * 세로 68px로 리사이징 됩니다.
+                                                            </p>
+                                                            <p class="p_0">
+                                                                - 등록 파일: 1M 이하 / png
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="b_b1 h128">
+                                                        <td class="td_title h128">
+                                                            상세 이미지 2
+                                                            <strong>
+                                                                *
+                                                            </strong>
+                                                        </td>
+                                                        <td class="exposure_area">
+                                                            <div class="int_btn">
+                                                                <input class="upload-name w87 mg_l0" value="파일첨부" disabled="disabled">
+                                                                <label for="ex_filename" class="btn_text l0">파일첨부</label>
+                                                                <input type="file" id="ex_filename" class="upload-hidden">
+                                                                <button class="btn_del r_0">
+                                                                    <img src="../images/minus_icon.svg">삭제</button>
+                                                            </div>
+                                                            <p class="pl_0">ⓘ 권장 이미지 사이즈(크게보기, PC): 가로 612px * 세로 724px로 리사이징 됩니다.</p>
+                                                            <p class="p_00011">
+                                                                크게 보기(Mobile) 이미지: 가로 300px * 세로 358px로 리사이징 됩니다.</p>
+                                                            <p class="p_00011">
+                                                                제품 상세(PC) 이미지: 가로 502px * 세로 594px로 리사이징 됩니다.</p>
+                                                            <p class="p_00011">
+                                                                제품 상세(Mobile) 이미지: 가로 252px * 세로 300px로 리사이징 됩니다.</p>
+                                                            <p class="p_0">
+                                                                - 등록 파일: 1M 이하 / png
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_title h128">
+                                                            상세 이미지 3
+                                                            <strong>
+                                                                *
+                                                            </strong>
+                                                        </td>
+                                                        <td class="exposure_area">
+                                                            <div class="int_btn">
+                                                                <input class="upload-name w87 mgl_0" value="파일첨부" disabled="disabled">
+                                                                <label for="ex_filename" class="btn_text l0">파일첨부</label>
+                                                                <input type="file" id="ex_filename" class="upload-hidden">
+                                                                <button class="btn_del r_0">
+                                                                    <img src="../images/minus_icon.svg">삭제</button>
+                                                            </div>
+                                                            <p class="pl_0">ⓘ 권장 이미지 사이즈(크게보기, PC): 가로 612px * 세로 724px로 리사이징 됩니다.</p>
+                                                            <p class="p_00011">
+                                                                크게 보기(Mobile) 이미지: 가로 300px * 세로 358px로 리사이징 됩니다.</p>
+                                                            <p class="p_00011">
+                                                                제품 상세(PC) 이미지: 가로 502px * 세로 594px로 리사이징 됩니다.</p>
+                                                            <p class="p_00011">
+                                                                제품 상세(Mobile) 이미지: 가로 252px * 세로 300px로 리사이징 됩니다.</p>
+                                                            <p class="p_0">
+                                                                - 등록 파일: 1M 이하 / png
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="category_subtitle">
+                            <h2>제품설명</h2>
+                            <p>
+                                <strong>
+                                    *
+                                </strong>
+                                필수 입력
+                            </p>
+                        </div>
+                        <div class="table_wrap">
+                            <table class="category_03 mg_b10 bt_1_0">
+                                <tbody>
+                                    <tr class="table_m_title">
+                                        <th colspan="2">
+                                            PC
+                                        </th>
+                                    </tr>
+                                    <tr class="h278">
+                                        <td class="td_title h58 bt_1_9">
+                                            상세 설명(한글)
+                                        </td>
+                                        <td class="btn_attach_area h58 p1018">
+                                            <div class="editor_area">
+                                                에디터(Editor)영역
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="h278">
+                                        <td class="td_title h58">
+                                            상세 설명(영어)
+                                        </td>
+                                        <td class="btn_attach_area h58 p1018">
+                                            <div class="editor_area">
+                                                에디터(Editor)영역
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table_m_title t_a_t">
+                                        <th class="table_m_title" colspan="2">
+                                            Mobile
+                                        </th>
+                                    </tr>
+                                    <tr class="h278">
+                                        <td class="td_title h58 bt_1_9">
+                                            상세 설명(한글)
+                                        </td>
+                                        <td class="btn_attach_area h58 p1018">
+                                            <div class="editor_area">
+                                                에디터(Editor)영역
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="h278">
+                                        <td class="td_title h58">
+                                            상세 설명(영어)
+                                        </td>
+                                        <td class="btn_attach_area h58 p1018">
+                                            <div class="editor_area">
+                                                에디터(Editor)영역
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="category_subtitle">
+                            <h2>제품 사양</h2>
+                            <p>
+                                <strong>
+                                    *
+                                </strong>
+                                필수 입력
+                            </p>
+                        </div>
+                        <div class="table_wrap">
+                            <table class="category_03 mg_b10 bt_1_0">
+                                <tbody>
+                                    <tr>
+                                        <td class="td_title h58 w16">
+                                            규격(mm)
+                                        </td>
+                                        <td class="btn_attach_area h58 w42 br_1_0">
+                                            <label>
+                                                한글
+                                            </label>
+                                            <input
+                                                class="btn_attach_input"
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 파일첨부">
+                                        </td>
+                                        <td class="btn_attach_area h58 w42 pl_0">
+                                            <label class="pl_20">영어</label>
+                                            <input
+                                                class="btn_attach_input"
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 파일첨부">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_title h58">수용능력</td>
+                                        <td class="btn_attach_area h58 w42 br_1_0">
+                                            <label>
+                                                한글
+                                            </label>
+                                            <input
+                                                class="btn_attach_input"
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 파일첨부">
+                                        </td>
+                                        <td class="btn_attach_area h58 w42 pl_0">
+                                            <label class="pl_20">영어</label>
+                                            <input
+                                                class="btn_attach_input"
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 파일첨부">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_title h58">사용전력</td>
+                                        <td class="btn_attach_area h58 w42 br_1_0">
+                                            <label>
+                                                한글
+                                            </label>
+                                            <input
+                                                class="btn_attach_input"
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 파일첨부">
+                                        </td>
+                                        <td class="btn_attach_area h58 w42 pl_0">
+                                            <label class="pl_20">영어</label>
+                                            <input
+                                                class="btn_attach_input"
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 파일첨부">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_title bt_1_9 h58">
+                                            콘트롤
+                                        </td>
+                                        <td class="btn_attach_area h58 w42 br_1_0">
+                                            <label>
+                                                한글
+                                            </label>
+                                            <input
+                                                class="btn_attach_input"
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 파일첨부">
+                                        </td>
+                                        <td class="btn_attach_area h58 w42 pl_0">
+                                            <label class="pl_20">영어</label>
+                                            <input
+                                                class="btn_attach_input"
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 파일첨부">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_title  h58">온도범위</td>
+                                        <td class="btn_attach_area h58 w42 br_1_0">
+                                            <label>
+                                                한글
+                                            </label>
+                                            <input
+                                                class="btn_attach_input"
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 파일첨부">
+                                        </td>
+                                        <td class="btn_attach_area h58 w42 pl_0">
+                                            <label class="pl_20">영어</label>
+                                            <input
+                                                class="btn_attach_input"
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 파일첨부">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_title h58">습도범위</td>
+                                        <td class="btn_attach_area h58 w42 br_1_0">
+                                            <label>
+                                                한글
+                                            </label>
+                                            <input
+                                                class="btn_attach_input"
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 파일첨부">
+                                        </td>
+                                        <td class="btn_attach_area h58 w42 pl_0">
+                                            <label class="pl_20">영어</label>
+                                            <input
+                                                class="btn_attach_input"
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 파일첨부">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_title bt_1_9 h58">
+                                            급수
+                                        </td>
+                                        <td class="btn_attach_area h58 w42 br_1_0">
+                                            <label>
+                                                한글
+                                            </label>
+                                            <input
+                                                class="btn_attach_input"
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 파일첨부">
+                                        </td>
+                                        <td class="btn_attach_area h58 w42 pl_0">
+                                            <label class="pl_20">영어</label>
+                                            <input
+                                                class="btn_attach_input"
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 파일첨부">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_title h58">배수</td>
+                                        <td class="btn_attach_area h58 w42 br_1_0">
+                                            <label>
+                                                한글
+                                            </label>
+                                            <input
+                                                class="btn_attach_input"
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 파일첨부">
+                                        </td>
+                                        <td class="btn_attach_area h58 w42 pl_0">
+                                            <label class="pl_20">영어</label>
+                                            <input
+                                                class="btn_attach_input"
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 파일첨부">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_title h58">옵션사항</td>
+                                        <td class="btn_attach_area h58 w42 br_1_0">
+                                            <label>
+                                                한글
+                                            </label>
+                                            <input
+                                                class="btn_attach_input"
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 파일첨부">
+                                        </td>
+                                        <td class="btn_attach_area h58 w42 pl_0">
+                                            <label class="pl_20">영어</label>
+                                            <input
+                                                class="btn_attach_input"
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                value=""
+                                                placeholder=""
+                                                title="한글 파일첨부">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_title h108">
+                                            도면 이미지
+                                            <strong>
+                                                *
+                                            </strong>
+                                        </td>
+                                        <td class="exposure_area" colspan="2">
+                                            <div class="int_btn"><input class="upload-name w100" value="파일첨부" disabled="disabled">
+                                                <label for="ex_filename" class="btn_text l0">파일첨부</label>
+                                                <input type="file" id="ex_filename" class="upload-hidden">
+                                            </div>
+                                            <p class="pl_0">
+                                                ⓘ 권장 이미지 사이즈: 가로 000px * 세로 000px로 리사이징 됩니다.
+                                            </p>
+                                            <p class="p_0">
+                                                - 등록 파일: 1M 이하 / png
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="category_subtitle">
+                            <h2>설치 사례</h2>
+                            <p>
+                                <strong>
+                                    *
+                                </strong>
+                                필수 입력
+                            </p>
+                        </div>
+                        <div class="table_wrap mg_b0">
+                            <table class="category_03">
+                                <tbody>
+                                    <tr class="b_b1 h58">
+                                        <th class="left_title b_b1_9" scope="row">노출 여부</th>
+                                        <td class="p_l18">
+                                            <input class="magic_radio" type="radio" name="use" id="2" value="option1">
+                                            <label for="2" class="magic_radio_label">
+                                                노출
+                                            </label>
+                                            <input class="magic_radio" type="radio" name="use" id="2" value="option1">
+                                            <label for="2" class="magic_radio_label">
+                                                노출안함
+                                            </label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="category_btn_wrap">
+                            <button class="category_btn_del">취소</button>
+                            <button class="category_btn_regist">저장</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+    </body>
+</html>
