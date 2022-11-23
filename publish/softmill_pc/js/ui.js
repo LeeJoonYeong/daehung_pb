@@ -1,4 +1,4 @@
-// top go button
+// 탑 버튼
 $(window).scroll(function(){
 	if ($(this).scrollTop() > 260){
 		$('.btn_gotop').fadeIn(400);
@@ -12,11 +12,11 @@ $('.btn_gotop').click(function(){
 });
 
 
-//tab menu
+//서브 페이지 탭 메뉴
 $(document).ready( function() {
 	var Offset = $( '.tabmenu_Wrap' ).offset();
 	$( window ).scroll( function() {
-		if ( $( document ).scrollTop() > Offset.top ) {
+		if ( $( document ).scrollTop() > Offset,'top' ) {
 		$( '.tabmenu_Wrap' ).addClass( 'fixed' );
 		}
 		else {
@@ -25,7 +25,7 @@ $(document).ready( function() {
 	});
 });
 
-//product tab menu
+//서브 페이지 탭 메뉴 (product)
 $(document).ready( function() {
 	var Offset = $( '.detail_tab_Wrap' ).offset();
 	$( window ).scroll( function() {
@@ -38,7 +38,7 @@ $(document).ready( function() {
 	});
 });
 
-// location dropmenu
+// 드롭다운 메뉴 (서브 페이지)
 $(document).ready(function () {
     
 	// 마우스 오버시 add 추가
@@ -55,52 +55,27 @@ $(document).ready(function () {
 
 
 //product gallay
-$(document).ready(function() {
-	$("#content-slider").lightSlider({
-		loop:false,
-		keyPress:false
-	});
-});
+// $(document).ready(function() {
+// 	$("#content-slider").lightSlider({
+// 		loop:false,
+// 		keyPress:false
+// 	});
+// });
 
 
-
-//Main GNB
+//메인 GNB
 var lastScrollTop = 0;
 var delta = 55;
 var fixBox = document.querySelector('.mheader_wrap');
-var fixBoxHeight = fixBox.offsetHeight;
+var fixBox_sub = document.querySelector('.header_wrap');
 var didScroll;
+
 //스크롤 이벤트 
 window.onscroll = function(e) {
 	didScroll = true;
 };
 
-//0.25초마다 스크롤 여부 체크하여 스크롤 중이면 hasScrolled() 호출
-setInterval(function(){
-	if(didScroll){
-		hasScrolled();
-		didScroll = false;
-	}
-}, 50);
-
-function hasScrolled(){
-	var nowScrollTop = window.scrollY;
-	if(Math.abs(lastScrollTop - nowScrollTop) <= delta){
-		return;
-	}
-	if(nowScrollTop > lastScrollTop && nowScrollTop > fixBoxHeight){
-		//Scroll down
-		fixBox.classList.add('show');
-	}else{
-		if(nowScrollTop + window.innerHeight < document.body.offsetHeight){
-			//Scroll up
-			fixBox.classList.remove('show');
-		}
-	}
-	lastScrollTop = nowScrollTop;
-}
-
-//GNB plus
+//메인 GNB 배경
 $(window).scroll(function() {
 
 	if($(this).scrollTop() > 300) {
@@ -113,37 +88,34 @@ $(window).scroll(function() {
 	}
 });
 
-//Sub GNB
-var lastScrollTop = 0;
-var delta = 55;
-var fixBox = document.querySelector('.header_wrap');
-var fixBoxHeight = fixBox?.offsetHeight;
-var didScroll;
-//스크롤 이벤트 
-window.onscroll = function(e) {
-	didScroll = true;
-};
-
 //0.25초마다 스크롤 여부 체크하여 스크롤 중이면 hasScrolled() 호출
 setInterval(function(){
 	if(didScroll){
-		hasScrolled();
+		
+		if(fixBox) {
+			let fixBoxHeight = fixBox.offsetHeight;
+			hasScrolled(fixBox, fixBoxHeight);
+		} else if(fixBox_sub) {
+			let fixBoxSubHeight = fixBox_sub.offsetHeight;
+			hasScrolled(fixBox_sub, fixBoxSubHeight);
+		}
 		didScroll = false;
 	}
 }, 50);
 
-function hasScrolled(){
+// 스크롤 함수
+function hasScrolled(fixbox, fixbox_height){
 	var nowScrollTop = window.scrollY;
 	if(Math.abs(lastScrollTop - nowScrollTop) <= delta){
 		return;
 	}
-	if(nowScrollTop > lastScrollTop && nowScrollTop > fixBoxHeight){
+	if(nowScrollTop > lastScrollTop && nowScrollTop > fixbox_height){
 		//Scroll down
-		fixBox.classList.add('show');
+		fixbox.classList.add('show');
 	}else{
 		if(nowScrollTop + window.innerHeight < document.body.offsetHeight){
 			//Scroll up
-			fixBox.classList.remove('show');
+			fixbox.classList.remove('show');
 		}
 	}
 	lastScrollTop = nowScrollTop;
@@ -314,10 +286,24 @@ function proItemCountCheck() {
 
 /* //제품 상세 리스트 기능 */
 
+/* 햄버거 메뉴 on / off */
+const gnb_burger = document.querySelector('.burger');
+const menu_hamburger = document.querySelector('#hamburger');
+const menu_close_btn = document.querySelector('.mega_header a');
+gnb_burger?.addEventListener('click', () => {
+	if(menu_hamburger.classList.contains('active')) {
+		menu_hamburger.classList.remove('active');
+	} else {
+		menu_hamburger.classList.add('active');
+	}
+});
+menu_close_btn?.addEventListener('click', () => {
+	menu_hamburger.classList.remove('active');
+});
 
+/* //햄버거 메뉴 on / off */
 
 /* combo list */
-
 const label = document.querySelectorAll('.label');
 label.forEach(function(lb){
     lb.addEventListener('click', e => {
