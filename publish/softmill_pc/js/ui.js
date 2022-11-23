@@ -16,7 +16,7 @@ $('.btn_gotop').click(function(){
 $(document).ready( function() {
 	var Offset = $( '.tabmenu_Wrap' ).offset();
 	$( window ).scroll( function() {
-		if ( $( document ).scrollTop() > Offset,'top' ) {
+		if ( $( document ).scrollTop() > Offset?.top ) {
 		$( '.tabmenu_Wrap' ).addClass( 'fixed' );
 		}
 		else {
@@ -29,7 +29,7 @@ $(document).ready( function() {
 $(document).ready( function() {
 	var Offset = $( '.detail_tab_Wrap' ).offset();
 	$( window ).scroll( function() {
-		if ( $( document ).scrollTop() > Offset,'top' ) {
+		if ( $( document ).scrollTop() > Offset?.top ) {
 		$( '.detail_tab_Wrap' ).addClass( 'fixed' );
 		}
 		else {
