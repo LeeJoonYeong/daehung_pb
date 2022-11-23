@@ -15,9 +15,18 @@
     width: 100%;
 }
 
+
 .skill_Wrap .title {
     position: relative;
     margin: 80px 20px 30px;
+}
+.skill_Wrap .title .tags {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 12px;
+    color: #666666;
+    text-align: center;
 }
 .skill_Wrap .title .tite {
     font-size: 22px;
@@ -69,20 +78,31 @@
     line-height: 22px;
     color: #6f6f6f;
     text-align: center;
-    padding: 0 20px 50px;
+    padding: 0 20px 30px;
 }
 
 .skill_Wrap .conte .control_title {
-    font-size: 16px;
-    line-height: 25px;
-    color: #FF5F00;
-    margin-bottom: 26px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 8px;
 }
 .skill_Wrap .conte .control_title_W {
-    font-size: 16px;
-    line-height: 26px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
     color: #ffffff;
-    margin-bottom: 26px;
+    margin-bottom: 8px;
+}
+
+.skill_Wrap .conte .control_dec {
+    font-size: 10px;
+    line-height: 14px;
+    margin-top: 4px;
+    color: #000;
 }
 
 .skill_Wrap .conte .control {
@@ -123,18 +143,18 @@
 .skill_Wrap .conte .controls {
     position: relative;
     padding: 0 20px;
+    margin-top: 20px;
 }
-.skill_Wrap .conte .controls .box {
+.skill_Wrap .conte .controls li{
     display: block;
     position: relative;
-    height: 128px;
-    margin-bottom: 12px;
+    margin-bottom: 30px;
+}
+.skill_Wrap .conte .controls li:last-child{ 
+    margin-bottom: 0
 }
 .skill_Wrap .conte .controls .detail {
     width: 100%;
-    padding-left: 128px;
-    height: 128px;
-    padding-top: 15px;
 }
 .skill_Wrap .conte .controls .icons {
     position: absolute;
@@ -154,13 +174,21 @@
     text-align: left;
     margin-bottom: 8px;
 }
+.skill_Wrap .conte .controls .ctitles {
+    font-size: 16px;
+    line-height: 25px;
+    color: #000000;
+    text-align: left;
+    margin: 20px 0 8px;
+}
 .skill_Wrap .conte .controls .bcopy {
     font-size: 12px;
     line-height: 16px;
     text-align: left;
 }
 .skill_Wrap .conte .box {
-    margin-bottom: 0;
+    margin-bottom: 20px;
+    padding: 0 20px;
 }
 .banner_oven {
     position: relative;
@@ -262,8 +290,8 @@
 .rnd_Wrap .conte .stitle {
     font-size: 18px;
     line-height: 26px;
-    color: #fff;
-    margin: 30px 0 10px;
+    color: #000;
+    margin: 50px 0 10px;
     padding: 0 20px;
     text-align: left;
 }
@@ -271,16 +299,17 @@
 .rnd_Wrap .conte .btitle {
     font-size: 13px;
     line-height: 22px;
-    color: #6f6f6f;
+    color: #4a4a4a;
     margin-bottom: 50px;
     padding: 0 20px;
     text-align: left;
 }
 
 .rnd_Wrap .conte .control_title {
-    font-size: 16px;
-    line-height: 25px;
-    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000;
     margin-bottom: 10px;
     padding: 0 20px;
     text-align: left;
@@ -289,15 +318,7 @@
 .rnd_Wrap .conte .control {
     position: relative;
 }
-.rnd_Wrap .conte li {
-    display: block;
-    float: left;
-    width: 250px;
-    margin: 0 60px 80px 0;
-}
-.rnd_Wrap .conte li:nth-child(3n) {
-    margin: 0;
-}
+
 .rnd_Wrap .conte .control .icons {
     width: 200px;
     height: 200px;
@@ -337,6 +358,7 @@
 .rnd_Wrap .conte .box {
     text-align: center;
 }
+
 .banner_rnd {
     position: relative;
     height: 843px;
@@ -439,6 +461,67 @@
     left: 50%;
     margin-left: -140px;
     text-align: center;
+}
+
+.rtitle_Wrap {
+    position: relative;
+    padding: 0 20px;
+    margin: 80px 0 0;
+}
+.rtitle_Wrap .title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 12px;
+    text-align: center;
+    color: #000;
+}
+
+.rtitle_Wrap .stitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #4A4A4A;
+}
+
+.rtitle_Wrap img {
+    width: 100%;
+}
+
+.banner_tech {
+    position: relative;
+    background: #F9F9F9;
+    padding: 80px 0;
+    text-align: center;
+}
+.banner_tech .title {
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+.banner_tech .title .mtitle {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 12px;
+    color: #000;
+}
+.banner_tech .title .stitle {
+    font-size: 14px;
+    line-height: 22px;
+    color: #4a4a4a;
+}
+.banner_tech .otitle {
+    font-size: 13px;
+    line-height: 22px;
+    margin: 30px 0;
+    padding: 0 20px;
+    color: #000;
+}
+.banner_tech img {
+    width: 200px;
+    margin: 0 auto;
 }
 
 .sbg {

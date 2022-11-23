@@ -32,7 +32,7 @@
     </div>
     <!-- header 끝 -->
     <!-- 컨텐츠 시작 -->
-    <div id="contentsWrap" name="contentsWrap" class="mbomm">
+    <div id="contentsWrap" name="contentsWrap">
         <div class="contwrap">
             <!-- 타이틀 시작 -->
             <div class="title_Wrap">
@@ -57,8 +57,8 @@
             <!-- 텝메뉴 시작 -->
             <div class="tabmenu_Wrap">
                 <ul class="tabmenu">
-                    <li><a href="skill_oven.html" class="selected">오븐시리즈</a></li>
                     <li><a href="skill_dou.html">도우컨디셔너</a></li>
+                    <li><a href="skill_oven.html" class="selected">오븐시리즈</a></li>
                     <li><a href="skill_mini.html">미니시리즈</a></li>
                 </ul>
             </div>
@@ -77,83 +77,55 @@
                 <div class="sectionWrap">
                     <!-- LCD-TFT 터치스크린 시작 -->
                     <div class="skill_wrap">
-                        <div class="titles">
+                        <div class="title">
                             <p class="tite">LCD-TFT 터치스크린</p>
                         </div>
                         <div class="conte">
                             <div class="group_area">
-                                <div class="stitle">유로오븐</div>
-                                <div class="btitle">LCD-TFT 화면으로 구성된 조작반은 베이킹 동작 상태를 직관적으로 보여주며 아이콘 터치 방식을 통해 베이킹 설정 기능을
-                                    간편하게 사용할 수 있습니다.
+                                <div class="btitle">LCD-TFT 화면으로 구성된 조작반은 베이킹 동작 상태를 직관적으로 보여주며 아이콘 터치 방식을 통해 
+                                   베이킹 설정 기능을 간편하게 사용할 수 있습니다.
                                 </div>
-                                <div class="control_title">화면 내 제공 항목</div>
-                                <div class="control">
-                                    <div class="box">
-                                        <p class="icons"><img src="../img/skill_oven_icon01.svg"></p>
-                                        <p class="ctitle">온도 설정범위</p>
-                                        <p class="bcopy">0~400℃</p>
-                                    </div>
-                                    <div class="box">
-                                        <p class="icons"><img src="../img/skill_oven_icon02.svg"></p>
-                                        <p class="ctitle">제어 정밀도</p>
-                                        <p class="bcopy">±1℃</p>
-                                    </div>
-                                    <div class="box">
-                                        <p class="icons"><img src="../img/skill_oven_icon03.svg"></p>
-                                        <p class="ctitle">레시피 저장 최대</p>
-                                        <p class="bcopy">60개</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group_area">
-                                <div class="stitle">컨벡션오븐</div>
-                                <div class="btitle">사용자가 개발한 레시피의 설정값을 저장하면 대기모드에서 각 레시피별 빵 아이콘이 표시됩니다. 베이킹 모드는 자동모드,
-                                    수동모드, 예약모드로 선택할 수 있습니다.
-                                </div>
-                                <div class="control_title">레시피 설정 항목</div>
-                                <div class="control">
-                                    <div class="box">
-                                        <p class="icons"><img src="../img/skill_oven_icon04.svg"></p>
-                                        <p class="bcopy">베이킹 시간</p>
-                                    </div>
-                                    <div class="box">
-                                        <p class="icons"><img src="../img/skill_oven_icon05.svg"></p>
-                                        <p class="bcopy">설정 온도</p>
-                                    </div>
-                                    <div class="box">
-                                        <p class="icons"><img src="../img/skill_oven_icon06.svg"></p>
-                                        <p class="bcopy">팬 속도</p>
-                                    </div>
-                                    <div class="box">
-                                        <p class="icons"><img src="../img/skill_oven_icon07.svg"></p>
-                                        <p class="bcopy">스팀주기</p>
-                                    </div>
-                                    <div class="box">
-                                        <p class="icons"><img src="../img/skill_oven_icon08.svg"></p>
-                                        <p class="bcopy">댐퍼 동작 주기</p>
-                                    </div>
-                                </div>
+                                <ul class="controls">
+                                    <li>
+                                        <div class="detail">
+                                            <div class="control_title">유로베이커오븐</div>
+                                            <img src="../img/skill_oven_lcd-tft.png" class="control_diag">
+                                            <p class="ctitles">마이크로 컴퓨터 내장 고속 정밀 케어</p>
+                                            <p class="bcopy">
+                                                7인치 TFT 터치 스크린 조작반은 베이킹 동작 상태를 보여줍니다. 아이콘 터치 방식으로 온도 설정범위는 0~400℃, 제어 정밀도 ±1℃ 입니다. 60개의 베이킹 레시피 저장이 가능하고 5단계 PID 자동 온도조절 방식으로 다양한 베이킹이 가능합니다.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="detail">
+                                            <p class="control_title">컨벡션오븐</p>
+                                            <img src="../img/skill_oven_lcd-tft2.png" class="control_diag">
+                                           <p class="ctitles">베이킹 이미지 자동 Mode</p>
+                                           <p class="bcopy">
+                                            사용자가 창의적으로 개발한 레시피를 저장하면 대기모드에서 빵의 아이콘이 표시됩니다. 베이킹 모드는 자동 모드, 수동 모드, 예약 모드로 선택할 수 있습니다. 레시피 이미지 저장은 99개까지 가능합니다.
+                                           </p> 
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <!-- LCD-TFT 터치스크린 끝 -->
-                </div>
-                
-                <!-- 공기 순환 시스템 시작 -->
-                <div class="banner_oven">
-                    <div class="title">
-                        <p class="tag">컨벡션오븐</p>
-                        <p class="mtitle_W">4단계 팬 속도 조절</p>
-                        <p class="stitle_W">
-                            팬의 속도와 송풍 방향을 정방향, 역방향으로 변화시켜<br> 
-                            순환 바람이 내부에 일정하게 분배됩니다. 순환을 통해<br> 
-                            빠르게 예열되며 온도가 정밀하게 유지되어 최적의<br>
-                            베이킹이 가능합니다. 
-                        </p>
+                    <!-- LCD-TFT 터치스크린 시작 -->
+                    <div class="skill_wrap">
+                        <div class="title">
+                            <p class="tags">컨벡션 오븐</p>
+                            <p class="tite">4단계 팬 속도 조절</p>
+                        </div>
+                        <div class="conte">
+                            <div class="btitles">팬의 속도와 송풍 방향을 정방향, 역방향으로 변화시켜 순환 바람이 내부에 일정하게 분배됩니다. 
+                                순환을 통해 빠르게 예열되며 온도가 정밀하게 유지되어 최적의 베이킹이 가능합니다. 
+                            </div>
+                            <div class="box"><img src="../img/skill_oven_convec.svg" class="control_diag"></div>
+                        </div>
                     </div>
-                    <img src="../img/skill_banner_oven02.png" class="bg_img">
+                    <!-- LCD-TFT 터치스크린 끝 -->
                 </div>
-                <!-- 공기 순환 시스템 끝 -->
             </div>
             <!-- 오븐그룹 끝 -->
         </div>
