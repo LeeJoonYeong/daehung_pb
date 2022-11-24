@@ -384,16 +384,16 @@
 }
 
 .detail_box {
-    width: 1920px;
+    max-width: 1920px;
     margin: 0 auto;
     background: #000;
     height: 80px;
 }
 .detail_tab {
     position: relative;
-    width: 1590px;
+    max-width: 1630px;
     margin: 0 auto;
-    padding: 17px 0 18px;
+    padding: 17px 20px 18px;
 }
 .detail_tab a{
     display: block;
