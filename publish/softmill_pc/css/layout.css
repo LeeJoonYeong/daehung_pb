@@ -209,6 +209,10 @@
     right: 0;
     z-index: 100;
     padding-top: 10px;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
 }
 
 .indicator > li .menu_list ul {
@@ -722,12 +726,12 @@
     color: #000000;
 }
 .oneDepth .gnb_menu li .smenu li a.more {
-		display: inline-block;
-		background: url('../img/main_sub_arrow.png') no-repeat top right / 30px 30px;
+	display: inline-block;
+	background: url('../img/main_sub_arrow.png') no-repeat top right / 30px 30px;
     padding: 0 30px 0 0;
 }
 .oneDepth .gnb_menu li .smenu li a.more:hover {
-		background-image: url('../img/main_sub_arrow_g.png');
+	background-image: url('../img/main_sub_arrow_g.png');
 }
 
 .gnb_menu > li.on .smenu {
@@ -812,7 +816,7 @@
     line-height: 65px;
     color: #000;
     margin-bottom: 20px;
-    animation: fadein 0.6s ease-in-out;
+    animation: fadein_trans 0.6s ease-in-out;
 
 }
 .menus_btitle {
@@ -821,7 +825,7 @@
     color: #000;
     opacity: 0.8;
     margin-bottom: 24px;
-    animation: fadein 0.9s ease-in-out;
+    animation: fadein_trans 0.9s ease-in-out;
 }
 .gotos {
     width: 134px;
@@ -831,10 +835,10 @@
     line-height: 19px;
     padding: 10px 46px 10px 34px;
     background: #FF5C00;
-    animation: fadein 2s ease-in-out;
+    animation: fadein_trans 2s ease-in-out;
 }
 
-@keyframes fadein{
+@keyframes fadein_trans{
     0% {
       opacity: 0;
       transform: translateY(40px);
