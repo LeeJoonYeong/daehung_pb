@@ -10,16 +10,11 @@
 
 .main_Wrap {
     position: relative;
-    width: 1920px;
-    margin: 0 auto;
 }
 
 .mbanner_wrap{
     position: relative;
-    width: 1920px;
-    height: 1080px;
-    left: 50%;
-    margin-left: -960px;
+    width: 100%;
     overflow: hidden;
 }
 .mbanner_wrap img{
@@ -27,7 +22,7 @@
 }
 .mbanner_wrap .banner_txt {
     position: absolute;
-    top: 296px;
+    top: 24%;
     left: 50%;
     margin-left: -660px;
 }
@@ -66,7 +61,6 @@
     position: fixed;
     padding: 0 100px 0 100px;
     width: 100%;
-    max-width: 1920px;
     transition: top .3s ease , background .3s ease;
 }
 
@@ -213,16 +207,14 @@
 /*********** history header *********/
 .story_wrap{
     position: relative;
-    width: 1920px;
-    left: 50%;
-    margin-left: -960px;
+    width: 100%x;
 }
 .story_wrap img{
     width: 100%;
 }
 .story_wrap .story_txt {
     position: absolute;
-    top: 200px;
+    top: 19%;
     left: 50%;
     margin-left: -660px;
 }
@@ -241,16 +233,14 @@
 /*********** global header *********/
 .global_wrap{
     position: relative;
-    width: 1920px;
-    left: 50%;
-    margin-left: -960px;
+    width: 100%;
 }
 .global_wrap img{
     width: 100%;
 }
 .global_wrap .global_txt {
     position: absolute;
-    top: 200px;
+    top: 19%;
     left: 50%;
     margin-left: -660px;
 }
@@ -268,16 +258,14 @@
 /*********** signature header *********/
 .signature_wrap{
     position: relative;
-    width: 1920px;
-    left: 50%;
-    margin-left: -960px;
+    width: 100%;
 }
 .signature_wrap img{
     width: 100%;
 }
 .signature_wrap .signature_txt {
     position: absolute;
-    top: 200px;
+    top: 19%;
     left: 50%;
     margin-left: -660px;
 }
@@ -312,22 +300,20 @@
 /*********** mission/core header *********/
 .etc_wrap{
     position: relative;
-    width: 1920px;
-    left: 50%;
-    margin-left: -960px;
+    width: 100%;
 }
 .etc_wrap img{
     width: 100%;
 }
 .mission {
     float: left;
-    width: 960px;
+    width: 50%;
     position: relative;
 }
 .mission .mission_txt {
     position: absolute;
     width: 100%;
-    top: 222px;
+    top: 36%;
 }
 .mission .mis_title {
     text-align: center;
@@ -345,12 +331,12 @@
 .core {
     position: relative;
     float: left;
-    width: 960px;
+    width: 50%;
 }
 .core .core_txt {
     position: absolute;
     width: 100%;
-    top: 222px;
+    top: 40%;
 }
 .core .cor_title {
     text-align: center;
@@ -535,16 +521,15 @@
 }
 .client_wrap {
     position: relative;
-    width: 1920px;
     height: 750px;
-    padding: 150px 300px 0;
+    padding: 150px 0 0;
     background: #F9F9F9;
     overflow: hidden;
-    left: 50%;
-    margin-left: -960px;
 }
 .client_txt {
-    position: relative;
+    position: absolute;
+    left: 50%;
+    margin-left: -660px;
 }
 .cli_title {
     font-size: 42px;
@@ -579,8 +564,8 @@
     width: 100%;
 }
 .banner_wraper { 
-    height: 120px; 
-    width: 1920px; 
+    height: 120px;
+    width: 100%; 
     position: absolute; 
     overflow: hidden; 
     left: 0;
@@ -595,7 +580,6 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1920px;
   position: relative;
   margin: auto;
   background: #000;
@@ -604,8 +588,9 @@
 /* The dots/bullets/indicators */
 .dot_line {
     position: absolute;
-    bottom: 300px;
-    left:300px
+    bottom: 24%;
+    left: 50%;
+    margin-left: -660px;
 }
 .dot {
   height: 2px;
@@ -640,7 +625,67 @@
 }
 
 .main_img {
-   height: 1080px;
-   width: 1920px;
+   width: 100%;
    overflow: hidden;
+}
+
+
+
+@media (max-width: 1920px) {
+
+    .mbanner_wrap {
+        width: 1920px;
+        height: 1080px;
+        left: 50%;
+        margin-left: -960px;
+    }
+    .mbanner_wrap .banner_txt {
+        top: 296px;
+    }
+    .ban_title {
+        font-weight: 500;
+    }
+    
+    .main_img {
+        height: 1080px;
+        width: 1920px;
+        overflow: hidden;
+    }
+    .mbanner_wrap img {
+        width: 100%;
+    }
+
+    .story_wrap {
+        position: relative;
+        width: 1920px;
+        left: 50%;
+        margin-left: -960px;
+    }
+
+    .global_wrap {
+        position: relative;
+        width: 1920px;
+        left: 50%;
+        margin-left: -960px;
+    }
+
+    .signature_wrap {
+        position: relative;
+        width: 1920px;
+        left: 50%;
+        margin-left: -960px;
+    }
+
+    .etc_wrap {
+        position: relative;
+        width: 1920px;
+        left: 50%;
+        margin-left: -960px;
+    }
+    .mission .mission_txt {
+        top: 222px;
+    }
+    .core .core_txt {
+        top: 222px;
+    }
 }
