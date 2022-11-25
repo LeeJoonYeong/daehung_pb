@@ -1,4 +1,4 @@
-// 탑 버튼
+// 탑 바로가기 버튼
 $(window).scroll(function(){
 	if ($(this).scrollTop() > 260){
 		$('.btn_gotop').fadeIn(400);
@@ -29,7 +29,7 @@ $(document).ready( function() {
 $(document).ready( function() {
 	var Offset = $( '.detail_tab_Wrap' ).offset();
 	$( window ).scroll( function() {
-		if ( $( document ).scrollTop() > Offset?.top ) {
+		if ( $( document ).scrollTop() > Offset?.top  ) {
 		$( '.detail_tab_Wrap' ).addClass( 'fixed' );
 		}
 		else {
@@ -53,7 +53,6 @@ $(document).ready(function () {
 
 });
 
-
 //product gallay
 // $(document).ready(function() {
 // 	$("#content-slider").lightSlider({
@@ -61,7 +60,6 @@ $(document).ready(function () {
 // 		keyPress:false
 // 	});
 // });
-
 
 //메인 GNB
 var lastScrollTop = 0;
@@ -287,21 +285,40 @@ function proItemCountCheck() {
 /* //제품 상세 리스트 기능 */
 
 /* 햄버거 메뉴 on / off */
+const header = document.querySelector('#header'); // 메인을 제외한 공통 헤더
 const gnb_burger = document.querySelector('.burger');
 const menu_hamburger = document.querySelector('#hamburger');
 const menu_close_btn = document.querySelector('.mega_header a');
+const goTop_btn = document.querySelector('.topwrap');
 gnb_burger?.addEventListener('click', () => {
 	if(menu_hamburger.classList.contains('active')) {
 		menu_hamburger.classList.remove('active');
 	} else {
-		menu_hamburger.classList.add('active');
+		menu_hamburger.classList.add('active');  // 햄버거 메뉴 활성화
+		document.body.style.overflow = 'hidden'; // 메인 페이지 스크롤 숨김
+		goTop_btn.classList.remove('active'); 	 // 최상단 이동 버튼 숨김
+		header?.classList.remove('active');      // 헤더 숨김
 	}
 });
 menu_close_btn?.addEventListener('click', () => {
-	menu_hamburger.classList.remove('active');
+	menu_hamburger.classList.remove('active'); // 햄버거 메뉴 비활성화
+	document.body.style.overflow = 'visible';  // 메인 페이지 스크롤 활성화
+	goTop_btn.classList.add('active');				 // 최상단 이동 버튼 활성화
+	header?.classList.add('active');					 // 헤더 활성화
 });
 
 /* //햄버거 메뉴 on / off */
+
+/* depth3 tab menu 활성화   */
+const tabmenuList = document.querySelectorAll('.tabmenu li');
+tabmenuList?.forEach(el => {
+	let target = el.firstElementChild;
+	if(target.href.replace(/^.*\//, '') === window.location.pathname.replace(/^.*\//, '')) { // 현재 주소와 탭 메뉴 매칭
+		target.classList.add('selected');
+	}
+});
+/* //depth3 tab menu 활성화  */
+
 
 /* combo list */
 const label = document.querySelectorAll('.label');
@@ -343,6 +360,10 @@ function showSlides() {
 	var i;
 	var slides = document.getElementsByClassName("mySlides");
 	var dots = document.getElementsByClassName("dot");
+
+	if(!slides.length) // 슬라이드가 없다면 종료 (안전 장치)
+		return;
+
 	for (i = 0; i < slides.length; i++) {
 	slides[i].style.display = "none";  
 	}
@@ -359,42 +380,44 @@ function showSlides() {
 
 //main client rolling banner
 window.onload = function() {
-var bannerLeft=0;
-var first=1;
-var last;
-var imgCnt=0;
-var $img = $(".banner_wraper img");
-var $first;
-var $last;
+	var bannerLeft=0;
+	var first=1;
+	var last;
+	var imgCnt=0;
+	var $img = $(".banner_wraper img");
+	var $first;
+	var $last;
 
-$img.each(function(){   // 5px 간격으로 배너 처음 위치 시킴
-	$(this).css("left",bannerLeft);
-	bannerLeft += $(this).width()+80;
-	$(this).attr("id", "banner"+(++imgCnt));  // img에 id 속성 추가
-});
+	$img.each(function() {   // 5px 간격으로 배너 처음 위치 시킴
+		$(this).css("left",bannerLeft);
+		bannerLeft += $(this).width()+80;
+		$(this).attr("id", "banner"+(++imgCnt));  // img에 id 속성 추가
+	});
 
-if( imgCnt > 6){                //배너 6개 이상이면 이동시킴
+	if( imgCnt > 6 ){                //배너 6개 이상이면 이동시킴
 
 
-	last = imgCnt;
+		last = imgCnt;
 
-	setInterval(function() {
-		$img.each(function(){
-			$(this).css("left", $(this).position().left-1); // 1px씩 왼쪽으로 이동
-		});
-		$first = $("#banner"+first);
-		$last = $("#banner"+last);
-		if($first.position().left < -260) {    // 제일 앞에 배너 제일 뒤로 옮김
-			$first.css("left", $last.position().left + $last.width()+80 );
-			first++;
-			last++;
-			if(last > imgCnt) { last=1; }   
-			if(first > imgCnt) { first=1; }
-		}
-	}, 20);   //여기 값을 조정하면 속도를 조정할 수 있다.(위에 1px 이동하는 부분도 조정하면 
+		setInterval(function() {
+			$img.each(function() {
+				$(this).css("left", $(this).position().left-1); // 1px씩 왼쪽으로 이동
+			});
+			$first = $("#banner"+first);
+			$last = $("#banner"+last);
 
-//깔끔하게 변경가능하다           
+			if($first.position().left < -260) {    // 제일 앞에 배너 제일 뒤로 옮김
+				$first.css("left", $last.position().left + $last.width()+80 );
+				first++;
+				last++;
+				if(last > imgCnt) { last=1; }   
+				if(first > imgCnt) { first=1; }
+			}
+		}, 20);   //여기 값을 조정하면 속도를 조정할 수 있다.(위에 1px 이동하는 부분도 조정하면 
 
-}
+	//깔끔하게 변경가능하다           
+
+	}
 
 };
+
