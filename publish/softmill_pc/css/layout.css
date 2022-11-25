@@ -322,6 +322,9 @@
     line-height: 20px;
     color: #000000;
 }
+.banner {
+    overflow: hidden;
+}
 .banner_Wrap {
     position: relative;
     left: 50%;
