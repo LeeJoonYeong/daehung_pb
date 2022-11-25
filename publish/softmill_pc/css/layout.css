@@ -322,9 +322,7 @@
     line-height: 20px;
     color: #000000;
 }
-.banner {
-    overflow: hidden;
-}
+
 .banner_Wrap {
     position: relative;
     left: 50%;
@@ -610,14 +608,14 @@
 .treeDepth {
     float: left;
     position: relative;
-		display: none;
+	display: none;
     height: 1000px;
     overflow: scroll;
     background: #fbfbfb;
 }
 
 .treeDepth.active { 
-		display: block;
+	display: block;
 }
 
 .treeDepth li {
@@ -654,6 +652,11 @@
     color: #000;
     opacity: 0.6;
 }
+
+.banner {
+    overflow: hidden;
+}
+
 
 @media (max-width: 1700px) {
     .treeDepth li {
