@@ -740,10 +740,10 @@
 
 .oneDepth .gnb_menu > li.active .smenu { 
 	display: block;
-    animation: fadein 0.6s;
-    -moz-animation: fadein 0.6s; /* Firefox */
-    -webkit-animation: fadein 0.6s; /* Safari and Chrome */
-    -o-animation: fadein 0.6s; /* Opera */
+    animation: fadein_trans 0.6s;
+    -moz-animation: fadein_trans 0.6s; /* Firefox */
+    -webkit-animation: fadein_trans 0.6s; /* Safari and Chrome */
+    -o-animation: fadein_trans 0.6s; /* Opera */
 }
 
 .oneDepth .gnb_menu > li.active > a { 
