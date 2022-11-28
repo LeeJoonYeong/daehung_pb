@@ -237,11 +237,26 @@
     background-color: #F9F9F9;
     border: none;
     resize: none;
-    outline:none
+    outline:none;
 }
 .aree textarea:focus{
     border: none;
 }
+.aree textarea::-webkit-scrollbar {
+    width: 4px;
+    cursor: pointer;
+}
+
+.aree textarea::-webkit-scrollbar-thumb  {
+    height: 30%;
+    background: #e6e6e6;
+    border-radius: 10px;
+}
+
+.aree textarea::-webkit-scrollbar-track  {
+    background: transparent;
+}
+
 .write {
     display: block;
 }
@@ -318,8 +333,8 @@ input#chk_top:checked + label:before{
 }
 .pop_product {
     height: 364px;
-    overflow: scroll;
-    margin-bottom: 40px;
+    overflow-y: scroll;
+    margin-bottom: 30px;
 }
 .pop_product_list {
     position: relative;
@@ -337,7 +352,7 @@ input#chk_top:checked + label:before{
 }
 .pop_product_list li a {
     display: block;
-    width: 155px;
+    width: 156px;
     height: 172px;
     padding: 20px;
     text-align: center;
@@ -346,7 +361,7 @@ input#chk_top:checked + label:before{
 .pop_product_list li a:hover {
     border: 1px solid #000000;
 }
-.pop_product_list li:last-child {
+.pop_product_list li:nth-child(4n) {
     margin: 0 0 10px 0;
 }
 .pop_product_list li .img_size {
@@ -409,8 +424,29 @@ input#chk_top:checked + label:before{
     margin-right: 20px;
 }
 .pop_product_select {
-    height: 174px;
-    width: 660px;
+    height: 182px;
     margin-top: 20px;
-    overflow: scroll;
+    overflow-y: scroll;
+}
+
+/*********** Scroll bar design ***************/
+
+.pop_product::-webkit-scrollbar,
+.pop_product_select::-webkit-scrollbar,
+.treeDepth::-webkit-scrollbar {
+    width: 4px;  /* 스크롤바의 너비 */
+}
+
+.pop_product::-webkit-scrollbar-thumb,
+.pop_product_select::-webkit-scrollbar-thumb,
+.treeDepth::-webkit-scrollbar-thumb  {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #e6e6e6; /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+
+.pop_product::-webkit-scrollbar-track,
+.pop_product_select::-webkit-scrollbar-track,
+.treeDepth::-webkit-scrollbar-track  {
+    background: transparent;  /*스크롤바 뒷 배경 색상*/
 }

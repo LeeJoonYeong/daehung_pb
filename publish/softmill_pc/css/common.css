@@ -463,7 +463,7 @@
         background: #fff;
         width: 760px;
         height: 942px;
-        padding: 50px 50px;
+        padding: 50px 37px 50px 50px;
         margin: 40px auto;
     }
     .pop_wrap {
@@ -1026,7 +1026,7 @@
     .empty {
         position: relative;
         text-align: center;
-        padding: 38px 20px 38px;
+        padding: 37px 20px 37px;
         margin-bottom: 20px;
         border: 1px dotted #bbbbbb;
         border-style: dotted;
@@ -1373,3 +1373,4 @@
   .selectBox .optionItem:last-child {
     border-bottom: 0 none;
     }
+
