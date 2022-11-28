@@ -325,20 +325,20 @@
 
 .banner_Wrap {
     position: relative;
-    left: 50%;
-    margin-left: -960px;
-    width: 1920px;
     height: 460px;
-}
-
-.banner_Wrap img{
-    width: 100%;
-    height: 100%;
+    background: #f9f9f9;
 }
 
 .banner_Wrap .bg_img{
+    position: absolute;
     width: 1920px;
     height: 460px;
+    left: 50%;
+    margin-left: -960px;
+}
+.banner_Wrap img{
+    width: 100%;
+    height: 100%;
 }
 .banner_Wrap .title {
     z-index: 999;
