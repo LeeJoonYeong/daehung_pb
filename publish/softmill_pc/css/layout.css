@@ -590,6 +590,14 @@
 	width: 1920px;
 	position: relative;
 	display: inline-flex;
+	max-height: 1000px;
+	height: 82%;
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: scroll;
+}
+.mega_menu::-webkit-scrollbar {
+	display: none;
 }
 
 .oneDepth {
