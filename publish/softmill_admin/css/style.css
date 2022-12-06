@@ -36,7 +36,6 @@ body {
 
 main {
   display: block;
-  min-width: 1280px;
 }
 .wrap {
   display: flex;
@@ -998,7 +997,7 @@ select::-ms-expand {
 #category_table_01 {
   border-top: 1px solid #000000 !important;
 }
-.content > .table_wrap {
+.content .table_wrap {
   margin: 20px 0px 60px 40px;
 }
 .content div .table_wrap:last-child {
@@ -2403,7 +2402,7 @@ input[type="checkbox"] {
   padding: 0;
   letter-spacing: -0.01em;
 }
-
+input::placeholder,
 input::-webkit-input-placeholder {
   color: #bbbbbb;
   letter-spacing: -0.01em;
