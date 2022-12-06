@@ -363,7 +363,7 @@ table {
   width: 256px;
   height: 38px;
   padding: 9px 0px 9px 18px;
-  background: url('../images/select_icon.svg') no-repeat 95% 50%;
+  background: url('../img/select_icon.svg') no-repeat 95% 50%;
 }
 .popup_close{
   float: right;
@@ -884,7 +884,7 @@ div.search_table_wrap{
   padding-left: 18px;
   float: right;
   margin-bottom: 20px;
-  background: url('../images/select_icon.svg') no-repeat 95% 50%;
+  background: url('../img/select_icon.svg') no-repeat 95% 50%;
 }
 
 .mg0{
@@ -952,7 +952,7 @@ div.search_table_wrap{
   border: 1px solid #000000;
   margin: 0px 14px 0px 18px;
   width: 167px;
-  background: url('../images/select_icon.svg') no-repeat 95% 50%;
+  background: url('../img/select_icon.svg') no-repeat 95% 50%;
 }
 select::-ms-expand {
   display: none;
@@ -1260,7 +1260,7 @@ table.category_02 tbody tr th.input_area select {
   border-radius: 0px;
   margin-right: 14px;
   padding-left: 18px;
-  background: url('../images/select_icon.svg') no-repeat 95% 50%;
+  background: url('../img/select_icon.svg') no-repeat 95% 50%;
 }
 
 table.category_02 tbody tr.input_area input {
@@ -1617,7 +1617,7 @@ table.category_02 tbody tr .input_area .tel_input {
   padding: 3px 8px 3px 18px;
   width: 124px;
   height: 38px;
-  background: url('../images/select_icon.svg') no-repeat 95% 50%;
+  background: url('../img/select_icon.svg') no-repeat 95% 50%;
   border: 1px solid #000000;
   flex: none;
   order: 0;
