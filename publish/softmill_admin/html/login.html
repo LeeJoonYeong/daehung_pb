@@ -10,20 +10,24 @@
         <div>
             <main class="login_wrap">
                 <div class="login_div">
-                    <h1 class="login_title">
-                        관리자 페이지
-                    </h1>
-                    <input type="text" class="login_id_input" placeholder="아이디 입력">
-                    <input type="password" class="login_pw_input" placeholder="비밀번호 입력">
-                    <button class="login_btn">
-                        로그인
-                    </button>
-                    <div class="login_id_div">
-                        <input type="checkbox" class="login_id_save">
-                        <p class="login_id_save_text">
-                            아이디 저장
-                        </p>
-                    </div>
+                    <form name="login" action="/admin/loginSecure" method="post">
+                        <fieldset>
+                            <h1 class="login_title">
+                                관리자 페이지
+                            </h1>
+                            <input type="text" name="username" class="login_id_input" placeholder="아이디 입력" title="아이디 입력">
+                            <input type="password" name="password" class="login_pw_input" placeholder="비밀번호 입력" title="비밀번호 입력">
+                            <button class="login_btn">
+                                로그인
+                            </button>
+                            <div class="login_id_div">
+                                <input type="checkbox" class="login_id_save">
+                                <p class="login_id_save_text">
+                                    아이디 저장
+                                </p>
+                            </div>
+                        </fieldset>
+                    </form>
                     <p class="login_copyright">
                         COPYRIGHT ⓒ SYSTEM ALL RIGHT RESERVED
                     </p>

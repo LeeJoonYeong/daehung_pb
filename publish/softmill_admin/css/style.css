@@ -1,4 +1,7 @@
+
 @charset "utf-8";
+@import url('font.css');
+
 *,
 *::before,
 *::after {
@@ -15,9 +18,9 @@
 }
 
 html {
-  font-family: "Pretendard"; /* `font` 속성 리셋 */
-  font-size: 16px; /* 기본 글골 사이즈 정의 :16x => 1rem */
-  font-weight: normal;
+  font-family: 'Pretendard', 'Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif;
+	
+  font-size: 16px;
   line-height: 1.5; /* 단위 쓰지 말것 */
   background-color: #fff;
   color: #4d5058; /* 글꼴 크기 조정을 방지 */
@@ -33,9 +36,9 @@ body {
 
 main {
   display: block;
+  min-width: 1280px;
 }
 .wrap {
-  /* height:calc(100vh-3.5rem); */
   display: flex;
 }
 .content {
@@ -68,6 +71,7 @@ ul,
 ol,
 li,
 p,
+form,
 h1,
 h2,
 h3,
@@ -82,6 +86,7 @@ span {
 }
 input {
   border: 1px solid #000000;
+  letter-spacing: -0.01em;
 }
 input[type='date']::before {
   content: attr(data-placeholder);
@@ -113,7 +118,6 @@ input#file-upload-button{
   font-size: 13px;
   padding: 8px 15px 8px 128px;
   line-height: 1;
-  /*margin-left: 21px;*/
   height: 38px;
   background-color: #ffffff;
 }
@@ -247,8 +251,6 @@ table.category_03 tbody tr th.input_area input.magic_radio{
 
 }
 
-
-
 .magic_radio {
   user-select: auto;
   padding-right: 10px;
@@ -257,6 +259,7 @@ table.category_03 tbody tr th.input_area input.magic_radio{
   width: 20px;
   height: 20px;
 }
+
 .magic_radio_label {
   user-select: auto;
   font-weight: 500;
@@ -284,7 +287,6 @@ select {
 -moz-appearance: none;
 appearance: none;
 }
-
 
 svg:not(:root) {
   overflow: hidden;
@@ -385,7 +387,6 @@ table {
   font-weight: 500;
   color: #000000;
 }
-
 
 .popup_table thead tr th input{
   display: inline-block;
@@ -578,8 +579,6 @@ thead.table_style_08 tr th:nth-child(7){
   width: 14%;
 }
 
-
-
 .t_a_t{
   text-align: top !important;
 }
@@ -637,8 +636,6 @@ thead.table_style_08 tr th:nth-child(7){
   padding-bottom: 10px !important;
 }
 
-
-
 .p_00011{
   padding: 0 0 0 11px !important;
 }
@@ -666,8 +663,6 @@ thead.table_style_08 tr th:nth-child(7){
 .br_1_0{
   border-right: 1px solid #bbbbbb !important;
 }
-
-
 
 .h_a {
   height: auto !important;
@@ -778,8 +773,6 @@ div.table_wrap table.category_02 tbody tr .text_input_1line .int_date {
   line-height: 1;
 }
 
-
-
 .input_history{
 width: 100%;
 margin-left: 0px;
@@ -792,7 +785,6 @@ height: 38px;
 background: #ffffff;
 border: 1px solid #000000;
 }
-
 
 .p_l18 {
   user-select: auto;
@@ -838,47 +830,37 @@ border: 1px solid #000000;
 }
 
 .board_nav .board_nav_page{
-width: 8px;
-height: 26px;
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 26px;
-/* identical to box height, or 217% */
-text-align: center;
-letter-spacing: -0.01em;
-/* gr/40_BBBBBB */
-color: #BBBBBB;
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
-padding: 0px 12px;
+  width: 8px;
+  height: 26px;
+  font-size: 12px;
+  line-height: 26px;
+  /* identical to box height, or 217% */
+  text-align: center;
+  letter-spacing: -0.01em;
+  /* gr/40_BBBBBB */
+  color: #BBBBBB;
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  padding: 0px 12px;
 }
 
 .board_nav .active{
   width: 6px;
-height: 26px;
-
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 26px;
-/* identical to box height, or 217% */
-
-text-align: center;
-letter-spacing: -0.01em;
-
-/* primary/bk */
-
-color: #000000;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
+  height: 26px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 26px;
+  /* identical to box height, or 217% */
+  text-align: center;
+  letter-spacing: -0.01em;
+  /* primary/bk */
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 .table_wrap .category_02 tbody tr td.table_name{
   width: 152px;
@@ -888,17 +870,12 @@ flex-grow: 0;
   height: 80px
 }
 
-
-
-
 div.search_table_wrap{
   margin: 138px 0px 0px 40px
 }
 
 .search_table_wrap .category_01 thead tr th{
-
   font-weight: 500;
-
 }
 
 .search_table_wrap .table_number{
@@ -908,12 +885,12 @@ div.search_table_wrap{
   padding-left: 18px;
   float: right;
   margin-bottom: 20px;
-  background: url(../images/select_icon.svg) no-repeat 95% 50%;
+  background: url('../images/select_icon.svg') no-repeat 95% 50%;
 }
 
 .mg0{
 
- margin: 0px !important;
+  margin: 0px !important;
 }
 
 .pr0{
@@ -936,8 +913,8 @@ div.search_table_wrap{
 
 .table_m_title th{
   padding: 0px 0 0 18px;
-    font-size: 15px;
-    font-weight: 500;
+  font-size: 15px;
+  font-weight: 500;
 
 }
 
@@ -1037,8 +1014,8 @@ table.category_01 {
 }
 
 table.category_01 tbody {
-  font-style: normal;
-  font-weight: 400;
+  
+  
   font-size: 14px;
   line-height: 22px;
   text-align: center;
@@ -1067,7 +1044,7 @@ table.category_01 tbody tr td:first-child > input {
 
 table.category_01 thead {
   background-color: #e6e6e6;
-  font-style: normal;
+  
   font-weight: 500;
   font-size: 15px;
   line-height: 36px;
@@ -1114,12 +1091,11 @@ table.category_01 thead {
   height: 258px;
   padding: 10px 18px;
   font-size: 14px;
-  font-weight: 400;
+  
 
 }
 
 .btn_attach_area .btn_attach_input {
-  /*margin-left: 18px;*/
   width: 80%;
   height: 38px;
   padding: 9px 18px;
@@ -1156,7 +1132,7 @@ table.category_02 tbody tr td .btn_attach_input {
 }
 table.category_02 tbody tr td p.guide_text {
   font-size: 10px;
-  font-weight: 400;
+  
   margin: 0px;
   padding-top: 10px;
 }
@@ -1196,7 +1172,6 @@ table.category_02 tbody tr td p.guide_text {
   margin-top: 4px;
 }
 
-
 table.category_03 tbody tr td.td_title {
   width: 152px;
   height: 88px;
@@ -1217,9 +1192,6 @@ table.category_03 tbody tr td.td_title div {
 .btn_del img{
   margin-right: 5px;
 }
-
-
-
 
 .h115 {
   height: 115px !important;
@@ -1246,7 +1218,7 @@ table.category_01 > thead > tr {
 table.category_02 {
   user-select: auto;
   font-size: 15px;
-  font-weight: 400;
+  
   width: 100%;
   color: #000000;
 }
@@ -1282,7 +1254,6 @@ table.category_02 tbody tr th {
 
 table.category_02 tbody tr th.input_area {
   font-size: 14px;
-  font-weight: 400;
 }
 table.category_02 tbody tr th.input_area select {
   width: 167px;
@@ -1317,7 +1288,6 @@ table.category_02 tbody tr td.text_input_1line {
 table.category_02 tbody tr td.text_input_1line p {
   padding-left: 46px;
   font-size: 10px;
-  font-weight: 400;
   margin: 0px;
   padding-top: 10px;
 }
@@ -1340,8 +1310,6 @@ table.category_02 tbody tr td.text_input_2line p {
   position: relative;
   top: 7px;
 }
-
-
 
 table.category_02 tbody tr td.btn_attach_area {
   height: 58px;
@@ -1396,10 +1364,7 @@ table.category_02 tbody tr td input {
 
 div.table_wrap table.category_03 td.p_l18 table.category_03 thead tr th button.btn_add,
 div.table_wrap table.category_03 td.p_l18 table.category_03 thead tr th button.btn_del{
-
   margin-top: -2px;
-  
-
 }
 
 table.category_02 tbody tr td.text_input_1line span {
@@ -1410,11 +1375,11 @@ table.category_02 tbody tr td.text_input_1line span {
   padding-top: 10px;
 }
 .text_input_1line p{
-padding-left: 0px !important;
-font-size: 10px;
-font-weight: 400;
-margin: 0px;
-padding-top: 10px;
+  padding-left: 0px !important;
+  font-size: 10px;
+
+  margin: 0px;
+  padding-top: 10px;
 }
 
 table.category_02 tbody tr td.text_input_2line span {
@@ -1598,7 +1563,7 @@ table.category_03 tbody tr td.exposure_num_area {
 }
 
 table.category_03 tbody tr td p {
-  font-weight: 400;
+  
   font-size: 10px;
   line-height: 20px;
   letter-spacing: -0.01em;
@@ -1609,7 +1574,6 @@ table.category_03 tbody tr td p {
 table.category_03 tbody tr td p.p_00011 {
   padding: 0px 0 0 12px !important;
 }
-
 
 table.category_03 tbody tr td p:first-child {
   padding: 10px 0 0 0;
@@ -1719,7 +1683,7 @@ table.category_02 tbody tr .input_area .tel_input {
   order: 2;
   flex-grow: 0;
   color: #ffffff;
-  font-style: normal;
+  
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
@@ -1754,7 +1718,7 @@ table.category_02 tbody tr .input_area .tel_input {
   flex: none;
   order: 1;
   flex-grow: 0;
-  font-style: normal;
+  
   font-weight: 500;
   font-size: 11px;
   line-height: 10px;
@@ -1765,8 +1729,6 @@ table.category_02 tbody tr .input_area .tel_input {
 .log_out > a {
   width: 45px;
   height: 26px;
-  font-style: normal;
-  font-weight: 400;
   font-size: 13px;
   line-height: 26px; /* identical to box height, or 200% */
   letter-spacing: -0.01em; /* primary/wh */
@@ -1783,39 +1745,42 @@ table.category_02 tbody tr .input_area .tel_input {
   width: 100%;
   background-color: white;
   z-index: 1;
+  top: 0;
 }
 .GNB_area {
-  display: flex;
+  position: relative;
 }
 .GNB_logo {
-  width: 76px;
-  height: 18px;
-  display: flex;
-  margin: 19px 50px 19px 40px;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  padding: 19px 40px;
 }
 .GNB_Menu {
+  position: absolute;
   height: 56px;
-  display: flex;
+  top: 0;
+  left: 166px;
 }
 .GNB_info {
+  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
   gap: 50px;
-  position: absolute;
   width: 352px;
   height: 38px;
   right: 40px;
   top: 9px;
 }
 .GNB_list > li > a {
-  font-style: normal;
   font-weight: 500;
   font-size: 13px;
-  line-height: 26px; /* identical to box height, or 200% */
+  line-height: 26px;
   text-align: right;
-  letter-spacing: -0.01em; /* primary/bk */
+  letter-spacing: -0.01em;
   color: #000000;
   margin-right: 24px;
 }
@@ -1876,7 +1841,6 @@ table.category_02 tbody tr .input_area .tel_input {
 }
 .LNB > ul > li > a {
   height: 30px;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 30px; /* identical to box height, or 250% */
@@ -1912,7 +1876,6 @@ table.category_02 tbody tr .input_area .tel_input {
 }
 .LNB_title > h2 {
   height: 40px;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 40px; /* identical to box height, or 250% */
@@ -1962,8 +1925,8 @@ table.category_02 tbody tr .input_area .tel_input {
 }
 .website_link > a {
   height: 26px;
-  font-style: normal;
-  font-weight: 400;
+  
+  
   font-size: 12px;
   line-height: 26px; /* identical to box height, or 217% */
   text-align: right;
@@ -1980,18 +1943,15 @@ table.category_02 tbody tr .input_area .tel_input {
   padding: 0px;
   gap: 6px;
   height: 26px; /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  
+}
+.login_text div{
+  font-weight: 400;
 }
 
 .login_text div:first-child{
   font-weight: 600;
 }
-.login_text div:nth-child(2){
-  font-weight: 400;
-}
-
 
 .page_title {
   display: flex;
@@ -2006,7 +1966,6 @@ table.category_02 tbody tr .input_area .tel_input {
 }
 .page_title > h1 {
   height: 40px;
-  font-style: normal;
   font-weight: 500;
   font-size: 22px;
   line-height: 40px; /* identical to box height, or 182% */
@@ -2034,8 +1993,7 @@ table.category_02 tbody tr .input_area .tel_input {
   position: absolute;
   height: 20px;
   right: 50px; /* top:7.99px; */
-  font-style: normal;
-  font-weight: 400;
+  
   font-size: 12px;
   line-height: 20px;
   letter-spacing: -0.01em;
@@ -2074,7 +2032,7 @@ table.category_02 tbody tr .input_area .tel_input {
 }
 .info_path > ul > li {
   display: inline-block;
-  font-style: normal;
+  
   font-weight: 500;
   font-size: 12px;
   line-height: 27px; /* identical to box height, or 225% */
@@ -2109,7 +2067,7 @@ table.category_02 tbody tr .input_area .tel_input {
   flex-grow: 0;
 }
 .login_text:first-child {
-  font-style: normal;
+  
   font-weight: 600;
   font-size: 12px;
   line-height: 26px; /* identical to box height, or 217% */
@@ -2123,8 +2081,6 @@ table.category_02 tbody tr .input_area .tel_input {
 .login_text:last-child {
   width: 52px;
   height: 26px;
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 26px; /* identical to box height, or 217% */
   text-align: right;
@@ -2147,10 +2103,12 @@ table.category_02 tbody tr .input_area .tel_input {
 
 }
 .login_title{
-  height: 40px;
+  position: relative;
+  width: 100%;
   font-weight: 500;
   font-size: 22px;
   line-height: 40px;
+  color: #000000;
   text-align: center;
   letter-spacing: -0.01em;
   display: inline-block;
@@ -2197,6 +2155,8 @@ table.category_02 tbody tr .input_area .tel_input {
   justify-content: center;
   align-items: center;
   padding: 11px 50px;
+  font-size: 13px;
+  height: 16px;
   gap: 10px;
   width: 327px;
   height: 38px;
@@ -2210,64 +2170,47 @@ table.category_02 tbody tr .input_area .tel_input {
 }
 
 .login_id_div{
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  width: 327px;
-  height: 20px;
-  flex: none;
-  order: 3;
-  flex-grow: 0;
-
+  position: relative;
+  text-align: left;
+  margin-top: 10px;
 }
+
 .login_id_save{
   display: inline-block;
   position: relative;
-  top: 10px;
-  box-sizing: border-box;
   width: 20px;
   height: 20px;
   border: 1px solid #000000;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
 }
+
 .login_id_save_text{
+  position: absolute;
+  top: 0;
+  left: 30px;
   width: 55px;
   height: 20px;
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 20px;
   letter-spacing: -0.01em;
   color: #222222;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin-top: 10px;
-  display: inline-block;
+  margin: 0 0;
 }
 
 .login_copyright{
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 0px;
-      gap: 30px;
-      height: 26px;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 10px;
-      line-height: 26px;
-      text-align: center;
-      letter-spacing: -0.01em;
-      color: #929292;
-      flex: none;
-      order: 0;
-      display: inline-block;
-      flex-grow: 0;
-      margin-top: 40px;
+  position: relative;
+  width: 100%;
+  padding: 0px;
+  gap: 30px;
+  font-size: 10px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #929292;
+  flex: none;
+  order: 0;
+  display: inline-block;
+  flex-grow: 0;
+  margin: 40px 0 0;
 }
 
 /* 인접한 요소 인 경우 여백 추가 */
@@ -2388,7 +2331,7 @@ hr {
 }
 
 address {
-  font-style: normal;
+  
 }
 
 blockquote {
@@ -2458,10 +2401,12 @@ input[type="radio"],
 input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0;
+  letter-spacing: -0.01em;
 }
 
 input::-webkit-input-placeholder {
   color: #bbbbbb;
+  letter-spacing: -0.01em;
 }
 
 textarea {
