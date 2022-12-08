@@ -92,9 +92,7 @@ input[type='date']::before {
   content: attr(data-placeholder);
   width: 100%;
 }
-div.search_table_wrap table.category_01 tbody tr td a{
-  text-decoration-line: underline;
-}
+
 title{
   display: inline-block;
   padding-right: 20px;
@@ -245,6 +243,13 @@ video {
   box-sizing: border-box;
 }
 table.category_03 tbody tr th.input_area input.magic_radio{
+  height: 20px;
+  width: 20px;
+  margin-left: 0px;
+
+}
+
+table.category_03 tbody tr td.input_area input.magic_radio{
   height: 20px;
   width: 20px;
   margin-left: 0px;
@@ -579,6 +584,11 @@ thead.table_style_08 tr th:nth-child(7){
   width: 14%;
 }
 
+div.search_table_wrap table.category_01 tbody tr td a{
+  text-decoration-line: underline;
+  text-align: left;
+}
+
 .t_a_t{
   text-align: top !important;
 }
@@ -906,7 +916,7 @@ div.search_table_wrap{
 
 }
 .btn_attach_area div.int_btn input.upload-name{
-  width: 91%;
+  width: 92.6%;
 }
 
 
@@ -1029,6 +1039,7 @@ table.category_01 tbody {
 table.category_01 td,
 table.category_01 th {
   text-align: center;
+  padding: 0 10px;
 }
 table.category_01 thead tr th:first-child > input,
 table.category_01 tbody tr td:first-child > input {
