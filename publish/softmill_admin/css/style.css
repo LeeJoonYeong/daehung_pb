@@ -38,20 +38,20 @@ main {
   display: block;
 }
 .wrap {
-  display: flex;
+  position: relative;
 }
 .content {
   position: relative;
-  height: 100%;
   width: 1050px;
   margin: 96px 50px 0px 180px;
-  z-index: 0;
+  z-index: 9990;
 }
 .LNB {
   height: calc(100vh - 3.5rem);
   width: 180px;
   background: #fbfbfb;
   border-right: 1px solid #c5c5c5;
+  z-index: 9999;
 }
 
 /* 기본 셋업 */
@@ -820,10 +820,8 @@ border: 1px solid #000000;
 
 }
 .board_pagination{
-  display: inline-block;
-  /* margin: auto; */
   padding: 98px 0px 40px 0px;
-  margin: 0 43%;
+  margin: 0 auto;
   width: 234px;
 }
 .board_nav{
@@ -1754,7 +1752,7 @@ text-decoration: none;
   position: fixed;
   width: 100%;
   background-color: white;
-  z-index: 1;
+  z-index: 9999;
   top: 0;
 }
 .GNB_area {
@@ -1801,11 +1799,6 @@ text-decoration: none;
   display: inline-block;
 }
 .LNB {
-  box-sizing: border-box; /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 30px 0px 0px;
   position: fixed;
   width: 180px;
   left: 0px;
@@ -1813,6 +1806,10 @@ text-decoration: none;
   background: #fbfbfb; /* gr/30_C5C5C5 */
   border-right: 1px solid #c5c5c5;
 }
+.LNB > ul {
+  margin: 0;
+}
+
 .LNB > ul > li {
   /* Component 81 */
   box-sizing: border-box; /* Auto layout */
@@ -1872,28 +1869,17 @@ text-decoration: none;
 	height: 30px;
 }
 .LNB_title {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 10px 24px 10px 40px;
+  padding: 40px 20px 9px 40px;
   gap: 10px;
-  height: 60px; /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: -1px 0px;
 }
 .LNB_title > h2 {
-  height: 40px;
   font-weight: 500;
   font-size: 16px;
   line-height: 40px; /* identical to box height, or 250% */
   letter-spacing: -0.01em; /* primary/bk */
   color: #000000; /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 0px 0px;
 }
 .magic-radio:checked + label:before {
