@@ -10,7 +10,7 @@
         <div>
             <header class="GNB">
                 <div class="GNB_area">
-                    <div class="GNB_logo"><img src="../images/logo.svg"></div>
+                    <div class="GNB_logo"><img src="../img/logo.svg"></div>
                     <div class="GNB_menu">
                         <ul class="GNB_list">
                             <li>
@@ -37,9 +37,9 @@
                         </div>
                         <div class="shortcut">
                             <div class="website_link">
-                                <a>홈페이지</a><img src="../images/svg01.svg">
+                                <a>홈페이지</a><img src="../img/svg01.svg">
                             </div>
-                            <button class="log_out">로그아웃</button>
+                            <a href="#" class="log_out">로그아웃</a>
                         </div>
                     </div>
                 </div>
@@ -55,11 +55,7 @@
                                 <a>제품 카테고리</a>
                             </li>
                             <li class="selected">
-                                <a>고객사 카테고리
-                                    <div class="select_icon">
-                                        <img src="../images/arrow_black_icon.svg">
-                                    </div>
-                                </a>
+                                <a>고객사 카테고리</a>
                             </li>
                         </ul>
                     </nav>
@@ -73,7 +69,7 @@
                                     <a>카테고리 관리</a>
                                 </li>
                                 <span>
-                                    <img src="../images/next_icon.svg">
+                                    <img src="../img/next_icon.svg">
                                 </span>
                                 <li>
                                     <a>
@@ -82,67 +78,59 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="category_subtitle">
-                            <h2>고객사 카테고리</h2>
-                            <p>
-                                <strong>
-                                    *
-                                </strong>
-                                필수 입력
-                            </p>
-                        </div>
-                        <div class="table_wrap mg_b0">
-                            <table class="category_02">
-                                <tbody>
-                                    <tr>
-                                        <th scope="row" class="table_whether">노출 여부</th>
-                                        <th class="input_area w35">
-                                            <input
-                                                class="magic_radio"
-                                                type="radio"
-                                                name="exposure00"
-                                                id="2"
-                                                value="option1">
-                                            <label for="2" class="magic_radio_label">
-                                                노출
-                                            </label>
-                                            <input
-                                                class="magic_radio"
-                                                type="radio"
-                                                name="exposure00"
-                                                id="2"
-                                                value="option1">
-                                            <label for="2" class="magic_radio_label">
-                                                노출안함
-                                            </label>
-                                        </th>
-                                        <th scope="row" class="table_date">등록일</th>
-                                        <th class="input_area none  w35">2022/08/08 18:30</th>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row" class="table_name" rowspan="2">
-                                            카테고리명<strong>
-                                                *
-                                            </strong>
-                                        </td>
-                                        <td class="text_input_1line h58" colspan="3">
-                                            <label>한글</label>
-                                            <input type="text" name="" id="" value="" placeholder="" title="한글 카테고리명">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text_input_1line h58" colspan="3">
-                                            <label>영어</label>
-                                            <input type="text" name="" id="" value="" placeholder="" title="영문 카테고리명">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="category_btn_wrap">
-                            <button class="category_btn_del">취소</button>
-                            <button class="category_btn_regist">저장</button>
-                        </div>
+                        <form name="client" action="/admin/add_client" method="post">
+                            <div class="category_subtitle">
+                                <h2>고객사 카테고리</h2>
+                                <p>
+                                    <strong>
+                                        *
+                                    </strong>
+                                    필수 입력
+                                </p>
+                            </div>
+                            <div class="table_wrap mg_b0">
+                                <table class="category_02">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" class="table_whether">노출 여부</th>
+                                            <th class="input_area w35">
+                                                <input class="magic_radio" type="radio" name="exposure00"  id="2" value="option1">
+                                                <label for="2" class="magic_radio_label">
+                                                    노출
+                                                </label>
+                                                <input class="magic_radio" type="radio" name="exposure00" id="2" value="option1">
+                                                <label for="2" class="magic_radio_label">
+                                                    노출안함
+                                                </label>
+                                            </th>
+                                            <th scope="row" class="table_date">등록일</th>
+                                            <th class="input_area none  w35">2022/08/08 18:30</th>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" class="table_name" rowspan="2">
+                                                카테고리명<strong>
+                                                    *
+                                                </strong>
+                                            </td>
+                                            <td class="text_input_1line h58" colspan="3">
+                                                <label>한글</label>
+                                                <input type="text" name="" id="" value="" placeholder="" title="한글 카테고리명">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text_input_1line h58" colspan="3">
+                                                <label>영어</label>
+                                                <input type="text" name="" id="" value="" placeholder="" title="영문 카테고리명">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="category_btn_wrap">
+                                <button class="category_btn_del">취소</button>
+                                <button class="category_btn_regist">저장</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </main>

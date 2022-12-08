@@ -14,75 +14,77 @@
                         제품선택
                     </h2>
                     <a class="popup_close" href="#">
-                        <img src="../images/popup_close_icon.svg">
+                        <img src="../img/popup_close_icon.svg">
                     </a>
                 </div>
-                <div class="popup_search">
-                    <select>
-                        <option value="exposed">
-                            오븐
-                        </option>
-                        <option value="exposed">
-                            오븐
-                        </option>
-                    </select>
-                    <select>
-                        <option value="exposed">
-                            테크오븐
-                        </option>
-                        <option value="exposed">
-                            테크오븐
-                        </option>
-                    </select>
-                </div>
-                <div class="popup_content">
-                    <table class="popup_table">
-                        <thead>
-                            <tr>
-                                <th><input type="checkbox">
-                                    <span>
-                                        전체선택
-                                    </span>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><input type="checkbox">
-                                    <span>
-                                        데크오븐 4매 3단
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox">
-                                    <span>
-                                        데크오븐 4매 3단
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox">
-                                    <span>
-                                        데크오븐 4매 3단
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox">
-                                    <span>
-                                        데크오븐 4매 3단
-                                    </span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="popup_btn_wrap">
-                    <button class="popup_btn">
-                        선택완료
-                    </button>
-                </div>
+                <form name="popup" action="/admin/add_install_popup" method="post">
+                    <div class="popup_search">
+                        <select>
+                            <option value="exposed">
+                                오븐
+                            </option>
+                            <option value="exposed">
+                                오븐
+                            </option>
+                        </select>
+                        <select>
+                            <option value="exposed">
+                                테크오븐
+                            </option>
+                            <option value="exposed">
+                                테크오븐
+                            </option>
+                        </select>
+                    </div>
+                    <div class="popup_content">
+                        <table class="popup_table">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox">
+                                        <span>
+                                            전체선택
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox">
+                                        <span>
+                                            데크오븐 4매 3단
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox">
+                                        <span>
+                                            데크오븐 4매 3단
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox">
+                                        <span>
+                                            데크오븐 4매 3단
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox">
+                                        <span>
+                                            데크오븐 4매 3단
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="popup_btn_wrap">
+                        <button class="popup_btn">
+                            선택완료
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </body>

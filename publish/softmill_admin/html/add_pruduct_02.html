@@ -10,7 +10,7 @@
         <div>
             <header class="GNB">
                 <div class="GNB_area">
-                    <div class="GNB_logo"><img src="../images/logo.svg"></div>
+                    <div class="GNB_logo"><img src="../img/logo.svg"></div>
                     <div class="GNB_menu">
                         <ul class="GNB_list">
                             <li>
@@ -37,9 +37,9 @@
                         </div>
                         <div class="shortcut">
                             <div class="website_link">
-                                <a>홈페이지</a><img src="../images/svg01.svg">
+                                <a>홈페이지</a><img src="../img/svg01.svg">
                             </div>
-                            <button class="log_out">로그아웃</button>
+                            <a href="#" class="log_out">로그아웃</a>
                         </div>
                     </div>
                 </div>
@@ -52,10 +52,7 @@
                         </div>
                         <ul>
                             <li class="selected">
-                                <a>고객사 카테고리
-                                    <div class="select_icon">
-                                        <img src="../images/arrow_black_icon.svg"></div>
-                                </a>
+                                <a>고객사 카테고리</a>
                             </li>
                             <li>
                                 <a>고객사 카테고리</a>
@@ -86,7 +83,7 @@
                                     </a>
                                 </li>
                                 <span>
-                                    <img src="../images/next_icon.svg">
+                                    <img src="../img/next_icon.svg">
                                 </span>
                                 <li>
                                     <a>
@@ -95,438 +92,440 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="category_subtitle">
-                            <h2>1차 제품 카테고리</h2>
-                            <p>
-                                <strong>
-                                    *
-                                </strong>
-                                필수 입력
-                            </p>
-                        </div>
-                        <div class="table_wrap">
-                            <table class="category_02">
-                                <tbody>
-                                    <tr>
-                                        <th scope="row" class="table_whether">노출여부</th>
-                                        <th class="input_area  w35">
-                                            <input
-                                                class="magic_radio"
-                                                type="radio"
-                                                name="exposure00"
-                                                id="2"
-                                                value="option1">
-                                            <label for="2" class="magic_radio_label">
-                                                노출
-                                            </label>
-                                            <input
-                                                class="magic_radio"
-                                                type="radio"
-                                                name="exposure00"
-                                                id="2"
-                                                value="option1">
-                                            <label for="2" class="magic_radio_label">
-                                                노출안함
-                                            </label>
-                                        </th>
-                                        <th scope="row" class="table_date">
-                                            등록일
-                                        </th>
-                                        <th class="input_area none w35"></th>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row" class="table_name" rowspan="2">
-                                            카테고리명
-                                            <strong>
-                                                *
-                                            </strong>
-                                        </td>
-                                        <td class="text_input_1line h58" colspan="3">
-                                            <label>한글</label><input type="text" name="" id="" value="" placeholder="" title="영문 카테고리명">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text_input_1line h58" colspan="3">
-                                            <label>영어</label><input type="text" name="" id="" value="" placeholder="" title="영문 카테고리명">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row" class="table_description" rowspan="2">
-                                            카테고리 설명
-                                            <strong>
-                                                *
-                                            </strong>
-                                        </td>
-                                        <td class="text_input_2line" colspan="3">
-                                            <p>한글</p>
-                                            <textarea name="Text1" cols="40" rows="5" title="한글 카테고리설명"></textarea>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text_input_2line" colspan="3">
-                                            <p>영어</p>
-                                            <textarea name="Text1" cols="40" rows="5" title="영문 카테고리설명"></textarea>
-                                        </td>
-                                    </tr>
-                                    <!-- 설명문구 -->
-                                    <tr>
-                                        <th scope="row" class="table_register">
-                                            이미지 등록
-                                            <strong>
-                                                *
-                                            </strong>
-                                        </th>
-                                        <td class="p_l18" colspan="3">
-                                            <div class="g-browser-icons">
-                                                <!-- 제품 리스트 상단 비주얼 테이블 -->
-                                                <table class="category_03 mg_b0">
-                                                    <thead>
-                                                        <tr>
-                                                            <th colspan="2">제품 리스트 상단 비주얼</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="td_title h108">
-                                                                PC 이미지
-                                                                <strong>
-                                                                    *
-                                                                </strong>
-                                                            </td>
-                                                            <td class="btn_attach_area">
-                                                                <div class="int_btn"><input class="upload-name w100" value="파일첨부" disabled="disabled">
-                                                                    <label for="ex_filename" class="btn_text l0">파일첨부</label>
-                                                                    <input type="file" id="ex_filename" class="upload-hidden">
-                                                                </div>
-                                                                <p>ⓘ 권장 이미지 사이즈: 가로 1920px * 세로 590px로 리사이징 됩니다.</p>
-                                                                <p class="pl_0">- 등록 파일: 1M 이하 / png</p>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td class="td_title h108">
-                                                                Mobile 이미지<strong>*</strong>
-                                                            </td>
-                                                            <td class="btn_attach_area">
-                                                                <div class="int_btn"><input class="upload-name w100" value="파일첨부" disabled="disabled">
-                                                                    <label for="ex_filename" class="btn_text l0">파일첨부</label>
-                                                                    <input type="file" id="ex_filename" class="upload-hidden">
-                                                                </div>
-                                                                <p>ⓘ 권장 이미지 사이즈: 가로 360px * 세로 456px로 리사이징 됩니다.</p>
-                                                                <p class="pl_0">- 등록 파일: 1M 이하 / png</p>
-                                                            </td>
-                                                        </tr>
-
-                                                    </tbody>
-                                                </table>
-                                                <!-- 제품 리스트 상단 비주얼 테이블 -->
-                                                <table class="category_03 mg0">
-                                                    <thead>
-                                                        <tr>
-                                                            <th colspan="2">메인 주요 제품군</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="td_title h108">
-                                                                이미지
-                                                                <strong>
-                                                                    *
-                                                                </strong>
-                                                            </td>
-                                                            <td class="btn_attach_area">
-                                                                <div class="int_btn"><input class="upload-name w100" value="파일첨부" disabled="disabled">
-                                                                    <label for="ex_filename" class="btn_text l0">파일첨부</label>
-                                                                    <input type="file" id="ex_filename" class="upload-hidden">
-                                                                </div>
-                                                                <p class="pl_0">ⓘ 권장 이미지 사이즈(PC): 가로 420px * 세로 460px로 리사이징 됩니다.</p>
-                                                                <p class="p_00010">
-                                                                    Mobile 이미지: 가로 280px * 세로 306px로 리사이징 됩니다.
-                                                                </p>
-                                                                <p class="pl_0">- 등록 파일: 1M 이하 / png</p>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td class="td_title h115" rowspan="2">
-                                                                링크
-                                                                <strong>
-                                                                    *
-                                                                </strong>
-                                                            </td>
-                                                            <td class="link_attach_area">
-                                                                <label>한글</label>
-                                                                <input
-                                                                    title="검색 키워드"
-                                                                    placeholder=""
-                                                                    value=""
-                                                                    id=""
-                                                                    name=""
-                                                                    type="text"
-                                                                    class="w376px">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="link_attach_area">
-                                                                <label>영어</label>
-                                                                <input 검색="" placeholder="" value="" id="" name="" type="text" class="w376px">
-
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <!-- 제품 리스트 상단 비주얼 테이블 -->
-                                                <table class="category_03 mgupdown10">
-                                                    <thead>
-                                                        <tr>
-                                                            <th colspan="2">메인 서브 제품군</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="h108">
-                                                                이미지
-                                                                <strong>
-                                                                    *
-                                                                </strong>
-                                                            </td>
-                                                            <td class="btn_attach_area">
-                                                                <div class="int_btn"><input class="upload-name w100" value="파일첨부" disabled="disabled">
-                                                                    <label for="ex_filename" class="btn_text l0">파일첨부</label>
-                                                                    <input type="file" id="ex_filename" class="upload-hidden">
-                                                                </div>
-                                                                <p>ⓘ 권장 이미지 사이즈(PC): 가로 210px * 세로 280px로 리사이징 됩니다.</p>
-                                                                <p class="p_00010">
-                                                                    Mobile 이미지: 가로 280px * 세로 306px로 리사이징 됩니다.
-                                                                </p>
-                                                                <p class="pl_0">- 등록 파일: 1M 이하 / png</p>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td class="td_title h115" rowspan="2">
-                                                                링크<strong>*</strong>
-                                                            </td>
-                                                            <td class="link_attach_area">
-                                                                <label>한글</label>
-                                                                <input
-                                                                    title="검색 키워드"
-                                                                    placeholder=""
-                                                                    value=""
-                                                                    id=""
-                                                                    name=""
-                                                                    type="text"
-                                                                    class="w376px">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="link_attach_area">
-                                                                <label>영어</label>
-                                                                <input
-                                                                    title="검색 키워드"
-                                                                    placeholder=""
-                                                                    value=""
-                                                                    id=""
-                                                                    name=""
-                                                                    type="text"
-                                                                    class="w376px">
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="category_subtitle">
-                            <h2>2차 제품 카테고리</h2>
-                            <p>
-                                <strong>
-                                    *
-                                </strong>
-                                필수 입력
-                            </p>
-                        </div>
-                        <div class="table_wrap mg_b0">
-                            <div class="table_wrap mg_b0">
-                                <table class="category_03">
+                        <form name="pruduct" action="/admin/add_pruduct" method="post">
+                            <div class="category_subtitle">
+                                <h2>1차 제품 카테고리</h2>
+                                <p>
+                                    <strong>
+                                        *
+                                    </strong>
+                                    필수 입력
+                                </p>
+                            </div>
+                            <div class="table_wrap">
+                                <table class="category_02">
                                     <tbody>
-                                        <tr class="b_b1 h58">
-                                            <th class="left_title" scope="row">사용여부</th>
-                                            <td class="p_l18">
-                                                <input class="magic_radio" type="radio" name="use" id="2" value="option1">
+                                        <tr>
+                                            <th scope="row" class="table_whether">노출여부</th>
+                                            <th class="input_area  w35">
+                                                <input
+                                                    class="magic_radio"
+                                                    type="radio"
+                                                    name="exposure00"
+                                                    id="2"
+                                                    value="option1">
                                                 <label for="2" class="magic_radio_label">
-                                                    사용
+                                                    노출
                                                 </label>
-                                                <input class="magic_radio" type="radio" name="use" id="2" value="option1">
+                                                <input
+                                                    class="magic_radio"
+                                                    type="radio"
+                                                    name="exposure00"
+                                                    id="2"
+                                                    value="option1">
                                                 <label for="2" class="magic_radio_label">
-                                                    사용안함
+                                                    노출안함
                                                 </label>
+                                            </th>
+                                            <th scope="row" class="table_date">
+                                                등록일
+                                            </th>
+                                            <th class="input_area none w35"></th>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" class="table_name" rowspan="2">
+                                                카테고리명
+                                                <strong>
+                                                    *
+                                                </strong>
+                                            </td>
+                                            <td class="text_input_1line h58" colspan="3">
+                                                <label>한글</label><input type="text" name="" id="" value="" placeholder="" title="영문 카테고리명">
                                             </td>
                                         </tr>
-                                        <tr class="b_b1 h58">
-                                            <th class="left_title" scope="row">2차 카테고리</th>
-                                            <td class="p_l18">
-                                                <table class="category_03 mg_b0">
-                                                    <thead>
-                                                        <tr>
-                                                            <th colspan="4">
-                                                                <h3 class="i_b">2차 카테고리 1</h3>
-                                                                <button class="btn_add">
-                                                                    <img src="../images/plus_icon.svg">
-                                                                    추가
-                                                                </button>
-                                                            </th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr class="b_b1">
-                                                            <td class="td_title h_a">
-                                                                노출여부
-                                                                <strong>
-                                                                    *
-                                                                </strong>
-                                                            </td>
-                                                            <td class="exposure_area">
-                                                                <input class="magic_radio" type="radio" name="exposure" id="2" value="option1">
-                                                                <label for="2" class="magic_radio_label">
-                                                                    노출
-                                                                </label>
-                                                                <input class="magic_radio" type="radio" name="exposure" id="2" value="option1">
-                                                                <label for="2" class="magic_radio_label">
-                                                                    노출안함
-                                                                </label>
-                                                            </td>
-                                                            <td class="exposure_num_area">노출순서</td>
-                                                            <td class="w19">
-                                                                <input class="num_input" type="text" value="1">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="td_title h115" rowspan="2">
-                                                                카테고리명
-                                                                <strong>
-                                                                    *
-                                                                </strong>
-                                                            </td>
-                                                            <td class="link_attach_area" colspan="3">
-                                                                <label>한글</label>
-                                                                <input
-                                                                    class="file_input w376px"
-                                                                    title="검색 키워드"
-                                                                    placeholder=""
-                                                                    value=""
-                                                                    id=""
-                                                                    name=""
-                                                                    type="text">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="link_attach_area" colspan="3">
-                                                                <label>영어</label>
-                                                                <input
-                                                                    class="file_input w376px"
-                                                                    title="검색 키워드"
-                                                                    placeholder=""
-                                                                    value=""
-                                                                    id=""
-                                                                    name=""
-                                                                    type="text">
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <table class="category_03 mgupdown10">
-                                                    <thead>
-                                                        <tr>
-                                                            <th colspan="4">
-                                                                <h3 class="i_b">2차 카테고리 2</h3>
-                                                                <button class="btn_del">
-                                                                    <img src="../images/minus_icon.svg">
-                                                                    삭제
-                                                                </button>
-                                                            </th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr class="b_b1 h58">
-                                                            <td class="td_title h_a">
-                                                                노출여부
-                                                                <strong>
-                                                                    *
-                                                                </strong>
-                                                            </td>
-                                                            <td class="exposure_area">
-                                                                <input
-                                                                    class="magic_radio"
-                                                                    type="radio"
-                                                                    name="exposure02"
-                                                                    id="2"
-                                                                    value="option1">
-                                                                <label for="2" class="magic_radio_label">
-                                                                    노출
-                                                                </label>
-                                                                <input
-                                                                    class="magic_radio"
-                                                                    type="radio"
-                                                                    name="exposure02"
-                                                                    id="2"
-                                                                    value="option1">
-                                                                <label for="2" class="magic_radio_label">
-                                                                    노출안함
-                                                                </label>
-                                                            </td>
-                                                            <td class="exposure_num_area">노출순서</td>
-                                                            <td class="w19">
-                                                                <input class="num_input" type="text" value="1">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="td_title h115" rowspan="2">
-                                                                카테고리명
-                                                                <strong>
-                                                                    *
-                                                                </strong>
-                                                            </td>
-                                                            <td class="link_attach_area" colspan="3">
-                                                                <label>한글</label>
-                                                                <input
-                                                                    class="file_input w376px"
-                                                                    title="검색 키워드"
-                                                                    placeholder=""
-                                                                    value=""
-                                                                    id=""
-                                                                    name=""
-                                                                    type="text">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="link_attach_area" colspan="3">
-                                                                <label>영어</label>
-                                                                <input
-                                                                    class="file_input w376px"
-                                                                    title="검색 키워드"
-                                                                    placeholder=""
-                                                                    value=""
-                                                                    id=""
-                                                                    name=""
-                                                                    type="text">
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                        <tr>
+                                            <td class="text_input_1line h58" colspan="3">
+                                                <label>영어</label><input type="text" name="" id="" value="" placeholder="" title="영문 카테고리명">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" class="table_description" rowspan="2">
+                                                카테고리 설명
+                                                <strong>
+                                                    *
+                                                </strong>
+                                            </td>
+                                            <td class="text_input_2line" colspan="3">
+                                                <p>한글</p>
+                                                <textarea name="Text1" cols="40" rows="5" title="한글 카테고리설명"></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text_input_2line" colspan="3">
+                                                <p>영어</p>
+                                                <textarea name="Text1" cols="40" rows="5" title="영문 카테고리설명"></textarea>
+                                            </td>
+                                        </tr>
+                                        <!-- 설명문구 -->
+                                        <tr>
+                                            <th scope="row" class="table_register">
+                                                이미지 등록
+                                                <strong>
+                                                    *
+                                                </strong>
+                                            </th>
+                                            <td class="p_l18" colspan="3">
+                                                <div class="g-browser-icons">
+                                                    <!-- 제품 리스트 상단 비주얼 테이블 -->
+                                                    <table class="category_03 mg_b0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th colspan="2">제품 리스트 상단 비주얼</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="td_title h108">
+                                                                    PC 이미지
+                                                                    <strong>
+                                                                        *
+                                                                    </strong>
+                                                                </td>
+                                                                <td class="btn_attach_area">
+                                                                    <div class="int_btn"><input class="upload-name w100" value="파일첨부" disabled="disabled">
+                                                                        <label for="ex_filename" class="btn_text l0">파일첨부</label>
+                                                                        <input type="file" id="ex_filename" class="upload-hidden">
+                                                                    </div>
+                                                                    <p>ⓘ 권장 이미지 사이즈: 가로 1920px * 세로 590px로 리사이징 됩니다.</p>
+                                                                    <p class="pl_0">- 등록 파일: 1M 이하 / png</p>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="td_title h108">
+                                                                    Mobile 이미지<strong>*</strong>
+                                                                </td>
+                                                                <td class="btn_attach_area">
+                                                                    <div class="int_btn"><input class="upload-name w100" value="파일첨부" disabled="disabled">
+                                                                        <label for="ex_filename" class="btn_text l0">파일첨부</label>
+                                                                        <input type="file" id="ex_filename" class="upload-hidden">
+                                                                    </div>
+                                                                    <p>ⓘ 권장 이미지 사이즈: 가로 360px * 세로 456px로 리사이징 됩니다.</p>
+                                                                    <p class="pl_0">- 등록 파일: 1M 이하 / png</p>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                    <!-- 제품 리스트 상단 비주얼 테이블 -->
+                                                    <table class="category_03 mg0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th colspan="2">메인 주요 제품군</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="td_title h108">
+                                                                    이미지
+                                                                    <strong>
+                                                                        *
+                                                                    </strong>
+                                                                </td>
+                                                                <td class="btn_attach_area">
+                                                                    <div class="int_btn"><input class="upload-name w100" value="파일첨부" disabled="disabled">
+                                                                        <label for="ex_filename" class="btn_text l0">파일첨부</label>
+                                                                        <input type="file" id="ex_filename" class="upload-hidden">
+                                                                    </div>
+                                                                    <p class="pl_0">ⓘ 권장 이미지 사이즈(PC): 가로 420px * 세로 460px로 리사이징 됩니다.</p>
+                                                                    <p class="p_00010">
+                                                                        Mobile 이미지: 가로 280px * 세로 306px로 리사이징 됩니다.
+                                                                    </p>
+                                                                    <p class="pl_0">- 등록 파일: 1M 이하 / png</p>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="td_title h115" rowspan="2">
+                                                                    링크
+                                                                    <strong>
+                                                                        *
+                                                                    </strong>
+                                                                </td>
+                                                                <td class="link_attach_area">
+                                                                    <label>한글</label>
+                                                                    <input
+                                                                        title="검색 키워드"
+                                                                        placeholder=""
+                                                                        value=""
+                                                                        id=""
+                                                                        name=""
+                                                                        type="text"
+                                                                        class="w376px">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="link_attach_area">
+                                                                    <label>영어</label>
+                                                                    <input 검색="" placeholder="" value="" id="" name="" type="text" class="w376px">
+
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <!-- 제품 리스트 상단 비주얼 테이블 -->
+                                                    <table class="category_03 mgupdown10">
+                                                        <thead>
+                                                            <tr>
+                                                                <th colspan="2">메인 서브 제품군</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="h108">
+                                                                    이미지
+                                                                    <strong>
+                                                                        *
+                                                                    </strong>
+                                                                </td>
+                                                                <td class="btn_attach_area">
+                                                                    <div class="int_btn"><input class="upload-name w100" value="파일첨부" disabled="disabled">
+                                                                        <label for="ex_filename" class="btn_text l0">파일첨부</label>
+                                                                        <input type="file" id="ex_filename" class="upload-hidden">
+                                                                    </div>
+                                                                    <p>ⓘ 권장 이미지 사이즈(PC): 가로 210px * 세로 280px로 리사이징 됩니다.</p>
+                                                                    <p class="p_00010">
+                                                                        Mobile 이미지: 가로 280px * 세로 306px로 리사이징 됩니다.
+                                                                    </p>
+                                                                    <p class="pl_0">- 등록 파일: 1M 이하 / png</p>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="td_title h115" rowspan="2">
+                                                                    링크<strong>*</strong>
+                                                                </td>
+                                                                <td class="link_attach_area">
+                                                                    <label>한글</label>
+                                                                    <input
+                                                                        title="검색 키워드"
+                                                                        placeholder=""
+                                                                        value=""
+                                                                        id=""
+                                                                        name=""
+                                                                        type="text"
+                                                                        class="w376px">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="link_attach_area">
+                                                                    <label>영어</label>
+                                                                    <input
+                                                                        title="검색 키워드"
+                                                                        placeholder=""
+                                                                        value=""
+                                                                        id=""
+                                                                        name=""
+                                                                        type="text"
+                                                                        class="w376px">
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-                        </div>
-                        <div class="category_btn_wrap">
-                            <button class="category_btn_del">취소</button>
-                            <button class="category_btn_regist">저장</button>
-                        </div>
+                            <div class="category_subtitle">
+                                <h2>2차 제품 카테고리</h2>
+                                <p>
+                                    <strong>
+                                        *
+                                    </strong>
+                                    필수 입력
+                                </p>
+                            </div>
+                            <div class="table_wrap mg_b0">
+                                <div class="table_wrap mg_b0">
+                                    <table class="category_03">
+                                        <tbody>
+                                            <tr class="b_b1 h58">
+                                                <th class="left_title" scope="row">사용여부</th>
+                                                <td class="p_l18">
+                                                    <input class="magic_radio" type="radio" name="use" id="2" value="option1">
+                                                    <label for="2" class="magic_radio_label">
+                                                        사용
+                                                    </label>
+                                                    <input class="magic_radio" type="radio" name="use" id="2" value="option1">
+                                                    <label for="2" class="magic_radio_label">
+                                                        사용안함
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr class="b_b1 h58">
+                                                <th class="left_title" scope="row">2차 카테고리</th>
+                                                <td class="p_l18">
+                                                    <table class="category_03 mg_b0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th colspan="4">
+                                                                    <h3 class="i_b">2차 카테고리 1</h3>
+                                                                    <button class="btn_add">
+                                                                        <img src="../img/plus_icon.svg">
+                                                                        추가
+                                                                    </button>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="b_b1">
+                                                                <td class="td_title h_a">
+                                                                    노출여부
+                                                                    <strong>
+                                                                        *
+                                                                    </strong>
+                                                                </td>
+                                                                <td class="exposure_area">
+                                                                    <input class="magic_radio" type="radio" name="exposure" id="2" value="option1">
+                                                                    <label for="2" class="magic_radio_label">
+                                                                        노출
+                                                                    </label>
+                                                                    <input class="magic_radio" type="radio" name="exposure" id="2" value="option1">
+                                                                    <label for="2" class="magic_radio_label">
+                                                                        노출안함
+                                                                    </label>
+                                                                </td>
+                                                                <td class="exposure_num_area">노출순서</td>
+                                                                <td class="w19">
+                                                                    <input class="num_input" type="text" value="1">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="td_title h115" rowspan="2">
+                                                                    카테고리명
+                                                                    <strong>
+                                                                        *
+                                                                    </strong>
+                                                                </td>
+                                                                <td class="link_attach_area" colspan="3">
+                                                                    <label>한글</label>
+                                                                    <input
+                                                                        class="file_input w376px"
+                                                                        title="검색 키워드"
+                                                                        placeholder=""
+                                                                        value=""
+                                                                        id=""
+                                                                        name=""
+                                                                        type="text">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="link_attach_area" colspan="3">
+                                                                    <label>영어</label>
+                                                                    <input
+                                                                        class="file_input w376px"
+                                                                        title="검색 키워드"
+                                                                        placeholder=""
+                                                                        value=""
+                                                                        id=""
+                                                                        name=""
+                                                                        type="text">
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table class="category_03 mgupdown10">
+                                                        <thead>
+                                                            <tr>
+                                                                <th colspan="4">
+                                                                    <h3 class="i_b">2차 카테고리 2</h3>
+                                                                    <button class="btn_del">
+                                                                        <img src="../img/minus_icon.svg">
+                                                                        삭제
+                                                                    </button>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="b_b1 h58">
+                                                                <td class="td_title h_a">
+                                                                    노출여부
+                                                                    <strong>
+                                                                        *
+                                                                    </strong>
+                                                                </td>
+                                                                <td class="exposure_area">
+                                                                    <input
+                                                                        class="magic_radio"
+                                                                        type="radio"
+                                                                        name="exposure02"
+                                                                        id="2"
+                                                                        value="option1">
+                                                                    <label for="2" class="magic_radio_label">
+                                                                        노출
+                                                                    </label>
+                                                                    <input
+                                                                        class="magic_radio"
+                                                                        type="radio"
+                                                                        name="exposure02"
+                                                                        id="2"
+                                                                        value="option1">
+                                                                    <label for="2" class="magic_radio_label">
+                                                                        노출안함
+                                                                    </label>
+                                                                </td>
+                                                                <td class="exposure_num_area">노출순서</td>
+                                                                <td class="w19">
+                                                                    <input class="num_input" type="text" value="1">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="td_title h115" rowspan="2">
+                                                                    카테고리명
+                                                                    <strong>
+                                                                        *
+                                                                    </strong>
+                                                                </td>
+                                                                <td class="link_attach_area" colspan="3">
+                                                                    <label>한글</label>
+                                                                    <input
+                                                                        class="file_input w376px"
+                                                                        title="검색 키워드"
+                                                                        placeholder=""
+                                                                        value=""
+                                                                        id=""
+                                                                        name=""
+                                                                        type="text">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="link_attach_area" colspan="3">
+                                                                    <label>영어</label>
+                                                                    <input
+                                                                        class="file_input w376px"
+                                                                        title="검색 키워드"
+                                                                        placeholder=""
+                                                                        value=""
+                                                                        id=""
+                                                                        name=""
+                                                                        type="text">
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="category_btn_wrap">
+                                <button class="category_btn_del">취소</button>
+                                <button class="category_btn_regist">저장</button>
+                            </div>
+                        </form>    
                     </div>
                 </div>
             </main>
