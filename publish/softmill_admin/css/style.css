@@ -1684,7 +1684,6 @@ table.category_02 tbody tr .input_area .tel_input {
   order: 2;
   flex-grow: 0;
   color: #ffffff;
-  
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
@@ -1693,6 +1692,16 @@ table.category_02 tbody tr .input_area .tel_input {
   color: #ffffff;
   flex-grow: 0;
 }
+
+.category_btn_wrap > a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.category_btn_wrap > a:hover{
+color: #ffffff;
+text-decoration: none;
+}
+
 .order_num > input {
   align-items: center;
   padding: 4px 18px;
