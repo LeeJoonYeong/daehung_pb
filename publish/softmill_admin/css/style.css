@@ -2490,3 +2490,12 @@ template {
   }
 }
 
+/* 2차 제품 카테고리 인터렉션*/
+.stepTwo_table_wrap {
+	display: none;
+}
+
+.stepTwo_table_wrap.active {
+	display: table-row;
+}
+/* //2차 제품 카테고리 인터렉션*/
