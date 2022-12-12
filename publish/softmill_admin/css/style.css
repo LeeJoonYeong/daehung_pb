@@ -105,6 +105,7 @@ input[type='date']:valid::before {
 input#file-upload-button{
   display:none;
 }
+
 .int_btn {
   display: block;
   position: relative;
@@ -2490,3 +2491,20 @@ template {
   }
 }
 
+
+table.category_02 tbody tr td input:hover,
+table.category_02 tbody tr td input:active,
+table.category_02 tbody tr td input:focus {
+  background-color: #fff;
+  border-radius: 0;
+  border: 2px solid #000;
+}
+
+
+table.category_02 tbody tr .input_area .tel_input:hover,
+table.category_02 tbody tr .input_area .tel_input:active,
+table.category_02 tbody tr .input_area .tel_input:focus {
+  background-color: #fff;
+  border-radius: 0;
+  border: 2px solid #000;
+}
