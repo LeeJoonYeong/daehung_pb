@@ -2491,6 +2491,7 @@ template {
   }
 }
 
+<<<<<<< HEAD
 
 table.category_02 tbody tr td input:hover,
 table.category_02 tbody tr td input:active,
@@ -2508,3 +2509,14 @@ table.category_02 tbody tr .input_area .tel_input:focus {
   border-radius: 0;
   border: 2px solid #000;
 }
+=======
+/* 2차 제품 카테고리 인터렉션*/
+.stepTwo_table_wrap {
+	display: none;
+}
+
+.stepTwo_table_wrap.active {
+	display: table-row;
+}
+/* //2차 제품 카테고리 인터렉션*/
+>>>>>>> a7f50bdc92eba8f87655d6c5846ea1676af90f23
