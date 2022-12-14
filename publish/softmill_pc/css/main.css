@@ -506,6 +506,11 @@
 	color: #000;
 	text-align: center;
 	margin-top: 30px;
+	width: 210px;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .customer_wrap {
