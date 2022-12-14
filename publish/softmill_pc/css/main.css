@@ -30,6 +30,7 @@
 }
 
 .ban_title {
+	width: 700px;
 	font-size: 55px;
 	line-height: 70px;
 	color: #fff;
@@ -39,6 +40,7 @@
 }
 
 .ban_btitle {
+	width: 700px;
 	font-size: 20px;
 	line-height: 30px;
 	color: #fff;
