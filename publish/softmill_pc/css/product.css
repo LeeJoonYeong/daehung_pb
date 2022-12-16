@@ -3,10 +3,8 @@
 
 .product_Wrap {
 	position: relative;
-	width: 1920px;
 	height: 590px;
-	left: 50%;
-	margin-left: -960px;
+	background: #F9F9F9;
 }
 
 .product_Wrap .bg_img {
@@ -125,7 +123,7 @@
 }
 
 .product_list .pro_img {
-	width: 264px;
+	width: 312px;
 	height: 312px;
 }
 
@@ -156,11 +154,11 @@
 	line-height: 22px;
 	color: #313131;
 	text-align: center;
-	-webkit-line-clamp: 2;
+	-webkit-line-clamp: 32;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	max-height: 44px;
+	max-height: 66px;
 }
 
 .product_list .size {
@@ -194,7 +192,7 @@
 .detail_img .zoomin {
 	position: absolute;
 	bottom: -32px;
-	left: 222px;
+	left: 272px;
 }
 
 .detail_img .zoomin a {
@@ -208,7 +206,7 @@
 }
 
 .detail_img .img_size {
-	width: 502px;
+	width: 594px;
 	height: 594px;
 }
 
@@ -217,7 +215,7 @@
 	text-align: center;
 	width: 92px;
 	height: 520px;
-	margin: 58px 120px 0 108px;
+	margin: 50px 96px 0 40px;
 }
 
 .items img {
@@ -292,7 +290,7 @@
 .detail_data {
 	float: left;
 	width: 498px;
-	margin-top: 60px;
+	margin-top: 50px;
 }
 
 .detail_data .title {
@@ -367,6 +365,12 @@
 	line-height: 28px;
 	color: #666;
 	font-weight: 300;
+	padding-left: 0;
+	width: 398px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .cata {
@@ -549,26 +553,30 @@
 }
 
 .caption .box ul li {
-	padding: 20px 0;
-	border-bottom: 1px solid #ebebeb;
-	height: 64px;
-	margin-right: 132px;
+	display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid #ebebeb;
+    min-height: 64px;
+    margin-right: 132px;
 }
 
 .caption .box ul li .title {
 	color: #000;
-	float: left;
-	font-size: 16px;
-	line-height: 20px;
-	width: 80px;
-	margin-right: 60px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 80px;
+    margin-right: 60px;
 }
 
 .caption .box ul li .bcopy {
 	font-size: 16px;
-	line-height: 20px;
-	color: #6f6f6f;
-	float: left;
+    line-height: 22px;
+    color: #6f6f6f;
+    width: 428px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .caption .box img {

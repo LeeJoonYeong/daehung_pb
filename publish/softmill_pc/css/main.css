@@ -237,6 +237,7 @@
 }
 
 .story_wrap .story_txt .sto_title {
+	width: 840px;
 	font-size: 42px;
 	line-height: 54px;
 	color: #000;
@@ -244,6 +245,7 @@
 }
 
 .story_wrap .story_txt .sto_btitle {
+	width: 840px;
 	font-size: 18px;
 	line-height: 30px;
 	color: #666;
@@ -267,6 +269,7 @@
 }
 
 .global_wrap .glo_title {
+	width: 840px;
 	font-size: 42px;
 	line-height: 54px;
 	color: #000;
@@ -274,6 +277,7 @@
 }
 
 .global_wrap .glo_btitle {
+	width: 840px;
 	font-size: 18px;
 	line-height: 30px;
 	color: #666;
@@ -297,6 +301,7 @@
 }
 
 .signature_wrap .sig_title {
+	width: 840px;
 	font-size: 42px;
 	line-height: 54px;
 	color: #000;
@@ -304,6 +309,7 @@
 }
 
 .signature_wrap .sig_btitle {
+	width: 840px;
 	font-size: 18px;
 	line-height: 30px;
 	color: #666;
@@ -465,11 +471,16 @@
 }
 
 .exper_pro .btitle {
-	padding-left: 40px;
+	padding: 0 20px 0 40px;
 	font-size: 14px;
 	line-height: 24px;
 	color: #313131;
 	opacity: 0.8;
+	height: 48px;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .sub_pro {
