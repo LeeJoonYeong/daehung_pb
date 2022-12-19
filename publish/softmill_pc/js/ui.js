@@ -53,6 +53,17 @@ $(document).ready(function () {
 
 });
 
+// 공식대리점 텝 메뉴 (서브 페이지)
+$(function(){
+	$('.maps > div').hide();
+	$('.agency_list a').click(function () {
+		$('.maps > div').hide().filter(this.hash).fadeIn();
+		$('.agency_list a').removeClass('active');
+		$(this).addClass('active');
+		return false;
+	}).filter(':eq(0)').click();
+});
+
 //product gallay
 // $(document).ready(function() {
 // 	$("#content-slider").lightSlider({

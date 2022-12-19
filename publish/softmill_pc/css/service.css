@@ -485,26 +485,26 @@ input#chk_top:checked+label:before {
 }
 
 /*********** Scroll bar design ***************/
+
 .pop_product::-webkit-scrollbar,
 .pop_product_select::-webkit-scrollbar,
-.treeDepth::-webkit-scrollbar {
-	width: 4px;
-	/* 스크롤바의 너비 */
+.treeDepth::-webkit-scrollbar,
+.map_Wrap .map_tab::-webkit-scrollbar {
+    width: 4px;  /* 스크롤바의 너비 */
 }
 
 .pop_product::-webkit-scrollbar-thumb,
 .pop_product_select::-webkit-scrollbar-thumb,
-.treeDepth::-webkit-scrollbar-thumb {
-	height: 30%;
-	/* 스크롤바의 길이 */
-	background: #e6e6e6;
-	/* 스크롤바의 색상 */
-	border-radius: 10px;
+.treeDepth::-webkit-scrollbar-thumb,
+.map_Wrap .map_tab::-webkit-scrollbar-thumb  {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #e6e6e6; /* 스크롤바의 색상 */
+    border-radius: 10px;
 }
 
 .pop_product::-webkit-scrollbar-track,
 .pop_product_select::-webkit-scrollbar-track,
-.treeDepth::-webkit-scrollbar-track {
-	background: transparent;
-	/*스크롤바 뒷 배경 색상*/
+.treeDepth::-webkit-scrollbar-track,
+.map_Wrap .map_tab::-webkit-scrollbar-track  {
+    background: transparent;  /*스크롤바 뒷 배경 색상*/
 }
