@@ -193,5 +193,27 @@
     </div>
     <!-- 상단이동버튼 끝 -->
     <script type="text/javascript" src="../js/ui.js"></script>
+    <script>
+        // naver map
+        var position = new naver.maps.LatLng(37.3910362, 127.3402882);
+
+        var map = new naver.maps.Map('map', {
+            center: position,
+            zoom: 18
+        });
+
+        var markerOptions = {
+            position: position,
+            map: map,
+            icon: {
+                url: '../img/pin_default.svg',
+                size: new naver.maps.Size(109, 90),
+                origin: new naver.maps.Point(0, 0),
+                anchor: new naver.maps.Point(79, 55)
+            }
+        };
+
+        var marker = new naver.maps.Marker(markerOptions);
+    </script>
 </body>
 </html>

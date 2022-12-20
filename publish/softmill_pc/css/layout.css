@@ -632,6 +632,8 @@
 	display: block;
 	font-size: 28px;
 	line-height: 34px;
+	font-weight: 500;
+	letter-spacing: -0.02em;
 	color: #BBBBBB;
 }
 
@@ -645,6 +647,8 @@
 	background: url('../img/menu_arrow.png')no-repeat right 2px;
 	background-size: 28px 28px;
 	color: #000;
+	font-weight: 500;
+	letter-spacing: -0.02em;
 }
 
 .oneDepth .title {
@@ -764,13 +768,14 @@
 	display: none;
 	position: absolute;
 	width: 300px;
-	left: 350px;
+	left: 340px;
 	top: 0;
 }
 
 .oneDepth li .smenu li {
 	position: relative;
 	margin-bottom: 24px;
+	width: 310px;
 }
 
 .oneDepth li .smenu li a {
@@ -778,6 +783,8 @@
 	display: block;
 	font-size: 24px;
 	line-height: 29px;
+	font-weight: 500;
+	letter-spacing: -0.02em;
 	color: #BBBBBB;
 }
 
