@@ -111,6 +111,31 @@ input#file-upload-button{
   position: relative;
   width: 100%;
 }
+
+/* 파일 첨부 시 이미지 링크 */
+.int_btn > a {
+  position: absolute;
+	top: 50%;
+	left: 128px;
+	transform: translateY(-50%);
+	padding-right: 18px;
+}
+
+.int_btn > a.type_pdf {
+	left: 180px;
+}
+
+.int_btn > a > button {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	width: 12px;
+	height: 12px;
+	background: url(../img/file_upload_close.svg);
+}
+/* //파일 첨부 시 이미지 링크 */
+
 .int_btn .upload-name {
   border: 1px solid #000000;
   width: 93%;
@@ -2491,8 +2516,6 @@ template {
   }
 }
 
-<<<<<<< HEAD
-
 table.category_02 tbody tr td input:hover,
 table.category_02 tbody tr td input:active,
 table.category_02 tbody tr td input:focus {
@@ -2509,7 +2532,7 @@ table.category_02 tbody tr .input_area .tel_input:focus {
   border-radius: 0;
   border: 2px solid #000;
 }
-=======
+
 /* 2차 제품 카테고리 인터렉션*/
 .stepTwo_table_wrap {
 	display: none;
@@ -2519,4 +2542,3 @@ table.category_02 tbody tr .input_area .tel_input:focus {
 	display: table-row;
 }
 /* //2차 제품 카테고리 인터렉션*/
->>>>>>> a7f50bdc92eba8f87655d6c5846ea1676af90f23
