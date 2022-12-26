@@ -91,7 +91,7 @@
                                     <tbody>
                                         <tr>
                                             <th scope="row" class="table_whether">등록일</th>
-                                            <th class="input_area none"></th>
+                                            <th class="input_area none">2023/01/07 16:05</th>
                                         </tr>
                                         <tr>
                                             <td scope="row" class="table_name">
@@ -130,40 +130,8 @@
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                                                <th scope="row" class="table_whether">유형</th>
-                                                                <th class="input_area">
-                                                                    <input
-                                                                        class="magic_radio"
-                                                                        type="radio"
-                                                                        name="exposure00"
-                                                                        id="1"
-                                                                        value="option1">
-                                                                    <label for="1" class="magic_radio_label">
-                                                                        한글+영어
-                                                                    </label>
-                                                                    <input
-                                                                        class="magic_radio"
-                                                                        type="radio"
-                                                                        name="exposure00"
-                                                                        id="1"
-                                                                        value="option1">
-                                                                    <label for="1" class="magic_radio_label">
-                                                                        한글
-                                                                    </label>
-                                                                    <input
-                                                                        class="magic_radio"
-                                                                        type="radio"
-                                                                        name="exposure00"
-                                                                        id="1"
-                                                                        value="option1">
-                                                                    <label for="1" class="magic_radio_label">
-                                                                        영어
-                                                                    </label>
-                                                                </th>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row" class="table_whether" rowspan="4">
-                                                                    한글
+                                                                <th scope="row" class="table_whether">
+                                                                    이미지
                                                                     <strong>
                                                                         *
                                                                     </strong>
@@ -178,71 +146,58 @@
                                                                         <input type="file" id="ex_filename" class="upload-hidden">
                                                                     </div>
                                                                     <p class="pl_44">ⓘ 권장 이미지 사이즈: 가로 1920px * 세로 1080px로 리사이징 됩니다.</p>
-                                                                    <p class="pl">- 등록 파일: 1M 이하 / png</p>
+                                                                    <p class="pl">- 등록 파일: 1M 이하 (TBD) / jpg, jpeg, png</p>
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="link_attach_area" colspan="4">
-                                                                    <label>제목</label>
-                                                                    <input
-                                                                        class="file_input"
-                                                                        title="검색 키워드"
-                                                                        placeholder=""
-                                                                        value=""
-                                                                        id=""
-                                                                        name=""
-                                                                        type="text">
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="link_attach_area" colspan="4">
-                                                                    <label>내용</label>
-                                                                    <input
-                                                                        class="file_input"
-                                                                        title="검색 키워드"
-                                                                        placeholder=""
-                                                                        value=""
-                                                                        id=""
-                                                                        name=""
-                                                                        type="text">
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="link_attach_area" colspan="4">
-                                                                    <label>링크</label>
-                                                                    <input
-                                                                        class="file_input"
-                                                                        title="검색 키워드"
-                                                                        placeholder=""
-                                                                        value=""
-                                                                        id=""
-                                                                        name=""
-                                                                        type="text">
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row" class="table_whether" rowspan="4">
-                                                                    영어
+                                                                <th scope="row" class="table_description" rowspan="2">
+                                                                    메인 카피
                                                                     <strong>
                                                                         *
                                                                     </strong>
                                                                 </th>
-                                                                <td class="btn_attach_area" colspan="4">
-                                                                    <div class="int_btn">
-                                                                        <title>
-                                                                            사진
-                                                                        </title>
-                                                                        <input class="upload-name" value="파일첨부" disabled="disabled">
-                                                                        <label for="ex_filename" class="btn_text">파일첨부</label>
-                                                                        <input type="file" id="ex_filename" class="upload-hidden">
-                                                                    </div>
-                                                                    <p class="pl_44">ⓘ 권장 이미지 사이즈: 가로 1920px * 세로 1080px로 리사이징 됩니다.</p>
-                                                                    <p class="pl">- 등록 파일: 1M 이하 / png</p>
+                                                                <td class="text_input_2line" colspan="3">
+                                                                    <p>한글</p>
+                                                                    <textarea name="ko_stepOne_categoryDesc" cols="40" rows="5" title="한글 카테고리설명"></textarea>
+                                                                    <p class="pl_44">ⓘ 작성 가이드: 최대 4줄(약 60자, 공백 포함) 권장, 5줄 이상 시 프론트 페이지에 영역 겹침</p>
                                                                 </td>
                                                             </tr>
                                                             <tr>
+                                                                <td class="text_input_2line" colspan="3">
+                                                                    <p>영어</p>
+                                                                    <textarea name="ko_stepOne_categoryDesc" cols="40" rows="5" title="한글 카테고리설명"></textarea>
+                                                                    <p class="pl_44">ⓘ 작성 가이드: 최대 4줄(약 60자, 공백 포함) 권장, 5줄 이상 시 프론트 페이지에 영역 겹침</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row" class="table_description" rowspan="2">
+                                                                    서브 카피
+                                                                    <strong>
+                                                                        *
+                                                                    </strong>
+                                                                </th>
+                                                                <td class="text_input_2line" colspan="3">
+                                                                    <p>한글</p>
+                                                                    <textarea name="ko_stepOne_categoryDesc" cols="40" rows="5" title="한글 카테고리설명"></textarea>
+                                                                    <p class="pl_44">ⓘ 작성 가이드: 최대 6줄(약 246자, 공백 포함) 권장, 7줄 이상 시 프론트 페이지에 영역 겹침</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text_input_2line" colspan="3">
+                                                                    <p>영어</p>
+                                                                    <textarea name="ko_stepOne_categoryDesc" cols="40" rows="5" title="한글 카테고리설명"></textarea>
+                                                                    <p class="pl_44">ⓘ 작성 가이드: 최대 6줄(약 6246자, 공백 포함) 권장, 7줄 이상 시 프론트 페이지에 영역 겹침</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row" class="table_whether" rowspan="2">
+                                                                    링크
+                                                                    <strong>
+                                                                        *
+                                                                    </strong>
+                                                                </th>
                                                                 <td class="link_attach_area" colspan="4">
-                                                                    <label>제목</label>
+                                                                    <label>한글</label>
                                                                     <input
                                                                         class="file_input"
                                                                         title="검색 키워드"
@@ -254,21 +209,8 @@
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="link_attach_area" colspan="4">
-                                                                    <label>내용</label>
-                                                                    <input
-                                                                        class="file_input"
-                                                                        title="검색 키워드"
-                                                                        placeholder=""
-                                                                        value=""
-                                                                        id=""
-                                                                        name=""
-                                                                        type="text">
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="link_attach_area" colspan="4">
-                                                                    <label>링크</label>
+                                                                <td class="link_attach_area" colspan="2">
+                                                                    <label>영어</label>
                                                                     <input
                                                                         class="file_input"
                                                                         title="검색 키워드"
@@ -282,7 +224,6 @@
                                                         </tbody>
                                                     </table>
                                                     <!-- 제품 리스트 상단 비주얼 테이블 -->
-                                                    <!-- 제품 리스트 상단 비주얼 테이블 -->
                                                     <table class="category_03 mgupdown10">
                                                         <thead>
                                                             <tr>
@@ -291,40 +232,8 @@
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                                                <th scope="row" class="table_whether">유형</th>
-                                                                <th class="input_area">
-                                                                    <input
-                                                                        class="magic_radio"
-                                                                        type="radio"
-                                                                        name="exposure01"
-                                                                        id="2"
-                                                                        value="option2">
-                                                                    <label for="2" class="magic_radio_label">
-                                                                        한글+영어
-                                                                    </label>
-                                                                    <input
-                                                                        class="magic_radio"
-                                                                        type="radio"
-                                                                        name="exposure01"
-                                                                        id="2"
-                                                                        value="option2">
-                                                                    <label for="2" class="magic_radio_label">
-                                                                        한글
-                                                                    </label>
-                                                                    <input
-                                                                        class="magic_radio"
-                                                                        type="radio"
-                                                                        name="exposure01"
-                                                                        id="2"
-                                                                        value="option2">
-                                                                    <label for="2" class="magic_radio_label">
-                                                                        영어
-                                                                    </label>
-                                                                </th>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row" class="table_whether" rowspan="4">
-                                                                    한글
+                                                                <th scope="row" class="table_whether">
+                                                                    이미지
                                                                     <strong>
                                                                         *
                                                                     </strong>
@@ -339,71 +248,58 @@
                                                                         <input type="file" id="ex_filename" class="upload-hidden">
                                                                     </div>
                                                                     <p class="pl_44">ⓘ 권장 이미지 사이즈: 가로 1920px * 세로 1080px로 리사이징 됩니다.</p>
-                                                                    <p class="pl">- 등록 파일: 1M 이하 / png</p>
+                                                                    <p class="pl">- 등록 파일: 1M 이하 (TBD) / jpg, jpeg, png</p>
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="link_attach_area" colspan="4">
-                                                                    <label>제목</label>
-                                                                    <input
-                                                                        class="file_input"
-                                                                        title="검색 키워드"
-                                                                        placeholder=""
-                                                                        value=""
-                                                                        id=""
-                                                                        name=""
-                                                                        type="text">
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="link_attach_area" colspan="4">
-                                                                    <label>내용</label>
-                                                                    <input
-                                                                        class="file_input"
-                                                                        title="검색 키워드"
-                                                                        placeholder=""
-                                                                        value=""
-                                                                        id=""
-                                                                        name=""
-                                                                        type="text">
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="link_attach_area" colspan="4">
-                                                                    <label>링크</label>
-                                                                    <input
-                                                                        class="file_input"
-                                                                        title="검색 키워드"
-                                                                        placeholder=""
-                                                                        value=""
-                                                                        id=""
-                                                                        name=""
-                                                                        type="text">
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row" class="table_whether" rowspan="4">
-                                                                    영어
+                                                                <th scope="row" class="table_description" rowspan="2">
+                                                                    메인 카피
                                                                     <strong>
                                                                         *
                                                                     </strong>
                                                                 </th>
-                                                                <td class="btn_attach_area" colspan="4">
-                                                                    <div class="int_btn">
-                                                                        <title>
-                                                                            사진
-                                                                        </title>
-                                                                        <input class="upload-name" value="파일첨부" disabled="disabled">
-                                                                        <label for="ex_filename" class="btn_text">파일첨부</label>
-                                                                        <input type="file" id="ex_filename" class="upload-hidden">
-                                                                    </div>
-                                                                    <p class="pl_44">ⓘ 권장 이미지 사이즈: 가로 1920px * 세로 1080px로 리사이징 됩니다.</p>
-                                                                    <p class="pl">- 등록 파일: 1M 이하 / png</p>
+                                                                <td class="text_input_2line" colspan="3">
+                                                                    <p>한글</p>
+                                                                    <textarea name="ko_stepOne_categoryDesc" cols="40" rows="5" title="한글 카테고리설명"></textarea>
+                                                                    <p class="pl_44">ⓘ 작성 가이드: 최대 4줄(약 60자, 공백 포함) 권장, 5줄 이상 시 프론트 페이지에 영역 겹침</p>
                                                                 </td>
                                                             </tr>
                                                             <tr>
+                                                                <td class="text_input_2line" colspan="3">
+                                                                    <p>영어</p>
+                                                                    <textarea name="ko_stepOne_categoryDesc" cols="40" rows="5" title="한글 카테고리설명"></textarea>
+                                                                    <p class="pl_44">ⓘ 작성 가이드: 최대 4줄(약 60자, 공백 포함) 권장, 5줄 이상 시 프론트 페이지에 영역 겹침</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row" class="table_description" rowspan="2">
+                                                                    서브 카피
+                                                                    <strong>
+                                                                        *
+                                                                    </strong>
+                                                                </th>
+                                                                <td class="text_input_2line" colspan="3">
+                                                                    <p>한글</p>
+                                                                    <textarea name="ko_stepOne_categoryDesc" cols="40" rows="5" title="한글 카테고리설명"></textarea>
+                                                                    <p class="pl_44">ⓘ 작성 가이드: 최대 6줄(약 246자, 공백 포함) 권장, 7줄 이상 시 프론트 페이지에 영역 겹침</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text_input_2line" colspan="3">
+                                                                    <p>영어</p>
+                                                                    <textarea name="ko_stepOne_categoryDesc" cols="40" rows="5" title="한글 카테고리설명"></textarea>
+                                                                    <p class="pl_44">ⓘ 작성 가이드: 최대 6줄(약 6246자, 공백 포함) 권장, 7줄 이상 시 프론트 페이지에 영역 겹침</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row" class="table_whether" rowspan="2">
+                                                                    링크
+                                                                    <strong>
+                                                                        *
+                                                                    </strong>
+                                                                </th>
                                                                 <td class="link_attach_area" colspan="4">
-                                                                    <label>제목</label>
+                                                                    <label>한글</label>
                                                                     <input
                                                                         class="file_input"
                                                                         title="검색 키워드"
@@ -415,21 +311,8 @@
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="link_attach_area" colspan="4">
-                                                                    <label>내용</label>
-                                                                    <input
-                                                                        class="file_input"
-                                                                        title="검색 키워드"
-                                                                        placeholder=""
-                                                                        value=""
-                                                                        id=""
-                                                                        name=""
-                                                                        type="text">
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="link_attach_area" colspan="4">
-                                                                    <label>링크</label>
+                                                                <td class="link_attach_area" colspan="2">
+                                                                    <label>영어</label>
                                                                     <input
                                                                         class="file_input"
                                                                         title="검색 키워드"
