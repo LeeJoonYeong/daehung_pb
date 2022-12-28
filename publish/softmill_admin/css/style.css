@@ -1679,7 +1679,8 @@ table.category_02 tbody tr .input_area .tel_input {
   right: 0;
   padding: 20px 0px 20px 0px;
 }
-.category_btn_del {
+.category_btn_del,
+.category_btn_remove {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
