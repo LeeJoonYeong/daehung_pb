@@ -129,8 +129,10 @@ input#file-upload-button{
 	padding-right: 18px;
 }
 
-.int_btn > a.type_pdf {
+.int_btn > a.type_left_01 {
 	left: 180px;
+	font-size: 14px;
+	font-weight: 500;
 }
 
 .int_btn > a > button {
