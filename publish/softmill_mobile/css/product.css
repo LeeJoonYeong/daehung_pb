@@ -111,7 +111,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height: 52px;
+    max-height: 48px;
 }
 .product_list .bcopy {
     display: none;
@@ -287,6 +287,11 @@
     font-size: 13px;
     line-height: 22px;
     font-weight: 300;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 22px;
 }
 .detail_data .desc {
     position: relative;
@@ -442,13 +447,12 @@
     position: relative;
 }
 .caption .box ul li {
-    position: relative;
-    padding: 11px 0 12px;
+    display: flex;
+    padding: 20px 0;
     border-bottom: 1px solid #ebebeb;
-    height: 44px;
+    min-height: 44px;
 }
 .caption .box ul li .title {
-    float: left;
     color: #000;
     font-size: 14px;
     line-height: 22px;
@@ -457,10 +461,14 @@
     margin-right: 20px;
 }
 .caption .box ul li .bcopy {
-    float: left;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
     color: #6f6f6f;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .caption .box .capimg img {
     width: 100%;

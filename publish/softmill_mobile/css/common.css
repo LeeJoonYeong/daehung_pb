@@ -1485,7 +1485,9 @@ text-align: right;
     position: relative;
     }
 
-  .selectBox * { box-sizing: border-box; }
+  .selectBox * { 
+    box-sizing: border-box;
+}
   .selectBox {
     position: relative;
     width: 100%;
@@ -1494,13 +1496,11 @@ text-align: right;
     background: url('../img/arrow_down.png') no-repeat 100% 50%;
     background-size: 30px;
     cursor: pointer;
-    z-index: 9990;
     }
 
   .selectBox.action {
     background: url('../img/arrow_up.png') no-repeat 100% 50%;
     }
-
 
   .selectBox .label {
     display: flex;
@@ -1529,7 +1529,6 @@ text-align: right;
     padding: 0;
     overflow: hidden;
     max-height: 0;
-    z-index: 999;
     text-align: left;
     }
   
@@ -1538,11 +1537,13 @@ text-align: right;
   .selectBox .optionList::-webkit-scrollbar-thumb {background: #303030; border-radius: 45px;}
   .selectBox .optionList::-webkit-scrollbar-thumb:hover {background: #303030;}
   
+
   .selectBox.active .optionList {
     max-height: 500px;
     transition: .1s ease-in;
     border: 1px solid #000;
     padding: 15px 0;
+    z-index: 9999;
     }
   
   .selectBox .optionItem {

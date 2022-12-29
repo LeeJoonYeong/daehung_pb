@@ -341,6 +341,7 @@ input#chk_top:checked + label:before{
     border: 1px solid #F9F9F9;
     margin: 0 auto;
 }
+
 .pop_product_list li a.on {
     border: 1px solid #000000;
     
@@ -366,7 +367,7 @@ input#chk_top:checked + label:before{
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height: 38px;
+    max-height: 36px;
 }
 .pop_product_list li .delete {
     position: absolute;

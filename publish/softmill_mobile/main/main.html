@@ -464,44 +464,6 @@
     </div>
     <!-- 햄버거메뉴 끝 -->
     <!-- 상단이동버튼 끝 -->
-    <script type="text/javascript" src="../js/mui.js"></script>
-    <script>
-        $(document).ready(function(){
- 
-        $('.mheader_wrap .burger').on('click', function(){
-            $('.dim_bg').fadeIn('linear');
-            $('.ham_memu').show().fadeIn('linear').animate({
-                right:0
-            });
-            $('body').addClass('notScroll');  
-        });
-        $('.close>a').on('click', function(){
-            $('.dim_bg').fadeOut('linear');
-            $('.ham_memu').animate({
-                right: '-' + 100 + '%'
-                        },function(){
-                            $('.ham_memu').hide();          
-                        });
-            $('body').removeClass('notScroll');
-        });
-
-        });
-    </script>
-    <script>
-        ( function( $ ) {
-        $('.cate ul').hide();
-        $('.cate .menu .menulink').click(function() {
-            if($(this).hasClass('active')){
-            $(this).parent().next().slideUp('slow');
-            $(this).removeClass('active');
-            }else{
-            $('.accordion').find('.active').parent().next().slideUp('slow');
-            $('.accordion').find('.active').removeClass('active');
-            $(this).parent().next().slideDown('slow');
-            $(this).addClass('active');
-            }
-        });
-        })( jQuery );
-    </script>
+    <script type="text/javascript" src="../js/ui.js"></script>
 </body>
 </html>
