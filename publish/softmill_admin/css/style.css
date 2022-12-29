@@ -31,6 +31,7 @@ html {
 }
 
 body {
+	font-family: 'Pretendard', 'Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif;
   margin: 0;
 }
 
@@ -93,6 +94,13 @@ input[type='date']::before {
   width: 100%;
 }
 
+label {
+	display: initial;
+	max-width: initial;
+	margin: initial;
+	font-weight: initial;
+}
+
 title{
   display: inline-block;
   padding-right: 20px;
@@ -116,7 +124,7 @@ input#file-upload-button{
 .int_btn > a {
   position: absolute;
 	top: 50%;
-	left: 128px;
+	left: 135px;
 	transform: translateY(-50%);
 	padding-right: 18px;
 }
@@ -1679,7 +1687,8 @@ table.category_02 tbody tr .input_area .tel_input {
   right: 0;
   padding: 20px 0px 20px 0px;
 }
-.category_btn_del {
+.category_btn_del,
+.category_btn_remove {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -2552,3 +2561,9 @@ table.category_02 tbody tr .input_area .tel_input:focus {
 	display: table-row;
 }
 /* //2차 제품 카테고리 인터렉션*/
+
+/* 에디터 스타일 */
+.note-editable {
+	height: 300px;
+}
+/* //에디터 스타일 */
