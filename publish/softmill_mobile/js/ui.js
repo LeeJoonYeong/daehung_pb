@@ -64,6 +64,44 @@ $(function(){
 	}).filter(':eq(0)').click();
 });
 
+// 햄버거 메뉴
+$(document).ready(function(){
+ 
+	$('.mheader_wrap .burger').on('click', function(){
+		$('.dim_bg').fadeIn('linear');
+		$('.ham_memu').show().fadeIn('linear').animate({
+			right:0
+		});
+		$('body').addClass('notScroll');  
+	});
+	$('.close>a').on('click', function(){
+		$('.dim_bg').fadeOut('linear');
+		$('.ham_memu').animate({
+			right: '-' + 100 + '%'
+					},function(){
+						$('.ham_memu').hide();          
+					});
+		$('body').removeClass('notScroll');
+	});
+
+});
+
+// 햄버거 아코디온 메뉴
+(function( $ ) {
+	$('.cate ul').hide();
+	$('.cate .menu .menulink').click(function() {
+		if($(this).hasClass('active')){
+		$(this).parent().next().slideUp('slow');
+		$(this).removeClass('active');
+		}else{
+		$('.accordion').find('.active').parent().next().slideUp('slow');
+		$('.accordion').find('.active').removeClass('active');
+		$(this).parent().next().slideDown('slow');
+		$(this).addClass('active');
+		}
+	});
+})( jQuery );
+
 //product gallay
 // $(document).ready(function() {
 // 	$("#content-slider").lightSlider({
@@ -130,97 +168,6 @@ function hasScrolled(fixbox, fixbox_height){
 	lastScrollTop = nowScrollTop;
 }
 
-/* 햄버거 메뉴 1뎁스 활성화 */
-const gnbMenu = document.querySelector('.gnb_menu');
-gnbMenu?.addEventListener('click', (e) => {
-
-	for (const val of gnbMenu.children) {
-
-		if(e.target.tagName === 'UL') // 리스트를 클릭 하는게 아니라면 return
-			return;
-
-		if(e.target.parentElement.parentElement.classList.contains('smenu')) // 2depth 리스트를 클릭 했을 때 return
-			return;
-
-		if(e.target === val.firstElementChild) { //  클릭 하는 태그와 일치하는 리스트 active
-			
-			val.classList.add('active');
-
-			const depth1TagA = val.firstElementChild;
-			Depth3Change(depth1TagA); // 클릭 하는 태그가 소프트밀 소개 리스트일 때
-			
-			continue;
-		}
-		
-		val.classList.remove('active'); // 나머지 비활성화
-	}
-});
-/* //햄버거 메뉴 1뎁스 활성화 */
-
-/* 햄버거 메뉴 2뎁스 활성화 */
-const subMenu = document.querySelectorAll('.smenu');
-if(subMenu) {
-	for (const val of subMenu) {
-
-		val.addEventListener('click', (e) => {
-
-			let targetLi = e.target.parentElement;
-			for (const lists of val.children) {
-
-				if(e.target.tagName === 'UL') // 리스트를 클릭 하는게 아니라면 return
-					return;
-
-				if(targetLi === lists) { //  클릭 하는 태그와 일치하는 리스트 active
-					Depth2Clear(subMenu); // 모든 2depth 리스트 비활성화 
-					lists.classList.add('select');
-					Depth3Designate(e.target.dataset.prodname); // 활성화 리스트 아이템에 맞춰 3depth 지정
-					continue;
-				}
-
-			}
-
-		});
-
-	}
-}
-
-function Depth2Clear(tagUL) {
-
-	for(const value of tagUL) {
-		const depth2lists = value.children;
-		for (const values of depth2lists) {
-			values.classList.remove('select');
-		}
-	}
-
-}
-/* //햄버거 메뉴 2뎁스 활성화 */
-
-/* 햄버거 메뉴 3뎁스 활성화 */
-const dep3prodLists = document.querySelector('.treeDepth.prodLists');
-const dep3banner = document.querySelector('.treeDepth.banner');
-
-function Depth3Designate(prodName) {
-	if(!prodName) // data-prodName이 없을 경우 종료
-		return;
-
-	dep3prodLists.setAttribute('data-prodName', prodName);
-}
-
-function Depth3Change(tagType) {
-	if(tagType.dataset.gnb === 'intro') { // 클릭 하는 태그가 소프트밀 소개 리스트일 때
-				
-		dep3prodLists.classList.remove('active');
-		dep3banner.classList.add('active');
-
-	} else {
-
-		dep3banner.classList.remove('active');
-		dep3prodLists.classList.add('active');
-
-	}
-}
-/* //햄버거 메뉴 3뎁스 활성화 */
 
 /* 제품 상세 리스트 기능 */
 const proItemsWrap = document.querySelector('.items .pro_items');
