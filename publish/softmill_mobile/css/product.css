@@ -90,7 +90,8 @@
     padding: 24px 17px 20px 17px;
 }
 .product_list .pro_img {
-    width: 110px;
+    width: 130px;
+     height: 130px;
 }
 .product_list .tag {
     font-size: 12px;
@@ -147,7 +148,8 @@
     overflow: hidden;
 }
 .detail_large_img .large_size {
-    width: 300px;
+    width: 320px;
+    height: 320px;
 }
 .detail_view {
     position: relative;
@@ -168,7 +170,8 @@
     width: 252px;
 }
 .detail_img .img_size {
-    width: 252px;
+    width: 300px;
+    height: 300px;
 }
 .detail_view .zoomin {
     position: absolute;
