@@ -619,7 +619,7 @@
 	text-align: left;
 }
 
-.oneDepth li:nth-of-type(10)::before {
+.oneDepth li.company_intro::before {
 	content: '소프트밀 소개';
 	display: block;
 	font-size: 14px;
