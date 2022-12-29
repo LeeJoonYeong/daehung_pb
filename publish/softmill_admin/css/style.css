@@ -1127,7 +1127,7 @@ table.category_01 thead {
   border-bottom: 1px solid #bbbbbb;
   padding-left: 18px;
   vertical-align: top;
-  padding-top: 10px;
+  padding: 10px 18px;
   font-size: 14px;
   height: 68px;
   font-weight: 500;
@@ -1618,7 +1618,15 @@ table.category_03 tbody tr td p {
   margin: 0;
 }
 table.category_03 tbody tr td p.p_00011 {
-  padding: 0px 0 0 12px !important;
+  padding: 0 0 0 12px !important;
+}
+
+table.category_03 tbody tr td p.p_00044 {
+  padding: 0 0 0 44px !important;
+}
+
+table.category_03 tbody tr td p.p_00057 {
+  padding: 0 0 0 57px !important;
 }
 
 table.category_03 tbody tr td p:first-child {
