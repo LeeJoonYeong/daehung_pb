@@ -1,16 +1,3 @@
-// 탑 바로가기 버튼
-$(window).scroll(function(){
-	if ($(this).scrollTop() > 260){
-		$('.btn_gotop').fadeIn(400);
-	} else{
-		$('.btn_gotop').fadeOut(400);
-	}
-});
-$('.btn_gotop').click(function(){
-	$('html, body').animate({scrollTop:0},400);
-	return false;
-});
-
 //서브 페이지 탭 메뉴 (product)
 $(document).ready( function() {
 	var Offset = $( '.detail_tab_Wrap' ).offset();
@@ -37,6 +24,18 @@ $(document).ready( function() {
 	});
 });
 
+// 탑 바로가기 버튼
+$(window).scroll(function(){
+	if ($(this).scrollTop() > 260){
+		$('.btn_gotop').fadeIn(400);
+	} else{
+		$('.btn_gotop').fadeOut(400);
+	}
+});
+$('.btn_gotop').click(function(){
+	$('html, body').animate({scrollTop:0},400);
+	return false;
+});
 
 // 드롭다운 메뉴 (서브 페이지)
 $(document).ready(function () {
