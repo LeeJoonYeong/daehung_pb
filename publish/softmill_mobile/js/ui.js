@@ -11,6 +11,18 @@ $('.btn_gotop').click(function(){
 	return false;
 });
 
+//서브 페이지 탭 메뉴 (product)
+$(document).ready( function() {
+	var Offset = $( '.detail_tab_Wrap' ).offset();
+	$( window ).scroll( function() {
+		if ( $( document ).scrollTop() > Offset?.top ) {
+		$( '.detail_tab_Wrap' ).addClass( 'fixed' );
+		}
+		else {
+		$( '.detail_tab_Wrap' ).removeClass( 'fixed' );
+		}
+	});
+});
 
 //서브 페이지 탭 메뉴
 $(document).ready( function() {
@@ -25,18 +37,6 @@ $(document).ready( function() {
 	});
 });
 
-//서브 페이지 탭 메뉴 (product)
-$(document).ready( function() {
-	var Offset = $( '.detail_tab_Wrap' ).offset();
-	$( window ).scroll( function() {
-		if ( $( document ).scrollTop() > Offset?.top  ) {
-		$( '.detail_tab_Wrap' ).addClass( 'fixed' );
-		}
-		else {
-		$( '.detail_tab_Wrap' ).removeClass( 'fixed' );
-		}
-	});
-});
 
 // 드롭다운 메뉴 (서브 페이지)
 $(document).ready(function () {

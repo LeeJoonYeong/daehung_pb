@@ -130,7 +130,7 @@
                 </div>           
             </div>
             <!-- 옵션 끝 -->
-            <!-- 텝메뉴 시작 -->
+            <!-- 텝메뉴 시작 --> 
             <div class="detail_tab_Wrap">
                 <div class="detail_box">
                     <div class="detail_tab">
@@ -301,20 +301,6 @@
         <div class="topBtn"><a href="#" class="btn_gotop"></a></div>
     </div>
     <!-- 상단이동버튼 끝 -->
-    <script>
-        //tab menu
-        $( document ).ready( function() {
-            var Offset = $( '.detail_tab_Wrap' ).offset();
-            $( window ).scroll( function() {
-                if ( $( document ).scrollTop() > Offset.top ) {
-                $( '.detail_tab_Wrap' ).addClass( 'fixed' );
-                }
-                else {
-                $( '.detail_tab_Wrap' ).removeClass( 'fixed' );
-                }
-            });
-        });
-    </script>
     <script type="text/javascript" src="../js/ui.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
