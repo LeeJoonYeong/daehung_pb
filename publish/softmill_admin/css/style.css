@@ -529,12 +529,14 @@ thead.table_style_03 tr th:nth-child(5),
 thead.table_style_03 tr th:nth-child(6){
   width: 11%;
 }
-thead.table_style_04 tr th:nth-child(1),
-thead.table_style_04 tr th:nth-child(2){
+thead.table_style_04 tr th:nth-child(1){
   width: 6%;
 }
-thead.table_style_04 tr th:nth-child(3){
+thead.table_style_04 tr th:nth-child(2){
   width: 40%;
+}
+thead.table_style_04 tr th:nth-child(3){
+  width: 17%;
 }
 thead.table_style_04 tr th:nth-child(4){
   width: 17%;
@@ -1138,8 +1140,6 @@ table.category_01 thead {
   height: 258px;
   padding: 10px 18px;
   font-size: 14px;
-  
-
 }
 
 .btn_attach_area .btn_attach_input {
@@ -1147,15 +1147,24 @@ table.category_01 thead {
   height: 38px;
   padding: 9px 18px;
 }
-.btn_attach_area label{
 
+.btn_attach_area.pd_spec .btn_attach_input {
+  height: 58px;
+}
+
+.btn_attach_area label{
   padding-right: 20px;
 }
 
+.btn_attach_area.pd_spec label {
+	position: relative;
+	top: -35px;
+}
 
 table.category_02 tbody tr td.text_input_1line label{
   margin-right: 20px;
 }
+
 div.table_wrap table.category_03 tbody tr .p_l18 table.category_03 tbody .link_attach_area label{
   margin-right: 20px;
 }
@@ -1279,7 +1288,7 @@ table.category_02 tbody tr td textarea {
   flex-direction: row;
   align-items: flex-start;
   padding: 9px 18px;
-  height: 68px;
+  height: 188px;
   background: #ffffff;
   border: 1px solid #000000;
   flex: none;
@@ -1442,8 +1451,8 @@ table.category_02 tbody tr td.text_input_2line span.text_limit {
   font-size: 13px;
 	color: #000;
 	position: absolute;
-	top: 175px;
 	right: -15px;
+	bottom: 51px;
 }
 
 table.category_02 tbody tr td.text_input_2line span.text_limit > i {
@@ -1529,7 +1538,7 @@ table.category_03 thead tr th.btn_add {
   background: #f6f6f6;
   border: 1px solid #929292;
   position: absolute;
-  right: 64px;
+  right: 26px;
   font-weight: 500;
   font-size: 11px;
   line-height: 13px;
@@ -1704,7 +1713,8 @@ table.category_02 tbody tr .input_area .tel_input {
   padding: 20px 0px 20px 0px;
 }
 .category_btn_del,
-.category_btn_remove {
+.category_btn_remove,
+.btn_target_remove {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
