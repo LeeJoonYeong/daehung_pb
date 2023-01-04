@@ -257,7 +257,11 @@
 	position: relative;
 	font-size: 14px;
 	line-height: 27px;
-	color: #000000;
+	color: #BBB;
+}
+
+.indicator>li .menu_list ul li a.active {
+	color: #000;
 }
 
 .indicator>li.on .menu_list {
@@ -338,7 +342,7 @@
 	margin-right: 0;
 }
 
-.tabmenus li a.selected {
+.tabmenus li a.active {
 	color: #FF5F00;
 }
 
@@ -712,6 +716,13 @@
 
 .treeDepth.active {
 	display: block;
+}
+
+.treeDepth.prodLists > h3 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .treeDepth li {
