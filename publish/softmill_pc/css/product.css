@@ -171,7 +171,7 @@
 .detail_wrap {
 	width: 1320px;
 	margin: 0 auto;
-	padding: 38px 0 150px 0;
+	padding: 38px 0 0 0;
 }
 
 .detail_pop_wrap {
@@ -285,12 +285,13 @@
 	height: 100%;
 }
 
-
-
 .detail_data {
 	float: left;
 	width: 498px;
-	margin-top: 50px;
+	min-height: 510px;
+	padding-bottom: 28px;
+	margin-top: 66px;
+	position: relative;
 }
 
 .detail_data .title {
@@ -335,6 +336,7 @@
 
 .detail_data .data li {
 	position: relative;
+	display: flow-root;
 	width: 395px;
 }
 
@@ -376,7 +378,7 @@
 .cata {
 	margin-top: 20px;
 	padding: 20px 20px 0 20px;
-	border-top: 1px solid #000;
+	border-top: 1px solid #d9d9d9;
 }
 
 .cata .box {
@@ -423,26 +425,37 @@
 }
 
 .detail_data button {
-	margin-top: 28px;
 	width: 100%;
+	height: 50px;
 	font-size: 17px;
 	padding: 15px 0;
 	color: #fff;
 	background: #000;
+	position: absolute;
+	bottom: -50px;
+}
+
+.detail_data button:hover {
+	background-color: #313131;
 }
 
 .detail_tab_Wrap {
-	opacity: 0;
+	/* opacity: 0; */
 	width: 100%;
-	margin-top: -80px;
+	margin-top: 152px;
 	z-index: 999;
 }
 
 .detail_box {
-	max-width: 1920px;
-	margin: 0 auto;
-	background: #000;
+	/* max-width: 1920px;
+	margin: 0 auto; */
+	background: #f9f9f9;
 	height: 80px;
+	transition: all 0.2s;
+}
+
+.detail_tab_Wrap.fixed .detail_box {
+	background-color: #000;
 }
 
 .detail_tab {
@@ -452,14 +465,27 @@
 	padding: 17px 20px 18px;
 }
 
-.detail_tab a {
+.detail_tab > a {
 	display: block;
 	float: left;
 	font-size: 15px;
-	color: #fff;
+	color: #666;
 	width: auto;
 	line-height: 44px;
 	margin-right: 70px;
+}
+
+.detail_tab_Wrap.fixed .detail_tab > a {
+	color: #fff;
+}
+
+.detail_tab > a:last-child {
+	float: right;
+	visibility: hidden;
+}
+
+.detail_tab_Wrap.fixed .detail_tab > a:last-child {
+	visibility: visible;
 }
 
 .fixed {
@@ -552,6 +578,10 @@
 	float: left;
 }
 
+.caption .box ul.bp_empty {
+	width: 100%;
+}
+
 .caption .box ul li {
 	display: flex;
     padding: 22px 0;
@@ -565,7 +595,7 @@
     font-size: 16px;
     line-height: 20px;
     width: 80px;
-    margin-right: 60px;
+    margin: 0 60px 0 0;
 }
 
 .caption .box ul li .bcopy {

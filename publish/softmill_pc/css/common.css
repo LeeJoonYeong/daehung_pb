@@ -410,6 +410,11 @@ input::placeholder {
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
+	display: none;
+}
+
+.layer_popup.active {
+	display: block;
 }
 
 .dim_bg {
