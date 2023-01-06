@@ -192,7 +192,8 @@
 .detail_img .zoomin {
 	position: absolute;
 	bottom: -32px;
-	left: 272px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .detail_img .zoomin a {
@@ -451,7 +452,7 @@
 	margin: 0 auto; */
 	background: #f9f9f9;
 	height: 80px;
-	transition: all 0.2s;
+	transition: all 0.1s;
 }
 
 .detail_tab_Wrap.fixed .detail_box {
@@ -552,7 +553,11 @@
 	position: relative;
 	background: #F9F9F9;
 	padding: 150px 0;
-	height: 987px;
+	/* height: 987px; */
+}
+
+.caption.prod_desc_empty {
+	background-color: initial;
 }
 
 .caption .box {
@@ -585,7 +590,7 @@
 .caption .box ul li {
 	display: flex;
     padding: 22px 0;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid #d9d9d9;
     min-height: 64px;
     margin-right: 132px;
 }
@@ -619,8 +624,13 @@
 	position: relative;
 	width: 1320px;
 	margin: 0 auto;
-	padding: 150px 0 0;
-	height: 909px;
+	padding-top: 150px;
+	padding-bottom: 160px;
+	/* height: 909px; */
+}
+
+.detail_reward.prod_desc_empty {
+	padding-top: initial;
 }
 
 .detail_reward .title {
