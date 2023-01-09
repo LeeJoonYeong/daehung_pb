@@ -370,6 +370,7 @@
 	font-weight: 300;
 	padding-left: 0;
 	width: 398px;
+	max-height: 80px;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
