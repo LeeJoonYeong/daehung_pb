@@ -887,13 +887,13 @@ border: 1px solid #000000;
 .board_pagination{
   padding: 98px 0px 40px 0px;
   margin: 0 auto;
-  width: 234px;
+  /* width: 234px; */
 }
 .board_nav{
   text-align: center;
 }
 
-.board_nav .board_nav_page{
+.board_nav .board_nav_page {
   width: 8px;
   height: 26px;
   font-size: 12px;
@@ -910,7 +910,7 @@ border: 1px solid #000000;
   padding: 0px 12px;
 }
 
-.board_nav .active{
+.board_nav .board_nav_page.active {
   width: 6px;
   height: 26px;
   font-weight: 500;
@@ -926,6 +926,7 @@ border: 1px solid #000000;
   order: 1;
   flex-grow: 0;
 }
+
 .table_wrap .category_02 tbody tr td.table_name{
   width: 152px;
   border-bottom: 1px solid #929292;
@@ -2686,3 +2687,15 @@ td.two_step_empty > input[onclick='return false;'] + label {
 	width: 18.12%;
 }
 /* //td 스타일*/
+
+/* 페이저네이션 스타일*/
+.board_nav_pre,
+.board_nav_next {
+	display: none;
+}
+
+.board_nav_pre.active,
+.board_nav_next.active {
+	display: inline;
+}
+/* //페이저네이션 스타일*/
