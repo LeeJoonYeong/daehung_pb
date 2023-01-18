@@ -415,6 +415,7 @@ input::placeholder {
 
 .layer_popup.active {
 	display: block;
+	background-color: initial;
 }
 
 .dim_bg {
