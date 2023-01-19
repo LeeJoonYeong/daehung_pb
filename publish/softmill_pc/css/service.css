@@ -375,6 +375,7 @@ input#chk_top:checked+label:before {
 	height: 364px;
 	overflow-y: scroll;
 	margin-bottom: 30px;
+	position: relative;
 }
 
 .pop_product_list {
@@ -386,6 +387,15 @@ input#chk_top:checked+label:before {
 	float: left;
 	background: #F9F9F9;
 	margin: 0 10px 10px 0;
+	border: 1px solid #F9F9F9;
+}
+
+.pop_product_list li:hover {
+	border: 1px solid #313131;
+}
+
+.pop_product_list li.selected {
+	border: 1px solid #313131;
 }
 
 .pop_product_list .btn_close {
@@ -400,19 +410,15 @@ input#chk_top:checked+label:before {
 	height: 172px;
 	padding: 20px;
 	text-align: center;
-	border: 1px solid #F9F9F9;
 }
 
-.pop_product_list li a:hover {
-	border: 1px solid #000000;
-}
 
 .pop_product_list li:nth-child(4n) {
 	margin: 0 0 10px 0;
 }
 
 .pop_product_list li .img_size {
-	width: 64px;
+	width: 76px;
 	height: 76px;
 }
 
@@ -484,6 +490,15 @@ input#chk_top:checked+label:before {
 	overflow-y: scroll;
 }
 
+.pop_product_select .empty {
+	display: none;
+	margin-bottom: 0;
+}
+
+.pop_product_select .empty.active {
+	display: block;
+}
+
 /*********** Scroll bar design ***************/
 
 .pop_product::-webkit-scrollbar,
@@ -508,3 +523,17 @@ input#chk_top:checked+label:before {
 .map_Wrap .map_tab::-webkit-scrollbar-track  {
     background: transparent;  /*스크롤바 뒷 배경 색상*/
 }
+
+/* 로딩 중 스타일 (test)*/
+.loading::after {
+	content: '로딩 중....';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	color: #000;
+	background-color: #fff;
+}
+/* //로딩 중 스타일 (test)*/

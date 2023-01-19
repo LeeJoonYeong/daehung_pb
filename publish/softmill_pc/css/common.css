@@ -1327,7 +1327,8 @@ input::placeholder {
 	text-align: center;
 }
 
-.btn_selet {
+.btn_selet,
+.btn_popup_select_ok {
 	display: block;
 	margin: 0 auto;
 	padding: 10px 70px;
