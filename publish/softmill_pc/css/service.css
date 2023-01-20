@@ -50,7 +50,7 @@
 
 .custo_Wrap .forms .tag {
 	position: relative;
-	padding-top: 22px;
+	padding-top: 10px;
 }
 
 .custo_Wrap .forms .tag button {
@@ -60,7 +60,7 @@
 	font-size: 15px;
 	line-height: 20px;
 	color: #000000;
-	margin-right: 12px;
+	margin: 12px 12px 0 0;
 }
 
 .custo_Wrap .forms .tag a {
@@ -158,6 +158,7 @@
 	font-size: 16px;
 	line-height: 22px;
 	padding: 10px 36px;
+	position: relative;
 }
 
 .form-input-text {
@@ -537,3 +538,18 @@ input#chk_top:checked+label:before {
 	background-color: #fff;
 }
 /* //로딩 중 스타일 (test)*/
+
+/* 견적 문의 - 파일 첨부 스타일 */
+#user_file {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	opacity: 0;
+	cursor: pointer;
+}
+
+#user_file::file-selector-button {
+	display: none;
+}
+/* //견적 문의 - 파일 첨부 스타일 */

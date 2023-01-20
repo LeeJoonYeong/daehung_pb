@@ -1340,6 +1340,10 @@ input::placeholder {
 	margin-top: 40px;
 }
 
+.btn_popup_select_ok:hover {
+	background-color: #313131;
+}
+
 .pop_select {
 	position: relative;
 }
