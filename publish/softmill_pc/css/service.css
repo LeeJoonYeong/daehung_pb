@@ -87,9 +87,14 @@
 }
 
 .attach .emptys {
+	display: none;
 	position: relative;
 	text-align: center;
 	padding: 27px 20px 27px;
+}
+
+.attach .emptys.active {
+	display: block;
 }
 
 .attach .emptys .bg_img {
@@ -111,8 +116,10 @@
 
 .attach .file {
 	position: relative;
-	font-size: 14px;
+	font-size: 15px;
+	font-weight: 400;
 	line-height: 50px;
+	color: #000;
 }
 
 .attach .file span {
@@ -123,6 +130,7 @@
 	width: 10px;
 	height: 10px;
 	margin-left: 10px;
+	cursor: pointer;
 }
 
 .form-item {
