@@ -380,6 +380,10 @@ input#chk_top:checked+label:before {
 	line-height: 21px;
 }
 
+.btn_send button:hover {
+	background-color: #313131;
+}
+
 .pop_product {
 	height: 364px;
 	overflow-y: scroll;
