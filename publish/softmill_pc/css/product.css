@@ -750,7 +750,7 @@
 .mill_help .box .helps li .tit span {
 	position: absolute;
 	margin: 4px 6px;
-	background: url(../img/help_arrow.png) no-repeat 0 0;
+	background: url(../images/icon/help_arrow.png) no-repeat 0 0;
 	background-size: 100% 100%;
 	width: 9px;
 	height: 13px;

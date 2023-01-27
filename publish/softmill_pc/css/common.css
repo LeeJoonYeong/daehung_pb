@@ -610,7 +610,7 @@ input::placeholder {
 
 .pop_close_btn .btn_close {
 	display: block;
-	background: url('../img/bt_layer_close.png')no-repeat 0 0;
+	background: url('../images/icon/bt_layer_close.png')no-repeat 0 0;
 	background-size: 100% 100%;
 	width: 14px;
 	height: 14px;
@@ -671,7 +671,7 @@ input::placeholder {
 	right: 0;
 	top: 12px;
 	display: block;
-	background: url(../img/arrow_down.png) no-repeat;
+	background: url(../images/icon/arrow_down.png) no-repeat;
 	background-size: 100% 100%;
 	width: 30px;
 	height: 30px;
@@ -682,7 +682,7 @@ input::placeholder {
 	right: 0;
 	top: 12px;
 	display: block;
-	background: url(../img/arrow_up.png) no-repeat;
+	background: url(../images/icon/arrow_up.png) no-repeat;
 	background-size: 100% 100%;
 	width: 30px;
 	height: 30px;
@@ -1021,7 +1021,7 @@ input::placeholder {
 
 .board_list_L>li a:hover,
 .board_list_L>li a.active {
-	background: url('../img/download_w_icon.png')no-repeat 0 0;
+	background: url('../images/icon/download_w_icon.png')no-repeat 0 0;
 	background-size: 28px 12px;
 	background-position: right;
 	background-color: #000000;
@@ -1038,7 +1038,7 @@ input::placeholder {
 	line-height: 22px;
 	padding: 12px 35px 11px 32px;
 	border: 1px solid #000;
-	background: url('../img/download_icon.png')no-repeat 0 0;
+	background: url('../images/icon/download_icon.png')no-repeat 0 0;
 	background-size: 28px 12px;
 	background-position: right;
 	-webkit-transition: all 0.2s linear 0s;
@@ -1136,7 +1136,7 @@ input::placeholder {
 
 .catalog_list>li a:hover,
 .catalog_list>li a.active {
-	background: url('../img/download_w_icon.png')no-repeat 0 0;
+	background: url('../images/icon/download_w_icon.png')no-repeat 0 0;
 	background-size: 28px 12px;
 	background-position: right;
 	background-color: #000000;
@@ -1153,7 +1153,7 @@ input::placeholder {
 	line-height: 22px;
 	padding: 12px 60px 11px 55px;
 	border: 1px solid #000;
-	background: url('../img/download_icon.png')no-repeat 0 0;
+	background: url('../images/icon/download_icon.png')no-repeat 0 0;
 	background-size: 28px 12px;
 	background-position: right;
 	-webkit-transition: all 0.2s linear 0s;
@@ -1204,7 +1204,7 @@ input::placeholder {
 
 .map_Wrap .maps {
 	float: right;
-	width: 1458px;
+	width: 1456px !important;
 }
 
 .map_Wrap .maps .msize {
@@ -1280,7 +1280,7 @@ input::placeholder {
 	top: 25px;
 	text-align: center;
 	padding-top: 5px;
-	background: url('../img/agency_pin.png')no-repeat 0 0;
+	background: url('../images/icon/agency_pin.png')no-repeat 0 0;
 	background-size: 100% 100%;
 	width: 22px;
 	height: 28px;
@@ -1410,14 +1410,14 @@ input::placeholder {
 	position: absolute;
 	right: 60px;
 	border-radius: 30px;
-	background: #000 url('../img/top_move_btn.svg')no-repeat center;
+	background: #000 url('../images/icon/top_move_btn.svg')no-repeat center;
 	background-size: 18px 21px;
 	width: 54px;
 	height: 54px;
 }
 
 .topwrap .topBtn a:hover {
-	background: #FF5F00 url('../img/top_move_btn.svg')no-repeat center;
+	background: #FF5F00 url('../images/icon/top_move_btn.svg')no-repeat center;
 	background-size: 18px 21px;
 	width: 54px;
 	height: 54px;
@@ -1464,14 +1464,14 @@ input::placeholder {
 	width: 100%;
 	height: 56px;
 	border-bottom: 1px solid #000;
-	background: url('../img/arrow_down.png') no-repeat 100% 50%;
+	background: url('../images/icon/arrow_down.png') no-repeat 100% 50%;
 	background-size: 30px;
 	cursor: pointer;
 	z-index: 9990;
 }
 
 .selectBox.action {
-	background: url('../img/arrow_up.png') no-repeat 100% 50%;
+	background: url('../images/icon/arrow_up.png') no-repeat 100% 50%;
 }
 
 

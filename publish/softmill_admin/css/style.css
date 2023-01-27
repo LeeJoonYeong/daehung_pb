@@ -2699,3 +2699,14 @@ td.two_step_empty > input[onclick='return false;'] + label {
 	display: inline;
 }
 /* //페이저네이션 스타일*/
+
+/* 유저 첨부파일 스타일*/
+.user_file {
+	display: block;
+	padding: 20px 0;
+}
+
+.user_file ~ .user_file {
+	padding-top: 0;
+}
+/* //유저 첨부파일 스타일*/

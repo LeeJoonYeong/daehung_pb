@@ -58,7 +58,7 @@
 
 .header_wrap h1.logo a {
 	display: inline-block;
-	background: url('../img/top_logo.svg')no-repeat 0 0;
+	background: url('../images/menu/top_logo.svg')no-repeat 0 0;
 	background-size: 100% 100%;
 	width: 107px;
 	height: 24px;
@@ -71,7 +71,7 @@
 	top: 0;
 	left: 100px;
 	margin: 26px 0 26px 0;
-	background: url('../img/top_menu.svg')no-repeat 0 0;
+	background: url('../images/menu/top_menu.svg')no-repeat 0 0;
 	background-size: 100% 100%;
 	width: 24px;
 	height: 24px;
@@ -95,7 +95,7 @@
 
 .header_wrap .util a span {
 	position: absolute;
-	background: url('../img/top_new_page.svg')no-repeat right 0;
+	background: url('../images/menu/top_new_page.svg')no-repeat right 0;
 	background-size: 100% 100%;
 	width: 18px;
 	height: 18px;
@@ -187,7 +187,7 @@
 	top: 3px;
 	right: 0;
 	overflow: hidden;
-	background: url('../img/top_arrow_drops.png') no-repeat center center;
+	background: url('../images/icon/top_arrow_drops.png') no-repeat center center;
 	background-size: 100% 100%;
 	width: 22px;
 	height: 22px;
@@ -199,7 +199,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url('../img/top_arrow.png') no-repeat 0 0;
+	background: url('../images/icon/top_arrow.png') no-repeat 0 0;
 	background-size: 100% 100%;
 	width: 27px;
 	height: 27px;
@@ -216,7 +216,7 @@
 	top: 3px;
 	right: 0;
 	overflow: hidden;
-	background: url('../img/top_arrow_drop.png') no-repeat center center;
+	background: url('../images/icon/top_arrow_drop.png') no-repeat center center;
 	background-size: 100% 100%;
 	width: 22px;
 	height: 22px;
@@ -269,11 +269,11 @@
 }
 
 .indicator>li.on button span:after {
-	background-image: url('../img/top_arrow_drops_on.png');
+	background-image: url('../images/icon/top_arrow_drops_on.png');
 }
 
 .indicator>li.on:last-child button span:after {
-	background-image: url('../img/top_arrow_drop_on.png');
+	background-image: url('../images/icon/top_arrow_drop_on.png');
 }
 
 .tabmenu_Wrap {
@@ -366,7 +366,7 @@
 .banner_Wrap {
 	position: relative;
 	height: 460px;
-	background: #f6fcfd;
+	background: #fff;
 }
 
 .banner_Wrap img {
@@ -458,7 +458,7 @@
 }
 
 .footer_wrap .flogo {
-	background: url('../img/footer_logo.svg') no-repeat 0 0;
+	background: url('../images/footer/footer_logo.svg') no-repeat 0 0;
 	background-size: 100% 100%;
 	width: 104px;
 	height: 24px;
@@ -505,7 +505,7 @@
 
 .footer_wrap .corpInfo .cscenter .csL a span {
 	position: absolute;
-	background: url('../img/bottom_new_page.svg')no-repeat 0 0;
+	background: url('../images/icon/bottom_new_page.svg')no-repeat 0 0;
 	background-size: 100% 100%;
 	width: 18px;
 	height: 18px;
@@ -583,7 +583,7 @@
 	position: absolute;
 	top: 30px;
 	left: 100px;
-	background: url('../img/bt_layer_close.png')no-repeat 0 0;
+	background: url('../images/icon/bt_layer_close.png')no-repeat 0 0;
 	background-size: 100% 100%;
 	width: 22px;
 	height: 22px;
@@ -642,13 +642,13 @@
 }
 
 .oneDepth li a:hover {
-	background: url('../img/menu_arrow.png')no-repeat right 2px;
+	background: url('../images/icon/menu_arrow.png')no-repeat right 2px;
 	background-size: 28px 28px;
 	color: #000;
 }
 
 .oneDepth li a.select {
-	background: url('../img/menu_arrow.png')no-repeat right 2px;
+	background: url('../images/icon/menu_arrow.png')no-repeat right 2px;
 	background-size: 28px 28px;
 	color: #000;
 	font-weight: 500;
@@ -695,12 +695,12 @@
 }
 
 .twoDepth li a.more {
-	background: url(../img/main_sub_arrow.png)no-repeat 160px 0;
+	background: url(../images/icon/main_sub_arrow.png)no-repeat 160px 0;
 	background-size: 30px 30px;
 }
 
 .twoDepth li a.more:hover {
-	background: url(../img/main_sub_arrow_g.png)no-repeat 160px 0;
+	background: url(../images/icon/main_sub_arrow_g.png)no-repeat 160px 0;
 	background-size: 30px 30px;
 }
 
@@ -806,12 +806,12 @@
 
 .oneDepth .gnb_menu li .smenu li a.more {
 	display: inline-block;
-	background: url('../img/main_sub_arrow.png') no-repeat top right / 30px 30px;
+	background: url('../images/icon/main_sub_arrow.png') no-repeat top right / 30px 30px;
 	padding: 0 30px 0 0;
 }
 
 .oneDepth .gnb_menu li .smenu li a.more:hover {
-	background-image: url('../img/main_sub_arrow_g.png');
+	background-image: url('../images/icon/main_sub_arrow_g.png');
 }
 
 .gnb_menu>li.on .smenu {
@@ -830,7 +830,7 @@
 }
 
 .oneDepth .gnb_menu>li.active>a {
-	background: url('../img/menu_arrow.png') no-repeat right 2px / 28px 28px;
+	background: url('../images/icon/menu_arrow.png') no-repeat right 2px / 28px 28px;
 	color: #000000;
 }
 
@@ -839,7 +839,7 @@
 }
 
 .oneDepth .gnb_menu>li.active .smenu li.select a.more {
-	background-image: url('../img/main_sub_arrow_g.png');
+	background-image: url('../images/icon/main_sub_arrow_g.png');
 }
 
 .section_group {

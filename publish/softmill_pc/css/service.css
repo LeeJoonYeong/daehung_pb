@@ -125,7 +125,7 @@
 .attach .file span {
 	position: absolute;
 	top: 22px;
-	background: url('../img/menu_close.svg') no-repeat 0 0;
+	background: url('../images/icon/menu_close.svg') no-repeat 0 0;
 	background-size: 100% 100%;
 	width: 10px;
 	height: 10px;
@@ -338,7 +338,7 @@ input#chk_top+label:before {
 	width: 30px;
 	height: 30px;
 	line-height: 30px;
-	background: url(../img/chk_normal.png) no-repeat 0 0;
+	background: url(../images/icon/chk_normal.png) no-repeat 0 0;
 	background-size: 100% 100%;
 	vertical-align: middle;
 	margin-right: 15px;
@@ -346,7 +346,7 @@ input#chk_top+label:before {
 
 input#chk_top:checked+label:before {
 	content: "";
-	background: url(../img/chk_check.png) no-repeat 0 0;
+	background: url(../images/icon/chk_check.png) no-repeat 0 0;
 	background-size: 100% 100%;
 	border: none;
 	width: 30px;
@@ -460,7 +460,7 @@ input#chk_top:checked+label:before {
 	position: absolute;
 	right: 10px;
 	top: 10px;
-	background: url('../img/close.png') no-repeat 0 0;
+	background: url('../images/icon/close.png') no-repeat 0 0;
 	background-size: 100% 100%;
 	width: 10px;
 	height: 10px;

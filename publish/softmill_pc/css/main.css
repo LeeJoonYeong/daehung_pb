@@ -85,7 +85,7 @@
 
 .mheader_wrap h1.logo a {
 	display: inline-block;
-	background: url('../img/top_logo_w.svg')no-repeat 0 0;
+	background: url('../images/icon/top_logo_w.svg')no-repeat 0 0;
 	background-size: 100% 100%;
 	width: 107px;
 	height: 24px;
@@ -102,7 +102,7 @@
 	top: 0;
 	left: 100px;
 	margin: 26px 0 26px 0;
-	background: url('../img/top_menu_w.svg')no-repeat 0 0;
+	background: url('../images/icon/top_menu_w.svg')no-repeat 0 0;
 	background-size: 100% 100%;
 	width: 24px;
 	height: 24px;
@@ -130,7 +130,7 @@
 
 .mheader_wrap .util a span {
 	position: absolute;
-	background: url('../img/top_new_page_w.svg')no-repeat right 0;
+	background: url('../images/icon/top_new_page_w.svg')no-repeat right 0;
 	background-size: 100% 100%;
 	width: 18px;
 	height: 18px;
@@ -169,7 +169,7 @@
 
 .ttop h1.logo a {
 	display: inline-block;
-	background: url('../img/top_logo.svg')no-repeat 0 0;
+	background: url('../images/menu/top_logo.svg')no-repeat 0 0;
 	background-size: 100% 100%;
 	width: 107px;
 	height: 24px;
@@ -182,7 +182,7 @@
 	top: 0;
 	left: 100px;
 	margin: 26px 0 26px 0;
-	background: url('../img/top_menu.svg')no-repeat 0 0;
+	background: url('../images/menu/top_menu.svg')no-repeat 0 0;
 	background-size: 100% 100%;
 	width: 24px;
 	height: 24px;
@@ -206,7 +206,7 @@
 
 .ttop .util a span {
 	position: absolute;
-	background: url('../img/top_new_page.svg')no-repeat right 0;
+	background: url('../images/menu/top_new_page.svg')no-repeat right 0;
 	background-size: 100% 100%;
 	width: 18px;
 	height: 18px;
