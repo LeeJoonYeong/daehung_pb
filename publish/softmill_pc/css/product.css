@@ -236,19 +236,19 @@
 }
 
 .items .arrow_up {
-	background: url('../img/detail_arrow_up_d.png') no-repeat center / 100%;
+	background: url('../images/icon/detail_arrow_up_d.png') no-repeat center / 100%;
 }
 
 .items .arrow_up.active {
-	background-image: url('../img/detail_arrow_up.png');
+	background-image: url('../images/icon/detail_arrow_up.png');
 }
 
 .items .arrow_down {
-	background: url('../img/detail_arrow_down_d.png') no-repeat center / 100%;
+	background: url('../images/icon/detail_arrow_down_d.png') no-repeat center / 100%;
 }
 
 .items .arrow_down.active {
-	background-image: url('../img/detail_arrow_down.png');
+	background-image: url('../images/icon/detail_arrow_down.png');
 }
 
 .items .pro_items {
