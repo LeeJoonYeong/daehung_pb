@@ -286,9 +286,15 @@
 	margin-bottom: 14px;
 	color: #000000;
 }
+
 .history_wrap .poto img {
 	width: 100%;
 }
+
+.history_wrap .poto img ~ img {
+margin-top: 120px;
+}
+
 .history_wrap .time_line {
 	float: right;
 	width: 676px;
