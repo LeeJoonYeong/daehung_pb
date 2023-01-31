@@ -143,6 +143,7 @@
 .mheader_wrap .util a:last-child {
 	margin-right: 0;
 	padding-right: 0;
+	color: #6f6f6f;
 }
 
 .fixes {
@@ -678,8 +679,22 @@
 /* Slideshow container */
 .slideshow-container {
 	position: relative;
+	display: flex;
+	width: 100%;
+	flex-wrap: nowrap;
 	margin: auto;
 	background: #000;
+}
+
+.slideshow-container > a {
+	position: relative;
+	flex-shrink: 0;
+	display: none;
+	width: 100%;
+}
+
+.slideshow-container > a.active {
+	display: block;
 }
 
 /* The dots/bullets/indicators */
@@ -711,6 +726,65 @@
 	animation-name: fade;
 	animation-duration: 2s;
 }
+
+/* 배너 슬라이드 스타일 */
+.banner_num_wrap {
+	position: absolute;
+	bottom: 24%;
+	left: 50%;
+	display: flex;
+	align-items: center;
+	height: 38px;
+	padding: 0 30px;
+	margin-left: -660px;
+	background: rgba(0, 0, 0, 0.42);
+  border-radius: 18px;
+}
+
+.banner_num_wrap > button {
+	position: absolute;
+	width: 24px;
+	height: 30px;
+}
+
+.banner_num_wrap > button:first-child {
+	left: 6px;
+	background: url(../images/icon/mn_banner_arrow_prev.png) center / 100% no-repeat;
+}
+
+.banner_num_wrap > span {
+	display: flex;
+	justify-content: space-between;
+	width: 52px;
+	margin: 0 13px;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: -0.01em;
+	color: #bbb;
+}
+
+.banner_num_wrap > span > b,
+.banner_num_wrap > span > strong,
+.banner_num_wrap > span > i {
+	font-weight: inherit;
+	font-style: normal;
+}
+
+.banner_num_wrap > span > b,
+.banner_num_wrap > span > i {
+	width: 18px;
+	text-align: center;
+}
+
+.banner_num_wrap > span > b {
+	color: #fff;
+}
+
+.banner_num_wrap > button:last-child {
+	right: 6px;
+	background: url(../images/icon/mn_banner_arrow_next.png) center / 100% no-repeat;
+}
+/* //배너 슬라이드 스타일 */
 
 @-webkit-keyframes fade {
 	from {
@@ -744,6 +818,14 @@
 		height: 1080px;
 		left: 50%;
 		margin-left: -960px;
+	}
+
+	.banner_num_wrap {
+		top: 779px;
+		left: 300px;
+		bottom: initial;
+		margin-left: 0;
+		
 	}
 
 	.mbanner_wrap .banner_txt {
@@ -801,32 +883,3 @@
 	}
 }
 
-/* 배너 슬라이드 스타일 (정원 추가) */
-.mbanner_wrap .slideshow-container .mySlides .banner_txt .numbertext {
-	color: #ffffff;
-	background: rgba(0, 0, 0, 0.42);
-	border-radius: 18px;
-	width: 138px;
-	height: 38px;
-	text-align: center;
-	padding-top: 10px;
-	margin-top: 250px;
-	color: #bbbbbb;
-}
-
-.mbanner_wrap .slideshow-container .mySlides .banner_txt .numbertext p {
-	display: inline-block;
-}
-
-.numbertext .prev,
-.numbertext .next {
-	cursor: pointer;
-	width: auto;
-	padding: 14px;
-	margin-top: -50px;
-	color: white;
-	border-radius: 0 3px 3px 0;
-	user-select: none;
-	-webkit-user-select: none;
-}
-/* //배너 슬라이드 스타일 (정원 추가) */
