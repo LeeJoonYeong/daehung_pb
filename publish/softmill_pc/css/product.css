@@ -479,6 +479,10 @@
 	margin-right: 70px;
 }
 
+.detail_tab > a.caseOfInstall_empty {
+	display: none;
+}
+
 .detail_tab_Wrap.fixed .detail_tab > a {
 	color: #fff;
 }
@@ -562,6 +566,10 @@
 
 .caption.prod_desc_empty {
 	background-color: initial;
+}
+
+.caption.prod_desc_empty + .mill_help.caseOfInstall_empty {
+	background-color: #f9f9f9;
 }
 
 .caption .box {
@@ -702,6 +710,10 @@
 	height: 300px;
 	padding-top: 70px;
 	background: #F9F9F9;
+}
+
+.mill_help.caseOfInstall_empty {
+	background-color: #fff;
 }
 
 .mill_help .box {
