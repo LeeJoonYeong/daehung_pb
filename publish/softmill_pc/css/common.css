@@ -1533,6 +1533,11 @@ input::placeholder {
 .selectBox .optionItem {
 	padding: 0 24px 0;
 	transition: .3s ease-in;
+	color: #bbb;
+}
+
+.selectBox .optionItem.selected {
+	color: #000;
 }
 
 .selectBox .optionItem:hover {
