@@ -404,7 +404,8 @@ input::placeholder {
 }
 
 .layer_popup,
-.layer_popup_complete {
+.layer_popup_complete,
+.layer_popup_customer_center {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -415,7 +416,8 @@ input::placeholder {
 }
 
 .layer_popup.active,
-.layer_popup_complete.active {
+.layer_popup_complete.active,
+.layer_popup_customer_center.active {
 	display: block;
 	background-color: initial;
 }
@@ -1549,3 +1551,36 @@ input::placeholder {
 .selectBox .optionItem:last-child {
 	border-bottom: 0 none;
 }
+
+/* 팝업 - 고객센터 (임시) */
+.service_popup {
+	width: 357px;
+	height: 207px;
+	padding: 50px 50px 50px 50px;
+	position: fixed;
+	top: calc(50% - 40px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	margin: 40px auto;
+}
+
+.service_popup_text_wrap {
+	padding-top: 24px;
+}
+
+.service_popup_text_wrap div {
+	width: 200px;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: -0.01em;
+	color: #313131;
+	margin-bottom: 5px;
+}
+
+.service_popup_text_wrap div img {
+	width: 20px;
+	margin-right: 7px;
+	padding-top: 3px;
+}
+/* //팝업 - 고객센터 (임시) */
