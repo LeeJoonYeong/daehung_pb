@@ -426,7 +426,7 @@
 .exper_btitle {
 	font-size: 18px;
 	line-height: 30px;
-	color: #313131;
+	color: #666;
 }
 
 .exper_pro {
@@ -552,7 +552,7 @@
 .cust_btitle {
 	font-size: 18px;
 	line-height: 30px;
-	color: #313131;
+	color: #666;
 }
 
 .counselor {
@@ -831,10 +831,10 @@
 	.mbanner_wrap .banner_txt {
 		top: 296px;
 	}
-
+	/* 
 	.ban_title {
 		font-weight: 500;
-	}
+	} */
 
 	.main_img {
 		height: 1080px;

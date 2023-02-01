@@ -116,6 +116,10 @@
 	margin-top: 180px;
 }
 
+#contentsWrap.page_agency {
+	margin-bottom: -130px;
+}
+
 #contentsWrap_pro {
 	min-width: 1360px;
 	overflow: hidden;
@@ -313,7 +317,7 @@
 .tabmenu li a {
 	display: block;
 	width: 100%;
-	padding: 0 0 21px;
+	padding: 0 0 17px;
 	display: block;
 	color: #666666;
 }
@@ -849,6 +853,10 @@
 	left: 50%;
 	margin-left: -960px;
 	padding-bottom: 200px;
+}
+
+.section_group.type01 {
+	padding-bottom: 0;
 }
 
 .section_group:last-child {

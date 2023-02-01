@@ -169,26 +169,31 @@
 
 .philo_wrap {
 	position: relative;
-	width: 1320px;
+	width: 1321px;
 	margin: 0 auto;
 }
+
 .philo_wrap li {
 	float: left;
-	width: 426px;
+	width: 427px;
 	height: 409px;
 	background: #fbfbfb;
-	padding: 50px;
+	padding: 50px 0 0 50px;
 	margin-right: 20px;
 }
+
 .philo_wrap li:last-child {
 	margin-right: 0;
 }
+
 .philo_wrap li .icon {
 	width: 74px;
 }
+
 .philo_wrap li .icon img {
 	width: 100%;
 }
+
 .philo_wrap li .tag {
 	font-size: 18px;
 	line-height: 30px;
@@ -197,13 +202,15 @@
 	margin: 60px 0 4px 0;
 
 }
+
 .philo_wrap li .title {
-	font-size: 30px;
+	font-size: 36px;
 	line-height: 42px;
 	font-weight: 500;
 	color: #000000;
 
 }
+
 .philo_wrap li .bcopy {
 	margin-top: 20px;
 	font-size: 16px;
@@ -341,6 +348,7 @@ margin-top: 120px;
 	color: #6f6f6f;
 }
 .history_wrap .time_line li .story span{
+	display: inline-block;
 	width: 44px;
 	font-size: 20px;
 	text-align: right;
@@ -397,11 +405,14 @@ margin-top: 120px;
 	color: #000000;
 	margin-bottom: 20px;
 }
+
 .ci_wrap .info li .bcopy {
 	font-size: 16px;
 	line-height: 26px;
 	color: #6f6f6f;
+	letter-spacing: -0.01em;
 }
+
 .ci_wrap .logo {
 	position: relative;
 }
@@ -942,10 +953,17 @@ margin-top: 120px;
 	width: 264px;
 	margin: 30px auto 0;
 }
+
 .paging .pre {
 	float: left;
 	width: 32px;
 }
+
+.paging img {
+width: 30px;
+height: 30px;
+}
+
 .paging .next {
 	float: left;
 	width: 32px;
