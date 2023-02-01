@@ -403,7 +403,8 @@ input::placeholder {
 	height: 30px;
 }
 
-.layer_popup {
+.layer_popup,
+.layer_popup_complete {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -413,7 +414,8 @@ input::placeholder {
 	display: none;
 }
 
-.layer_popup.active {
+.layer_popup.active,
+.layer_popup_complete.active {
 	display: block;
 	background-color: initial;
 }
