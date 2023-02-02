@@ -782,6 +782,7 @@ input::placeholder {
 
 .reward_list li .title {
 	font-size: 22px;
+	font-weight: 500;
 	line-height: 35px;
 	color: #000000;
 	height: 70px;
@@ -791,6 +792,7 @@ input::placeholder {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	margin-bottom: 15px;
+	letter-spacing: -0.01em;
 }
 
 .reward_list li .bcopy {
@@ -802,7 +804,7 @@ input::placeholder {
 .view_title {
 	position: relative;
 	display: block;
-	border-top: 1px solid #000;
+	border-top: 1.5px solid #000;
 	margin-bottom: 100px;
 }
 
@@ -816,6 +818,7 @@ input::placeholder {
 .view_title li .catalog {
 	display: block;
 	font-size: 16px;
+	font-weight: 500;
 	line-height: 26px;
 	float: left;
 	width: 150px;
@@ -861,7 +864,7 @@ input::placeholder {
 }
 
 .reward_product_list .pro_img {
-	width: 177px;
+	width: 209px;
 	height: 209px;
 }
 
@@ -874,7 +877,8 @@ input::placeholder {
 }
 
 .reward_product_list .title {
-	font-size: 20px;
+	font-size: 22px;
+	font-weight: 500;
 	line-height: 24px;
 	color: #000;
 	margin-top: 69px;
@@ -895,6 +899,7 @@ input::placeholder {
 }
 
 .item .title_inst {
+	font-weight: 500;
 	font-size: 36px;
 	line-height: 43px;
 	color: #000000;
@@ -1603,3 +1608,46 @@ input::placeholder {
 	padding-top: 3px;
 }
 /* //팝업 - 고객센터 (임시) */
+
+/* 설치사례 상세보기 전용 스타일*/
+.text_center {
+	text-align: center;
+}
+
+.special_article_01 {
+	text-align: center;
+	margin: 30px auto;
+	padding: 22px 21px 27px;
+	border: 5px solid rgb(228, 228, 228);
+	max-width: 500px;
+	height: 92px;
+	line-height: 46px;
+	font-size: 19px;
+	font-weight: 700;
+	color: #000;
+	letter-spacing: 7px;
+}
+
+.special_article_02 {
+	text-align: center;
+	font-style: italic;
+	font-size: 30px;
+	line-height: 37px;
+	color: rgb(109, 109, 109);
+	font-weight: 400;
+	margin-top: 100px;
+}
+
+.special_article_03 {
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 10px;
+	border: 2px solid #e5e5e5;
+	background-color: f6f6f6;
+	font-size: 25px;
+	color: #000;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+/* //설치사례 상세보기 전용 스타일 */

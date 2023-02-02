@@ -308,16 +308,28 @@ margin-top: 120px;
 	margin-left: 106px;
 	border-left: 1px solid #e6e6e6;
 }
-.history_wrap .time_line li{
+
+.history_wrap .time_line li {
 	position: relative;
 	padding-bottom: 100px;
 }
+
+.history_wrap .time_line li > div {
+position: relative;
+}
+
 .history_wrap .time_line li:last-child {
 	padding-bottom: 162px;
 }
-.history_wrap .time_line li p{
+
+.history_wrap .time_line li p {
 	line-height: 26px;
 }
+
+.history_wrap .time_line li .story.type02 p {
+white-space: nowrap;
+}
+
 .history_wrap .time_line li .box {
 	display: table-cell;
 }
@@ -338,7 +350,8 @@ margin-top: 120px;
 	margin-left: 40px;
 	color: #000000;
 }
-.history_wrap .time_line li .story{
+
+.history_wrap .time_line li .story {
 	float: left;
 	width: auto;
 	font-size: 16px;
@@ -347,6 +360,12 @@ margin-top: 120px;
 	padding-top: 4px;
 	color: #6f6f6f;
 }
+
+.history_wrap .time_line li .story.type02 {
+position: absolute;
+left: 105px;
+}
+
 .history_wrap .time_line li .story span{
 	display: inline-block;
 	width: 44px;
@@ -842,7 +861,7 @@ margin-top: 120px;
 }
 
 .view_box .view .bcopy {
-	margin-top: 50px;
+	margin: 50px 0;
 	font-size: 16px;
 	line-height: 26px;
 	color: #6F6F6F;
@@ -855,7 +874,7 @@ margin-top: 120px;
 	color: #6F6F6F;
 	padding-bottom: 40px;
 	margin: 16px 0 100px 0;
-	border-bottom: 1px solid #000000;
+	border-bottom: 1.5px solid #000000;
 }
 
 .view_list {
@@ -872,52 +891,66 @@ margin-top: 120px;
 	overflow: hidden;
 	padding: 30px 0;
 }
+
 .view_list li .arrow {
-	display: block;
-	float: left;
-	width: 32px;
-	padding: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+float: left;
+width: 46px;
+height: 26px;
+margin-right: 7px;
 }
+
 .view_list li .catalog {
 	display: block;
 	font-size: 20px;
+	font-weight: 500;
 	line-height: 24px;
 	float: left;
 	width: 150px;
 	color: #000000;
 }
+
 .view_list li .title {
-	display: block;
-	font-size: 20px;
-	line-height: 20px;
-	float: left;
-	width: 1058px;
-	color: #6f6f6f;
-	padding-top: 3px;
-	-webkit-line-clamp: 1;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	height: 35px;
+display: block;
+font-size: 20px;
+line-height: 20px;
+float: left;
+width: auto;
+color: #6f6f6f;
+padding-top: 3px;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
 }
+
 .view_list li .data {
-	display: block;
 	font-size: 14px;
 	line-height: 22px;
-	float: left;
+	float: right;
 	width: 80px;
 	color: #6F6F6F;
 	text-align: right;
 	padding-top: 3px;
+	margin-right: 5px;
 }
 .view_list li img {
 	width: 10px;
+	height: 5px;
 }
+
 .btn_box {
-	margin-top: 50px;
-	text-align: center;
+margin-top: 50px;
+text-align: center;
 }
+
+.btn_box.main_news {
+margin-top: 130px;
+}
+
 .btn_box a {
 	display: block;
 	color: #000000;
@@ -940,10 +973,16 @@ margin-top: 120px;
 	-webkit-transition: all 0.2s linear 0s;
 	transition: all 0.2s linear 0s;
 }
-.btn_box a.btn_list{
+.btn_box a.btn_list {
 	padding: 17px 0;
 	font-size: 20px;
+	font-weight: 500;
+	color: #222;
 	line-height: 24px;
+}
+
+.btn_box a.btn_list:hover {
+color: #fff;
 }
 
 .paging {
@@ -951,7 +990,7 @@ margin-top: 120px;
 	position: relative;
 	padding: 10px 0;
 	width: 264px;
-	margin: 30px auto 0;
+	margin: 130px auto 0;
 }
 
 .paging .pre {
