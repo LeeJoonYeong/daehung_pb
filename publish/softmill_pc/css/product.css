@@ -301,7 +301,7 @@
 	font-size: 38px;
 	line-height: 42px;
 	padding-bottom: 40px;
-	border-bottom: 1px solid #000;
+	border-bottom: 1.5px solid #000;
 	margin-bottom: 40px;
 	color: #000;
 }
@@ -479,7 +479,8 @@
 	margin-right: 70px;
 }
 
-.detail_tab > a.caseOfInstall_empty {
+.detail_tab > a.caseOfInstall_empty,
+.detail_tab > a.prod_desc_empty {
 	display: none;
 }
 
@@ -565,11 +566,11 @@
 }
 
 .caption.prod_desc_empty {
-	background-color: initial;
+	/* background-color: initial; */
 }
 
 .caption.prod_desc_empty + .mill_help.caseOfInstall_empty {
-	background-color: #f9f9f9;
+	background-color: #fff;
 }
 
 .caption .box {
@@ -638,11 +639,10 @@
 	margin: 0 auto;
 	padding-top: 150px;
 	padding-bottom: 160px;
-	/* height: 909px; */
 }
 
 .detail_reward.prod_desc_empty {
-	padding-top: initial;
+	/* padding-top: initial; */
 }
 
 .detail_reward .title {
