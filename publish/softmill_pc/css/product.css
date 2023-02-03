@@ -565,9 +565,9 @@
 	/* height: 987px; */
 }
 
-.caption.prod_desc_empty {
-	/* background-color: initial; */
-}
+/* .caption.prod_desc_empty {
+	background-color: initial;
+} */
 
 .caption.prod_desc_empty + .mill_help.caseOfInstall_empty {
 	background-color: #fff;
@@ -641,9 +641,9 @@
 	padding-bottom: 160px;
 }
 
-.detail_reward.prod_desc_empty {
-	/* padding-top: initial; */
-}
+/* .detail_reward.prod_desc_empty {
+	padding-top: initial;
+} */
 
 .detail_reward .title {
 	position: relative;
