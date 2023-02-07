@@ -101,14 +101,6 @@ $(document).ready(function(){
 	});
 })( jQuery );
 
-//product gallay
-// $(document).ready(function() {
-// 	$("#content-slider").lightSlider({
-// 		loop:false,
-// 		keyPress:false
-// 	});
-// });
-
 //메인 GNB
 var lastScrollTop = 0;
 var delta = 55;
@@ -166,115 +158,6 @@ function hasScrolled(fixbox, fixbox_height){
 	}
 	lastScrollTop = nowScrollTop;
 }
-
-
-/* 제품 상세 리스트 기능 */
-const proItemsWrap = document.querySelector('.items .pro_items');
-const detailImg = document.querySelector('.detail_img > img');
-proItemsWrap?.addEventListener('click', (e) => { // 제품 리스트 wrap 클릭 시
-
-	const lists = proItemsWrap.children;
-	for (const proItem of lists) {
-		if(proItem === e.target.parentElement.parentElement) { // 클릭한 아이템과 리스트 중 일치 할 때
-			proItem.classList.add('active');
-			
-			let imgFileName = e.target.src.replace(/^.*\//, ''); // 정규표현식을 이용한 선택 아이템 파일명 추출
-			detailImg.setAttribute('src', `../img/${imgFileName}`);
-			continue;
-		}
-
-		proItem.classList.remove('active'); // 나머지 비활성화
-	}
-});
-
-const proItemsArrowUp = document.querySelector('.items .arrow_up');
-const proItemsArrowDown = document.querySelector('.items .arrow_down');
-const proItemlists = document.querySelectorAll('.items .pro_items li');
-let proItemTransY_val = 0; 
-
-proItemCountCheck(); // 리스트 갯수 체크
-
-proItemsArrowUp?.addEventListener('click', () => { // 화살표 위 버튼 클릭 시
-	
-	if(!proItemsArrowUp.classList.contains('active')) // active 아니면 실행 x (안전장치)
-		return;
-	
-	proItemTransY_val += 100;
-
-	if(!proItemTransY_val) { // 리스트 맨 처음일 때 비활성화
-		proItemsArrowUp.classList.remove('active');
-	}
-
-	if(proItemlists.length * 100 + proItemTransY_val !== 500) { // down 버튼 활성화 계산 식
-		proItemsArrowDown.classList.add('active');
-	}
-
-	for (const prolist of proItemlists) {
-		prolist.style.transform = `translateY(${proItemTransY_val}%)`; // 리스트 아이템 무빙
-	}
-
-});
-
-proItemsArrowDown?.addEventListener('click', () => { // 화살표 아래 버튼 클릭 시
-
-	if(!proItemsArrowDown.classList.contains('active')) // active 아니면 실행 x (안전장치)
-		return;
-
-	proItemTransY_val -= 100;
-
-	if(proItemlists.length * 100 + proItemTransY_val === 500) { // up 버튼 활성화 및 down 버튼 비활성화 계산 식
-		proItemsArrowUp.classList.add('active');
-		proItemsArrowDown.classList.remove('active');
-	}
-
-	for (const prolist of proItemlists) {
-		prolist.style.transform = `translateY(${proItemTransY_val}%)`; // 리스트 아이템 무빙
-	}
-
-});
-
-function proItemCountCheck() {
-	if(proItemlists.length > 5) { // 리스트 갯수 5개 이상이면 down화살표 활성화
-		proItemsArrowDown.classList.add('active');
-	}
-}
-
-/* //제품 상세 리스트 기능 */
-
-/* 햄버거 메뉴 on / off */
-const header = document.querySelector('#header'); // 메인을 제외한 공통 헤더
-const gnb_burger = document.querySelector('.burger');
-const menu_hamburger = document.querySelector('#hamburger');
-const menu_close_btn = document.querySelector('.mega_header a');
-const goTop_btn = document.querySelector('.topwrap');
-gnb_burger?.addEventListener('click', () => {
-	if(menu_hamburger.classList.contains('active')) {
-		menu_hamburger.classList.remove('active');
-	} else {
-		menu_hamburger.classList.add('active');  // 햄버거 메뉴 활성화
-		document.body.style.overflow = 'hidden'; // 메인 페이지 스크롤 숨김
-		goTop_btn.classList.remove('active'); 	 // 최상단 이동 버튼 숨김
-		header?.classList.remove('active');      // 헤더 숨김
-	}
-});
-menu_close_btn?.addEventListener('click', () => {
-	menu_hamburger.classList.remove('active'); // 햄버거 메뉴 비활성화
-	document.body.style.overflow = 'visible';  // 메인 페이지 스크롤 활성화
-	goTop_btn.classList.add('active');				 // 최상단 이동 버튼 활성화
-	header?.classList.add('active');					 // 헤더 활성화
-});
-
-/* //햄버거 메뉴 on / off */
-
-/* depth3 tab menu 활성화   */
-const tabmenuList = document.querySelectorAll('.tabmenu li');
-tabmenuList?.forEach(el => {
-	let target = el.firstElementChild;
-	if(target.href.replace(/^.*\//, '') === window.location.pathname.replace(/^.*\//, '')) { // 현재 주소와 탭 메뉴 매칭
-		target.classList.add('selected');
-	}
-});
-/* //depth3 tab menu 활성화  */
 
 
 /* combo list */

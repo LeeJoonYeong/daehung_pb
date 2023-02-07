@@ -51,7 +51,7 @@
 
 .header_wrap h1.logo a {
     display: inline-block;
-    background: url('../img/top_logo.svg')no-repeat 0 0;
+    background: url('../images/icon/top_logo.svg')no-repeat 0 0;
     background-size: 100% 100%;
     width: 81px;
     height: 18px;
@@ -61,7 +61,7 @@
     position: absolute;
     top: 17px;
     left: 20px;
-    background: url('../img/top_menu.svg')no-repeat 0 0;
+    background: url('../images/icon/top_menu.svg')no-repeat 0 0;
     background-size: 100% 100%;
     width: 26px;
     height: 26px;
@@ -76,14 +76,14 @@
     display: inline-block;
 }
 .header_wrap .util a.shop{
-    background: url('../img/top_shop.svg')no-repeat 0 0;
+    background: url('../images/icon/top_shop.svg')no-repeat 0 0;
     background-size: 100% 100%;
     width: 26px;
     height: 26px;
     margin-right: 16px;
 }
 .header_wrap .util a.service{
-    background: url('../img/top_service.svg')no-repeat 0 0;
+    background: url('../images/icon/top_service.svg')no-repeat 0 0;
     background-size: 100% 100%;
     width: 26px;
     height: 26px;
@@ -111,11 +111,12 @@
     margin: 0 auto;
     /*max-width: 1920px;*/
 }
+
 .title_Wrap {
-    position: relative;
-    padding: 0 20px;
-    min-height: 24px;
-    margin: 0 auto;
+	position: relative;
+	padding: 0 20px;
+	min-height: 24px;
+	margin: 0 auto 20px;
 }
 
 .title_Wrap .title {
@@ -149,29 +150,36 @@
 .indicator > li:first-child {
     padding-left: 0;
 }
+
 .indicator > li button {
-    font-size: 12px;
-    line-height: 24px;
-    text-align: left;
-    color: #929292;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 24px;
+	text-align: left;
+	color: #929292;
 }
+
 .indicator > li button span {
-    display: inline-block;
-    position: relative;
-    line-height: 27px;
-    padding-right: 22px;
+	display: inline-block;
+	position: relative;
+	line-height: 27px;
+	/* padding-right: 22px; */
 }
+
 .indicator > li button span:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 3px;
-    right: 0;
-    overflow: hidden;
-    background: url('../img/top_arrow_drops.png') no-repeat center center;
-    background-size: 100% 100%;
-    width: 22px;
-    height: 22px;
+
+	display: none;
+
+	content: '';
+	/* display: block; */
+	position: absolute;
+	top: 3px;
+	right: 0;
+	overflow: hidden;
+	background: url('../images/icon/top_arrow_drops.png') no-repeat center center;
+	background-size: 100% 100%;
+	width: 22px;
+	height: 22px;
 }
 
 .indicator > li:not(:first-child):before {
@@ -180,7 +188,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: url('../img/top_arrow.png') no-repeat 0 0;
+    background: url('../images/icon/top_arrow.png') no-repeat 0 0;
     background-size: 100% 100%;
     width: 24px;
     height: 24px;
@@ -188,19 +196,22 @@
 .indicator > li:last-child button {
     color: #000;
 }
-.indicator > li:last-child button span:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 3px;
-    right: 0;
-    overflow: hidden;
-    background: url('../img/top_arrow_drop.png') no-repeat center center;
-    background-size: 100% 100%;
-    width: 22px;
-    height: 22px;
-}
 
+.indicator > li:last-child button span:after {
+
+	display: none;
+
+	content: '';
+	/* display: block; */
+	position: absolute;
+	top: 3px;
+	right: 0;
+	overflow: hidden;
+	background: url('../images/icon/top_arrow_drop.png') no-repeat center center;
+	background-size: 100% 100%;
+	width: 22px;
+	height: 22px;
+}
 
 .indicator > li .menu_list {
     display: none;
@@ -231,7 +242,8 @@
 }
 
 .indicator > li.on .menu_list {
-    display:block;
+	display: none;
+  /* display:block; */
 }
 
 .indicator > li.on button span:after {
@@ -394,7 +406,7 @@
     margin: 0 auto;
 }
 .footer_wrap .flogo{
-    background: url('../img/footer_logo.svg') no-repeat 0 0;
+    background: url('../images/footer/footer_logo.svg') no-repeat 0 0;
     background-size: 100% 100%;
     width: 70px;
     height: 16px;
@@ -434,7 +446,7 @@
 }
 .footer_wrap .corpInfo .cscenter .csL a span{
     position: absolute;
-    background: url('../img/bottom_new_page.svg')no-repeat left 0;
+    background: url('../images/icon/bottom_new_page.svg')no-repeat left 0;
     background-size: 100% 100%;
     width: 18px;
     height: 18px;

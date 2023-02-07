@@ -3,652 +3,663 @@
 
 
 .product_Wrap {
-    position: relative;
+	position: relative;
 }
 
 .product_Wrap .bg_img {
-    z-index: 990;
-    position: relative;
+	z-index: 990;
+	position: relative;
 }
 .product_Wrap img {
-    width: 100%;
+	width: 100%;
 }
 
 .product_Wrap .title {
-    position: absolute;
-    top: 65px;
-    left: 20px;
-    z-index: 999;
+	position: absolute;
+	top: 65px;
+	left: 20px;
+	z-index: 999;
 }
 .product_Wrap .title .tite {
-    font-size: 28px;
-    line-height: 34px;
-    color: #000;
-    margin-bottom: 12px;
+	font-size: 28px;
+	line-height: 34px;
+	color: #000;
+	margin-bottom: 12px;
 }
 .product_Wrap .title .mtitle {
-    font-size: 28px;
-    line-height: 34px;
-    font-weight: 500;
-    color: #000000;
-    margin-bottom: 12px;
+	font-size: 28px;
+	line-height: 34px;
+	font-weight: 500;
+	color: #000000;
+	margin-bottom: 12px;
 }
 .product_Wrap .title .stitle {
-    font-size: 14px;
-    line-height: 22px;
-    color: #4a4a4a;
+	font-size: 14px;
+	line-height: 22px;
+	color: #4a4a4a;
 }
 .pro_indicator {
-    z-index: 999;
-    position: absolute;
-    top: 40px;
-    width: 260px;
-    right: 50%;
-    margin-right: -660px;
+	z-index: 999;
+	position: absolute;
+	top: 40px;
+	width: 260px;
+	right: 50%;
+	margin-right: -660px;
 
 }
 .tabmenus_Wrap {
-    margin-top: 46px;
-    margin: 20px 20px 0;
-    overflow: hidden;
+	margin-top: 46px;
+	margin: 20px 20px 0;
+	overflow: hidden;
 }
 .tabmenus {
-    position: relative;
-    width: 600px;
+	position: relative;
+	width: 600px;
 }
 .tabmenus li {
-    font-size: 14px;
-    line-height: 22px;
-    text-align: center;
-    float: left;
-    margin-right: 14px;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: center;
+	float: left;
+	margin-right: 14px;
 }
 .tabmenus li a {
-    display: block;
-    width: 100%;
-    padding: 14px 0;
-    display: block;
-    color: #666666;
+	display: block;
+	width: 100%;
+	padding: 14px 0;
+	display: block;
+	color: #666666;
 }
 .product_list {
-    position: relative;
-    margin: 20px 20px 0 20px;
+	position: relative;
+	margin: 20px 20px 0 20px;
 }
 .product_list li {
-    float: left;
-    width: 48.7%;
-    background: #F9F9F9;
-    margin: 0 8px 8px 0;
-    text-align: center;
+	float: left;
+	width: 48.7%;
+	background: #F9F9F9;
+	margin: 0 8px 8px 0;
+	text-align: center;
 }
 .product_list li:nth-child(2n) {
-    margin: 0 0 8px 0;
+	margin: 0 0 8px 0;
 }
 .product_list li a {
-    display: block;
-    height: 250px;
-    padding: 24px 17px 20px 17px;
+	display: block;
+	height: 250px;
+	padding: 24px 17px 20px 17px;
 }
 .product_list .pro_img {
-    width: 130px;
-     height: 130px;
+	width: 130px;
+	 height: 130px;
 }
 .product_list .tag {
-    font-size: 12px;
-    line-height: 16px;
-    color: #6f6f6f;
-    margin: 14px 0 6px 0;
-    text-align: center;
+	font-size: 12px;
+	line-height: 16px;
+	color: #6f6f6f;
+	margin: 14px 0 6px 0;
+	text-align: center;
 }
 .product_list .title {
-    font-size: 14px;
-    line-height: 22px;
-    color: #000000;
-    font-weight: 500;
-    margin-bottom: 24px;
-    text-align: center;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-height: 48px;
+	font-size: 14px;
+	line-height: 22px;
+	color: #000000;
+	font-weight: 500;
+	margin-bottom: 24px;
+	text-align: center;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-height: 48px;
 }
 .product_list .bcopy {
-    display: none;
-    font-size: 14px;
-    line-height: 22px;
-    color: #313131;
-    text-align: center;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-height: 44px;
+	display: none;
+	font-size: 14px;
+	line-height: 22px;
+	color: #313131;
+	text-align: center;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-height: 44px;
 }
 .product_list .size {
-    font-size: 13px;
-    line-height: 16px;
-    color: #929292;
-    text-align: center;
+	font-size: 13px;
+	line-height: 16px;
+	color: #929292;
+	text-align: center;
 }
 .detail_wrap {
-    position: relative;
-    padding: 0 20px 50px;
+	position: relative;
+	padding: 0 20px 50px;
 }
 .detail_large_img {
-    display: block;
-    height: 358px;
+	display: block;
+	height: 358px;
 
 }
 .detail_large_img li {
-    float: left;
-    width: 300px;
-    text-align: center;
-    margin-right: 20px;
-    overflow: hidden;
+	float: left;
+	width: 300px;
+	text-align: center;
+	margin-right: 20px;
+	overflow: hidden;
 }
 .detail_large_img .large_size {
-    width: 320px;
-    height: 320px;
+	width: 320px;
+	height: 320px;
 }
 .detail_view {
-    position: relative;
-    margin-top: 4px;
+	position: relative;
+	margin-top: 4px;
 }
 .detail_img {
-    display: block;
-    height: 300px;
+	display: block;
+	height: 300px;
 }
 .detail_img li {
-    float: left;
-    width: 252px;
-    text-align: center;
-    margin-right: 20px;
-    overflow: hidden;
+	float: left;
+	width: 252px;
+	text-align: center;
+	margin-right: 20px;
+	overflow: hidden;
 }
 .detail_img li .detimg {
-    width: 252px;
+	width: 252px;
 }
 .detail_img .img_size {
-    width: 300px;
-    height: 300px;
+	width: 300px;
+	height: 300px;
 }
+
 .detail_view .zoomin {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    margin-left: -10px;
+position: absolute;
+bottom: 40px;
+left: 50%;
+transform: translateX(-50%);
 }
+
 .detail_view .zoomin a{
-    display: block;
-    width: 26px;
-    height: 26px;
+	display: block;
+	width: 26px;
+	height: 26px;
 }
 .detail_view .zoomin img{
-    width: 100%;
+	width: 100%;
 }
 
 
 .items {
-    text-align: center;
-    width: 92px;
-    height: 520px;
-    margin: 58px 120px 0 108px;
+	text-align: center;
+	width: 92px;
+	height: 520px;
+	margin: 58px 120px 0 108px;
 }
 .items img{
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 .items .ud_size {
-    width: 32px;
-    height: 32px;
+	width: 32px;
+	height: 32px;
 }
 .items a {
-    width: 32px;
-    height: 32px;
+	width: 32px;
+	height: 32px;
 }
 .items .pro_items li {
-    text-align: center;
+	text-align: center;
 }
 
 .items .pro_items li a{
-    display: block;
-    width: 92px;
-    height: 92px;
-    padding: 12px 18px;
+	display: block;
+	width: 92px;
+	height: 92px;
+	padding: 12px 18px;
 }
 .items .pro_items .item_size{
-    width: 56px;
-    height: 68px;
+	width: 56px;
+	height: 68px;
 }
 .items .pro_items img{
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 
 
 .detail_data {
-    position: relative;
-    margin-top: 40px;
+	position: relative;
+	margin-top: 40px;
 }
 .detail_data .title {
-    position: relative;
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 36px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #000;
-    margin-bottom: 20px;
-    color: #000;
+	position: relative;
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 36px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #000;
+	margin-bottom: 20px;
+	color: #000;
 }
 .line {
-    position: relative;
-    margin-bottom: 16px;
+	position: relative;
+	margin-bottom: 16px;
 }
 .detail_data .name {
-    position: relative;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 500;
-    color: #000;
+	position: relative;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 500;
+	color: #000;
 }
 .detail_data .model {
-    position: relative;
-    float: left;
-    font-size: 13px;
-    line-height: 22px;
-    color: #666;
+	position: relative;
+	float: left;
+	font-size: 13px;
+	line-height: 22px;
+	color: #666;
 }
 .detail_data .data {
-    position: relative;
-    font-size: 13px;
-    line-height: 22px;
-    color: #666;
+	position: relative;
+	font-size: 13px;
+	line-height: 22px;
+	color: #666;
 }
 .detail_data .data li {
-    position: relative;
-    width: 100%;
+	position: relative;
+	width: 100%;
 }
 .detail_data .data li .tit {
-    float: left;
-    position: relative;
-    width: 54px;
-    margin-right: 10px;
-    font-size: 13px;
-    line-height: 22px;
-    font-weight: 500;
-    color: #666666;
+	float: left;
+	position: relative;
+	width: 54px;
+	margin-right: 10px;
+	font-size: 13px;
+	line-height: 22px;
+	font-weight: 500;
+	color: #666666;
 }
 .detail_data .data li .stit {
-    float: left;
-    position: relative;
-    width: 74%;
-    font-size: 13px;
-    line-height: 22px;
-    font-weight: 300;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    height: 22px;
+	float: left;
+	position: relative;
+	width: 74%;
+	font-size: 13px;
+	line-height: 22px;
+	font-weight: 300;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 22px;
 }
 .detail_data .desc {
-    position: relative;
-    float: left;
-    font-size: 13px;
-    line-height: 22px;
-    color: #666;
-    font-weight: 300;
+	position: relative;
+	float: left;
+	font-size: 13px;
+	line-height: 22px;
+	color: #666;
+	font-weight: 300;
 }
 .cata {
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid #000;
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #000;
 }
 .cata .box {
-    position: relative;
-    margin-bottom: 8px;
+	position: relative;
+	margin-bottom: 8px;
 }
 .cata .box:last-child {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 .cata .box .icon {
-    float: left;
-    width: 34px;
-    height: 34px;
-    margin-right: 6px;
+	float: left;
+	width: 34px;
+	height: 34px;
+	margin-right: 6px;
 }
 .cata .box .icon img {
-    width: 34px;
-    height: 34px;
+	width: 34px;
+	height: 34px;
 }
 .cata .box .catalo {
-    float: left;
-    position: relative;
-    font-size: 14px;
-    line-height: 22px;
-    margin-top: 6px;
-    color: #000000;
+	float: left;
+	position: relative;
+	font-size: 14px;
+	line-height: 22px;
+	margin-top: 6px;
+	color: #000000;
 }
 .cata .box .down {
-    float: right;
-    font-size: 14px;
-    line-height: 20px;
-    color: #000000;
-    margin-top: 6px;
-    border-bottom: 1px solid #000;
+	float: right;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000000;
+	margin-top: 6px;
+	border-bottom: 1px solid #000;
 }
 .cata .box .cata a {
-    color: #000000;
+	color: #000000;
 }
 .detail_data button {
-    margin-top: 28px;
-    width: 100%;
-    font-size: 16px;
-    padding: 24px 0;
-    color: #fff;
-    background: #000;
+	margin-top: 28px;
+	width: 100%;
+	font-size: 16px;
+	padding: 24px 0;
+	color: #fff;
+	background: #000;
 }
 .detail_tab_Wrap {
-    width: 100%;
-    z-index: 9999;
-    height: 52px;
+	width: 100%;
+	z-index: 9999;
+	height: 52px;
 }
 
 .detail_box {
-    position: relative;
-    background: #000;
-    height: 52px;
+	position: relative;
+	background: #000;
+	height: 52px;
 }
 .detail_tab {
-    position: relative;
-    padding: 0 20px 0;
+	position: relative;
+	padding: 0 20px 0;
 }
 .detail_tab a{
-    display: block;
-    float: left;
-    font-size: 14px;
-    color: #fff;
-    width: auto;
-    line-height: 22px;
-    margin-right: 40px;
-    padding: 15px 0;
+	display: block;
+	float: left;
+	font-size: 14px;
+	color: #fff;
+	width: auto;
+	line-height: 22px;
+	margin-right: 40px;
+	padding: 15px 0;
 }
+
+.detail_tab > a.caseOfInstall_empty,
+.detail_tab > a.prod_desc_empty {
+display: none;
+}
+
 .fixed {
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    opacity: 1;
-    margin-top: 0;
-    background: #ffffff;
-    z-index: 9998;
-  }
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	opacity: 1;
+	margin-top: 0;
+	background: #ffffff;
+	z-index: 9998;
+}
 .detail_tab button{
-    float: right;
-    right: 0;
-    top: 0;
-    padding: 5px 45px;
-    color: #fff;
-    font-size: 16px;
-    line-height: 35px;
-    border: 1px solid #fff;
-    width: 187px;
-    height: 45px;
-    
+	float: right;
+	right: 0;
+	top: 0;
+	padding: 5px 45px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 35px;
+	border: 1px solid #fff;
+	width: 187px;
+	height: 45px;
+	
 }
 .detail_content_Wrap{
-    position: relative;
+	position: relative;
 }
 .detail_content_Wrap img {
-    width: 100%;
+	width: 100%;
 }
 .explans {
-    position: relative;
-    padding: 185px 135px 150px;
+	position: relative;
+	padding: 185px 135px 150px;
 }
 .explans .title {
-    font-size: 40px;
-    line-height: 52px;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #000;
+	font-size: 40px;
+	line-height: 52px;
+	text-align: center;
+	margin-bottom: 30px;
+	color: #000;
 }
 .explans .stitle {
-    font-size: 16px;
-    line-height: 28px;
-    text-align: center;
-    color: #4A4A4A;
-    margin-bottom: 80px;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: center;
+	color: #4A4A4A;
+	margin-bottom: 80px;
 }
 .explans img {
-    width:100%
+	width:100%
 }
 .caption {
-    position: relative;
-    background: #F9F9F9;
-    padding: 80px 0 50px;
+	position: relative;
+	background: #F9F9F9;
+	padding: 80px 0 50px;
 }
 .caption .box {
-    position: relative;
-    padding: 0 20px;
-    margin-top: 33px;
+	position: relative;
+	padding: 0 20px;
+	margin-top: 33px;
 }
 .caption .ctitle {
-    position: relative;
-    font-size: 22px;
-    line-height: 30px;
-    color: #000;
-    padding: 0 20px;
-    text-align: center;
-    font-weight: 500;
+	position: relative;
+	font-size: 22px;
+	line-height: 30px;
+	color: #000;
+	padding: 0 20px;
+	text-align: center;
+	font-weight: 500;
 }
 .caption .box ul {
-    position: relative;
+	position: relative;
 }
 .caption .box ul li {
-    display: flex;
-    padding: 20px 0;
-    border-bottom: 1px solid #ebebeb;
-    min-height: 44px;
+	display: flex;
+	padding: 20px 0;
+	border-bottom: 1px solid #ebebeb;
+	min-height: 44px;
 }
 .caption .box ul li .title {
-    color: #000;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 500;
-    width: 80px;
-    margin-right: 20px;
+	color: #000;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 500;
+	width: 80px;
+	margin-right: 20px;
 }
 .caption .box ul li .bcopy {
-    font-size: 16px;
-    line-height: 22px;
-    color: #6f6f6f;
-    width: 100%;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+	font-size: 16px;
+	line-height: 22px;
+	color: #6f6f6f;
+	width: 100%;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .caption .box .capimg img {
-    width: 100%;
+	width: 100%;
 }
 .caption .box .capimg {
-    width: 226px;
-    margin: 50px auto 0;
+	width: 226px;
+	margin: 50px auto 0;
 }
 .detail_reward {
-    position: relative;
-    padding: 80px 0 0;
+	position: relative;
+	padding: 80px 0 0;
 }
 .detail_reward .rtitle {
-    position: relative;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 30px;
-    color: #000;
-    padding: 0 20px;
+	position: relative;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 30px;
+	color: #000;
+	padding: 0 20px;
 }
 .detail_reward_list {
-    position: relative;
-    margin: 30px 20px 0;
+	position: relative;
+	margin: 30px 20px 0;
 }
 .detail_reward_list li {
-    float: left;
-    width: 100%;
-    margin: 0 18px 0 0;
+	float: left;
+	width: 100%;
+	margin: 0 18px 0 0;
 }
 .detail_reward_list li:last-child {
-    margin-right: 0;
+	margin-right: 0;
 }
 .detail_reward_list li .list_img {
-    width: 100%;
+	width: 100%;
 }
 .detail_reward_list li .list_img img {
-    width: 100%;
+	width: 100%;
 }
 .detail_reward_list li .tag {
-    font-size: 12px;
-    line-height: 16px;
-    color: #FF5F00;
-    margin: 40px 0 8px 0;
+	font-size: 12px;
+	line-height: 16px;
+	color: #FF5F00;
+	margin: 40px 0 8px 0;
 }
 .detail_reward_list li .title {
-    font-size: 16px;
-    line-height: 25px;
-    color: #000000;
-    height: 50px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-bottom: 15px;
+	font-size: 16px;
+	line-height: 25px;
+	color: #000000;
+	height: 50px;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 15px;
 }
 .detail_reward_list li .bcopy {
-    display: none;
-    font-size: 14px;
-    line-height: 27px;
-    color: #6f6f6f;
+	display: none;
+	font-size: 14px;
+	line-height: 27px;
+	color: #6f6f6f;
 }
 .mill_help {
-    position: relative;
-    margin-top: 70px;
+	position: relative;
+	margin-top: 70px;
 }
 .mill_help .box {
-    position: relative;
-    padding: 0 16px;
+	position: relative;
+	padding: 0 16px;
 }
 .mill_help .box .title {
-    position: relative;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    color: #000;
+	position: relative;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	color: #000;
 }
 .mill_help .box .helps{
-    position: relative;
-    height: 296px;
+	position: relative;
+	height: 296px;
 }
 .mill_help .box .helps li{
-    float: left;
-    width: 49.6%;
-    margin: 0 8px 8px 0;
-    background: #F9F9F9;
+	float: left;
+	width: 49.6%;
+	margin: 0 8px 8px 0;
+	background: #F9F9F9;
 }
 .mill_help .box .helps li a{
-    display: block;
-    height: 140px;
-    padding: 20px;
+	display: block;
+	height: 140px;
+	padding: 20px;
 }
 .mill_help .box .helps li:nth-child(2n){
-    margin: 0 0 8px 0;
+	margin: 0 0 8px 0;
 }
 .mill_help .box .helps li .tit{
-    position: relative;
-    width: 100%;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 500;
-    margin-bottom: 4px;
-    color: #000;
+	position: relative;
+	width: 100%;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 500;
+	margin-bottom: 4px;
+	color: #000;
 }
 .mill_help .box .helps li .tit span {
-    position: absolute;
-    margin: 4px 6px;
-    background: url(../img/help_arrow.png) no-repeat 0 0;
-    background-size: 100% 100%;
-    width: 8px;
-    height: 11px;
-    top: 1px;
+	position: absolute;
+	margin: 4px 6px;
+	background: url(../images/icon/help_arrow.png) no-repeat 0 0;
+	background-size: 100% 100%;
+	width: 8px;
+	height: 11px;
+	top: 1px;
 }
 .mill_help .box .helps li .sit{
-    width: 100%;
-    font-size: 10px;
-    line-height: 14px;
-    color: #6f6f6f;
+	width: 100%;
+	font-size: 10px;
+	line-height: 14px;
+	color: #6f6f6f;
 }
 .mill_help .box .helps li .icon{
-    margin-bottom: 8px;
+	margin-bottom: 8px;
 }
 .mill_help .box .helps li img{
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 .mill_help .box .helps li .cont{
-    width: 24px;
-    height: 24px;
+	width: 24px;
+	height: 24px;
 }
 .help_center {
-    position: relative;
-    height: 300px;
-    background: #000;
+	position: relative;
+	height: 300px;
+	background: #000;
 }
 .bgW {
-    background: #ffffff;
-    margin-top: 100px;
+	background: #ffffff;
+	margin-top: 100px;
 }
 .botbtn {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    padding: 20px 20px 20px;
-    background: #fff;
-    z-index: 9998;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	padding: 20px 20px 20px;
+	background: #fff;
+	z-index: 9998;
 }
-.botbtn button {
-    width: 100%;
-    font-size: 16px;
-    padding: 20px 0;
-    color: #fff;
-    background: #000;
+
+.botbtn > a {
+display: block;
+width: 100%;
+font-size: 16px;
+padding: 20px 0;
+color: #fff;
+background: #000;
+text-align: center;
 }
 
 
 @media (max-width: 1024px) {
-    .mill_help .box .helps li {
-        width: 49.4%;
-    }
-  }
+	.mill_help .box .helps li {
+			width: 49.4%;
+	}
+}
 @media (max-width: 800px) {
-    .mill_help .box .helps li {
-        width: 49.3%;
-    }
-  }
+	.mill_help .box .helps li {
+			width: 49.3%;
+	}
+}
 @media (max-width: 640px) {
-    .mill_help .box .helps li {
-        width: 49%;
-    }
-  }
+	.mill_help .box .helps li {
+			width: 49%;
+	}
+}
 @media (max-width: 500px) {
-    .mill_help .box .helps li {
-        width: 48.8%;
-    }
-  }
+	.mill_help .box .helps li {
+			width: 48.8%;
+	}
+}
 
 @media (max-width: 400px) {
-    .mill_help .box .helps li {
-        width: 48.7%;
-    }
-  }
+	.mill_help .box .helps li {
+			width: 48.7%;
+	}
+}
