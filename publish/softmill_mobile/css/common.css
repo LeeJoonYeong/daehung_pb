@@ -482,6 +482,24 @@ input::placeholder {
 	background-color: initial;
 }
 
+/* .layer_popup.select_prod_popup {
+	display: block;
+	visibility: hidden;
+} */
+
+.layer_popup.hidden {
+	display: block;
+	visibility: hidden;
+}
+
+.layer_popup.hidden * {
+	transition: none !important;
+}
+
+.layer_popup.active {
+	visibility: visible;
+}
+
 .dim_bgs {
 	position: absolute;
 	left: 0;
@@ -1438,7 +1456,8 @@ input::placeholder {
 	text-align: center;
 }
 
-.btn_selet {
+.btn_selet,
+.btn_popup_select_ok {
 	position: relative;
 	width: 100%;
 	padding: 10px 70px;
