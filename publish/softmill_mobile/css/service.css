@@ -49,26 +49,34 @@
 
 .custo_Wrap .forms .names {
 	position: relative;
-	font-size: 18px;
 	line-height: 26px;
+	margin-bottom: 16px;
+	font-size: 18px;
+	font-weight: 500;
 	color: #000;
 	text-align: left;
-	margin-bottom: 16px;
 }
 
 .custo_Wrap .forms .tag {
 	position: relative;
-	padding-top: 22px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 12px;
 }
 
 .custo_Wrap .forms .tag button {
 	position: relative;
-	background: #F9F9F9;
-	padding: 15px 40px 15px 20px;
-	font-size: 15px;
+	width: fit-content;
 	line-height: 20px;
+	padding: 15px 40px 15px 20px;
+	margin-bottom: 6px;
+	background: #F9F9F9;
+	font-size: 15px;
 	color: #000000;
-	margin: 0 8px 8px 0;
+}
+
+.custo_Wrap .forms .tag button:last-child {
+	margin-bottom: initial;
 }
 
 .custo_Wrap .forms .tag a {
@@ -126,24 +134,24 @@
 
 .attach .file span {
 	position: absolute;
-	top: 14px;
-	background: url('../images/icon/menu_close.svg') no-repeat 0 0;
-	background-size: 100% 100%;
-	width: 18px;
-	height: 18px;
+	top: 50%;
+  transform: translateY(-50%);
+	width: 10px;
+	height: 10px;
 	margin-left: 10px;
+	background: url('../images/icon/close.png') no-repeat center / 100%;
 }
 
 .form-input {
-	border-bottom: solid 1px #000000;
 	display: block;
+	height: 46px;
+	line-height: normal;
 	width: 100%;
 	padding: 12px 0;
-	color: #000;
+	border-bottom: solid 1px #000000;
 	font-size: 14px;
-	line-height: 22px;
-	line-height: normal;
-	height: 46px;
+	font-weight: 500;
+	color: #000;
 }
 
 .form-input-eorr {
@@ -159,11 +167,12 @@
 }
 
 .btn-more {
-	background: #000;
-	color: #fff;
-	font-size: 16px;
 	line-height: 22px;
-	padding: 10px 36px;
+	padding: 12px 36px;
+	background: #000;
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
 }
 
 .form-input-text {
@@ -304,8 +313,10 @@ input#chk_top {
 }
 
 input#chk_top+label {
-	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
 	color: #000;
+	cursor: pointer;
 }
 
 input#chk_top+label:before {
@@ -421,16 +432,17 @@ input#chk_top:checked+label:before {
 }
 
 .pop_product_list li .title {
-	font-size: 14px;
+	max-height: 36px;
 	line-height: 17px;
-	color: #000;
 	margin-top: 20px;
+	font-size: 14px;
+	font-weight: 500;
 	text-align: center;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
+	color: #000;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	max-height: 36px;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
 }
 
 .pop_product_list li .delete {
@@ -472,8 +484,9 @@ input#chk_top:checked+label:before {
 	position: absolute;
 	top: 18px;
 	left: 20px;
-	font-size: 18px;
 	line-height: 26px;
+	font-size: 18px;
+	font-weight: 500;
 	color: #000;
 }
 
@@ -510,10 +523,6 @@ input#chk_top:checked+label:before {
 	width: 100%;
 	height: 46px;
 	margin-bottom: 14px;
-}
-
-.pop_product_select {
-	margin: 20px 20px 0;
 }
 
 .botbtns {
@@ -554,13 +563,27 @@ input#chk_top:checked+label:before {
 /* //견적 문의 - 파일 첨부 스타일 */
 
 /* 견적 문의 - 제품 선택 팝업 스타일 */
+.pop_product_list.animated {
+	transition: left .3s;
+}
+
 .pop_product_select .empty {
 	display: none;
+	height: 180px;
+	padding: initial;
 	margin-bottom: 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: initial;
 }
 
 .pop_product_select .empty.active {
-	display: block;
+	display: flex;
+}
+
+.pop_product_select .empty .stitle {
+	text-align: center;
 }
 
 .listSwitch {
@@ -575,6 +598,7 @@ input#chk_top:checked+label:before {
 	height: 6px;
 	border-radius: 100%;
 	background-color: #d9d9d9;
+	transition: background-color .5s;
 }
 
 .listSwitch > button.selected {
@@ -585,3 +609,9 @@ input#chk_top:checked+label:before {
 	margin-left: 6px;
 }
 /* //견적 문의 - 제품 선택 팝업 스타일 */
+
+/* 견적 문의 - 문의 완료 팝업 스타일 */
+.layer_popup_complete .pop_wrap {
+	z-index: 9999;
+}
+/* //견적 문의 - 문의 완료 팝업 스타일 */

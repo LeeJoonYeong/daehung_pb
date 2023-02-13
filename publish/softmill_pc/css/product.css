@@ -298,11 +298,12 @@
 
 .detail_data .title {
 	position: relative;
-	font-size: 38px;
 	line-height: 42px;
 	padding-bottom: 40px;
-	border-bottom: 1.5px solid #000;
 	margin-bottom: 40px;
+	border-bottom: 1.5px solid #000;
+	font-size: 38px;
+	font-weight: 500;
 	color: #000;
 }
 
@@ -314,10 +315,11 @@
 .detail_data .name {
 	float: left;
 	width: 80px;
-	font-size: 16px;
 	line-height: 28px;
-	color: #000;
 	margin-right: 20px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #000;
 }
 
 .detail_data .model {

@@ -1739,12 +1739,13 @@ body.bot .topwrap {
 	align-items: center;
 	width: inherit;
 	height: inherit;
+	line-height: 30px;
 	border: 0 none;
 	outline: 0 none;
 	background: transparent;
 	cursor: pointer;
 	font-size: 18px;
-	line-height: 30px;
+	font-weight: 500;
 	color: #000;
 }
 
@@ -1787,12 +1788,19 @@ body.bot .topwrap {
 	transition: .1s ease-in;
 	border: 1px solid #000;
 	padding: 15px 0;
+	overflow-y: auto;
 	z-index: 9999;
 }
 
 .selectBox .optionItem {
 	padding: 0 24px 0;
+	font-weight: 500;
+	color: #bbb;
 	transition: .3s ease-in;
+}
+
+.selectBox .optionItem.selected {
+	color: #000;
 }
 
 .selectBox .optionItem:hover {
