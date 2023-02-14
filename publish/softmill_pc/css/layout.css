@@ -172,10 +172,11 @@
 }
 
 .indicator>li button {
-	font-size: 14px;
 	line-height: 27px;
-	text-align: left;
+	font-size: 14px;
+	font-weight: 500;
 	color: #929292;
+	text-align: left;
 }
 
 .indicator>li button span {

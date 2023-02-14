@@ -8,10 +8,11 @@
 
 .custo_Wrap .title {
 	position: relative;
-	font-size: 40px;
 	line-height: 58px;
-	color: #000;
 	margin-bottom: 50px;
+	font-size: 40px;
+	font-weight: 500;
+	color: #000;
 }
 
 .custo_Wrap .title .desc {
@@ -35,16 +36,18 @@
 .custo_Wrap .forms .name {
 	float: left;
 	width: 90px;
+	line-height: 54px;
 	margin-right: 60px;
 	font-size: 22px;
-	line-height: 54px;
+	font-weight: 500;
 	color: #000;
 }
 
 .custo_Wrap .forms .names {
 	position: relative;
-	font-size: 22px;
 	line-height: 54px;
+	font-size: 22px;
+	font-weight: 500;
 	color: #000;
 }
 
@@ -150,14 +153,15 @@
 }
 
 .form-input {
-	border-bottom: solid 1px #000000;
 	display: block;
 	width: 100%;
-	padding: 12px 0;
-	color: #000;
-	font-size: 18px;
-	line-height: normal;
 	height: 54px;
+	line-height: normal;
+	padding: 12px 0;
+	border-bottom: solid 1px #000000;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000;
 }
 
 .btn-more {
@@ -170,14 +174,15 @@
 }
 
 .form-input-text {
-	border: solid 1px #6f6f6f;
 	display: block;
 	width: 100%;
-	padding: 20px 30px;
-	color: #000;
-	font-size: 18px;
-	line-height: normal;
 	height: 280px;
+	line-height: normal;
+	padding: 20px 30px;
+	border: solid 1px #6f6f6f;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000;
 	resize: none;
 	outline: none;
 }
@@ -245,6 +250,7 @@
 }
 
 .explan em {
+	font-weight: 500;
 	color: #000000;
 }
 
@@ -328,8 +334,10 @@ input#chk_top {
 }
 
 input#chk_top+label {
-	cursor: pointer;
+	font-size: 18px;
+	font-weight: 500;
 	color: #000;
+	cursor: pointer;
 }
 
 input#chk_top+label:before {

@@ -941,6 +941,7 @@ input::placeholder {
 	-webkit-transform: translate(0px, 0px);
 	-ms-transform: translate(0px, 0px);
 	transform: translate(0px, 0px);
+	transition: all 1s;
 	-webkit-transition: all 1s;
 	-webkit-transition-property: -webkit-transform, height;
 	-moz-transition-property: -moz-transform, height;
@@ -1504,17 +1505,18 @@ input::placeholder {
 
 
 .selectBox .label {
-	display: flex;
 	align-items: center;
+	display: flex;
 	width: inherit;
 	height: inherit;
-	border: 0 none;
-	outline: 0 none;
-	background: transparent;
-	cursor: pointer;
-	font-size: 18px;
 	line-height: 30px;
+	border: 0 none;
+	font-size: 18px;
+	font-weight: 500;
 	color: #000;
+	background: transparent;
+	outline: 0 none;
+	cursor: pointer;
 }
 
 .selectBox .optionList {
