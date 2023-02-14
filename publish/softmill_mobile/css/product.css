@@ -425,6 +425,7 @@
 	height: 52px;
 }
 
+
 .detail_box {
 	position: relative;
 	background: #000;
@@ -445,6 +446,15 @@
 	line-height: 22px;
 	margin-right: 40px;
 	padding: 15px 0;
+	background-color: transparent;
+}
+
+.detail_tab_Wrap.fixed .detail_tab a {
+	opacity: .6;
+}
+
+.detail_tab_Wrap.fixed .detail_tab a.active {
+	opacity: 1;
 }
 
 .detail_tab>a.caseOfInstall_empty,

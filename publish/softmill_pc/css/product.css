@@ -472,13 +472,14 @@
 }
 
 .detail_tab > a {
-	display: block;
 	float: left;
-	font-size: 15px;
-	color: #666;
+	display: block;
 	width: auto;
 	line-height: 44px;
 	margin-right: 70px;
+	font-size: 15px;
+	color: #666;
+	background-color: transparent;
 }
 
 .detail_tab > a.caseOfInstall_empty,
@@ -488,6 +489,11 @@
 
 .detail_tab_Wrap.fixed .detail_tab > a {
 	color: #fff;
+	opacity: .6;
+}
+
+.detail_tab_Wrap.fixed .detail_tab > a.active {
+	opacity: 1;
 }
 
 .detail_tab > a:last-child {
