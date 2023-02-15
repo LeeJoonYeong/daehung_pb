@@ -224,9 +224,10 @@
 }
 
 .desc {
-	color: #929292;
-	font-size: 12px;
 	line-height: 16px;
+	padding-left: 14px;
+	font-size: 12px;
+	color: #929292;
 	text-align: left;
 }
 
@@ -243,6 +244,7 @@
 }
 
 .bate em {
+	font-weight: 500;
 	color: #000000;
 }
 
@@ -559,6 +561,20 @@ input#chk_top:checked+label:before {
 
 .attach .emptys > img {
 	width: 40px;
+}
+
+.desc p {
+	position: relative;
+}
+
+.desc p span {
+	position: absolute;
+	top: 8px;
+	left: -10px;
+	width: 2px;
+	height: 2px;
+	border-radius: 10px;
+	background: #929292;
 }
 /* //견적 문의 - 파일 첨부 스타일 */
 

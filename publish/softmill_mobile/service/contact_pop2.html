@@ -1,46 +1,50 @@
 <html lang="ko" xmlns="http://www.w3.org/1999/html">
+
 <head>
-    <title>대흥소프트밀</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no">
-    <meta content="http://www.softmill.co.kr/main/images/main/img_main_after_m.png" property="og:image">
-    <link rel="shortcut icon" href="img/common/favicon.ico">
-    <link rel="icon" type="image/png" href="img/common/favicon.png" sizes="32x32">
-    <link rel="stylesheet" href="../css/common.css">
-    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-    <script src="//cdn.polyfill.io/v1/polyfill.min.js" async="" defer=""></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="../js/clipboard.min.js"></script>
-    <script type="text/javascript" src="../js/lightslider.js"></script>
+	<title>대흥소프트밀</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no">
+	<meta content="http://www.softmill.co.kr/main/images/main/img_main_after_m.png" property="og:image">
+	<link rel="shortcut icon" href="img/common/favicon.ico">
+	<link rel="icon" type="image/png" href="img/common/favicon.png" sizes="32x32">
+	<link rel="stylesheet" href="../css/common.css">
+	<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script src="//cdn.polyfill.io/v1/polyfill.min.js" async="" defer=""></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/clipboard.min.js"></script>
+	<script type="text/javascript" src="../js/lightslider.js"></script>
 </head>
+
 <body class="bgWhite">
-    <!-- s:레이어 팝업-->
-    <div class="layer_popup">
-        <div class="dim_bgs"></div>
-        <div class="pop_wrap">
-            <p class="pop_title">견적문의 신청 완료</p>
-            <p class="pop_bcopy">
-                견적문의 신청이 완료되었습니다.<br>
-                영업담당자를 통해 확인 후 답변 드리겠습니다.
-            </p>
-            <button class="btn_ok">확인</button>
-        </div>
-    </div>    
-    <!-- e:레이어 팝업-->
-    <script type="text/javascript">
-        $(document).ready(function() {
-         $('#my-button').click(function() {
-          $('.layer_popup').show();
-         });
-     
-         $('.btn_ok').click(function() {
-          $('.layer_popup').hide();
-         });
-        });
-      </script>
-    <script type="text/javascript" src="../js/ui.js"></script>
+	<!-- s:레이어 팝업-->
+	<div class="layer_popup_complete active">
+		<div class="dim_bgs"></div>
+		<div class="pop_wrap">
+			<p class="pop_title">견적문의 신청 완료</p>
+			<p class="pop_bcopy">
+				견적문의 신청이 완료되었습니다.
+				<br>
+				영업담당자를 통해 확인 후 답변 드리겠습니다.
+			</p>
+			<button class="btn_ok">확인</button>
+		</div>
+	</div>
+	<!-- e:레이어 팝업-->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#my-button').click(function () {
+				$('.layer_popup').show();
+			});
+
+			$('.btn_ok').click(function () {
+				$('.layer_popup').hide();
+			});
+		});
+	</script>
+	<script type="text/javascript" src="../js/ui.js"></script>
 </body>
+
 </html>

@@ -641,29 +641,29 @@ if(onestep_category_list_wrap?.dataset.pagetypeFront === 'contact') { // 고객�
 		document.body.style.overflowY = 'hidden'; // 스크롤 감추기
 
 		// 1. 인벤토리와 상점 제품 모두 초기화
-		const inventory_product_wrap  = document.querySelector('[data-list-type="inventory"]'); // 제품 리스트 박스 (인벤토리) 
-		inventory_product_wrap.innerHTML = null; // 인벤토리 비우기
-		productCountCheck('clear');
+		// const inventory_product_wrap  = document.querySelector('[data-list-type="inventory"]'); // 제품 리스트 박스 (인벤토리) 
+		// inventory_product_wrap.innerHTML = null; // 인벤토리 비우기
+		// productCountCheck('clear');
 
-		const store_prod_list = document.querySelectorAll('[data-list-type="store"] > li'); // 상점 제품 리스트
-		for (const el of store_prod_list) {
-			if(el.classList.contains('selected')) el.classList.remove('selected'); // 상점 제품 selected 해제
-		}
+		// const store_prod_list = document.querySelectorAll('[data-list-type="store"] > li'); // 상점 제품 리스트
+		// for (const el of store_prod_list) {
+		// 	if(el.classList.contains('selected')) el.classList.remove('selected'); // 상점 제품 selected 해제
+		// }
 
-		// 2. 태그 제품이 있으면 인벤토리에 추가
-		const tag_box = document.querySelector('.tag'); // 문의내용 - 제품 태그 박스
-		for (const el of tag_box.children) {
+		// // 2. 태그 제품이 있으면 인벤토리에 추가
+		// const tag_box = document.querySelector('.tag'); // 문의내용 - 제품 태그 박스
+		// for (const el of tag_box.children) {
 
-			const product_id_copy = el.firstElementChild.lastElementChild.value;  // 태그 제품 id 복사
-			const title_copy 			= el.textContent; // 태그 제품 이름 복사
-			const src_copy 				= el.firstElementChild.children[1].value;   // 태그 제품 이미지 src 복사
+		// 	const product_id_copy = el.firstElementChild.lastElementChild.value;  // 태그 제품 id 복사
+		// 	const title_copy 			= el.textContent; // 태그 제품 이름 복사
+		// 	const src_copy 				= el.firstElementChild.children[1].value;   // 태그 제품 이미지 src 복사
 			
-			addProductInInventory(product_id_copy, title_copy, src_copy);
-			productSelectedCheck();
+		// 	addProductInInventory(product_id_copy, title_copy, src_copy);
+		// 	productSelectedCheck();
 
-			setSlideItem('inventory', 'remove');
+		// 	setSlideItem('inventory', 'remove');
 
-		}
+		// }
 
 	});
 	// #0. //태그 제품과 인벤토리 제품 연동
@@ -682,74 +682,74 @@ if(onestep_category_list_wrap?.dataset.pagetypeFront === 'contact') { // 고객�
 			const onestep_category_id = el.firstElementChild.value; // 클릭 된 해당 1차 카테고리 id 
 			const is_steptwo_use = el.lastElementChild.value; 			// 클릭 된 해당 1차 카테고리 2차 카테고리 사용 유무
 
-			$.post("../process/category_list_read_process.php", { // ajax를 이용한 데이터 전송
+			// $.post("../process/category_list_read_process.php", { // ajax를 이용한 데이터 전송
 
-				onestep_category_id,
-				is_steptwo_use,
+			// 	onestep_category_id,
+			// 	is_steptwo_use,
 
-			}, function(data) {
-				// 받아온 데이터
-				twostep_category_list_wrap.innerHTML = data;
+			// }, function(data) {
+			// 	// 받아온 데이터
+			// 	twostep_category_list_wrap.innerHTML = data;
 
-				const first_list_text = twostep_category_list_wrap.firstElementChild.textContent; // 2차 카테고리 첫 번째 리스트의 텍스트
-				twostep_category_list_wrap.previousElementSibling.textContent = first_list_text;  // 2차 카테고리 첫 번째 리스트 이름 등록
+			// 	const first_list_text = twostep_category_list_wrap.firstElementChild.textContent; // 2차 카테고리 첫 번째 리스트의 텍스트
+			// 	twostep_category_list_wrap.previousElementSibling.textContent = first_list_text;  // 2차 카테고리 첫 번째 리스트 이름 등록
 
-				// #1-1. 1차 카테고리 클릭 시 제품 셋팅 (동적)
-				const first_twostep_category_id = twostep_category_list_wrap.firstElementChild.firstElementChild.value; // 첫 번째 2차 카테고리 id
+			// 	// #1-1. 1차 카테고리 클릭 시 제품 셋팅 (동적)
+			// 	const first_twostep_category_id = twostep_category_list_wrap.firstElementChild.firstElementChild.value; // 첫 번째 2차 카테고리 id
 
-				setTwoStepClickEvent(); // 2차 카테고리 리스트 클릭 이벤트 재정의
+			// 	setTwoStepClickEvent(); // 2차 카테고리 리스트 클릭 이벤트 재정의
 
-				if(first_twostep_category_id === 'empty') { // 2차 카테고리가 '사용 안함'이거나 존재하지 않을 때
+			// 	if(first_twostep_category_id === 'empty') { // 2차 카테고리가 '사용 안함'이거나 존재하지 않을 때
 
 
-					$.post("../process/product_list_read_process.php?mode=onestep", { // ajax를 이용한 데이터 전송
+			// 		$.post("../process/product_list_read_process.php?mode=onestep", { // ajax를 이용한 데이터 전송
 			
-						onestep_category_id,
+			// 			onestep_category_id,
 			
-					}, function(data) {
-						// 받아온 데이터
-						// console.log(data);
+			// 		}, function(data) {
+			// 			// 받아온 데이터
+			// 			// console.log(data);
 
-						console.log('발동 코드5');
+			// 			console.log('발동 코드5');
 
-						const store_product_list = document.querySelector('[data-list-type="store"]'); // 제품 리스트 박스 (상점) 
-						store_product_list.innerHTML = data;
+			// 			const store_product_list = document.querySelector('[data-list-type="store"]'); // 제품 리스트 박스 (상점) 
+			// 			store_product_list.innerHTML = data;
 
-						setSlideItem('store'); // 제품 상점 슬라이드 초기화
+			// 			setSlideItem('store'); // 제품 상점 슬라이드 초기화
 
-						selectStoreProduct(); // 제품 선택 이벤트 재정의
-						productSelectedCheck(); // 제품 인벤토리와 상점 같은 값 체크 후 selected 클래스 부여 
+			// 			selectStoreProduct(); // 제품 선택 이벤트 재정의
+			// 			productSelectedCheck(); // 제품 인벤토리와 상점 같은 값 체크 후 selected 클래스 부여 
 						
 			
-					})
+			// 		})
 			
-				} else { // 2차 카테고리가 존재 할 때
+			// 	} else { // 2차 카테고리가 존재 할 때
 			
-					$.post("../process/product_list_read_process.php?mode=twostep", { // ajax를 이용한 데이터 전송
+			// 		$.post("../process/product_list_read_process.php?mode=twostep", { // ajax를 이용한 데이터 전송
 			
-						twostep_category_id: first_twostep_category_id,
-						page_type: 'contact',
+			// 			twostep_category_id: first_twostep_category_id,
+			// 			page_type: 'contact',
 			
-					}, function(data) {
-						// 받아온 데이터
-						// console.log(data);
+			// 		}, function(data) {
+			// 			// 받아온 데이터
+			// 			// console.log(data);
 
-						console.log('발동 코드2');
+			// 			console.log('발동 코드2');
 
-						const store_product_list = document.querySelector('[data-list-type="store"]'); // 제품 리스트 박스 (상점) 
-						store_product_list.innerHTML = data;
+			// 			const store_product_list = document.querySelector('[data-list-type="store"]'); // 제품 리스트 박스 (상점) 
+			// 			store_product_list.innerHTML = data;
 
-						setSlideItem('store'); // 제품 상점 슬라이드 초기화
+			// 			setSlideItem('store'); // 제품 상점 슬라이드 초기화
 						
-						selectStoreProduct(); // 제품 선택 이벤트 재정의
-						productSelectedCheck(); // 제품 인벤토리와 상점 같은 값 체크 후 selected 클래스 부여 
+			// 			selectStoreProduct(); // 제품 선택 이벤트 재정의
+			// 			productSelectedCheck(); // 제품 인벤토리와 상점 같은 값 체크 후 selected 클래스 부여 
 
-					})
+			// 		})
 			
-				}
-				// #1-1. //1차 카테고리 클릭 시 제품 셋팅 (동적)
+			// 	}
+			// 	// #1-1. //1차 카테고리 클릭 시 제품 셋팅 (동적)
 
-			})
+			// })
 
 			// 해당 선택 리스트 클래스 부여 (1차 카테고리)
 			const onestep_category_list = document.querySelectorAll('#onestep_category_list_wrap > li'); // 1차 카테고리 리스트 
@@ -790,26 +790,26 @@ if(onestep_category_list_wrap?.dataset.pagetypeFront === 'contact') { // 고객�
 					return;
 				} else { // 2차 카테고리 있을 때
 
-					$.post("../process/product_list_read_process.php?mode=twostep", { // ajax를 이용한 데이터 전송
+					// $.post("../process/product_list_read_process.php?mode=twostep", { // ajax를 이용한 데이터 전송
 			
-						twostep_category_id,
-						page_type: 'contact',
+					// 	twostep_category_id,
+					// 	page_type: 'contact',
 			
-					}, function(data) {
-						// 받아온 데이터
-						// console.log(data);
-						console.log('발동 코드4');
+					// }, function(data) {
+					// 	// 받아온 데이터
+					// 	// console.log(data);
+					// 	console.log('발동 코드4');
 
-						const store_product_list = document.querySelector('[data-list-type="store"]'); // 제품 리스트 박스 (상점) 
-						store_product_list.innerHTML = data;
+					// 	const store_product_list = document.querySelector('[data-list-type="store"]'); // 제품 리스트 박스 (상점) 
+					// 	store_product_list.innerHTML = data;
 
-						setSlideItem('store'); // 제품 상점 슬라이드 초기화
+					// 	setSlideItem('store'); // 제품 상점 슬라이드 초기화
 
-						selectStoreProduct(); // 제품 선택 이벤트 재정의
-						productSelectedCheck(); // 제품 인벤토리와 상점 같은 값 체크 후 selected 클래스 부여 
+					// 	selectStoreProduct(); // 제품 선택 이벤트 재정의
+					// 	productSelectedCheck(); // 제품 인벤토리와 상점 같은 값 체크 후 selected 클래스 부여 
 
 			
-					})
+					// })
 
 				}
 
@@ -831,47 +831,47 @@ if(onestep_category_list_wrap?.dataset.pagetypeFront === 'contact') { // 고객�
 	if(first_twostep_category_id === 'empty') { // 2차 카테고리가 '사용 안함'이거나 존재하지 않을 때
 
 
-		$.post("../process/product_list_read_process.php?mode=onestep", { // ajax를 이용한 데이터 전송
+		// $.post("../process/product_list_read_process.php?mode=onestep", { // ajax를 이용한 데이터 전송
 
-			onestep_category_id: first_onestep_category_id,
+		// 	onestep_category_id: first_onestep_category_id,
 
-		}, function(data) {
-			// 받아온 데이터
-			// console.log(data);
-			console.log('발동 코드3');
+		// }, function(data) {
+		// 	// 받아온 데이터
+		// 	// console.log(data);
+		// 	console.log('발동 코드3');
 
-			const store_product_list = document.querySelector('[data-list-type="store"]'); // 제품 리스트 박스 (상점) 
-			store_product_list.innerHTML = data;
+		// 	const store_product_list = document.querySelector('[data-list-type="store"]'); // 제품 리스트 박스 (상점) 
+		// 	store_product_list.innerHTML = data;
 
-			setSlideItem('store'); // 제품 상점 슬라이드 초기화
+		// 	setSlideItem('store'); // 제품 상점 슬라이드 초기화
 
-			selectStoreProduct(); // 제품 선택 이벤트 재정의
-			productSelectedCheck(); // 제품 인벤토리와 상점 같은 값 체크 후 selected 클래스 부여 
+		// 	selectStoreProduct(); // 제품 선택 이벤트 재정의
+		// 	productSelectedCheck(); // 제품 인벤토리와 상점 같은 값 체크 후 selected 클래스 부여 
 
-		})
+		// })
 
 	} else { // 2차 카테고리가 존재 할 때
 
-		$.post("../process/product_list_read_process.php?mode=twostep", { // ajax를 이용한 데이터 전송
+		// $.post("../process/product_list_read_process.php?mode=twostep", { // ajax를 이용한 데이터 전송
 
-			twostep_category_id: first_twostep_category_id,
-			page_type: 'contact',
+		// 	twostep_category_id: first_twostep_category_id,
+		// 	page_type: 'contact',
 
-		}, function(data) {
-			// 받아온 데이터
-			// console.log(data);
+		// }, function(data) {
+		// 	// 받아온 데이터
+		// 	// console.log(data);
 
-			console.log('발동 코드1');
+		// 	console.log('발동 코드1');
 			
-			const store_product_list = document.querySelector('[data-list-type="store"]'); // 제품 리스트 박스 (상점) 
-			store_product_list.innerHTML = data;
+		// 	const store_product_list = document.querySelector('[data-list-type="store"]'); // 제품 리스트 박스 (상점) 
+		// 	store_product_list.innerHTML = data;
 
-			setSlideItem('store'); // 제품 상점 슬라이드 초기화
+		// 	setSlideItem('store'); // 제품 상점 슬라이드 초기화
 			
-			selectStoreProduct(); // 제품 선택 이벤트 재정의
-			productSelectedCheck(); // 제품 인벤토리와 상점 같은 값 체크 후 selected 클래스 부여 
+		// 	selectStoreProduct(); // 제품 선택 이벤트 재정의
+		// 	productSelectedCheck(); // 제품 인벤토리와 상점 같은 값 체크 후 selected 클래스 부여 
 
-		})
+		// })
 
 	}
 	// #3. //페이지 처음 열람 시 제품 셋팅
@@ -1929,6 +1929,8 @@ function listMoveProcess(target_switch, target_switch_wrap, target_order_count) 
 /* //고객지원 - 제품 선택 : 제품 슬라이드 이동 */
 
 /* 고객지원 - 제품 선택 : 제품 슬라이드를 위한 슬라이드 갯수 셋팅 */
+setSlideItem('store');
+setSlideItem('inventory');
 function setSlideItem(target, mode = 'add') {
 
 	let item_wrap 	= undefined;
@@ -1940,6 +1942,10 @@ function setSlideItem(target, mode = 'add') {
 
 			item_wrap 	= document.querySelector('[data-list-type="store"]'); // 아이템 wrap 지정 (가변 값)
 			switch_wrap = document.querySelector('.listSwitch.store'); // 슬라이드 스위치 wrap 지정 (가변 값)
+
+			if(!item_wrap) { // 안전 장치
+				return;
+			}
 
 			// 관련 아이템 설정값 모두 초기화
 			store_isClicking  = false;
@@ -1955,7 +1961,9 @@ function setSlideItem(target, mode = 'add') {
 			item_wrap 	= document.querySelector('[data-list-type="inventory"]'); // 아이템 wrap 지정 (가변 값)
 			switch_wrap = document.querySelector('.listSwitch.inventory'); // 슬라이드 스위치 wrap 지정 (가변 값)
 
-			
+			if(!item_wrap) { // 안전 장치
+				return;
+			}
 
 			if(mode === 'remove') { // 삭제 모드 일 때
 
