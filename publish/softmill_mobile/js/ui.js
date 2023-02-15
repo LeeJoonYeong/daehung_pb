@@ -598,31 +598,31 @@ btn_carousel_view?.addEventListener('click', () => {
 const agency_list = document.querySelectorAll('.agency_list li a');
 if(agency_list.length) { // 안전 장치
 
-	for (const el of agency_list) {
+	// for (const el of agency_list) {
 
-		el.addEventListener('click', () => {
+	// 	el.addEventListener('click', () => {
 
-			const kakao_maps = el.parentElement.nextElementSibling;
+	// 		const kakao_maps = el.parentElement.nextElementSibling;
 
-			const map_id 		 = el.dataset.mapId;  // 지도 id
-			const map_key 	 = el.dataset.mapKey; // 지도 key
+	// 		const map_id 		 = el.dataset.mapId;  // 지도 id
+	// 		const map_key 	 = el.dataset.mapKey; // 지도 key
 
-			kakao_maps.id = `daumRoughmapContainer${map_id}`;
+	// 		kakao_maps.id = `daumRoughmapContainer${map_id}`;
 
-			if(kakao_maps.firstElementChild) {
-				kakao_maps.firstElementChild.remove(); // 기존 아이템 삭제
-				kakao_maps.firstElementChild.remove(); // 기존 아이템 삭제
-			}
+	// 		if(kakao_maps.firstElementChild) {
+	// 			kakao_maps.firstElementChild.remove(); // 기존 아이템 삭제
+	// 			kakao_maps.firstElementChild.remove(); // 기존 아이템 삭제
+	// 		}
 
-			new daum.roughmap.Lander({
-				"timestamp" : map_id,
-				"key" : map_key,
-				"mapHeight" : "220"
-			}).render();
+	// 		new daum.roughmap.Lander({
+	// 			"timestamp" : map_id,
+	// 			"key" : map_key,
+	// 			"mapHeight" : "220"
+	// 		}).render();
 
-		});
+	// 	});
 
-	}
+	// }
 
 }
 /* //고객지원 - 공식대리점 지도 */
