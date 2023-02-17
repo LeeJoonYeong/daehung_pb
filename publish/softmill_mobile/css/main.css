@@ -298,8 +298,9 @@
 
 .global_wrap .glo_btitle {
 	max-width: 300px;
-	font-size: 14px;
 	line-height: 22px;
+	font-size: 14px;
+	letter-spacing: -0.01em;
 	color: #666;
 }
 
@@ -559,9 +560,10 @@
 }
 
 .cust_btitle {
-	font-size: 14px;
 	line-height: 22px;
+	font-size: 14px;
 	color: #313131;
+	word-break: keep-all;
 }
 
 .counselor {
@@ -648,9 +650,10 @@
 }
 
 .cli_btitle {
-	font-size: 14px;
 	line-height: 22px;
+	font-size: 14px;
 	color: #666666;
+	word-break: keep-all;
 }
 
 .cli_list {

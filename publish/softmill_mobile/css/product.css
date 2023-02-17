@@ -66,8 +66,12 @@
 .tabmenus.flex_style {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 	width: 100%;
+	overflow-x: auto;
+}
+
+.tabmenus.flex_style::-webkit-scrollbar {
+	display: none;
 }
 
 .tabmenus li {
@@ -79,7 +83,10 @@
 }
 
 .tabmenus.flex_style li {
-	font-size: 12px;
+	flex-shrink: 0;
+	float: initial;
+	padding: 4px 0;
+	font-size: 14px;
 }
 
 .tabmenus li a {
@@ -92,6 +99,10 @@
 
 .tabmenus li a.active {
 	color: #FF5F00;
+}
+
+.tabmenus.flex_style li a {
+	padding: 0;
 }
 
 .product_list {
@@ -364,7 +375,7 @@
 .cata {
 	margin-top: 20px;
 	padding-top: 20px;
-	border-top: 1px solid #000;
+	border-top: 1px solid #e6e6e6;
 }
 
 .cata .box {
@@ -399,11 +410,11 @@
 
 .cata .box .down {
 	float: right;
-	font-size: 14px;
 	line-height: 20px;
-	color: #000000;
 	margin-top: 6px;
 	border-bottom: 1px solid #000;
+	font-size: 13px;
+	color: #666;
 }
 
 .cata .box .cata a {
@@ -547,9 +558,9 @@
 
 .caption .box ul li {
 	display: flex;
-	padding: 20px 0;
-	border-bottom: 1px solid #ebebeb;
 	min-height: 44px;
+	padding: 20px 0;
+	border-bottom: 1px solid #d9d9d9;
 }
 
 .caption .box ul li .title {
@@ -619,23 +630,25 @@
 }
 
 .detail_reward_list li .tag {
-	font-size: 12px;
 	line-height: 16px;
-	color: #FF5F00;
 	margin: 40px 0 8px 0;
+	font-size: 12px;
+	font-weight: 500;
+	color: #FF782D;
 }
 
 .detail_reward_list li .title {
-	font-size: 16px;
-	line-height: 25px;
-	color: #000000;
-	height: 50px;
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
-	overflow: hidden;
-	text-overflow: ellipsis;
+	height: 50px;
+	line-height: 25px;
 	margin-bottom: 15px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #000000;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 .detail_reward_list li .bcopy {
@@ -647,7 +660,7 @@
 
 .mill_help {
 	position: relative;
-	margin-top: 70px;
+	margin-top: 100px;
 }
 
 .mill_help .box {

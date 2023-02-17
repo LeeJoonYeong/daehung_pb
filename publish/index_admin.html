@@ -1,728 +1,743 @@
 ﻿<html lang="ko">
 
 <head>
-    <meta charset="utf-8">
-    <title>대흥소프트밀</title>
-    <meta name="Referrer" content="origin">
-    <meta http-equiv="Content-Script-Type" content="text/javascript">
-    <meta http-equiv="Content-Style-Type" content="text/css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="fonts/font.css" />
-    <style>
-        body {
-            font-family: 'Noto Sans CJK KR Regular', 'Malgun Gothic', '맑은 고딕', 돋움, Dotum, 굴림, Gulim, AppleSDGothicNeo, Droid Sans, arial, sans-serif !important;
-            font-size: 20px;
-            margin: 20px;
-            padding: 0;
-        }
-        
-        h1 {
-            margin: 20px 0;
-            font-size: 20px;
-        }
-        
-        h1 strong {
-            color: #000000;
-            font-weight: 500;
-            font-size: 60px;
-        }
-        
-        a {
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        ul,
-        li {
-            list-style: none
-        }
-        
-        table {
-            border-collapse: collapse;
-            border-spacing: 0;
-            font-size: 20px;
-        }
-        
-        table th,
-        strong {
-            font-weight: normal;
-        }
-        
-        .list_w table {
-            width: 100%;
-            margin: 26px auto;
-            border-collapse: collapse;
-            border-spacing: 0;
-        }
-        
-        .list_w table tr:hover {
-            background: #f3f3f3;
-        }
-        
-        .list_w table tr.bdt td {
-            border-top: 1px solid #FF5F00
-        }
-        
-        .list_w table th {
-            padding: 20px 0;
-            border: solid 1px #ddd;
-            background: #efefef;
-            text-align: center;
-            vertical-align: middle;
-        }
-        
-        .list_w table td {
-            padding: 20px 20px;
-            border: 1px solid #e6e6e6;
-        }
-        
-        .list_w table td a {
-            color: #FF5F00;
-            text-align: left;
-            padding: 10px;
-        }
-        
-        .list_w table tr.on td {
-            background: #ffcc99;
-        }
-        
-        .list_w table tr.title th {
-            background: #FF5F00;
-            color: #fff;
-            font-size: 15px;
-            border: 0;
-            padding: 5px 0 5px 10px;
-            font-weight: bold;
-            text-align: left;
-        }
-        
-        .aj_menu {
-            padding: 20px 0;
-        }
-        
-        .aj_menu li {
-            display: inline-block;
-        }
-        
-        .aj_menu li>a {
-            background: #FF5F00;
-            padding: 20px 30px;
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        
-        .aj_menu li>a.now {
-            background: #000000;
-            border: 1px solid #000;
-            color: #fff;
-        }
-        .aj_menu li>a.nows {
-            background: #ffffff;
-            border: 1px solid #000;
-            color: #000;
-        }
-        
-        .top_menu li {
-            margin-right: 2px;
-            float: left;
-        }
-        
-        .top_menu li a {
-            width: 200px;
-            height: 50px;
-            line-height: 35px;
-            text-align: left;
-            font-weight: 500;
-            color: #fff;
-            font-size: 20px;
-            display: inline-block;
-            background: #27a0b2;
-        }
-        
-        .q_top {
-            display: inline-block;
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            z-index: 99
-        }
-        
-        .q_top a {
-            display: inline-block;
-            background: #ccc;
-            opacity: 0.5;
-            padding: 10px;
-            color: #000;
-            font-weight: bold;
-            font-size: 16px;
-        }
-        
-        .week1 {
-            background: #aaa;
-        }
-        
-        .week2 {
-            background: #bbbbbb;
-        }
-        
-        .week3 {
-            background: #818181;
-        }
-        
-        .week4 {
-            background: #595959;
-        }
-        
-        .week5 {
-            background: #333;
-            color: #fff
-        }
-        
-        .tmenu {
-            display: inline-block;
-            padding: 0 10px;
-            height: 35px;
-            line-height: 35px;
-            color: #fff;
-        }
-    </style>
+	<meta charset="utf-8">
+	<title>대흥소프트밀</title>
+	<meta name="Referrer" content="origin">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="./softmill_pc/css/font.css" />
+	<style>
+		body {
+			font-family: 'Noto Sans CJK KR Regular', 'Malgun Gothic', '맑은 고딕', 돋움, Dotum, 굴림, Gulim, AppleSDGothicNeo, Droid Sans, arial, sans-serif !important;
+			font-size: 20px;
+			margin: 20px;
+			padding: 0;
+		}
+
+		h1 {
+			margin: 20px 0;
+			font-size: 20px;
+		}
+
+		h1 strong {
+			color: #000000;
+			font-weight: 500;
+			font-size: 60px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		ul,
+		li {
+			list-style: none
+		}
+
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+			font-size: 20px;
+		}
+
+		table th,
+		strong {
+			font-weight: normal;
+		}
+
+		.list_w table {
+			width: 100%;
+			margin: 26px auto;
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		.list_w table tr:hover {
+			background: #f3f3f3;
+		}
+
+		.list_w table tr.bdt td {
+			border-top: 1px solid #FF5F00
+		}
+
+		.list_w table th {
+			padding: 20px 0;
+			border: solid 1px #ddd;
+			background: #efefef;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		.list_w table td {
+			padding: 20px 20px;
+			border: 1px solid #e6e6e6;
+		}
+
+		.list_w table td a {
+			color: #FF5F00;
+			text-align: left;
+			padding: 10px;
+		}
+
+		.list_w table tr.on td {
+			background: #ffcc99;
+		}
+
+		.list_w table tr.title th {
+			background: #FF5F00;
+			color: #fff;
+			font-size: 15px;
+			border: 0;
+			padding: 5px 0 5px 10px;
+			font-weight: bold;
+			text-align: left;
+		}
+
+		.aj_menu {
+			padding: 20px 0;
+		}
+
+		.aj_menu li {
+			display: inline-block;
+		}
+
+		.aj_menu li>a {
+			background: #FF5F00;
+			padding: 20px 30px;
+			color: #fff;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		.aj_menu li>a.now {
+			background: #000000;
+			border: 1px solid #000;
+			color: #fff;
+		}
+
+		.aj_menu li>a.nows {
+			background: #ffffff;
+			border: 1px solid #000;
+			color: #000;
+		}
+
+		.top_menu li {
+			margin-right: 2px;
+			float: left;
+		}
+
+		.top_menu li a {
+			width: 200px;
+			height: 50px;
+			line-height: 35px;
+			text-align: left;
+			font-weight: 500;
+			color: #fff;
+			font-size: 20px;
+			display: inline-block;
+			background: #27a0b2;
+		}
+
+		.q_top {
+			display: inline-block;
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			z-index: 99
+		}
+
+		.q_top a {
+			display: inline-block;
+			background: #ccc;
+			opacity: 0.5;
+			padding: 10px;
+			color: #000;
+			font-weight: bold;
+			font-size: 16px;
+		}
+
+		.week1 {
+			background: #aaa;
+		}
+
+		.week2 {
+			background: #bbbbbb;
+		}
+
+		.week3 {
+			background: #818181;
+		}
+
+		.week4 {
+			background: #595959;
+		}
+
+		.week5 {
+			background: #333;
+			color: #fff
+		}
+
+		.tmenu {
+			display: inline-block;
+			padding: 0 10px;
+			height: 35px;
+			line-height: 35px;
+			color: #fff;
+		}
+	</style>
 </head>
 
 <body id="guide">
+	<div id="guide_wrap">
+		<div class="header">
+			<h1>
+				<strong>대흥소프트밀 웹사이트 Admin</strong>
+			</h1>
+			<hr>
+		</div>
+		<ul class="aj_menu">
+			<li>
+				<a href="index.html" class="nows">PC Page List</a>
+				<a href="index_mobile.html" class="nows">Mobile Page List</a>
+				<a href="index_admin.html" class="now">Admin Page List</a>
+			</li>
+		</ul>
+		<div class="list_w">
+			<table class="codinglist" style="text-align: left;">
+				<colgroup>
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+					<col width="13%">
+					<col width="10%">
+					<col width="*" style="text-align:left;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>1depth</th>
+						<th>2depth</th>
+						<th>3depth</th>
+						<th>4depth</th>
+						<th>상태</th>
+						<th>관리자</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>공통</td>
+						<td>layout</td>
+						<td></td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/layout.html" target="_blank">softmill_admin/html/layout.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td>로그인페이지</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/login.html" target="_blank">softmill_admin/html/login.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td>메인</td>
+						<td>메인 배너 관리</td>
+						<td>
+							<span>리스트</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/main_banner_manage_list.html" target="_blank">softmill_admin/html/main_banner_manage_list.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>리스트-결과없음</span>
+						</td>
+						<td class="state"></td>
+						<td>완료</td>
+						<td>
+							<a href="softmill_admin/html/main_banner_manage_list_none.html"	target="_blank">softmill_admin/html/main_banner_manage_list_none.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td class="state">
+							<span>등록(수정)</span>
+						</td>
+						<td></td>
+						<td>완료</td>
+						<td>
+							<a href="softmill_admin/html/add_main_banner.html" target="_blank">softmill_admin/html/add_main_banner.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>GNB 배너 관리</td>
+						<td>
+							<span>리스트</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/gnb_banner_list.html" target="_blank">softmill_admin/html/gnb_banner_list.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>리스트-결과없음</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/gnb_banner_list_none.html"	target="_blank">softmill_admin/html/gnb_banner_list_none.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>등록(수정)</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/add_gnb_banner.html"	target="_blank">softmill_admin/html/add_gnb_banner.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>달력</span>
+						</td>
+						<td></td>
+						<td class="state">미완료</td>
+						<td>
+							<a href="softmill_admin/html/add_gnb_banner.html"	target="_blank">softmill_admin/html/add_gnb_banner.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td>제품</td>
+						<td>제품관리</td>
+						<td>
+							<span>리스트</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/pruduct_manage_list.html" target="_blank">softmill_admin/html/pruduct_manage_list.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>리스트-결과없음</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/pruduct_list_none.html" target="_blank">softmill_admin/html/pruduct_list_none.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>등록(수정)</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/add_product_management.html"	target="_blank">softmill_admin/html/add_product_management.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td>회사소개</td>
+						<td>명장교육기술원</td>
+						<td>교육성과</td>
+						<td>
+							<span>리스트</span>
+						</td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/edu_list.html" target="_blank">softmill_admin/html/edu_list.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<span>리스트-결과없음</span>
+						</td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/edu_list_none.html" target="_blank">softmill_admin/html/edu_list_none.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<span>등록(수정)</span>
+						</td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/add_edu.html" target="_blank">softmill_admin/html/add_edu.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>주요고객사</td>
+						<td>
+							<span>리스트</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/major_list.html" target="_blank">softmill_admin/html/major_list.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>리스트-결과없음</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/major_list_none.html" target="_blank">softmill_admin/html/major_list_none.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>등록(수정)</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/add_major.html" target="_blank">softmill_admin/html/add_major.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>새소식</td>
+						<td>
+							<span>리스트</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/news_list.html" target="_blank">softmill_admin/html/news_list.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>리스트-결과없음</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/news_list_none.html"	target="_blank">softmill_admin/html/news_list_none.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>등록(수정)</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/add_news.html" target="_blank">softmill_admin/html/add_news.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td>고객지원</td>
+						<td>견적문의</td>
+						<td>
+							<span>리스트</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/contact_list.html" target="_blank">softmill_admin/html/contact_list.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>리스트-결과없음</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/contact_list_none.html" target="_blank">softmill_admin/html/contact_list_none.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>상세</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/contact_list_view.html" target="_blank">softmill_admin/html/contact_list_view.html</a>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>설치사례</td>
+						<td>
+							<span>리스트</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/install_list.html" target="_blank">softmill_admin/html/install_list.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>리스트-결과없음</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/install_list_none.html" target="_blank">softmill_admin/html/install_list_none.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>등록(수정)</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/add_install.html" target="_blank">softmill_admin/html/add_install.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<span>제품선택</span>
+						</td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/add_install_popup.html" target="_blank">softmill_admin/html/add_install_popup.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>자료실</td>
+						<td>사용설명서</td>
+						<td>
+							<span>리스트</span>
+						</td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/manual_list.html" target="_blank">softmill_admin/html/manual_list.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<span>리스트-결과없음</span>
+						</td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/manual_list_none.html"	target="_blank">softmill_admin/html/manual_list_none.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<span>등록(수정)</span>
+						</td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/add_manual.html" target="_blank">softmill_admin/html/add_manual.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>카달로그</td>
+						<td>
+							<span>등록(수정)</span>
+						</td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/add_catalogue.html" target="_blank">softmill_admin/html/add_catalogue.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>공식대리점</td>
+						<td>
+							<span>리스트</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/agency_list.html" target="_blank">softmill_admin/html/agency_list.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>리스트-결과없음</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/agency_list_none.html"	target="_blank">softmill_admin/html/agency_list_none.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>등록(수정)</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/add_agency.html" target="_blank">softmill_admin/html/add_agency.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td>카테고리 관리</td>
+						<td>제품 카테고리</td>
+						<td>
+							<span>리스트</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/pruduct_list.html" target="_blank">softmill_admin/html/pruduct_list.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>리스트-결과없음</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/pruduct_list_none.html" target="_blank">softmill_admin/html/pruduct_list_none.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>등록(수정)01</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/add_pruduct_01.html"	target="_blank">softmill_admin/html/add_pruduct_01.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>등록(수정)02</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/add_pruduct_02.html"	target="_blank">softmill_admin/html/add_pruduct_02.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>고객사 카테고리</td>
+						<td>
+							<span>리스트</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/client_list.html" target="_blank">softmill_admin/html/client_list.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>리스트-결과없음</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/client_list_none.html"	target="_blank">softmill_admin/html/client_list_none.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<span>등록(수정)</span>
+						</td>
+						<td></td>
+						<td class="state">완료</td>
+						<td>
+							<a href="softmill_admin/html/add_client.html" target="_blank">softmill_admin/html/add_client.html</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!-- top menu -->
+	<div class="q_top">
+		<a href="#">▲ TOP</a>
+	</div>
+</body>
 
-    <div id="guide_wrap">
-        <div class="header">
-            <h1>
-                <strong>대흥소프트밀 웹사이트 Admin</strong>
-            </h1>
-            <hr>
-        </div>
-
-        <ul class="aj_menu">
-            <li>
-                <li><a href="index.html" class="nows">PC Page List</a><a href="index_mobile.html" class="nows">Mobile Page List</a><a href="index_admin.html" class="now">Admin Page List</a></li>
-            </li>
-        </ul>
-        <div class="list_w">
-
-            <table class="codinglist" style="
-text-align: left;
-">
-                <colgroup>
-                    <col width="10%">
-                    <col width="10%">
-                    <col width="10%">
-                    <col width="13%">
-                    <col width="10%">
-                    <col width="*" style="text-align:left;">
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>1depth</th>
-                        <th>2depth</th>
-                        <th>3depth</th>
-                        <th>4depth</th>
-                        <th>상태</th>
-                        <th>관리자</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>공통</td>
-                        <td>layout</td>
-                        <td></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/layout.html" target="_blank">softmill_admin/html/layout.html</a>
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td>로그인페이지</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/login.html" target="_blank">softmill_admin/html/login.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>메인</td>
-                        <td>메인 배너 관리</td>
-                        <td>
-                            <span>리스트</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/main_banner_manage_list.html" target="_blank">softmill_admin/html/main_banner_manage_list.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-
-                        <td></td>
-                        <td>
-                            <span>리스트-결과없음</span></td>
-                        <td class="state"></td>
-                        <td>완료</td>
-                        <td>
-                            <a href="softmill_admin/html/main_banner_manage_list_none.html" target="_blank">softmill_admin/html/main_banner_manage_list_none.html</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td></td>
-
-                        <td></td>
-                        <td class="state">
-                            <span>등록(수정)</span></td>
-                        <td></td>
-
-                        <td>완료</td>
-                        <td>
-                            <a href="softmill_admin/html/add_main_banner.html" target="_blank">softmill_admin/html/add_main_banner.html</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>GNB 배너 관리</td>
-                        <td>
-                            <span>리스트</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/gnb_banner_list.html" target="_blank">softmill_admin/html/gnb_banner_list.html</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>리스트-결과없음</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/gnb_banner_list_none.html" target="_blank">softmill_admin/html/gnb_banner_list_none.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>등록(수정)</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/add_gnb_banner.html" target="_blank">softmill_admin/html/add_gnb_banner.html</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>달력</span></td>
-                        <td></td>
-                        <td class="state">미완료</td>
-                        <td>
-                            <a href="softmill_admin/html/add_gnb_banner.html" target="_blank">softmill_admin/html/add_gnb_banner.html</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>제품</td>
-                        <td>제품관리</td>
-                        <td>
-                            <span>리스트</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/pruduct_manage_list.html" target="_blank">softmill_admin/html/pruduct_manage_list.html</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>리스트-결과없음</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/pruduct_list_none.html" target="_blank">softmill_admin/html/pruduct_list_none.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>등록(수정)</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/add_product_management.html" target="_blank">softmill_admin/html/add_product_management.html</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>회사소개</td>
-                        <td>명장교육기술원</td>
-                        <td>교육성과</td>
-                        <td>
-                            <span>리스트</span></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/edu_list.html" target="_blank">softmill_admin/html/edu_list.html</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>리스트-결과없음</span></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/edu_list_none.html" target="_blank">softmill_admin/html/edu_list_none.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-
-                        <td></td>
-                        <td>
-                            <span>등록(수정)</span></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/add_edu.html" target="_blank">softmill_admin/html/add_edu.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>주요고객사</td>
-                        <td>
-                            <span>리스트</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/major_list.html" target="_blank">softmill_admin/html/major_list.html</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>리스트-결과없음</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/major_list_none.html" target="_blank">softmill_admin/html/major_list_none.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>등록(수정)</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/add_major.html" target="_blank">softmill_admin/html/add_major.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>새소식</td>
-                        <td>
-                            <span>리스트</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/news_list.html" target="_blank">softmill_admin/html/news_list.html</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>리스트-결과없음</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/news_list_none.html" target="_blank">softmill_admin/html/news_list_none.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>등록(수정)</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/add_news.html" target="_blank">softmill_admin/html/add_news.html</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>고객지원</td>
-                        <td>견적문의</td>
-                        <td>
-                            <span>리스트</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/contact_list.html" target="_blank">softmill_admin/html/contact_list.html</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>리스트-결과없음</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/contact_list_none.html" target="_blank">softmill_admin/html/contact_list_none.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>상세</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/contact_list_view.html" target="_blank">softmill_admin/html/contact_list_view.html</a>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>설치사례</td>
-                        <td>
-                            <span>리스트</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/install_list.html" target="_blank">softmill_admin/html/install_list.html</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>리스트-결과없음</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/install_list_none.html" target="_blank">softmill_admin/html/install_list_none.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>등록(수정)</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/add_install.html" target="_blank">softmill_admin/html/add_install.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>제품선택</span></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/add_install_popup.html" target="_blank">softmill_admin/html/add_install_popup.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>자료실</td>
-                        <td>사용설명서</td>
-                        <td>
-                            <span>리스트</span></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/manual_list.html" target="_blank">softmill_admin/html/manual_list.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>리스트-결과없음</span></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/manual_list_none.html" target="_blank">softmill_admin/html/manual_list_none.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>등록(수정)</span></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/add_manual.html" target="_blank">softmill_admin/html/add_manual.html</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>카달로그</td>
-                        <td>
-                            <span>등록(수정)</span></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/add_catalogue.html" target="_blank">softmill_admin/html/add_catalogue.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>공식대리점</td>
-                        <td>
-                            <span>리스트</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/agency_list.html" target="_blank">softmill_admin/html/agency_list.html</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>리스트-결과없음</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/agency_list_none.html" target="_blank">softmill_admin/html/agency_list_none.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>등록(수정)</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/add_agency.html" target="_blank">softmill_admin/html/add_agency.html</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>카테고리 관리</td>
-                        <td>제품 카테고리</td>
-                        <td>
-                            <span>리스트</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/pruduct_list.html" target="_blank">softmill_admin/html/pruduct_list.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>리스트-결과없음</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/pruduct_list_none.html" target="_blank">softmill_admin/html/pruduct_list_none.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>등록(수정)01</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/add_pruduct_01.html" target="_blank">softmill_admin/html/add_pruduct_01.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>등록(수정)02</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/add_pruduct_02.html" target="_blank">softmill_admin/html/add_pruduct_02.html</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td>고객사 카테고리</td>
-                        <td>
-                            <span>리스트</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/client_list.html" target="_blank">softmill_admin/html/client_list.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>리스트-결과없음</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/client_list_none.html" target="_blank">softmill_admin/html/client_list_none.html</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span>등록(수정)</span></td>
-                        <td></td>
-                        <td class="state">완료</td>
-                        <td>
-                            <a href="softmill_admin/html/add_client.html" target="_blank">softmill_admin/html/add_client.html</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div>
-    </div>
-    <!-- top menu -->
-    <div class="q_top">
-        <a href="#">▲ TOP</a>
-    </div>
-
-
-</body></html>
+</html>

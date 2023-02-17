@@ -108,6 +108,23 @@ $(document).ready(function(){
 		$('.accordion').find('.active').removeClass('active');
 		$(this).parent().next().slideDown('slow');
 		$(this).addClass('active');
+
+		var offset = $('.accordion').find('.active').parent().parent().offset();  
+
+		const cate_list = document.querySelectorAll('.accordion > .cate');
+		let total_height = 0;
+		cate_list.forEach((el) => {
+			total_height += el.getBoundingClientRect().height;
+		});
+
+		// console.log('offset.top: ', offset.top);
+		// console.log('total_height: ', total_height);
+		// console.log($(this).hasClass('intro'));
+
+		if($(this).hasClass('intro')) {
+			$('.accordion').animate({scrollTop: (total_height + 400 - offset.top)}, 600);
+		}
+
 		}
 	});
 })( jQuery );
@@ -2094,3 +2111,34 @@ if(window.location.pathname.replace(/^.*\//, '').includes('product_detail')) { /
 
 }
 /* //제품 상세 - 탭 메뉴의 카테고리 활성화 / 비활성화 */
+
+
+
+/* 공통 - 탭 메뉴의 카테고리 포지셔닝 */
+tabMenuPosition();
+function tabMenuPosition() {
+
+	const $tab_menu = document.querySelector('.tabmenus.flex_style'); // 탭메뉴 ul
+
+	if(!$tab_menu) return; // 안전 장치
+
+	let $target_list = undefined;
+
+	for (const $list of $tab_menu.children) { // 탭메뉴 리스트 루프
+		
+		if($list.firstElementChild.classList.contains('active')) { // 활성화 아이템 일 때
+			$target_list = $list;
+		}
+
+	}
+
+	const target_margin_right = removeUnitText(window.getComputedStyle($target_list).getPropertyValue('margin-right')); // 타겟 아이템 마진 값
+	const gap 								= $target_list.offsetLeft - $tab_menu.getBoundingClientRect().width + target_margin_right; // 타겟 아이템이 화면을 나간 거리 값
+
+	if(gap > 0) { // 타겟 아이템이 화면을 나갔을 때
+		$tab_menu.scrollLeft = gap + target_margin_right * 2;
+	}
+
+	
+}
+/* //공통 - 탭 메뉴의 카테고리 포지셔닝 */
