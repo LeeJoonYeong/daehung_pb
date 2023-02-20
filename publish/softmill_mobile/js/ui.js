@@ -2142,3 +2142,56 @@ function tabMenuPosition() {
 	
 }
 /* //공통 - 탭 메뉴의 카테고리 포지셔닝 */
+
+
+
+/* 공통 - 탭 메뉴의 wrap gradient on/off */
+tabMenugradient();
+function tabMenugradient() {
+
+	const $tabmenus_Wrap = document.querySelector('.tabmenus_Wrap'); // 탭메뉴 wrap
+
+	if(!$tabmenus_Wrap) return; // 안전 장치
+
+	const $tabmenu_list  = document.querySelectorAll('.tabmenus.flex_style li');
+	let total_list_width = 0; // 리스트 아이템들의 총 witdh 합
+
+	for (const $lists of $tabmenu_list) {
+		
+		// total_list_width += $lists.getBoundingClientRect().width + removeUnitText(window.getComputedStyle($lists).getPropertyValue('margin-right'));
+		total_list_width += $lists.getBoundingClientRect().width;
+
+	}
+
+	let gap = $tabmenus_Wrap.getBoundingClientRect().width - total_list_width;
+
+	if(gap < 0) {
+
+		$tabmenus_Wrap.classList.add('over_list');
+
+	}
+
+	const $tabmenu_ul  = document.querySelector('.tabmenus.flex_style');
+
+	// console.log('total_list_width: ', total_list_width);
+	// console.log('$tabmenu_ul.getBoundingClientRect().width: ', $tabmenu_ul.getBoundingClientRect().width);
+
+
+	$tabmenu_ul.addEventListener('scroll', () => {
+
+		// console.log('스크롤');
+
+		if($tabmenu_ul.scrollLeft >= total_list_width - $tabmenu_ul.getBoundingClientRect().width) {
+
+			$tabmenus_Wrap.classList.remove('over_list');
+
+		} else {
+
+			$tabmenus_Wrap.classList.add('over_list');
+
+		}
+
+	});
+
+}
+/* //공통 - 탭 메뉴의 wrap gradient on/off */

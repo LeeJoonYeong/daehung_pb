@@ -53,9 +53,26 @@
 }
 
 .tabmenus_Wrap {
-	margin-top: 46px;
+	position: relative;
 	margin: 20px 20px 0;
 	overflow: hidden;
+}
+
+div.tabmenus_Wrap::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 65px;
+	height: 100%;
+	background: linear-gradient(270deg, #FFFFFF 12.32%, rgba(255, 255, 255, 0) 68.37%);
+	opacity: 0;
+	transition: all .4s;
+}
+
+.tabmenus_Wrap.over_list::after {
+	opacity: 1;
 }
 
 .tabmenus {
@@ -64,6 +81,7 @@
 }
 
 .tabmenus.flex_style {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	width: 100%;
@@ -84,7 +102,9 @@
 
 .tabmenus.flex_style li {
 	flex-shrink: 0;
-	float: initial;
+	position: relative;
+	display: inline-block;
+	width: max-content;
 	padding: 4px 0;
 	font-size: 14px;
 }
@@ -102,7 +122,14 @@
 }
 
 .tabmenus.flex_style li a {
+	position: relative;
 	padding: 0;
+}
+
+.tabmenus.flex_style li a span {
+	position: relative;
+	display: inline-block;
+	width: fit-content;
 }
 
 .product_list {
@@ -350,26 +377,26 @@
 }
 
 .detail_data .data li .stit {
-	float: left;
 	position: relative;
+	float: left;
 	width: 74%;
-	font-size: 13px;
+	height: 22px;
 	line-height: 22px;
-	font-weight: 300;
+	font-size: 13px;
+	font-weight: 400;
+	text-overflow: ellipsis;
 	-webkit-line-clamp: 1;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 22px;
 }
 
 .detail_data .desc {
 	position: relative;
 	float: left;
-	font-size: 13px;
 	line-height: 22px;
+	font-size: 13px;
+	font-weight: 400;
 	color: #666;
-	font-weight: 300;
 }
 
 .cata {
@@ -604,6 +631,18 @@
 	line-height: 30px;
 	color: #000;
 	padding: 0 20px;
+}
+
+.detail_reward .rtitle .more {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	padding-right: 14px;
+	background: url('../images/icon/arrow_right_type03.svg') right center / 4px 8px no-repeat;
+	font-size: 14px;
+	font-weight: 500;
+	color: #6F6F6F;
+	letter-spacing: -0.01em;
 }
 
 .detail_reward_list {
