@@ -2195,3 +2195,46 @@ function tabMenugradient() {
 
 }
 /* //공통 - 탭 메뉴의 wrap gradient on/off */
+
+
+
+
+/* 설치사례 상세 - 설치제품 텍스트 펼치기/접기 */
+textLimit();
+function textLimit() {
+
+	const $data_limit_row = document.querySelector('[data-limit-text="two_row"]');
+
+	if(!$data_limit_row) return; // 안전 장치
+
+	const limit_row_num 	= 2; // 제한 할 줄 수
+	const standard_height = removeUnitText(window.getComputedStyle($data_limit_row).getPropertyValue('line-height')) * limit_row_num; // 제한 기준 높이 값
+
+	if(standard_height < $data_limit_row.getBoundingClientRect().height) { // 3줄 이상 일 때
+
+		$data_limit_row.classList.add('txt_limit'); // 텍스트 제한 클래스 삽입
+
+		const $btn_arrow = $data_limit_row.lastElementChild; // 펼치기 / 접기 버튼
+
+		$btn_arrow.addEventListener('click', (e) => {
+
+			console.log('펼치기 / 접기 버튼 클릭하였습니다.');
+
+			const $target_row = e.target.parentElement; // 해당 row
+
+			if($target_row.classList.contains('opened')) { // 펼쳐져 있을 때
+
+				$target_row.classList.remove('opened');
+
+			} else { // 접혀져 있을 때
+
+				$target_row.classList.add('opened');
+
+			}
+
+		});
+
+	}
+
+}
+/* //설치사례 상세 - 설치제품 텍스트 펼치기/접기 */

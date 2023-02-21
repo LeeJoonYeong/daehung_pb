@@ -19,10 +19,10 @@
 
 .custo_Wrap .title .desc {
 	position: absolute;
-	right: 0;
 	top: 0;
-	font-size: 14px;
+	right: 0;
 	line-height: 27px;
+	font-size: 13px;
 	color: #4a4a4a;
 	text-align: left;
 }
@@ -33,7 +33,7 @@
 
 .custo_Wrap .forms {
 	position: relative;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 
 .custo_Wrap .forms .name {
@@ -123,18 +123,26 @@
 
 .attach {
 	position: relative;
+	padding-left: 18px;
 	margin-top: 16px;
 }
 
 .attach .file {
 	position: relative;
-	font-size: 14px;
+	width: fit-content;
+	max-width: 100%;
 	line-height: 42px;
+	padding-right: 20px;
+	font-size: 14px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .attach .file span {
 	position: absolute;
 	top: 50%;
+	right: 0;
   transform: translateY(-50%);
 	width: 10px;
 	height: 10px;
@@ -152,6 +160,12 @@
 	font-size: 14px;
 	font-weight: 500;
 	color: #000;
+}
+
+.form-input::placeholder {
+	font-size: 14px;
+	font-weight: 400;
+	color: #bbb;
 }
 
 .form-input-eorr {
@@ -188,6 +202,12 @@
 	outline: none;
 }
 
+.form-input-text::placeholder {
+	font-size: 14px;
+	font-weight: 400;
+	color: #bbb;
+}
+
 .form-input-text-eorr {
 	border: solid 1px #FF2020;
 	display: block;
@@ -219,8 +239,7 @@
 
 .explan {
 	position: relative;
-	margin-top: -40px;
-	position: relative;
+	margin-top: -34px;
 }
 
 .desc {
@@ -237,13 +256,20 @@
 
 .bate {
 	position: absolute;
-	font-size: 12px;
-	line-height: 16px;
 	top: 4px;
 	right: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	line-height: 16px;
+	font-size: 12px;
 }
 
 .bate em {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-right: 2px;
 	font-weight: 500;
 	color: #000000;
 }
@@ -251,7 +277,7 @@
 .combo_boxs {
 	float: left;
 	width: 48%;
-	height: 46px;
+	height: 41px;
 	margin-right: 4%;
 }
 
@@ -262,8 +288,32 @@
 .aree {
 	position: relative;
 	width: 100%;
-	padding: 20px 20px 20px 20px;
+	padding: 20px 10px 20px 20px;
 	background-color: #F9F9F9;
+}
+
+.aree > article {
+	height: 116px;
+	line-height: 22px;
+	padding-right: 24px;
+	font-size: 13px;
+	text-align: initial;
+	letter-spacing: -0.03em;
+	overflow-y: auto;
+}
+
+.aree > article::-webkit-scrollbar {
+	width: 4px;
+}
+
+.aree > article::-webkit-scrollbar-thumb {
+	width: 4px;
+	border-radius: 2px;
+	background-color: #d9d9d9;
+}
+
+.aree > article > span {
+	color: #313131;
 }
 
 .aree textarea {
@@ -315,6 +365,9 @@ input#chk_top {
 }
 
 input#chk_top+label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	font-size: 14px;
 	font-weight: 500;
 	color: #000;
@@ -347,26 +400,26 @@ input#chk_top:checked+label:before {
 
 .btn_send {
 	position: relative;
-	margin-top: 50px;
 	text-align: center;
 }
 
 .btn_send button {
 	width: 100%;
+	line-height: 25px;
 	padding: 16px 84px;
-	color: #fff;
 	background: #000000;
 	font-size: 16px;
-	line-height: 25px;
+	font-weight: 500;
+	color: #fff;
 }
 
 .btn_send button:active {
 	width: 100%;
+	line-height: 25px;
 	padding: 16px 84px;
-	color: #bbb;
 	background: #E6E6E6;
 	font-size: 16px;
-	line-height: 25px;
+	color: #bbb;
 }
 
 .pop_product {
@@ -495,25 +548,25 @@ input#chk_top:checked+label:before {
 
 .alert_title {
 	position: relative;
-	font-size: 18px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 	line-height: 26px;
-	color: #000;
 	margin: 24px 20px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000;
 }
 
 .alert_title span {
-	position: absolute;
-	right: 0;
-	top: 5px;
-	font-size: 13px;
-	line-height: 20px;
-	margin-left: 40px;
-	vertical-align: middle;
-	color: #4a4a4a;
+	font-size: 12px;
+	font-weight: 400;
+	color: #6f6f6f;
 }
 
 .alert_title em {
-	color: #FF5C00;
+	color: #FF5f00;
 }
 
 .pop_forms {
@@ -631,3 +684,52 @@ input#chk_top:checked+label:before {
 	z-index: 9999;
 }
 /* //견적 문의 - 문의 완료 팝업 스타일 */
+
+
+/* 설치 사례 상세 - 유형 & 설치제품 스타일 */
+.view_title.type_reward > li {
+	display: flow-root;
+	padding: 18px 0;
+}
+
+.view_title.type_reward > li .catalog {
+	line-height: 22px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.view_title.type_reward > li .title {
+	width: 61.25%;
+	line-height: 22px;
+	font-size: 14px;
+}
+
+.view_title.type_reward > li .title.txt_limit {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	max-height: 44px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.view_title.type_reward > li .title.txt_limit.opened {
+	display: initial;
+	max-height: initial;
+	text-overflow: initial;
+	overflow: initial;
+}
+
+.view_title.type_reward > li .title.txt_limit > button {
+	position: absolute;
+	right: 0;
+	bottom: 18px;
+	width: 24px;
+	height: 24px;
+	background: url('../images/icon/arrow_down_type01.svg') center / 24px no-repeat;
+}
+
+.view_title.type_reward > li .title.txt_limit.opened > button {
+	background-image: url('../images/icon/arrow_up_type01.svg');
+}
+/* //설치 사례 상세 - 유형 & 설치제품 스타일 */

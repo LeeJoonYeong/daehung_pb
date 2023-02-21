@@ -971,40 +971,42 @@
 }
 
 .view_list li a {
-	display: block;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 14.5px 0;
 	overflow: hidden;
-	padding: 30px 0;
 }
 
 .view_list li .arrow {
-	display: block;
+	position: relative;
 	float: left;
+	display: block;
 	width: 24px;
-	padding: 9px 6px;
+	height: 24px;
 	margin-right: 4px;
 }
 
 .view_list li .catalog {
-	display: block;
-	font-size: 14px;
-	line-height: 26px;
 	float: left;
+	display: block;
 	width: 60px;
+	font-size: 14px;
+	font-weight: 500;
 	color: #000000;
 }
 
 .view_list li .title {
-	display: block;
-	font-size: 14px;
-	line-height: 26px;
 	float: left;
+	display: block;
 	width: auto;
+	font-size: 14px;
 	color: #6f6f6f;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 	-webkit-line-clamp: 1;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
 }
 
 .view_list li .data {
@@ -1019,7 +1021,8 @@
 }
 
 .view_list li img {
-	width: 10px;
+	width: 100%;
+	height: 100%;
 }
 
 .btn_box {
@@ -1053,9 +1056,10 @@
 }
 
 .btn_box a.btn_list {
+	line-height: 22px;
 	padding: 15px 0;
 	font-size: 13px;
-	line-height: 22px;
+	font-weight: 500;
 }
 
 .paging {
@@ -1131,9 +1135,9 @@
 
 .map_box .info .softmill {
 	width: 100%;
-	padding-bottom: 40px;
-	border-bottom: 1px solid #e6e6e6;
+	padding-bottom: 15px;
 	margin-bottom: 40px;
+	border-bottom: 1px solid #e6e6e6;
 }
 
 .map_box .info .title {
@@ -1144,10 +1148,10 @@
 }
 
 .map_box .info p {
-	font-size: 14px;
 	line-height: 22px;
+	margin-bottom: 25px;
+	font-size: 14px;
 	color: #6f6f6f;
-	margin-bottom: 10px;
 }
 
 .map_box .info span {
@@ -1172,9 +1176,10 @@
 
 .map_box .info .traffic .bcopy {
 	position: relative;
+	line-height: 22px;
+	margin-bottom: 0;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 22px;
 }
 
 
