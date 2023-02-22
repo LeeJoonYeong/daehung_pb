@@ -458,8 +458,8 @@ div.tabmenus_Wrap::after {
 }
 
 .detail_tab_Wrap {
+	position: absolute;
 	width: 100%;
-	z-index: 9999;
 	height: 52px;
 }
 
@@ -526,6 +526,7 @@ div.tabmenus_Wrap::after {
 
 .detail_content_Wrap {
 	position: relative;
+	margin-top: 52px;
 }
 
 .detail_content_Wrap img {

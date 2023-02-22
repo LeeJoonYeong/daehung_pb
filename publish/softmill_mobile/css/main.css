@@ -475,6 +475,7 @@
 	bottom: 0;
 	width: 280px;
 	height: 306px;
+	padding: 34px 0 0 6px;
 }
 
 .exper_pro li:last-child {
@@ -482,22 +483,23 @@
 }
 
 .exper_pro .title {
-	padding-left: 30px;
-	font-size: 20px;
 	line-height: 30px;
+	padding-left: 25px;
+	margin-bottom: 12px;
+	font-size: 20px;
 	font-weight: 500;
 	color: #000;
-	margin-bottom: 12px;
 }
 
 .exper_pro .btitle {
-	padding: 0 20px 0 30px;
-	font-size: 13px;
+	height: 44px;
 	line-height: 22px;
+	padding: 0 25px;
+	font-size: 13px;
 	color: #313131;
+	letter-spacing: -0.03em;
 	opacity: 0.8;
 	overflow: hidden;
-	height: 44px;
 }
 
 .sub_pro {
@@ -835,14 +837,14 @@
 @media screen and (max-width: 1024px) {
 
 	.exper_pro {
-		width: 904px;
+		width: 920px;
 		height: 420px;
-		margin: 0;
 		padding: 0 20px;
+		margin: 0;
 	}
 
 	.exper_pro li {
-		margin-right: 12px;
+		margin-right: 20px;
 	}
 
 	.sub_pro {
