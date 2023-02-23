@@ -388,7 +388,7 @@
 }
 
 .history_wrap .time_line li:last-child {
-	padding-bottom: 162px;
+	padding-bottom: 161px;
 }
 
 .history_wrap .time_line li p {
@@ -760,6 +760,10 @@
 	float: left;
 	width: 428px;
 	margin: 130px 18px 0 0;
+}
+
+.edu_list li:first-child {
+	margin-top: 140px;
 }
 
 .edu_list li:nth-child(3n) {
