@@ -1416,7 +1416,7 @@ input::placeholder {
 .agency_list li .title {
 	position: relative;
 	display: inline-block;
-	max-width: 245px;
+	max-width: 220px;
 	line-height: 26px;
 	padding: 0 50px 0 34px;
 	margin-bottom: 16px;

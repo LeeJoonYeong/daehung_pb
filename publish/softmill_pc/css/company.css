@@ -3,7 +3,16 @@
 
 .stitle_Wrap {
 	position: relative;
-	padding: 130px 0;
+	padding-bottom: 130px;
+	margin-top: 158px;
+}
+
+.stitle_Wrap.type02 {
+	margin-top: 102px;
+}
+
+.stitle_Wrap.type03 {
+	margin-top: 130px;
 }
 
 .stitle_Wrap .title {
@@ -25,7 +34,12 @@
 
 .stitle_philo_Wrap {
 	position: relative;
-	padding: 130px 0 60px;
+	padding-bottom: 60px;
+	margin-top: 130px;
+}
+
+.tabmenu_Wrap.fixed + .stitle_philo_Wrap {
+	margin-top: 305px;
 }
 
 .stitle_philo_Wrap .title {
@@ -83,18 +97,19 @@
 }
 
 .capa_Wrap li .title {
-	font-size: 36px;
-	color: #000;
 	line-height: 43px;
+	margin-bottom: 40px;
+	font-size: 36px;
 	font-weight: 500;
-	margin-bottom: 20px;
+	color: #000;
 }
 
 .capa_Wrap li .tag {
-	font-size: 22px;
-	color: #000;
 	line-height: 35px;
 	margin: 20px 0 10px 0;
+	font-size: 22px;
+	font-weight: 500;
+	color: #000;
 }
 
 .capa_Wrap li .stitle {
@@ -146,6 +161,16 @@
 
 .process li:last-child {
 	margin-right: 0;
+}
+
+.process li .img_box {
+	width: 140px;
+	height: 140px;
+}
+
+.process li .img_box img {
+	width: 100%;
+	height: 100%;
 }
 
 .process li .title {
@@ -247,6 +272,10 @@
 	margin: 0 auto;
 }
 
+.tabmenu_Wrap.fixed + .ceo_wrap {
+	margin-top: 305px;
+}
+
 .ceo_wrap .message {
 	float: left;
 	width: 782px;
@@ -285,12 +314,12 @@
 }
 
 .ceo_wrap .sign span {
-	font-size: 20px;
-	line-height: 24px;
-	color: #000;
-	opacity: 0.8;
 	line-height: 78px;
 	margin-right: 34px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #000;
+	opacity: 0.8;
 }
 
 .ceo_wrap .sign .ceo_sign {
@@ -305,6 +334,10 @@
 	position: relative;
 	width: 1320px;
 	margin: 0 auto;
+}
+
+.tabmenu_Wrap.fixed + .history_wrap {
+	margin-top: 175px;
 }
 
 .history_wrap .hline {
@@ -359,6 +392,9 @@
 }
 
 .history_wrap .time_line li p {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	line-height: 26px;
 }
 
@@ -407,17 +443,22 @@
 .history_wrap .time_line li .story span {
 	display: inline-block;
 	width: 44px;
-	font-size: 20px;
-	text-align: right;
 	line-height: 24px;
 	margin-right: 16px;
+	font-size: 20px;
+	font-weight: 500;
 	color: #000000;
+	text-align: right;
 }
 
 .ci_wrap {
 	position: relative;
 	width: 1320px;
 	margin: 0 auto;
+}
+
+.tabmenu_Wrap.fixed + .ci_wrap {
+	margin-top: 305px;
 }
 
 .ci_wrap .intro {
@@ -508,7 +549,7 @@
 	position: relative;
 	padding: 110px 0 130px;
 	text-align: center;
-	background-color: #FBFBFB;
+	background-color: #f9f9f9;
 }
 
 .ci_wrap .logo .log_box img {
@@ -545,14 +586,14 @@
 	height: 300px;
 	padding: 117px 0;
 	text-align: center;
-	background-color: #FBFBFB;
+	background-color: #f9f9f9;
 }
 
 .ci_wrap .logo .watermark li .breadth {
 	height: 300px;
 	padding: 100px 0;
 	text-align: center;
-	background-color: #FBFBFB;
+	background-color: #f9f9f9;
 }
 
 .ci_wrap .logo .watermark li:last-child {
@@ -617,10 +658,11 @@
 }
 
 .ci_wrap .color_box .title {
-	font-size: 20px;
 	line-height: 24px;
-	color: #ffffff;
 	margin-bottom: 100px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #ffffff;
 }
 
 .ci_wrap .color_box .bcopy {
@@ -676,17 +718,21 @@
 }
 
 .educa .info .title {
-	font-size: 40px;
 	line-height: 58px;
-	color: #000000;
 	margin-bottom: 30px;
+	font-size: 40px;
+	font-weight: 500;
+	color: #000000;
+	letter-spacing: -0.01em;
 }
 
 .educa .info .stitle {
-	font-size: 18px;
 	line-height: 30px;
-	color: #000000;
 	margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000000;
+	letter-spacing: -0.01em;
 }
 
 .educa .info .bcopy {
@@ -697,25 +743,27 @@
 
 .educa .info .sign {
 	font-size: 20px;
+	font-weight: 500;
 	line-height: 24px;
-	text-align: right;
 	color: #000000;
+	text-align: right;
+	letter-spacing: -0.01em;
 }
 
 .edu_list {
 	display: block;
 	width: 1320px;
-	margin: 0 auto;
+	margin: -130px auto 0;
 }
 
 .edu_list li {
 	float: left;
 	width: 428px;
-	margin: 0 18px 130px 0;
+	margin: 130px 18px 0 0;
 }
 
 .edu_list li:nth-child(3n) {
-	margin: 0 0 130px 0;
+	margin: 130px 0 0 0;
 }
 
 .edu_list li .list_img {
@@ -724,16 +772,17 @@
 }
 
 .edu_list li .bcopy {
-	margin-top: 30px;
-	font-size: 22px;
-	line-height: 35px;
-	color: #000000;
-	height: 70px;
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
-	overflow: hidden;
+	height: 70px;
+	line-height: 35px;
+	margin-top: 30px;
+	font-size: 22px;
+	font-weight: 500;
+	color: #000000;
 	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 .edu_list li .list_img img {
@@ -742,10 +791,11 @@
 }
 
 .edu_wrap .title {
-	font-size: 40px;
 	line-height: 58px;
-	color: #000000;
 	margin-bottom: 60px;
+	font-size: 40px;
+	font-weight: 500;
+	color: #000000;
 }
 
 .esg {
@@ -761,10 +811,11 @@
 }
 
 .esg .info .title {
-	font-size: 40px;
 	line-height: 58px;
-	color: #000000;
 	margin-bottom: 30px;
+	font-size: 40px;
+	font-weight: 500;
+	color: #000000;
 }
 
 .esg .info .stitle {
@@ -784,10 +835,12 @@
 .esg .info .box .btitle {
 	float: left;
 	width: 447px;
+	line-height: 31px;
 	padding-right: 50px;
 	font-size: 26px;
-	line-height: 31px;
+	font-weight: 500;
 	color: #000000;
+	letter-spacing: -0.01em;
 }
 
 .esg .info .box .bcopy {
@@ -799,18 +852,21 @@
 }
 
 .esg .info .sign {
+	line-height: 24px;
 	margin-top: 60px;
 	font-size: 20px;
-	line-height: 24px;
-	text-align: right;
+	font-weight: 500;
 	color: #000000;
+	text-align: right;
 }
 
 .esg .info .sign span {
-	font-size: 16px;
-	color: 6f6f6f;
 	line-height: 26px;
 	margin-right: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #313131;
+	letter-spacing: -0.01em;
 }
 
 

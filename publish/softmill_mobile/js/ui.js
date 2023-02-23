@@ -2136,7 +2136,9 @@ function tabMenuPosition() {
 	const gap 								= $target_list.offsetLeft - $tab_menu.getBoundingClientRect().width + target_margin_right; // 타겟 아이템이 화면을 나간 거리 값
 
 	if(gap > 0) { // 타겟 아이템이 화면을 나갔을 때
-		$tab_menu.scrollLeft = gap + target_margin_right * 2;
+
+		$tab_menu.scrollLeft = gap + $tab_menu.getBoundingClientRect().width / 2;
+		
 	}
 
 	

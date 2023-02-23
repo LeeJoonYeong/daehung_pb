@@ -161,14 +161,16 @@
 .indicator>li {
 	position: relative;
 	float: left;
-	font-size: 14px;
 	line-height: 27px;
+	padding-left: 34px;
+	margin-left: 4px;
+	font-size: 14px;
 	color: #929292;
-	padding-left: 27px;
 }
 
 .indicator>li:first-child {
 	padding-left: 0;
+	margin-left: 0;
 }
 
 .indicator>li button {
@@ -180,35 +182,35 @@
 }
 
 .indicator>li button span {
-	display: inline-block;
 	position: relative;
+	display: inline-block;
 	line-height: 27px;
-	padding-right: 22px;
+	padding-right: 23px;
 }
 
 .indicator>li button span:after {
 	content: '';
-	display: block;
 	position: absolute;
 	top: 3px;
 	right: 0;
-	overflow: hidden;
+	display: block;
+	width: 20px;
+	height: 20px;
 	background: url('../images/icon/top_arrow_drops.png') no-repeat center center;
 	background-size: 100% 100%;
-	width: 22px;
-	height: 22px;
+	overflow: hidden;
 }
 
 .indicator>li:not(:first-child):before {
 	content: '';
-	display: inline-block;
 	position: absolute;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
 	top: 0;
 	left: 0;
-	background: url('../images/icon/top_arrow.png') no-repeat 0 0;
+	background: url('../images/icon/arrow_right_type03.svg') no-repeat 0 0;
 	background-size: 100% 100%;
-	width: 27px;
-	height: 27px;
 }
 
 .indicator>li:last-child button {
@@ -224,8 +226,8 @@
 	overflow: hidden;
 	background: url('../images/icon/top_arrow_drop.png') no-repeat center center;
 	background-size: 100% 100%;
-	width: 22px;
-	height: 22px;
+	width: 20px;
+	height: 20px;
 }
 
 
@@ -373,6 +375,10 @@
 	position: relative;
 	height: 460px;
 	background: #fff;
+}
+
+.tabmenu_Wrap.fixed + .banner_Wrap {
+	margin-top: 175px;
 }
 
 .banner_Wrap img {
@@ -545,8 +551,8 @@
 
 .footer_wrap .copy .sns a {
 	display: block;
-	width: 22px;
-	margin-right: 20px;
+	width: 24px;
+	margin-right: 16px;
 	float: left;
 }
 
@@ -556,9 +562,10 @@
 
 .footer_wrap .copy .right {
 	float: right;
+	line-height: 22px;
 	font-size: 12px;
 	color: #6f6f6f;
-	line-height: 22px;
+	opacity: .6;
 }
 
 .menu_popup {
@@ -632,10 +639,11 @@
 .oneDepth li.company_intro::before {
 	content: '소프트밀 소개';
 	display: block;
-	font-size: 14px;
 	line-height: 17px;
-	color: #FF5C00;
 	margin: 80px 0 24px;
+	font-size: 14px;
+	color: #FF5C00;
+	letter-spacing: -0.04em;
 }
 
 .oneDepth li a {
@@ -662,11 +670,12 @@
 }
 
 .oneDepth .title {
-	font-size: 14px;
 	line-height: 17px;
-	color: #FF5C00;
 	margin: 80px 0 24px;
+	font-size: 14px;
+	color: #FF5C00;
 	text-align: left;
+	letter-spacing: -0.04em;
 }
 
 .twoDepth {
@@ -755,19 +764,19 @@
 }
 
 .treeDepth li .title {
-	font-size: 19px;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	height: 48px;
 	line-height: 24px;
+	padding: 0 20px;
 	margin: 20px 0 8px;
+	font-size: 20px;
+	font-weight: 500;
 	text-align: center;
 	color: #000;
-	font-weight: 500;
-	padding: 0 20px;
-	height: 48px;
-	display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 .treeDepth li .tag {
@@ -812,8 +821,8 @@
 
 .oneDepth .gnb_menu li .smenu li a.more {
 	display: inline-block;
+	padding: 0 40px 0 0;
 	background: url('../images/icon/main_sub_arrow.png') no-repeat top right / 30px 30px;
-	padding: 0 30px 0 0;
 }
 
 .oneDepth .gnb_menu li .smenu li a.more:hover {

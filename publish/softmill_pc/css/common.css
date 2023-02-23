@@ -314,52 +314,64 @@ input::placeholder {
 }
 
 .tac {
-	text-align: center
+	text-align: center;
 }
 
 .tar {
-	text-align: right
+	text-align: right;
 }
 
 .hip {
 	text-indent: -25px;
-	margin-left: 25px
+	margin-left: 25px;
 }
 
 .pt10 {
-	padding-top: 10px
+	padding-top: 10px;
 }
 
 .pl110 {
-	padding-left: 110px
+	padding-left: 110px;
 }
 
 .pl70 {
-	padding-left: 70px
+	padding-left: 70px;
 }
 
 .mt0 {
-	margin-top: 0 !important
+	margin-top: 0 !important;
 }
 
 .mt5 {
-	margin-top: 5px !important
+	margin-top: 5px !important;
 }
 
 .mt30 {
-	margin-top: 30px !important
+	margin-top: 30px !important;
 }
 
 .mt40 {
-	margin-top: 40px !important
+	margin-top: 40px !important;
 }
 
 .mt50 {
-	margin-top: 50px !important
+	margin-top: 50px !important;
 }
 
 .mt60 {
-	margin-top: 60px !important
+	margin-top: 60px !important;
+}
+
+.mb0 {
+	margin-bottom: 0 !important;
+}
+
+.mb20 {
+	margin-bottom: 20px !important;
+}
+
+.fontColor000 {
+	color: #000 !important;
 }
 
 .fwb {
@@ -628,14 +640,16 @@ input::placeholder {
 	display: none;
 }
 
-
-
 .combo_box {
 	width: 171px;
 	height: 56px;
 	position: absolute;
 	right: 0;
 	top: 0;
+}
+
+.combo_box.type02 {
+	width: 203px;
 }
 
 .combo_wrap {
@@ -1494,9 +1508,13 @@ input::placeholder {
 	height: 56px;
 	border-bottom: 1px solid #000;
 	background: url('../images/icon/arrow_down.png') no-repeat 100% 50%;
-	background-size: 30px;
+	background-size: 32px;
 	cursor: pointer;
 	z-index: 9990;
+}
+
+.selectBox.active {
+	background-image: url('../images/icon/arrow_up.png');
 }
 
 .selectBox.action {

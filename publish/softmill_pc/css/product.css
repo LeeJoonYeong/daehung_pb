@@ -325,8 +325,9 @@
 .detail_data .model {
 	position: relative;
 	float: left;
-	font-size: 16px;
 	line-height: 28px;
+	font-size: 16px;
+	font-weight: 300;
 	color: #666;
 }
 
@@ -430,14 +431,15 @@
 }
 
 .detail_data button {
-	width: 100%;
-	height: 50px;
-	font-size: 17px;
-	padding: 15px 0;
-	color: #fff;
-	background: #000;
 	position: absolute;
 	bottom: -50px;
+	width: 100%;
+	height: 50px;
+	padding: 15px 0;
+	background: #000;
+	font-size: 17px;
+	font-weight: 500;
+	color: #fff;
 }
 
 .detail_data button:hover {
@@ -466,9 +468,9 @@
 
 .detail_tab {
 	position: relative;
-	max-width: 1630px;
+	max-width: 1600px;
 	margin: 0 auto;
-	padding: 17px 20px 18px;
+	padding: 17px 0 18px;
 }
 
 .detail_tab > a {
@@ -477,9 +479,11 @@
 	width: auto;
 	line-height: 44px;
 	margin-right: 70px;
-	font-size: 15px;
-	color: #666;
 	background-color: transparent;
+	font-size: 15px;
+	font-weight: 500;
+	color: #666;
+	opacity: .6;
 }
 
 .detail_tab > a.caseOfInstall_empty,
@@ -498,6 +502,7 @@
 
 .detail_tab > a:last-child {
 	float: right;
+	opacity: initial;
 	visibility: hidden;
 }
 
@@ -517,16 +522,22 @@
 
 .detail_tab button {
 	float: right;
-	right: 0;
 	top: 0;
-	padding: 5px 45px;
-	color: #fff;
-	font-size: 16px;
-	line-height: 35px;
-	border: 1px solid #fff;
+	right: 0;
 	width: 187px;
 	height: 45px;
+	line-height: 35px;
+	padding: 5px 45px;
+	border: 1px solid rgba(255, 255, 255, .6);
+	font-size: 16px;
+	font-weight: 500;
+	color: #fff;
 
+}
+
+.detail_tab button:hover {
+	border-color: rgba(255, 255, 255, 1);
+	font-weight: 600;
 }
 
 .detail_content_Wrap {
@@ -588,9 +599,10 @@
 
 .caption .title {
 	width: 1320px;
+	line-height: 60px;
 	margin: 0 auto;
 	font-size: 36px;
-	line-height: 60px;
+	font-weight: 500;
 	color: #000;
 }
 
@@ -655,8 +667,9 @@
 
 .detail_reward .title {
 	position: relative;
-	font-size: 36px;
 	line-height: 60px;
+	font-size: 36px;
+	font-weight: 500;
 	color: #000;
 }
 
@@ -732,10 +745,11 @@
 
 .mill_help .box .title {
 	float: left;
-	font-size: 26px;
 	line-height: 36px;
-	color: #000;
 	margin-right: 196px;
+	font-size: 26px;
+	font-weight: 500;
+	color: #000;
 }
 
 .mill_help .box .helps {
@@ -761,10 +775,11 @@
 
 .mill_help .box .helps li .tit {
 	width: 100%;
-	font-size: 17px;
 	line-height: 20px;
 	margin-bottom: 10px;
-	color: #000;
+	font-size: 17px;
+	font-weight: 500;
+	color: #222;
 }
 
 .mill_help .box .helps li .tit span {
