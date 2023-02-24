@@ -1,22 +1,22 @@
 /* skill */
 
-
 .sectionWrap {
 	width: 1320px;
 	margin: 0 auto;
 }
 
-
 .skill_Wrap {
 	position: relative;
-	margin: 130px 0 200px 0;
+	margin-top: 200px;
 }
 
 .skill_Wrap .tags {
 	margin-bottom: 40px;
-	font-size: 26px;
 	line-height: 31px;
+	font-size: 26px;
+	font-weight: 500;
 	color: #000;
+	letter-spacing: -0.01em;
 }
 
 .skill_Wrap .title {
@@ -25,21 +25,25 @@
 }
 
 .skill_Wrap .title .tite {
-	font-size: 36px;
 	line-height: 42px;
-	color: #000;
 	margin-bottom: 20px;
+	font-size: 36px;
+	font-weight: 500;
+	color: #000;
+	letter-spacing: -0.01em;
 }
 
 .skill_Wrap .title .tag {
-	margin-top: 5px;
-	font-size: 13px;
-	line-height: 16px;
-	color: #929292;
-	padding: 10px 16px;
-	background: #F9F9F9;
 	width: 180px;
+	padding: 10px 16px;
+	margin-top: 5px;
+	line-height: 16px;
+	background: #F9F9F9;
+	font-size: 13px;
+	font-weight: 500;
+	color: #929292;
 	text-align: center;
+	letter-spacing: -0.01em;
 }
 
 .skill_Wrap .conte {
@@ -61,11 +65,20 @@
 	margin-bottom: 60px;
 }
 
+.skill_Wrap .conte .btitle.type02 {
+	font-size: 18px;
+	line-height: 30px;
+	color: #4a4a4a;
+	letter-spacing: -0.01em;
+}
+
 .skill_Wrap .conte .control_title {
-	font-size: 16px;
 	line-height: 26px;
-	color: #000000;
 	margin-bottom: 14px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #000000;
+	letter-spacing: -0.01em;
 }
 
 .skill_Wrap .conte .control_title_W {
@@ -130,15 +143,18 @@
 }
 
 .skill_Wrap .conte .control .ctitle {
-	font-size: 18px;
 	line-height: 30px;
-	color: #000000;
 	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000000;
+	letter-spacing: -0.01em;
 }
 
 .skill_Wrap .conte .control .bcopy {
-	font-size: 13px;
 	line-height: 20px;
+	font-size: 13px;
+	letter-spacing: -0.01em;
 }
 
 .skill_Wrap .conte .control_diag {
@@ -456,6 +472,11 @@
 	margin-bottom: 60px;
 }
 
+.rtitle_Wrap .stitle.type02 {
+	font-size: 18px;
+	color: #000;
+}
+
 .rtitle_Wrap img {
 	width: 100%;
 }
@@ -463,8 +484,9 @@
 .banner_tech {
 	position: relative;
 	height: 871px;
-	background: #F9F9F9;
 	padding: 130px 0;
+	margin-top: 160px;
+	background: #F9F9F9;
 	text-align: center;
 }
 

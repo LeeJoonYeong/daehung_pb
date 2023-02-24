@@ -314,6 +314,7 @@
 
 .tabmenu li a.selected {
 	border-bottom: 4px solid #FF5F00;
+	font-weight: 500;
 	color: #FF5F00;
 }
 
@@ -351,7 +352,8 @@
 }
 
 .tabmenus li a.active {
-	color: #FF5F00;
+	font-weight: 500;
+	color: #FF5C00;
 }
 
 .tabmenus li a {
@@ -412,11 +414,12 @@
 }
 
 .banner_Wrap .title .mtitle_W {
-	font-size: 40px;
 	line-height: 58px;
-	color: #ffffff;
 	margin-bottom: 10px;
-	letter-spacing: -2px;
+	font-size: 40px;
+	font-weight: 500;
+	color: #ffffff;
+	letter-spacing: -0.01em;
 }
 
 .banner_Wrap .title .stitle {
@@ -431,6 +434,12 @@
 	color: #bbbbbb;
 }
 
+.banner_Wrap .title .stitle_W.type02 {
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: -0.01em;
+}
+
 .banner_Wrap .title_C {
 	z-index: 999;
 	position: absolute;
@@ -440,10 +449,11 @@
 }
 
 .banner_Wrap .title_C .mtitle {
-	font-size: 40px;
 	line-height: 58px;
-	color: #000000;
 	margin-bottom: 10px;
+	font-size: 40px;
+	font-weight: 500;
+	color: #000000;
 	letter-spacing: -2px;
 	text-align: center;
 }
@@ -453,6 +463,12 @@
 	line-height: 30px;
 	color: #929292;
 	text-align: center;
+}
+
+.banner_Wrap .title_C .stitle.type02 {
+	font-size: 16px;
+	color: #6f6f6f;
+	letter-spacing: -0.01em;
 }
 
 /*********** footer *********/
