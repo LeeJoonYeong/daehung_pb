@@ -880,6 +880,14 @@
 	margin: 0 auto;
 }
 
+.conte_wrap.type02 {
+	margin-top: 124px;
+}
+
+.tabmenu_Wrap.fixed + .conte_wrap {
+	margin-top: 295px;
+}
+
 
 .board_box {
 	display: block;
