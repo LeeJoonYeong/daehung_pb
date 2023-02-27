@@ -378,6 +378,10 @@ input::placeholder {
 	margin-bottom: 20px !important;
 }
 
+.fs40 {
+	font-size: 40px !important;
+}
+
 .fontColor000 {
 	color: #000 !important;
 }
