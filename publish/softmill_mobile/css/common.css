@@ -255,6 +255,33 @@ hr {
 	overflow: hidden !important
 }
 
+.hide_text {
+	position:absolute; 
+	display:block; 
+	width: 1px; 
+	height: 1px; 
+	border: 0; 
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden; 
+}
+
+.skip { 
+	position: fixed; 
+	top:-100%; 
+	right: 0; 
+	left: 0; 
+	line-height: 5rem; 
+	background: #000; 
+	color:#fff; 
+	text-align: center;
+	z-index: 10000;
+	transition: all .3s; 
+}
+
+.skip:focus {
+	top: 0; 
+}
+
 input {
 	width: 100%;
 	border: 0;
