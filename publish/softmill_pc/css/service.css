@@ -439,6 +439,7 @@ input#chk_top:checked+label:before {
 
 .pop_product_list {
 	position: relative;
+	height: 100%;
 }
 
 .pop_product_list li {

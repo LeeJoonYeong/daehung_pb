@@ -197,7 +197,8 @@
 	transform: translateX(-50%);
 }
 
-.detail_img .zoomin a {
+.detail_img .zoomin a,
+.detail_img .zoomin button {
 	display: block;
 	width: 32px;
 	height: 32px;
@@ -263,7 +264,8 @@
 	transition: all .3s;
 }
 
-.items .pro_items li a {
+.items .pro_items li a,
+.items .pro_items li button {
 	display: block;
 	width: 92px;
 	height: 92px;
@@ -274,7 +276,8 @@
 	box-shadow: 0 0 0 1px #000 inset;
 }
 
-.items .pro_items li.active a {
+.items .pro_items li.active a,
+.items .pro_items li.active button {
 	opacity: initial;
 }
 

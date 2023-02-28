@@ -408,7 +408,7 @@ function prodItemCountCheck() {
 const header = document.querySelector('#header'); // 메인을 제외한 공통 헤더
 const gnb_burger = document.querySelector('.burger');
 const menu_hamburger = document.querySelector('#hamburger');
-const menu_close_btn = document.querySelector('.mega_header a');
+const menu_close_btn = document.querySelector('.mega_header button');
 const goTop_btn = document.querySelector('.topwrap');
 gnb_burger?.addEventListener('click', () => {
 	if(menu_hamburger.classList.contains('active')) {

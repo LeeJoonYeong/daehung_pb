@@ -608,7 +608,8 @@
 	border-bottom: 1px solid #ebebeb;
 }
 
-.mega_header a {
+.mega_header a,
+.mega_header button {
 	position: absolute;
 	top: 30px;
 	left: 100px;
@@ -662,22 +663,27 @@
 	letter-spacing: -0.04em;
 }
 
-.oneDepth li a {
+.oneDepth li a,
+.oneDepth li button {
 	display: block;
-	font-size: 28px;
+	width: 100%;
 	line-height: 34px;
+	font-size: 28px;
 	font-weight: 500;
 	letter-spacing: -0.02em;
 	color: #BBBBBB;
+	text-align: left;
 }
 
-.oneDepth li a:hover {
+.oneDepth li a:hover,
+.oneDepth li button:hover {
 	background: url('../images/icon/menu_arrow.png')no-repeat right 2px;
 	background-size: 28px 28px;
 	color: #000;
 }
 
-.oneDepth li a.select {
+.oneDepth li a.select,
+.oneDepth li button.select {
 	background: url('../images/icon/menu_arrow.png')no-repeat right 2px;
 	background-size: 28px 28px;
 	color: #000;
@@ -821,7 +827,8 @@
 	width: 310px;
 }
 
-.oneDepth li .smenu li a {
+.oneDepth li .smenu li a,
+.oneDepth li .smenu li button {
 	background: none;
 	display: block;
 	font-size: 24px;
@@ -831,7 +838,8 @@
 	color: #BBBBBB;
 }
 
-.oneDepth .gnb_menu li .smenu li a:hover {
+.oneDepth .gnb_menu li .smenu li a:hover,
+.oneDepth .gnb_menu li .smenu li button:hover {
 	color: #000000;
 }
 
@@ -860,12 +868,14 @@
 	/* Opera */
 }
 
-.oneDepth .gnb_menu>li.active>a {
+.oneDepth .gnb_menu>li.active>a,
+.oneDepth .gnb_menu>li.active>button {
 	background: url('../images/icon/menu_arrow.png') no-repeat right 2px / 28px 28px;
 	color: #000000;
 }
 
-.oneDepth .gnb_menu>li.active .smenu li.select a {
+.oneDepth .gnb_menu>li.active .smenu li.select a,
+.oneDepth .gnb_menu>li.active .smenu li.select button {
 	color: #000000;
 }
 
