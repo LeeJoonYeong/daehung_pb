@@ -413,6 +413,10 @@ input::placeholder {
 	color: #000 !important;
 }
 
+.fw500 {
+	font-weight: 500 !important;
+}
+
 .fwb {
 	font-family: 'Pretendard';
 	font-weight: 700;
