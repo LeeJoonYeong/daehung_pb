@@ -216,9 +216,9 @@ div.tabmenus_Wrap::after {
 
 .detail_large_img li {
 	float: left;
-	width: 300px;
+	width: calc(100% - 40px);
+	margin: 0 20px;
 	text-align: center;
-	margin-right: 20px;
 	overflow: hidden;
 }
 
@@ -340,8 +340,9 @@ div.tabmenus_Wrap::after {
 
 .detail_data .name {
 	position: relative;
-	font-size: 14px;
 	line-height: 22px;
+	margin-bottom: 3px;
+	font-size: 14px;
 	font-weight: 500;
 	color: #000;
 }
@@ -395,6 +396,7 @@ div.tabmenus_Wrap::after {
 	position: relative;
 	float: left;
 	line-height: 22px;
+	padding-left: initial;
 	font-size: 13px;
 	font-weight: 400;
 	color: #666;
@@ -828,6 +830,45 @@ div.tabmenus_Wrap::after {
 	opacity: 1;
 } */
 /* //슬라이드 탭 메뉴 스타일 */
+
+/* 제품 상세 보기 (캐러셀) 스타일 */
+.detail_wrap.detail_up {
+	position: relative;
+	height: 100%;
+	padding: initial;
+	overflow: hidden;
+}
+
+.product_detail_up_list {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	display: flex;
+	flex-flow: row nowrap;
+	height: initial;
+}
+
+.product_detail_up_list.animated {
+	transition: left .3s;
+}
+
+.product_detail_up_list li {
+	flex-shrink: 0;
+}
+
+.product_detail_up_list li .large_size {
+	width: 100%;
+	height: initial;
+}
+
+.detail_wrap.detail_up .listSwitch {
+	position: absolute;
+	bottom: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+/* //제품 상세 보기 (캐러셀) 스타일 */
 
 
 @media (max-width: 1024px) {

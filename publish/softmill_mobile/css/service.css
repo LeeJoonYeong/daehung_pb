@@ -434,6 +434,7 @@ input#chk_top:checked+label:before {
 	display: flex;
 	flex-flow: row nowrap;
 	margin-top: 20px;
+	touch-action: auto;
 }
 
 .pop_product_list li {
@@ -441,6 +442,7 @@ input#chk_top:checked+label:before {
 	width: calc(50% - 30px);
 	background: #F9F9F9;
 	margin: 0 20px 0 10px;
+	touch-action: none;
 }
 
 .pop_product_list li:not(:nth-child(2n)) {

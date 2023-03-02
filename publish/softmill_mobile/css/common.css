@@ -534,7 +534,7 @@ input::placeholder {
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	right: -100%;
+	/* right: -100%; */
 	display: none;
 }
 
@@ -639,12 +639,13 @@ input::placeholder {
 }
 
 .cont_wrap {
-	margin-top: 60px;
+	flex: 1 1 auto;
 	width: 100%;
 	height: auto;
+	margin-top: 60px;
 	overflow: auto;
-	flex: 1 1 auto;
 	-webkit-overflow-scrolling: touch;
+	touch-action: auto;
 }
 
 .comm_popup_wrap .pic_area {
@@ -1640,7 +1641,8 @@ input::placeholder {
 	display: block;
 }
 
-.topwrap .topBtn a {
+.topwrap .topBtn a,
+.topwrap .topBtn button {
 	position: absolute;
 	border-radius: 30px;
 	background: #000 url('../images/icon/top_move_btn.svg')no-repeat center;
@@ -1649,7 +1651,8 @@ input::placeholder {
 	height: 34px;
 }
 
-.topwrap .topBtn a:active {
+.topwrap .topBtn a:active,
+.topwrap .topBtn button:active {
 	background: #FF5F00 url('../images/icon/top_move_btn.svg')no-repeat center;
 	background-size: 12px 14px;
 	width: 34px;
@@ -1692,11 +1695,13 @@ body.bot .topwrap {
 .cate .menu .menulink {
 	position: relative;
 	display: block;
-	color: #bbbbbb;
+	width: 100%;
+	line-height: 50px;
+	padding-left: 40px;
 	font-size: 20px;
 	font-weight: 500;
-	padding-left: 40px;
-	line-height: 50px;
+	color: #bbbbbb;
+	text-align: left;
 }
 
 .cate .menu .menulink span {
@@ -1709,8 +1714,12 @@ body.bot .topwrap {
 	height: 24px;
 }
 
-.cate .menu .menulink:active {
+.cate .menu .menulink.active {
 	color: #000;
+}
+
+.cate .menu .menulink.active > span {
+	background-image: url('../images/icon/arrow_up_type01.svg');
 }
 
 .cate .smenu {
@@ -1742,11 +1751,13 @@ body.bot .topwrap {
 	color: #000000;
 }
 
-.cate .menu a.active {
+.cate .menu a.active,
+.cate .menu button.active {
 	color: #000000;
 }
 
-.cate .menu a.active span {
+.cate .menu a.active span
+.cate .menu button.active span {
 	position: absolute;
 	right: 20px;
 	top: 12px;
@@ -1782,7 +1793,8 @@ body.bot .topwrap {
 	top: 12px;
 }
 
-.menu_header .close>a {
+.menu_header .close>a,
+.menu_header .close>button {
 	display: block;
 	background: url('../images/icon/menu_close.svg')no-repeat 0 0;
 	background-size: 100% 100%;
@@ -1906,7 +1918,7 @@ body.bot .topwrap {
 
 
 .selectBox.active .optionList {
-	max-height: 150px;
+	max-height: 300px;
 	transition: .1s ease-in;
 	border: 1px solid #000;
 	padding: 15px 0;
