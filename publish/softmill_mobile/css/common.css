@@ -639,13 +639,14 @@ input::placeholder {
 }
 
 .cont_wrap {
-	flex: 1 1 auto;
+	/* flex: 1 1 auto; */
+	position: relative;
 	width: 100%;
 	height: auto;
 	margin-top: 60px;
 	overflow: auto;
-	-webkit-overflow-scrolling: touch;
-	touch-action: auto;
+	/* -webkit-overflow-scrolling: touch;
+	touch-action: auto; */
 }
 
 .comm_popup_wrap .pic_area {
@@ -882,15 +883,22 @@ input::placeholder {
 
 .board_title {
 	position: relative;
-	font-size: 26px;
-	line-height: 36px;
-	color: #000;
-	margin: 20px 0 20px;
+	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
+	max-height: 108px;
+	line-height: 36px;
+	margin: 20px 0 20px;
+	font-size: 26px;
+	font-weight: 500;
+	color: #000;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	max-height: 108px;
+}
+
+.board_title.text_free {
+	max-height: initial;
+	display: initial;
 }
 
 .board_title.flex_style {
@@ -1439,6 +1447,10 @@ input::placeholder {
 
 .agency_list li:first-child {
 	border-top: 1px solid #e6e6e6;
+}
+
+.agency_list li:last-child {
+	border-bottom: none;
 }
 
 .agency_list li .title {
@@ -2061,3 +2073,22 @@ body.bot .topwrap {
 	font-weight: 500;
 }
 /* //고객지원 - 견적문의 완료 팝업 스타일 */
+
+/* 모바일 테스트용 박스 스타일 */
+#console_box {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 15%;
+	border: 3px solid green;
+	background-color: #000;
+	font-size: 20px;
+	color: #fff;
+	z-index: 10004;
+}
+/* //모바일 테스트용 박스 스타일 */
