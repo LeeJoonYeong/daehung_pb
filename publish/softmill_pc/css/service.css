@@ -464,12 +464,14 @@ input#chk_top:checked+label:before {
 	top: 0;
 }
 
-.pop_product_list li a {
+.pop_product_list li a,
+.pop_product_list li div {
 	display: block;
 	width: 155px;
 	height: 172px;
 	padding: 20px;
 	text-align: center;
+	cursor: pointer;
 }
 
 
