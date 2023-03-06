@@ -639,14 +639,12 @@ input::placeholder {
 }
 
 .cont_wrap {
-	/* flex: 1 1 auto; */
 	position: relative;
 	width: 100%;
 	height: auto;
 	margin-top: 60px;
-	overflow: auto;
-	/* -webkit-overflow-scrolling: touch;
-	touch-action: auto; */
+	overflow-y: auto;
+	/* overflow: auto; */
 }
 
 .comm_popup_wrap .pic_area {

@@ -1002,7 +1002,6 @@
 	display: -webkit-box;
 	-webkit-line-clamp: 1;
 	-webkit-box-orient: vertical;
-	width: 1090px;
 	height: 35px;
 	line-height: 35px;
 	font-size: 22px;
@@ -1014,14 +1013,15 @@
 }
 
 .board_list li .data {
-	display: block;
-	font-size: 16px;
-	line-height: 26px;
+	position: absolute;
+	right: 0;
 	float: left;
-	width: 80px;
+	display: block;
+	line-height: 26px;
+	padding-top: 5px;
+	font-size: 16px;
 	color: #6F6F6F;
 	text-align: right;
-	padding-top: 5px;
 }
 
 
