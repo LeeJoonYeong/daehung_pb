@@ -279,6 +279,10 @@
 	margin-right: 0;
 }
 
+.combo_boxs .boxs { 
+	height: 100%;
+}
+
 .aree {
 	position: relative;
 	width: 100%;
@@ -562,6 +566,10 @@ input#chk_top:checked+label:before {
 
 .pop_product_select .empty.active {
 	display: block;
+}
+
+.pop_product_select .empty.active + [data-list-type="inventory"] {
+	display: none;
 }
 
 /*********** Scroll bar design ***************/

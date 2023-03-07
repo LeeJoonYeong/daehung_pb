@@ -298,6 +298,10 @@
 	margin-right: 0;
 }
 
+.combo_boxs .boxs { 
+	height: 100%;
+}
+
 .aree {
 	position: relative;
 	width: 100%;
@@ -594,6 +598,10 @@ input#chk_top:checked+label:before {
 	width: 100%;
 	height: 46px;
 	margin-bottom: 14px;
+}
+
+.pop_combo_boxs .boxs {
+	height: 100%;
 }
 
 .botbtns {
