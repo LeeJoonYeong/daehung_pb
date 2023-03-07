@@ -1296,7 +1296,7 @@ input::placeholder {
 .map_Wrap .map_tab {
 	float: left;
 	width: 460px;
-	height: calc(100% - 446px);
+	height: calc(100vh - 446px);
 	overflow-y: scroll;
 }
 
@@ -1304,8 +1304,7 @@ input::placeholder {
 .map_Wrap .kakao_maps {
 	float: right;
 	width: calc(100% - 460px);
-	/* height: calc(100vh - 446px); */
-	height: 100vh;
+	height: calc(100vh - 446px);
 }
 .map_Wrap .maps .wrap_map,
 .map_Wrap .kakao_maps .wrap_map {
