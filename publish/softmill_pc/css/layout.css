@@ -663,6 +663,10 @@
 	letter-spacing: -0.04em;
 }
 
+.en .oneDepth li.company_intro::before {
+	content: 'About Softmill';
+}
+
 .oneDepth li a,
 .oneDepth li button {
 	display: block;
