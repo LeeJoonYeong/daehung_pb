@@ -1518,12 +1518,12 @@ input::placeholder {
 }
 
 .topwrap {
-	display: none;
 	position: fixed;
 	bottom: 60px;
-	height: 54px;
-	z-index: 9999;
+	display: none;
 	width: 100%;
+	/* height: 54px; */
+	z-index: 9999;
 }
 
 .topwrap.active {
@@ -1533,17 +1533,18 @@ input::placeholder {
 
 .topwrap .topBtn {
 	position: relative;
-	height: 54px;
+	/* height: 54px; */
 }
 
 .topwrap .topBtn a {
 	position: absolute;
 	right: 60px;
+	bottom: 0;
+	width: 54px;
+	height: 54px;
 	border-radius: 30px;
 	background: #000 url('../images/icon/top_move_btn.svg')no-repeat center;
 	background-size: 18px 21px;
-	width: 54px;
-	height: 54px;
 }
 
 .topwrap .topBtn a:hover {

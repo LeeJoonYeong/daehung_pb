@@ -527,7 +527,7 @@
 	float: right;
 	top: 0;
 	right: 0;
-	width: 187px;
+	/* width: 187px; */
 	height: 45px;
 	line-height: 35px;
 	padding: 5px 45px;
@@ -748,6 +748,7 @@
 
 .mill_help .box .title {
 	float: left;
+	width: 222px;
 	line-height: 36px;
 	margin-right: 196px;
 	font-size: 26px;

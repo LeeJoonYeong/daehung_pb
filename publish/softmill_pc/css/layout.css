@@ -106,7 +106,6 @@
 .header_wrap .util a:last-child {
 	margin-right: 0;
 	padding-right: 0;
-	color: #929292;
 }
 
 /*********** contentsWrap *********/
@@ -249,11 +248,11 @@
 
 .indicator>li .menu_list ul {
 	position: relative;
-	box-sizing: border-box;
-	width: 130px;
+	min-width: 130px;
 	padding: 14px;
 	border: 1px solid #000000;
 	background: #fff;
+	box-sizing: border-box;
 }
 
 .indicator>li .menu_list ul li:first-child {
@@ -261,10 +260,11 @@
 }
 
 .indicator>li .menu_list ul li a {
-	display: block;
 	position: relative;
-	font-size: 14px;
+	display: block;
+	min-width: max-content;
 	line-height: 27px;
+	font-size: 14px;
 	color: #BBB;
 }
 
@@ -977,11 +977,12 @@
 .gotos {
 	width: 134px;
 	height: 40px;
-	font-size: 16px;
-	color: #fff;
 	line-height: 19px;
 	padding: 10px 46px 10px 34px;
-	background: #FF5C00;
+	font-size: 16px;
+	color: #fff;
+	/* background: #FF5C00; */
+	background: url('../images/icon/arrow_right_type04.svg') right 22px center / 20px no-repeat #ff5C00;
 	animation: fadein_trans 2s ease-in-out;
 }
 
