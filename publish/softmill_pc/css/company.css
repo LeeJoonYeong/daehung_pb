@@ -104,7 +104,7 @@
 	color: #000;
 }
 
-.capa_Wrap li .tag {
+.capa_Wrap li .esg_tag {
 	line-height: 35px;
 	margin: 20px 0 10px 0;
 	font-size: 22px;
@@ -191,11 +191,21 @@
 	margin-bottom: 10px;
 }
 
+.en .process li .title .mtitle {
+	font-size: 22px;
+	white-space: nowrap;
+}
+
 .process li .title .stitle {
 	color: #6f6f6f;
 	font-size: 13px;
 	line-height: 20px;
 	height: 60px;
+}
+
+.en .process li .title .stitle {
+	width: 200px;
+	height: auto;
 }
 
 .process li:after {
@@ -227,6 +237,11 @@
 	background: #fbfbfb;
 	padding: 50px 0 0 50px;
 	margin-right: 20px;
+}
+
+.en .philo_wrap li {
+	height: 453px;
+	padding: 50px 0 50px 50px;
 }
 
 .philo_wrap li:last-child {
@@ -263,7 +278,11 @@
 	font-size: 16px;
 	line-height: 26px;
 	color: #6f6f6f;
+}
 
+.en .philo_wrap li .bcopy {
+	width: 327px;
+	letter-spacing: -0.01em;
 }
 
 .ceo_wrap {
@@ -283,11 +302,12 @@
 }
 
 .ceo_wrap .message .title {
-	font-size: 40px;
 	line-height: 58px;
+	margin-bottom: 22px;
+	font-size: 40px;
 	font-weight: 500;
 	color: #000000;
-	margin-bottom: 22px;
+	letter-spacing: -0.01em;
 }
 
 .ceo_wrap .message em {
@@ -295,9 +315,15 @@
 }
 
 .ceo_wrap .message .bcopy {
-	font-size: 16px;
 	line-height: 26px;
+	font-size: 16px;
 	color: #000000;
+	letter-spacing: -0.01em;
+}
+
+.en .ceo_wrap .message .bcopy {
+	width: 650px;
+	text-align: justify;
 }
 
 .ceo_wrap .ceo_poto {
@@ -396,10 +422,23 @@
 	flex-direction: row;
 	align-items: center;
 	line-height: 26px;
+	letter-spacing: -0.01em;
+}
+
+.history_wrap .time_line li p ~ p {
+	margin-top: 10px;
+}
+
+.en .history_wrap .time_line li p {
+	align-items: flex-start;
 }
 
 .history_wrap .time_line li .story.type02 p {
 	white-space: nowrap;
+}
+
+.en .history_wrap .time_line li .story.type02 p {
+	white-space: initial;
 }
 
 .history_wrap .time_line li .box {
@@ -435,9 +474,17 @@
 	color: #6f6f6f;
 }
 
+.en .history_wrap .time_line li .story {
+	width: 519px;
+}
+
 .history_wrap .time_line li .story.type02 {
 	position: absolute;
 	left: 105px;
+}
+
+.en .history_wrap .time_line li .story.type02 {
+	position: initial;
 }
 
 .history_wrap .time_line li .story span {
@@ -449,6 +496,10 @@
 	font-weight: 500;
 	color: #000000;
 	text-align: right;
+}
+
+.en .history_wrap .time_line li .story span {
+	flex-shrink: 0;
 }
 
 .ci_wrap {
