@@ -441,11 +441,11 @@
 }
 
 .banner_Wrap .title_C {
-	z-index: 999;
 	position: absolute;
 	top: 174px;
 	left: 50%;
-	margin-left: -280px;
+	transform: translateX(-50%);
+	z-index: 999;
 }
 
 .banner_Wrap .title_C .mtitle {
@@ -456,6 +456,10 @@
 	color: #000000;
 	letter-spacing: -2px;
 	text-align: center;
+}
+
+.en .banner_Wrap .title_C .mtitle {
+	letter-spacing: -0.01em;
 }
 
 .banner_Wrap .title_C .stitle {

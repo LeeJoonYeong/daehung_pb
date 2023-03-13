@@ -34,6 +34,7 @@
 }
 
 .custo_Wrap .forms .name {
+	position: relative;
 	float: left;
 	width: 90px;
 	line-height: 54px;
@@ -633,6 +634,12 @@ input#chk_top:checked+label:before {
 
 .custo_Wrap .forms label[for="description"] {
 	line-height: 40px;
+}
+
+.en .custo_Wrap .forms label[for="description"] > em {
+	position: absolute;
+	top: 0;
+	right: -17px;
 }
 
 .custo_Wrap .forms label[for="user_file"] {

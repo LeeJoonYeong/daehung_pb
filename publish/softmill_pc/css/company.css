@@ -1306,6 +1306,10 @@
 	margin-right: 406px;
 }
 
+.en .map_box .info .softmill {
+	margin-right: 147px;
+}
+
 .map_box .info .title {
 	line-height: 43px;
 	margin-bottom: 30px;
@@ -1322,6 +1326,10 @@
 	letter-spacing: -0.01em;
 }
 
+.en .map_box .info p {
+	font-size: 14px;
+}
+
 .map_box .info span {
 	line-height: 30px;
 	margin-right: 20px;
@@ -1330,9 +1338,17 @@
 	color: #000000;
 }
 
+.en .map_box .info span {
+	margin-right: 15px;
+}
+
 .map_box .info .traffic {
 	float: left;
 	width: 500px;
+}
+
+.en .map_box .info .traffic {
+	width: 594px;
 }
 
 .map_box .info .traffic .tit {
@@ -1352,6 +1368,10 @@
 	line-height: 26px;
 	font-weight: 400;
 	font-size: 16px;
+}
+
+.en .map_box .info .traffic .bcopy {
+	width: 460px;
 }
 
 .client_list {
