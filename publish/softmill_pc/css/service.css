@@ -33,6 +33,10 @@
 	margin-bottom: 60px;
 }
 
+.en .custo_Wrap .forms.whole_region_wrap {
+	display: none;
+}
+
 .custo_Wrap .forms .name {
 	position: relative;
 	float: left;
@@ -422,14 +426,18 @@ input#chk_top:checked+label:before {
 	line-height: 21px;
 }
 
-.btn_send button:active {
+.en .btn_send button {
+	width: auto;
+}
+
+/* .btn_send button:active {
 	width: 272px;
 	padding: 16px 84px;
 	color: #fff;
 	background: #000;
 	font-size: 18px;
 	line-height: 21px;
-}
+} */
 
 .btn_send button:hover {
 	background-color: #313131;

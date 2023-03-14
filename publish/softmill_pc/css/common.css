@@ -1090,27 +1090,22 @@ input::placeholder {
 
 .board_list_L>li a:hover,
 .board_list_L>li a.active {
-	background: url('../images/icon/download_w_icon.png')no-repeat 0 0;
-	background-size: 28px 12px;
-	background-position: 116px center;
+	background-image: url('../images/icon/download_w_icon.svg');
 	background-color: #000000;
 	color: #ffffff;
-
 }
 
 .board_list_L>li a {
 	position: absolute;
-	right: 0;
 	top: 0;
+	right: 0;
 	line-height: 22px;
 	padding: 12px 69px 11px 54px;
 	border: 1px solid #000;
 	font-size: 16px;
 	color: #000;
 	letter-spacing: -0.01em;
-	background: url('../images/icon/download_icon.png')no-repeat 0 0;
-	background-size: 28px 12px;
-	background-position: 116px center;
+	background: url('../images/icon/download_icon.svg') no-repeat right 54px center / 10px 11px;
 	transition: all 0.2s linear 0s;
 	-webkit-transition: all 0.2s linear 0s;
 }
@@ -1225,30 +1220,34 @@ input::placeholder {
 	margin-right: 313px;
 }
 
+.en .catalog_list li {
+	height: auto;
+}
+
 .catalog_list>li a:hover,
 .catalog_list>li a.active {
-	background: url('../images/icon/download_w_icon.png')no-repeat 0 0;
-	background-size: 28px 12px;
-	background-position: 116px center;
+	background-image: url('../images/icon/download_w_icon.svg');
 	background-color: #000000;
 	color: #ffffff;
-
 }
 
 .catalog_list>li a {
 	display: block;
 	width: 180px;
-	margin-top: 60px;
-	color: #000;
-	font-size: 16px;
 	line-height: 22px;
 	padding: 12px 60px 14px 55px;
+	margin-top: 60px;
 	border: 1px solid #000;
-	background: url('../images/icon/download_icon.png')no-repeat 0 0;
-	background-size: 28px 12px;
-	background-position: 116px center;
+	font-size: 16px;
+	color: #000;
+	background: url('../images/icon/download_icon.svg') no-repeat right 54px center / 10px 11px;
 	-webkit-transition: all 0.2s linear 0s;
 	transition: all 0.2s linear 0s;
+}
+
+.en .catalog_list>li a {
+	width: fit-content;
+	padding-right: 70px;
 }
 
 .catalog_list li:last-child {
@@ -1366,6 +1365,10 @@ input::placeholder {
 	letter-spacing: -0.01em;
 }
 
+.en .agency_list li .adress {
+	padding-right: 45px;
+}
+
 .agency_list li .tel {
 	font-size: 14px;
 	line-height: 22px;
@@ -1384,6 +1387,11 @@ input::placeholder {
 	color: #313131;
 	letter-spacing: -0.01em;
 	background: url('../images/icon/arrow_right_type02.svg') right center / 4px 8px no-repeat;
+}
+
+.en .agency_list li .sbtn {
+	right: 16px;
+	text-align: center;
 }
 
 .agency_list li:last-child {
@@ -1416,6 +1424,10 @@ input::placeholder {
 	font-weight: 500;
 	color: #FF5C00;
 	vertical-align: top;
+}
+
+.en .agency_list li .title span {
+	line-height: 28px;
 }
 
 .pop_title {
