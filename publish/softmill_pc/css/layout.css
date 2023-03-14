@@ -634,8 +634,13 @@
 	-ms-overflow-style: none;
 	scrollbar-width: scroll;
 }
+
 .mega_menu::-webkit-scrollbar {
 	display: none;
+}
+
+.mega_menu.gnb {
+	height: 82vh;
 }
 
 .oneDepth {

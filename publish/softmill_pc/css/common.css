@@ -1088,6 +1088,10 @@ input::placeholder {
 	border-bottom: 1px solid #E6E6E6;
 }
 
+.en .board_list_L li.item_hidden {
+	display: none;
+}
+
 .board_list_L>li a:hover,
 .board_list_L>li a.active {
 	background-image: url('../images/icon/download_w_icon.svg');
