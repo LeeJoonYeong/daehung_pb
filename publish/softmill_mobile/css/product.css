@@ -362,9 +362,19 @@ div.tabmenus_Wrap::after {
 	color: #666;
 }
 
+.en .detail_data .data {
+	display: flex;
+  flex-direction: column;
+}
+
 .detail_data .data li {
 	position: relative;
 	width: 100%;
+}
+
+.en .detail_data .data li {
+	display: flex;
+  flex-direction: row;
 }
 
 .detail_data .data li .tit {
@@ -376,6 +386,10 @@ div.tabmenus_Wrap::after {
 	line-height: 22px;
 	font-weight: 500;
 	color: #666666;
+}
+
+.en .detail_data .data li .tit {
+	word-break: break-all;
 }
 
 .detail_data .data li .stit {
@@ -490,6 +504,10 @@ div.tabmenus_Wrap::after {
 	background-color: transparent;
 }
 
+.en .detail_tab a {
+	margin-right: 25px;
+}
+
 .detail_tab_Wrap.fixed .detail_tab a {
 	opacity: .6;
 }
@@ -601,6 +619,10 @@ div.tabmenus_Wrap::after {
 	font-weight: 500;
 	width: 80px;
 	margin-right: 20px;
+}
+
+.en .caption .box ul li .title {
+	flex-shrink: 0;
 }
 
 .caption .box ul li .bcopy {

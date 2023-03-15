@@ -502,6 +502,10 @@
 	overflow: hidden;
 }
 
+.en .exper_pro .btitle {
+	overflow: initial;
+}
+
 .sub_pro {
 	position: relative;
 	width: 1024px;
