@@ -165,11 +165,15 @@
 }
 
 .process li .title .mtitle {
-	color: #000000;
-	font-size: 18px;
 	line-height: 26px;
-	font-weight: 500;
 	margin-bottom: 8px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.en .process li .title .mtitle {
+	word-break: break-all;
 }
 
 .process li .title .stitle {
@@ -196,6 +200,10 @@
 	margin-bottom: 20px;
 	background: #f9f9f9;
 	text-align: center;
+}
+
+.en .philo_wrap li {
+	height: auto;
 }
 
 .philo_wrap li:last-child {

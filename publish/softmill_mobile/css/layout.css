@@ -146,6 +146,11 @@
 	word-break: keep-all;
 }
 
+.en .title_Wrap .title.flex_style {
+	height: auto;
+	min-height: 126px;
+}
+
 .title_Wrap .title span {
 	display: block;
 }
@@ -297,18 +302,45 @@
 	z-index: 999;
 }
 
+
+.tabmenu_Wrap::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 20px;
+	display: block;
+	width: 0;
+	height: 100%;
+	background: linear-gradient(270deg, #FFFFFF -22.31%, rgba(255, 255, 255, 0) 118.37%);
+	opacity: 0;
+	transition: all .4s;
+}
+
+.tabmenu_Wrap.over_list::after {
+	opacity: 1;
+	width: 40px;
+}
+
 .tabmenu {
 	position: relative;
-	width: 100%;
 	bottom: -1px;
+	display: flex;
+	flex-direction: row;
+	overflow-x: auto;	
+	width: 100%;
+}
+
+.tabmenu::-webkit-scrollbar {
+	display: none;
 }
 
 .tabmenu li {
-	font-size: 15px;
-	line-height: 18px;
-	text-align: center;
 	float: left;
+	flex-shrink: 0;
+	line-height: 18px;
 	margin-right: 20px;
+	font-size: 15px;
+	text-align: center;
 }
 
 .tabmenu li:last-child {
@@ -409,7 +441,7 @@
 	line-height: 30px;
 	color: #ffffff;
 	margin-bottom: 12px;
-	letter-spacing: -2px;
+	letter-spacing: -0.01em;
 }
 
 .banner_Wrap .title .stitle {
@@ -431,6 +463,11 @@
 	left: 50%;
 	margin-left: -143px;
 	text-align: center;
+}
+
+.en .banner_Wrap .title_C {
+	margin-left: initial;
+	left: initial;
 }
 
 .banner_Wrap .title_C .mtitle {

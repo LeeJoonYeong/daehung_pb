@@ -48,6 +48,10 @@
 	margin: 12px auto 0;
 }
 
+.en .skill_Wrap .title .tag {
+	width: fit-content;
+}
+
 .skill_Wrap .titles {
 	position: relative;
 	margin: 80px 20px 50px;
@@ -410,6 +414,11 @@
 	height: 843px;
 }
 
+.en .banner_rnd {
+	display: flex;
+	justify-content: center;
+}
+
 .banner_rnd img {
 	height: 100%;
 }
@@ -427,6 +436,11 @@
 	left: 50%;
 	margin-left: -141px;
 	text-align: center;
+}
+
+.en .banner_rnd .title {
+	left: initial;
+	margin-left: initial;
 }
 
 .banner_rnd .title .mtitle {
