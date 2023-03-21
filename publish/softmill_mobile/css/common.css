@@ -1197,33 +1197,32 @@ input::placeholder {
 	border-bottom: 1px solid #E6E6E6;
 }
 
+.en .board_list_L li.item_hidden {
+	display: none;
+}
+
 .board_list_L li ~ li {
 	margin-top: 35px;
 }
 
 .board_list_L>li a:hover,
 .board_list_L>li a.active {
-	background: url('../images/icon/download_w_icon.png')no-repeat 0 0;
-	background-size: 28px 12px;
-	background-position: right;
+	background-image: url('../images/icon/download_w_icon.svg');
 	background-color: #000000;
 	color: #ffffff;
-
 }
 
 .board_list_L>li a {
 	position: absolute;
 	right: 0;
 	top: 0;
-	color: #000;
-	font-size: 13px;
-	font-weight: 500;
 	line-height: 22px;
 	padding: 10px 33px 10px 18px;
 	border: 1px solid #000;
-	background: url('../images/icon/download_icon.png')no-repeat 0 0;
-	background-size: 28px 12px;
-	background-position: right;
+	background: url('../images/icon/download_icon.svg') no-repeat right 18px center / 9px 10px;
+	font-size: 13px;
+	font-weight: 500;
+	color: #000;
 	-webkit-transition: all 0.2s linear 0s;
 	transition: all 0.2s linear 0s;
 }
@@ -1251,6 +1250,10 @@ input::placeholder {
 	letter-spacing: -0.01em;
 	text-overflow: ellipsis;
 	overflow: hidden;
+}
+
+.en .board_list_L li .title {
+	width: 50%;
 }
 
 .board_list_L li .data {
@@ -1355,25 +1358,22 @@ input::placeholder {
 
 .catalog_list>li a:hover,
 .catalog_list>li a.active {
-	background: url('../images/icon/download_w_icon.png')no-repeat 103px 15px;
-	background-size: 28px 12px;
+	background-image: url('../images/icon/download_w_icon.svg');
 	background-color: #000000;
 	color: #ffffff;
-
 }
 
 .catalog_list>li a {
 	display: block;
-	width: 162px;
+	width: fit-content;
 	line-height: 22px;
-	padding: 10px 56px 10px 51px;
+	padding: 10px 66.5px 10px 51.5px;
 	border: 1px solid #000;
 	margin-top: 20px;
+	background: url('../images/icon/download_icon.svg') no-repeat right 51.5px center / 9px 10px;
 	font-size: 13px;
 	font-weight: 500;
 	color: #000;
-	background: url('../images/icon/download_icon.png')no-repeat 103px 15px;
-	background-size: 28px 12px;
 	-webkit-transition: all 0.2s linear 0s;
 	transition: all 0.2s linear 0s;
 }
@@ -1463,6 +1463,10 @@ input::placeholder {
 	color: #000000;
 }
 
+.en .agency_list li .title {
+	word-break: break-all;
+}
+
 .agency_list li .adress {
 	font-size: 14px;
 	line-height: 22px;
@@ -1470,6 +1474,11 @@ input::placeholder {
 	margin-bottom: 4px;
 	padding-left: 34px;
 	height: 44px;
+}
+
+.en .agency_list li .adress {
+	height: initial;
+	min-height: 44px;
 }
 
 .agency_list li .tel {
@@ -1489,6 +1498,10 @@ input::placeholder {
 	color: #000;
 	font-size: 14px;
 	background: url(../images/icon/arrow_right_type02.svg) right center / 4px 8px no-repeat;
+}
+
+.en .agency_list li .search {
+	width: fit-content;
 }
 
 .agency_list li .smenu {
@@ -1535,6 +1548,10 @@ input::placeholder {
 	font-size: 14px;
 	color: #FF5C00;
 	vertical-align: top;
+}
+
+.en .agency_list li .title span {
+	min-width: 67px;
 }
 
 .pop_title {
