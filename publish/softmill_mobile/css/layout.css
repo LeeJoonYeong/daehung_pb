@@ -457,17 +457,11 @@
 }
 
 .banner_Wrap .title_C {
-	z-index: 999;
 	position: absolute;
 	top: 49px;
-	left: 50%;
-	margin-left: -143px;
+	width: 100%;
 	text-align: center;
-}
-
-.en .banner_Wrap .title_C {
-	margin-left: initial;
-	left: initial;
+	z-index: 999;
 }
 
 .banner_Wrap .title_C .mtitle {
