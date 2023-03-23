@@ -492,18 +492,17 @@
 }
 
 .exper_pro .btitle {
-	height: 44px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
 	line-height: 22px;
 	padding: 0 25px;
 	font-size: 13px;
 	color: #313131;
 	letter-spacing: -0.03em;
-	opacity: 0.8;
+	text-overflow: ellipsis;
 	overflow: hidden;
-}
-
-.en .exper_pro .btitle {
-	overflow: initial;
+	opacity: 0.8;
 }
 
 .sub_pro {
