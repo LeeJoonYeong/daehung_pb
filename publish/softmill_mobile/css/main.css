@@ -380,6 +380,10 @@
 	color: #222;
 }
 
+.en .mission .mis_title {
+	padding: 0 20px;
+}
+
 .mission .mis_btitle {
 	text-align: center;
 	font-size: 16px;
@@ -404,6 +408,10 @@
 	font-size: 20px;
 	line-height: 28px;
 	color: #e6e6e6;
+}
+
+.en .core .cor_title {
+	padding: 0 20px;
 }
 
 .core .cor_btitle {
@@ -586,6 +594,11 @@
 	border-bottom: 1px solid #e6e6e6;
 }
 
+.en .counselor li {
+	display: flex;
+	align-items: center;
+}
+
 .counselor li:first-child {
 	border-top: 1px solid #000;
 }
@@ -637,6 +650,10 @@
 	padding: 0;
 	background: #F9F9F9;
 	overflow: hidden;
+}
+
+.en .client_wrap {
+	height: 498px;
 }
 
 .client_txt {
@@ -692,6 +709,10 @@
 	overflow: hidden;
 	left: 0;
 	top: 288px;
+}
+
+.en .banner_wraper {
+	top: 324px;
 }
 
 .banner_wraper img {
