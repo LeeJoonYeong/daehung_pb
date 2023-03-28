@@ -99,20 +99,120 @@
 }
 
 .mheader_wrap .burger {
-	display: block;
+  box-sizing: initial;
 	position: absolute;
 	top: 0;
 	left: 100px;
-	margin: 26px 0 26px 0;
-	background: url('../images/icon/top_menu_w.svg')no-repeat 0 0;
-	background-size: 100% 100%;
+	display: block;
 	width: 24px;
 	height: 24px;
+	padding-right: 56px;
+	background: url('../images/icon/top_menu_w.svg') no-repeat;
+	background-size: 24px;
+	margin: 26px 0 26px 0;
+}
+
+.mheader_wrap .burger > span {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+	letter-spacing: -0.01em;
 }
 
 .mheader_wrap .burger img {
 	width: 100%;
 }
+
+/* 헤더 툴팁 */
+.mheader_wrap .tooltip {
+	position: absolute;
+	top: 50%;
+	left: 154px;
+	transform: translateY(-50%);
+	animation-name: tooltip_swing;
+	animation-duration: .7s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes tooltip_swing {
+	0% {
+		left: 154px;
+	}
+
+	50% {
+		left: 159px;
+	}
+
+	100% {
+		left: 154px;
+	}
+}
+
+.mheader_wrap .tooltip > div {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 108px;
+	height: 36px;
+	background: rgba(255,255,255, .66);
+	border-radius: 10px;
+	filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.2));
+	animation-name: tooltip_ready;
+	animation-duration: 1.5s;
+}
+
+.mheader_wrap.ttop .tooltip > div {
+	display: none;
+	background-color: #313131;
+}
+
+@keyframes tooltip_ready {
+	0% {
+		opacity: 0;
+		left: -10px;
+	}
+
+	100% {
+		opacity: 1;
+		left: 0px;
+	}
+}
+
+.mheader_wrap .tooltip > div::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: -6px;
+	transform: translateY(-50%);
+	border-top: 4px solid white;
+	border-right: 6.3px solid white;
+	border-bottom: 4px solid white;
+	border-color: transparent rgba(255,255,255, .66) transparent transparent ;
+}
+
+.mheader_wrap.ttop .tooltip > div::before {
+	border-right-color: #313131;
+}
+
+.mheader_wrap .tooltip > div > span {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.01em;
+	color: #000;
+}
+
+.mheader_wrap.ttop .tooltip > div > span {
+	color: #fff;
+}
+
+/* //헤더 툴팁 */
 
 .mheader_wrap .util {
 	position: absolute;
@@ -179,15 +279,11 @@
 }
 
 .ttop .burger {
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 100px;
-	margin: 26px 0 26px 0;
-	background: url('../images/menu/top_menu.svg')no-repeat 0 0;
-	background-size: 100% 100%;
-	width: 24px;
-	height: 24px;
+	background-image: url('../images/menu/top_menu.svg');
+}
+
+.ttop .burger > span {
+	color: #000;
 }
 
 .ttop .util {

@@ -1656,13 +1656,39 @@ input::placeholder {
 	background: #000;
 }
 
+.contact_link_wrap {
+	position: fixed;
+	right: 20px;
+	bottom: 23px;
+	z-index: 9999;
+	transition: all .5s;
+}
+
+.contact_link_wrap.moving {
+	bottom: 75px;
+}
+
+body.bot .contact_link_wrap {
+	bottom: 119px;
+}
+
+body.bot .contact_link_wrap.moving {
+	bottom: 171px;
+}
+
+.contact_link_wrap > a {
+	display: block;
+	width: 42px;
+	height: 42px;
+	border-radius: 30px;
+	background: #000 url('../images/icon/contact_link_btn_01.svg') no-repeat left 10px center / 26px;
+}
+
 .topwrap {
 	position: fixed;
-	width: 34px;
-	height: 34px;
-	bottom: 20px;
 	right: 20px;
-	z-index: 9999;
+	bottom: 23px;
+	z-index: 9998;
 }
 
 .topwrap .topBtn {
@@ -1671,24 +1697,21 @@ input::placeholder {
 
 .topwrap .topBtn a,
 .topwrap .topBtn button {
-	position: absolute;
+	width: 42px;
+	height: 42px;
 	border-radius: 30px;
-	background: #000 url('../images/icon/top_move_btn.svg')no-repeat center;
-	background-size: 12px 14px;
-	width: 34px;
-	height: 34px;
+	background: #f6f6f6 url('../images/icon/top_move_btn_02.svg') no-repeat center / 15px 18px;
+	filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.2));
 }
 
 .topwrap .topBtn a:active,
 .topwrap .topBtn button:active {
-	background: #FF5F00 url('../images/icon/top_move_btn.svg')no-repeat center;
-	background-size: 12px 14px;
-	width: 34px;
-	height: 37px;
+	background-color: #FF5F00;
+	background-image: url('../images/icon/top_move_btn.svg');
 }
 
 body.bot .topwrap {
-	bottom: 110px;
+	bottom: 113px;
 }
 
 .btn_gotop {
