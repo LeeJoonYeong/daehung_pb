@@ -72,8 +72,9 @@ div.tabmenus_Wrap::after {
 }
 
 .tabmenus_Wrap.over_list::after {
-	opacity: 1;
 	width: 40px;
+	opacity: 1;
+	pointer-events: none;
 }
 
 .tabmenus {
