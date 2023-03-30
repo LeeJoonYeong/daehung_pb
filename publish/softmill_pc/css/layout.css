@@ -18,15 +18,14 @@
 }
 
 #header {
-	display: none;
 	width: 100%;
 	background: #fff;
-	/*position: fixed;*/
 	z-index: 999;
+	visibility: hidden;
 }
 
 #header.active {
-	display: block;
+	visibility: visible;
 }
 
 .header_wrap {
@@ -67,16 +66,62 @@
 .header_wrap .burger {
 	box-sizing: initial;
 	position: absolute;
-	top: 0;
+	top: 50%;
 	left: 100px;
+	transform: translateY(-50%);
 	display: block;
 	width: 24px;
 	height: 24px;
 	padding-right: 56px;
-	background: url('../images/menu/top_menu.svg') no-repeat;
-	background-size: 24px;
-	margin: 26px 0 26px 0;
+	/* background: url('../images/menu/top_menu.svg') no-repeat;
+	background-size: 24px; */
 }
+
+/* gnb 햄버거 버튼 (인터랙션) */
+.sub_burger_set {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 24px;
+	height: 24px;
+}
+
+.sub_burger_set > div {
+	position: absolute;
+	left: 1px;
+	width: 22px;
+	height: 2px;
+	background-color: #000;
+	transition: all .7s;
+}
+
+.sub_burger_set .bread_top {
+	top: 4px;
+}
+
+#hamburger.active + #header .sub_burger_set .bread_top {
+	transform-origin: left;
+	transform: rotateZ(45deg) scaleX(.88);
+}
+
+.sub_burger_set .patty {
+	top: 11px;
+}
+
+#hamburger.active + #header .sub_burger_set .patty {
+	transform-origin: center;
+	transform: scaleX(0);
+}
+
+.sub_burger_set .bread_bottom {
+	top: 18px;
+}
+
+#hamburger.active + #header .sub_burger_set .bread_bottom {
+	transform-origin: left;
+	transform: rotateZ(-45deg) scaleX(.88);
+}
+/* //gnb 햄버거 버튼 (인터랙션) */
 
 .header_wrap .burger > span {
 	position: absolute;
@@ -607,6 +652,12 @@
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
+	opacity: 0;
+	transition: opacity .7s;
+}
+
+#hamburger.active .menu_popup {
+	opacity: 1;
 }
 
 .megaDrop {
@@ -618,6 +669,7 @@
 	text-align: center;
 }
 
+
 .mega_header {
 	position: relative;
 	height: 80px;
@@ -627,14 +679,66 @@
 .mega_header a,
 .mega_header button {
 	position: absolute;
-	top: 30px;
+	top: 50%;
 	left: 100px;
-	background: url('../images/icon/bt_layer_close.png')no-repeat 0 0;
-	background-size: 100% 100%;
-	width: 22px;
-	height: 22px;
+	transform: translateY(-50%);
+	/* background: url('../images/icon/bt_layer_close.png')no-repeat 0 0;
+	background-size: 100% 100%; */
+	width: 24px;
+	height: 24px;
 	cursor: pointer;
 }
+
+/* gnb 햄버거 버튼 (인터랙션) */
+.menu_burger_set {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.menu_burger_set > div {
+	position: absolute;
+	left: 1px;
+	width: 22px;
+	height: 2px;
+	background-color: #fff;
+	transition: all .7s;
+}
+
+#hamburger.active .menu_burger_set > div {
+	background-color: #000;
+}
+
+.menu_burger_set .bread_top {
+	top: 4px;
+}
+
+#hamburger.active .menu_burger_set .bread_top {
+	transform-origin: left;
+	transform: rotateZ(45deg) scaleX(.88);
+}
+
+.menu_burger_set .patty {
+	top: 11px;
+}
+
+#hamburger.active .menu_burger_set .patty {
+	transform-origin: center;
+	transform: scaleX(0);
+}
+
+.menu_burger_set .bread_bottom {
+	top: 18px;
+}
+
+#hamburger.active .menu_burger_set .bread_bottom {
+	transform-origin: left;
+	transform: rotateZ(-45deg) scaleX(.88);
+}
+
+/* //gnb 햄버거 버튼 (인터랙션) */
 
 .mega_menu {
 	width: 1920px;

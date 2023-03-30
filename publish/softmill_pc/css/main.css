@@ -101,16 +101,70 @@
 .mheader_wrap .burger {
   box-sizing: initial;
 	position: absolute;
-	top: 0;
+	top: 50%;
 	left: 100px;
+  transform: translateY(-50%);
 	display: block;
 	width: 24px;
 	height: 24px;
 	padding-right: 56px;
-	background: url('../images/icon/top_menu_w.svg') no-repeat;
-	background-size: 24px;
-	margin: 26px 0 26px 0;
+	/* background: url('../images/icon/top_menu_w.svg') no-repeat;
+	background-size: 24px; */
 }
+
+/* gnb 햄버거 버튼 (인터랙션) */
+.main_burger_set {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 24px;
+	height: 24px;
+}
+
+.main_burger_set > div {
+	position: absolute;
+	left: 1px;
+	width: 22px;
+	height: 2px;
+	background-color: #fff;
+	transition: all .7s;
+}
+
+#hamburger.active + #mainWrap .main_burger_set > div {
+	background-color: #000;
+}
+
+.ttop .main_burger_set > div {
+	background-color: #000;
+}
+
+.main_burger_set .bread_top {
+	top: 4px;
+}
+
+#hamburger.active + #mainWrap .main_burger_set .bread_top {
+	transform-origin: left;
+	transform: rotateZ(45deg) scaleX(.88);
+}
+
+.main_burger_set .patty {
+	top: 11px;
+}
+
+#hamburger.active + #mainWrap .main_burger_set .patty {
+	transform-origin: center;
+	transform: scaleX(0);
+}
+
+.main_burger_set .bread_bottom {
+	top: 18px;
+}
+
+#hamburger.active + #mainWrap .main_burger_set .bread_bottom {
+	transform-origin: left;
+	transform: rotateZ(-45deg) scaleX(.88);
+}
+/* //gnb 햄버거 버튼 (인터랙션) */
 
 .mheader_wrap .burger > span {
 	position: absolute;
@@ -278,9 +332,9 @@
 
 }
 
-.ttop .burger {
+/* .ttop .burger {
 	background-image: url('../images/menu/top_menu.svg');
-}
+} */
 
 .ttop .burger > span {
 	color: #000;

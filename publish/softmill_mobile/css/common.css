@@ -523,7 +523,7 @@ input::placeholder {
 	position: fixed;
 	top: 0;
 	z-index: 9999;
-	right: -100%;
+	left: -100%;
 }
 
 .layer_popup,

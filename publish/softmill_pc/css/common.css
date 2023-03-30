@@ -1590,11 +1590,13 @@ input::placeholder {
 
 /* 221123 햄버거 셋팅 for 'on/off' */
 #hamburger {
-	display: none;
+	visibility: hidden;
+
+	transition: visibility .7s;
 }
 
 #hamburger.active {
-	display: block;
+	visibility: visible;
 }
 
 /* //221123 햄버거 셋팅 for 'on/off' */
