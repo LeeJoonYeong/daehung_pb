@@ -41,6 +41,12 @@
 
 }
 
+.en .ban_title 
+{
+	width: 800px;
+	line-height: 1.2;
+}
+
 .ban_btitle {
 	width: 714px;
 	font-size: 20px;
@@ -49,6 +55,12 @@
 	opacity: 0.9;
 	animation: fadein_trans 0.9s ease-in-out;
 }
+
+.en .ban_btitle {
+	width: 800px;
+	line-height: 1.6;
+}
+
 
 /*********** main header *********/
 #mheader {
@@ -750,6 +762,10 @@
 	font-weight: 400;
 	color: #000;
 	margin-bottom: 30px;
+}
+
+.en .counselor li .dirbtn {
+	margin-top: 57px;
 }
 
 .counselor li .dirbtn .img_size {

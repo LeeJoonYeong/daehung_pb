@@ -21,6 +21,10 @@
 	z-index: 999;
 }
 
+.en .product_Wrap .title {
+	right: 20px;
+}
+
 .product_Wrap .title .tite {
 	font-size: 28px;
 	line-height: 34px;
@@ -184,6 +188,11 @@ div.tabmenus_Wrap::after {
 	max-height: 48px;
 }
 
+.en .product_list .title {
+	line-height: 1.4;
+	max-height: 40px;
+}
+
 .product_list .bcopy {
 	display: none;
 	font-size: 14px;
@@ -334,6 +343,10 @@ div.tabmenus_Wrap::after {
 	color: #000;
 }
 
+.en .detail_data .title {
+	line-height: 1.4;
+}
+
 .line {
 	position: relative;
 	margin-bottom: 16px;
@@ -346,6 +359,11 @@ div.tabmenus_Wrap::after {
 	font-size: 14px;
 	font-weight: 500;
 	color: #000;
+}
+
+.en .detail_data .name {
+	font-size: 16px;
+	margin-bottom: 6px;
 }
 
 .detail_data .model {
@@ -365,7 +383,7 @@ div.tabmenus_Wrap::after {
 
 .en .detail_data .data {
 	display: flex;
-  flex-direction: column;
+	flex-direction: column;
 }
 
 .detail_data .data li {
@@ -374,8 +392,13 @@ div.tabmenus_Wrap::after {
 }
 
 .en .detail_data .data li {
-	display: flex;
-  flex-direction: row;
+	display: block;
+	flex-direction: row;
+	margin-bottom: 8px;
+}
+
+.en .detail_data .data li:last-child {
+	margin-bottom: 0;
 }
 
 .detail_data .data li .tit {
@@ -390,7 +413,10 @@ div.tabmenus_Wrap::after {
 }
 
 .en .detail_data .data li .tit {
+	float: none;
 	word-break: break-all;
+	width: 100%;
+	color: #333333;
 }
 
 .detail_data .data li .stit {
@@ -405,6 +431,11 @@ div.tabmenus_Wrap::after {
 	-webkit-line-clamp: 1;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
+}
+
+.en .detail_data .data li .stit {
+	float: none;
+	width: 100%;
 }
 
 .detail_data .desc {
@@ -772,7 +803,7 @@ div.tabmenus_Wrap::after {
 .mill_help .box .helps li .tit {
 	position: relative;
 	width: 100%;
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 22px;
 	font-weight: 500;
 	margin-bottom: 4px;

@@ -26,10 +26,22 @@
 	top: 140px;
 	left: 20px;
 }
+.en .mbanner_wrap .banner_txt {
+	right: 20px;
+}
 
 .ban_title {
 	font-size: 32px;
 	line-height: 42px;
+	font-weight: 500;
+	color: #fff;
+	margin-bottom: 24px;
+	animation: fadein 0.6s ease-in-out;
+
+} 
+.en .ban_title {
+	font-size: 32px;
+	line-height: 1.2;
 	font-weight: 500;
 	color: #fff;
 	margin-bottom: 24px;
@@ -43,6 +55,10 @@
 	color: #fff;
 	opacity: 0.9;
 	animation: fadein 0.9s ease-in-out;
+}
+
+.en .ban_btitle {
+	line-height: 1.4;
 }
 
 @keyframes fadein {
@@ -255,10 +271,18 @@
 	margin-bottom: 20px;
 }
 
+.en .story_wrap .story_txt .sto_title {
+	line-height: 1.2;
+}
+
 .story_wrap .story_txt .sto_btitle {
 	font-size: 14px;
 	line-height: 22px;
 	color: #666;
+}
+
+.en .story_wrap .story_txt .sto_btitle {
+	line-height: 1.4;
 }
 
 /*********** global header *********/
@@ -296,12 +320,20 @@
 	margin-bottom: 20px;
 }
 
+.global_wrap .glo_title {
+	line-height: 1.2;
+}
+
 .global_wrap .glo_btitle {
 	max-width: 300px;
 	line-height: 22px;
 	font-size: 14px;
 	letter-spacing: -0.01em;
 	color: #666;
+}
+
+.en .global_wrap .glo_btitle {
+	line-height: 1.4;
 }
 
 /*********** signature header *********/
@@ -328,10 +360,18 @@
 	margin-bottom: 40px;
 }
 
+.en .signature_wrap .sig_title {
+	line-height: 1.2;
+}
+
 .signature_wrap .sig_btitle {
 	font-size: 14px;
 	line-height: 22px;
 	color: #666;
+}
+
+.en .signature_wrap .sig_btitle {
+	line-height: 1.4;
 }
 
 .signature_wrap .m_sign {
@@ -373,6 +413,10 @@
 	top: 102px;
 }
 
+.en .mission .mission_txt {
+	top: 82px;
+}
+
 .mission .mis_title {
 	text-align: center;
 	font-size: 20px;
@@ -382,6 +426,7 @@
 
 .en .mission .mis_title {
 	padding: 0 20px;
+	line-height: 1.4;
 }
 
 .mission .mis_btitle {
@@ -403,6 +448,10 @@
 	top: 102px;
 }
 
+.en .core .core_txt {
+	top: 82px;
+}
+
 .core .cor_title {
 	text-align: center;
 	font-size: 20px;
@@ -412,6 +461,7 @@
 
 .en .core .cor_title {
 	padding: 0 20px;
+	line-height: 1.4;
 }
 
 .core .cor_btitle {
@@ -445,10 +495,18 @@
 	margin-bottom: 20px;
 }
 
+.en .exper_title {
+	line-height: 1.2;
+}
+
 .exper_btitle {
 	font-size: 14px;
 	line-height: 22px;
 	color: #313131;
+}
+
+.en .exper_btitle{
+	line-height: 1.4;
 }
 
 .exper_pro {
@@ -589,9 +647,13 @@
 	position: relative;
 	width: 100%;
 	height: 115px;
-	padding: 33px 0 33px;
+	padding: 33px 0 33px 24px;
 	margin-right: 33px;
 	border-bottom: 1px solid #e6e6e6;
+}
+
+.en .counselor li {
+	padding-left: 20px;
 }
 
 .en .counselor li {
@@ -633,6 +695,10 @@
 	right: 24px;
 }
 
+.en .counselor li a {
+	right: 20px;
+}
+
 .counselor li .img_size {
 	width: 20px;
 	height: 20px;
@@ -671,11 +737,19 @@
 	margin-bottom: 20px;
 }
 
+.en .cli_title {
+	line-height: 1.2;
+}
+
 .cli_btitle {
 	line-height: 22px;
 	font-size: 14px;
 	color: #666666;
 	word-break: keep-all;
+}
+
+.en .cli_btitle{
+	line-height: 1.4;
 }
 
 .cli_list {

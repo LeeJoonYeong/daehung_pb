@@ -22,6 +22,10 @@
 	letter-spacing: -0.03em;
 }
 
+.en .stitle_Wrap .stitle {
+	line-height: 1.4;
+}
+
 
 .stitle_philo_Wrap {
 	position: relative;
@@ -98,6 +102,10 @@
 	letter-spacing: -0.03em;
 }
 
+.en .capa_Wrap li .stitle {
+	line-height: 1.6;
+}
+
 .capa_Wrap li .stitle p {
 	position: relative;
 	font-size: 13px;
@@ -105,6 +113,10 @@
 	line-height: 22px;
 	padding-left: 12px;
 	letter-spacing: -0.03em;
+}
+
+.en .capa_Wrap li .stitle p {
+	line-height: 1.6;
 }
 
 .capa_Wrap li .stitle .icon {
@@ -157,6 +169,10 @@
 	margin-left: 30px;
 }
 
+.en .process li .title {
+	margin-left: 20px;
+}
+
 .process li .title .num {
 	line-height: 22px;
 	margin-bottom: 8px;
@@ -180,6 +196,10 @@
 	color: #6f6f6f;
 	font-size: 13px;
 	line-height: 22px;
+}
+
+.en .process li .title .stitle {
+	line-height: 1.4;
 }
 
 .process li:last-child {
@@ -241,7 +261,10 @@
 	font-size: 14px;
 	line-height: 22px;
 	color: #6f6f6f;
+}
 
+.en .philo_wrap li .bcopy {
+	line-height: 1.4;
 }
 
 .ceo_wrap {
@@ -274,6 +297,10 @@
 	font-size: 13px;
 	color: #000000;
 	letter-spacing: -0.03em;
+}
+
+.en .ceo_wrap .message .bcopy {
+	line-height: 1.4;
 }
 
 .ceo_wrap .ceo_poto {
@@ -367,6 +394,16 @@
 	line-height: 26px;
 }
 
+.en .history_wrap .time_line li p {
+	line-height: 1.4;
+	padding-left: 34px;
+	margin-bottom: 8px;
+}
+
+.en .history_wrap .time_line li p:last-child {
+	margin-bottom: 0px;
+}
+
 .history_wrap .time_line li .box {
 	display: table-cell;
 }
@@ -406,6 +443,12 @@
 	line-height: 22px;
 	margin-right: 12px;
 	color: #000000;
+}
+
+.en .history_wrap .time_line li .story span {
+	position: absolute;
+	line-height: 1.6;
+	left: 0;
 }
 
 .ci_wrap {
@@ -474,6 +517,10 @@
 	font-size: 13px;
 	line-height: 22px;
 	color: #6f6f6f;
+}
+
+.en .ci_wrap .info li .bcopy {
+	line-height: 1.4;
 }
 
 .ci_wrap .logo {
@@ -590,6 +637,10 @@
 	line-height: 22px;
 	text-align: center;
 	color: #6f6f6f;
+}
+
+.en .ci_wrap .soft_color .stitle{
+	line-height: 1.4;
 }
 
 .ci_wrap .color_box {
