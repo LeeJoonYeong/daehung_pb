@@ -296,6 +296,10 @@
 	line-height: 26px;
 }
 
+.mheader_wrap .util a:first-child {
+	padding-right: initial;
+}
+
 .mheader_wrap .util a span {
 	position: absolute;
 	background: url('../images/icon/top_new_page_w.svg')no-repeat right 0;
@@ -304,6 +308,10 @@
 	height: 18px;
 	right: 0;
 	top: 1px;
+}
+
+.mheader_wrap .util a:first-child span {
+	background-image: none;
 }
 
 .mheader_wrap .util a:last-child {
@@ -368,6 +376,10 @@
 	line-height: 26px;
 }
 
+.ttop .util a:first-child {
+	padding-right: initial;
+}
+
 .ttop .util a span {
 	position: absolute;
 	background: url('../images/menu/top_new_page.svg')no-repeat right 0;
@@ -376,6 +388,10 @@
 	height: 18px;
 	right: 0;
 	top: 1px;
+}
+
+.ttop .util a:first-child span {
+	background-image: none;
 }
 
 .ttop .util a:last-child {

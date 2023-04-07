@@ -126,6 +126,10 @@
 	padding-left: 12px;
 }
 
+.en .capa_Wrap li .stitle p {
+	padding-right: 30px;
+}
+
 .capa_Wrap li .stitle .icon {
 	position: absolute;
 	left: 0;
@@ -398,11 +402,22 @@
 }
 
 .history_wrap .time_line {
+	position: relative;
 	float: right;
 	width: 676px;
 	margin-left: 106px;
 	border-left: 1px solid #e6e6e6;
 }
+/* 
+.history_wrap .time_line:last-child::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 200px;
+	border-left: 1px solid #e6e6e6;
+} */
 
 .history_wrap .time_line li {
 	position: relative;
@@ -414,7 +429,11 @@
 }
 
 .history_wrap .time_line li:last-child {
-	padding-bottom: 161px;
+	padding-bottom: 66px;
+}
+
+.history_wrap .time_line:last-child li:last-child {
+	padding-bottom: 200px;
 }
 
 .history_wrap .time_line li p {

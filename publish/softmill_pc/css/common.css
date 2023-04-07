@@ -358,6 +358,10 @@ input::placeholder {
 	padding-top: 10px;
 }
 
+.pb0 {
+	padding-bottom: 0 !important;
+}
+
 .pl110 {
 	padding-left: 110px;
 }
@@ -666,6 +670,11 @@ input::placeholder {
 	right: 55px;
 	top: 60px;
 	z-index: 9999;
+}
+
+.service_popup .pop_close_btn {
+	right: 32px;
+	top: 32px;
 }
 
 .pop_close_btn .btn_close {
@@ -1629,14 +1638,12 @@ input::placeholder {
 /* 221123 햄버거 셋팅 for 'on/off' */
 #hamburger {
 	visibility: hidden;
-
-	transition: visibility .7s;
+	transition: visibility .5s;
 }
 
 #hamburger.active {
 	visibility: visible;
 }
-
 /* //221123 햄버거 셋팅 for 'on/off' */
 
 .boxs {

@@ -48,6 +48,11 @@
 	color: #4a4a4a;
 }
 
+.en .product_Wrap .title .stitle {
+	line-height: 1.6;
+	width: 640px;
+}
+
 .detail_large_img img {
 	height: 724px;
 }
@@ -151,15 +156,15 @@
 }
 
 .product_list .bcopy {
-	font-size: 14px;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
 	line-height: 22px;
+	font-size: 14px;
 	color: #313131;
 	text-align: center;
-	-webkit-line-clamp: 32;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
 	text-overflow: ellipsis;
-	max-height: 66px;
+	overflow: hidden;
 }
 
 .product_list .size {
@@ -325,6 +330,11 @@
 	color: #000;
 }
 
+.en .detail_data .name {
+	width: 102px;
+}
+
+
 .detail_data .model {
 	position: relative;
 	float: left;
@@ -348,6 +358,16 @@
 	width: 395px;
 }
 
+.en .detail_data .data li {
+	width: 375px;
+	margin-bottom: 6px;
+}
+
+.en .detail_data .data li:last-child {
+	margin-bottom: 0;
+}
+
+
 .detail_data .data li .tit {
 	float: left;
 	position: relative;
@@ -359,6 +379,12 @@
 	color: #666666;
 }
 
+.en .detail_data .data li .tit {
+	line-height: 1.6;
+	width: auto;
+}
+
+
 .detail_data .data li .stit {
 	float: left;
 	position: relative;
@@ -366,6 +392,10 @@
 	font-size: 16px;
 	line-height: 28px;
 	font-weight: 300;
+}
+
+.en .detail_data .data li .stit {
+	line-height: 1.6;
 }
 
 .detail_data .desc {
@@ -382,6 +412,12 @@
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+.en .detail_data .desc {
+	line-height: 1.6;
+	max-height: none;
+	width: 375px;
 }
 
 .cata {
@@ -615,7 +651,7 @@
 }
 
 .caption .box ul {
-	width: 700px;
+	width: 600px;
 	float: left;
 }
 
@@ -628,7 +664,6 @@
     padding: 22px 0;
     border-bottom: 1px solid #d9d9d9;
     min-height: 64px;
-    margin-right: 132px;
 }
 
 .caption .box ul li .title {
@@ -637,6 +672,11 @@
     line-height: 20px;
     width: 80px;
     margin: 0 60px 0 0;
+}
+
+.en .caption .box ul li .title {
+	width: 140px;
+	margin: 0 30px 0 0;
 }
 
 .caption .box ul li .bcopy {
@@ -650,10 +690,15 @@
     text-overflow: ellipsis;
 }
 
+.en .caption .box ul li .bcopy {
+	width: 454px;
+}
+
 .caption .box img {
 	float: left;
 	width: 480px;
 	height: 570px;
+	margin-left: 132px;
 }
 
 .detail_reward {
@@ -756,6 +801,16 @@
 	color: #000;
 }
 
+.en .mill_help .box .title {
+	float: left;
+	width: 302px;
+	line-height: 36px;
+	margin-right: 116px;
+	font-size: 1.4;
+	font-weight: 500;
+	color: #000;
+}
+
 .mill_help .box .helps {
 	float: left;
 	position: relative;
@@ -771,6 +826,10 @@
 	width: 200px;
 	height: 140px;
 	padding: 20px;
+}
+
+.mill_help .box .helps li:not(:last-child) a {
+	border-right: 0.5px solid #d9d9d9;
 }
 
 .mill_help .box .helps li:last-child {

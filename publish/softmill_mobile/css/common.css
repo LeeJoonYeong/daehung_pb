@@ -1465,7 +1465,10 @@ input::placeholder {
 }
 
 .en .agency_list li .title {
-	word-break: break-all;
+	max-width: 90%;
+	word-break: break-word;
+	margin-bottom: 12px;
+	padding: 0 20px 0 34px;
 }
 
 .agency_list li .adress {
@@ -1479,7 +1482,6 @@ input::placeholder {
 
 .en .agency_list li .adress {
 	height: initial;
-	min-height: 44px;
 }
 
 .agency_list li .tel {
@@ -1515,6 +1517,10 @@ input::placeholder {
 	padding: 24px 13px 24px 20px;
 }
 
+.en .agency_list li a {
+	padding: 24px 13px 24px 10px;
+}
+
 .agency_list li a.active {
 	background: #f9f9f9;
 	border-bottom: 1px solid #e6e6e6;
@@ -1539,6 +1545,10 @@ input::placeholder {
 	color: #fff;
 }
 
+.en .apin {
+	left: 10px;
+}
+
 .agency_list li .title span {
 	position: absolute;
 	top: 0;
@@ -1552,7 +1562,10 @@ input::placeholder {
 }
 
 .en .agency_list li .title span {
-	min-width: 67px;
+	position: relative;
+	min-width: 100%;
+	display: block;
+	left: 0;
 }
 
 .pop_title {
@@ -2017,8 +2030,8 @@ body.bot .topwrap {
 .service_popup .pop_close_btn{
 	display: inline-block;
 	position: absolute;
-	right: 55px;
-	top: 64px;
+	right: 32px;
+	top: 32px;
 	z-index: 9999;
 }
 
