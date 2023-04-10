@@ -802,13 +802,8 @@
 }
 
 .en .mill_help .box .title {
-	float: left;
-	width: 302px;
-	line-height: 36px;
-	margin-right: 116px;
-	font-size: 1.4;
-	font-weight: 500;
-	color: #000;
+	width: 288px;
+	margin-right: 100px;
 }
 
 .mill_help .box .helps {
@@ -816,9 +811,17 @@
 	position: relative;
 }
 
+.en .mill_help .box .helps {
+	margin-top: 18px;
+}
+
 .mill_help .box .helps li {
 	float: left;
 	margin-right: 30px;
+}
+
+.en .mill_help .box .helps li {
+	margin-right: initial;
 }
 
 .mill_help .box .helps li a {
@@ -826,6 +829,15 @@
 	width: 200px;
 	height: 140px;
 	padding: 20px;
+}
+
+.en .mill_help .box .helps li a {
+	width: auto;
+	padding: 0 45px;
+}
+
+.en .mill_help .box .helps li:last-child a {
+	padding-right: 0;
 }
 
 .mill_help .box .helps li:not(:last-child) a {
@@ -837,8 +849,9 @@
 }
 
 .mill_help .box .helps li .tit {
-	width: 100%;
+	width: max-content;
 	line-height: 20px;
+	padding-right: 13px;
 	margin-bottom: 10px;
 	font-size: 17px;
 	font-weight: 500;
