@@ -94,6 +94,11 @@ span {
 	font-size: inherit;
 }
 
+select, 
+table {
+	font-family: 'Pretendard', 'Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif;
+}
+
 input {
 	border: 1px solid #000000;
 	letter-spacing: -0.01em;
@@ -1152,17 +1157,21 @@ div.search_table_wrap {
 	width: 200px
 }
 
-.search_condition>select {
-	box-sizing: border-box;
+.search_condition > select {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 3px 8px 3px 18px;
+	width: 167px;
 	height: 38px;
+	padding: 3px 8px 3px 18px;
 	border: 1px solid #000000;
 	margin: 0px 14px 0px 18px;
-	width: 167px;
-	background: url('../images/select_icon.svg') no-repeat 95% 50%;
+	background: url('../images/select_icon.svg') no-repeat right 8px center / 32px;
+	box-sizing: border-box;
+}
+
+.search_condition > select.select_style_02 {
+	width: 180px;
 }
 
 select::-ms-expand {
@@ -1501,10 +1510,14 @@ table.category_02 tbody tr th.input_area {
 table.category_02 tbody tr th.input_area select {
 	width: 167px;
 	height: 38px;
+	padding-left: 18px;
 	border-radius: 0px;
 	margin-right: 14px;
-	padding-left: 18px;
-	background: url('../images/select_icon.svg') no-repeat 95% 50%;
+	background: url('../images/select_icon.svg') no-repeat right 8px center / 32px;
+}
+
+table.category_02 tbody tr th.input_area select.select_style_02 {
+	width: 180px;
 }
 
 table.category_02 tbody tr.input_area input {
