@@ -18,7 +18,6 @@
 
 html {
 	font-family: 'Pretendard', 'Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif;
-
 	font-size: 16px;
 	line-height: 1.5;
 	/* 단위 쓰지 말것 */
@@ -34,8 +33,8 @@ html {
 }
 
 body {
-	font-family: 'Pretendard', 'Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif;
 	margin: 0;
+	font-family: 'Pretendard', 'Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif;
 }
 
 main {
@@ -54,10 +53,10 @@ main {
 }
 
 .LNB {
-	height: calc(100vh - 3.5rem);
 	width: 180px;
-	background: #fbfbfb;
+	height: calc(100vh - 3.5rem);
 	border-right: 1px solid #c5c5c5;
+	background: #fbfbfb;
 	z-index: 9999;
 }
 
@@ -87,8 +86,8 @@ h5,
 h6,
 div,
 span {
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	/* 폰트 크기 상속 */
 	font-family: 'Pretendard', 'Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif;
 	font-size: inherit;
@@ -131,43 +130,43 @@ input#file-upload-button {
 }
 
 .int_btn {
-	display: block;
 	position: relative;
+	display: block;
 	width: 100%;
 }
 
 /* 파일 첨부 시 이미지 링크 */
-.int_btn>a {
+.int_btn > a {
 	position: absolute;
 	top: 50%;
 	left: 135px;
 	transform: translateY(-50%);
-	padding-right: 18px;
 	max-width: 77%;
+	padding-right: 18px;
 	white-space: nowrap;
-	overflow: hidden;
 	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
-.int_btn.box_type01>a {
+.int_btn.box_type01 > a {
 	max-width: 64%;
 }
 
-.int_btn.box_type02>a {
+.int_btn.box_type02 > a {
 	max-width: 75%;
 }
 
-.int_btn.box_type03>a {
+.int_btn.box_type03 > a {
 	max-width: 80%;
 }
 
-.int_btn>a.type_left_01 {
+.int_btn > a.type_left_01 {
 	left: 180px;
 	font-size: 14px;
 	font-weight: 500;
 }
 
-.int_btn>a>button {
+.int_btn > a > button {
 	position: absolute;
 	top: 50%;
 	right: 0;
@@ -180,19 +179,19 @@ input#file-upload-button {
 /* //파일 첨부 시 이미지 링크 */
 
 .int_btn .upload-name {
-	border: 1px solid #000000;
 	width: 94.2%;
-	font-size: 13px;
-	padding: 8px 15px 8px 128px;
-	line-height: 1;
 	height: 38px;
+	line-height: 1;
+	padding: 8px 15px 8px 128px;
+	border: 1px solid #000000;
 	background-color: #ffffff;
+	font-size: 13px;
 }
 
 .int_btn label {
 	position: absolute;
-	left: 44px;
 	top: 0;
+	left: 44px;
 	cursor: pointer;
 }
 
@@ -201,20 +200,20 @@ input#file-upload-button {
 	width: 1px;
 	height: 1px;
 	padding: 0;
+	border: 0;
 	margin: -1px;
 	overflow: hidden;
 	clip: rect(0, 0, 0, 0);
-	border: 0;
 }
 
 .btn_text {
+	display: inline-block;
 	width: 120px;
 	height: 38px;
 	line-height: 36px;
-	display: inline-block;
-	text-align: center;
-	color: #ffffff;
 	background: #000000;
+	color: #ffffff;
+	text-align: center;
 	font-size: 13px;
 	font-weight: 500;
 }
@@ -242,20 +241,20 @@ a:hover {
 
 b,
 strong {
-	font-weight: bolder;
-	color: #ff5f00;
 	position: relative;
 	top: 2px;
+	font-weight: bolder;
+	color: #ff5f00;
 }
 
-:not(pre)>code,
-:not(pre)>kbd,
-:not(pre)>samp {
+:not(pre) > code,
+:not(pre) > kbd,
+:not(pre) > samp {
+	padding: 2px 6px;
+	background: #f8f8f8;
 	font-size: 0.875rem;
 	color: #f0506e;
 	white-space: nowrap;
-	padding: 2px 6px;
-	background: #f8f8f8;
 }
 
 em {
@@ -285,9 +284,9 @@ small,
 
 sub,
 sup {
-	font-size: 75%;
-	line-height: 0;
 	position: relative;
+	line-height: 0;
+	font-size: 75%;
 	vertical-align: baseline;
 }
 
@@ -317,37 +316,35 @@ video {
 }
 
 table.category_03 tbody tr th.input_area input.magic_radio {
-	height: 20px;
 	width: 20px;
+	height: 20px;
 	margin-left: 0px;
-
 }
 
 table.category_03 tbody tr td.input_area input.magic_radio {
-	height: 20px;
 	width: 20px;
+	height: 20px;
 	margin-left: 0px;
-
 }
 
 .magic_radio {
-	user-select: auto;
-	padding-right: 10px;
 	position: relative;
 	top: 1px;
 	width: 20px;
 	height: 20px;
+	padding-right: 10px;
+	user-select: auto;
 }
 
 .magic_radio_label {
-	user-select: auto;
-	font-weight: 500;
+	position: relative;
+	top: 2px;
 	margin-right: 50px;
 	margin-left: 8px;
 	font-size: 14px;
+	font-weight: 500;
 	vertical-align: super;
-	position: relative;
-	top: 2px;
+	user-select: auto;
 }
 
 :root {
@@ -388,7 +385,7 @@ p {
 }
 
 /* 인접한 요소 인 경우 여백 추가 */
-*+p {
+* + p {
 	margin-top: 1rem;
 }
 
@@ -410,15 +407,15 @@ table {
 }
 
 .popup {
+	display: inline-block;
 	width: 604px;
 	height: 653px;
-	display: inline-block;
 	border: 1px solid #929292;
 }
 
 .popup_title {
-	padding: 20px 40px;
 	height: 80px;
+	padding: 20px 40px;
 }
 
 .popup_title h2 {
@@ -427,12 +424,12 @@ table {
 }
 
 .popup_content {
-	margin: 0px;
 	width: 603px;
 	height: 406px;
+	padding: 0px 1px 0px 1px;
 	border-bottom: 1px solid #bbbbbb;
 	border-top: 1px solid #bbbbbb;
-	padding: 0px 1px 0px 1px;
+	margin: 0px;
 }
 
 .popup_table {
@@ -458,7 +455,6 @@ table {
 
 .popup_close {
 	float: right;
-
 }
 
 .popup_table thead tr {
@@ -480,16 +476,16 @@ table {
 }
 
 .popup_table thead tr th input {
-	display: inline-block;
-	position: relative;
-	top: 2px;
-	box-sizing: border-box;
-	width: 16px;
-	height: 16px;
-	border: 1px solid #000000;
 	flex: none;
 	order: 0;
 	flex-grow: 0;
+	position: relative;
+	top: 2px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #000000;
+	box-sizing: border-box;
 }
 
 .popup_table tbody tr {
@@ -503,16 +499,16 @@ table {
 }
 
 .popup_table tbody tr td input {
-	display: inline-block;
-	position: relative;
-	top: 2px;
-	box-sizing: border-box;
-	width: 16px;
-	height: 16px;
-	border: 1px solid #000000;
 	flex: none;
 	order: 0;
 	flex-grow: 0;
+	position: relative;
+	top: 2px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #000000;
+	box-sizing: border-box;
 }
 
 .popup_table tbody tr td span {
@@ -532,7 +528,6 @@ table {
 	align-content: center;
 	padding: 20px 227px 40px 228px;
 	margin: auto;
-
 }
 
 thead.table_style_01 tr th:nth-child(1),
@@ -962,30 +957,29 @@ div.search_table_wrap table.category_01 tbody tr td a {
 }
 
 div.table_wrap table.category_02 tbody tr .text_input_1line .int_date {
-	border: 1px solid #000000;
-	border-right: 0;
 	width: 170px;
-	font-size: 14px;
 	padding: 8px 15px;
 	line-height: 1;
+	border: 1px solid #000000;
+	border-right: 0;
+	font-size: 14px;
 }
 
 .input_history {
-	width: 100%;
-	margin-left: 0px;
-	box-sizing: border-box;
 	flex-direction: row;
 	align-items: flex-start;
-	padding: 9px 18px;
 	width: 376px;
 	height: 38px;
-	background: #ffffff;
+	margin-left: 0px;
+	padding: 9px 18px;
 	border: 1px solid #000000;
+	background: #ffffff;
+	box-sizing: border-box;
 }
 
 .p_l18 {
-	user-select: auto;
 	padding-left: 18px;
+	user-select: auto;
 }
 
 .bb01_01 {
@@ -1003,8 +997,8 @@ div.table_wrap table.category_02 tbody tr .text_input_1line .int_date {
 
 .search>table {
 	width: 100%;
-	border: 0px;
 	height: 58px;
+	border: 0px;
 	border-top: 1px solid #000000;
 }
 
@@ -1024,7 +1018,6 @@ div.table_wrap table.category_02 tbody tr .text_input_1line .int_date {
 .board_pagination {
 	padding: 98px 0px 40px 0px;
 	margin: 0 auto;
-	/* width: 234px; */
 }
 
 .board_nav {
@@ -1087,11 +1080,11 @@ div.search_table_wrap {
 }
 
 .search_table_wrap .table_number {
+	float: right;
 	width: 167px;
 	height: 38px;
-	border-radius: 0px;
 	padding-left: 18px;
-	float: right;
+	border-radius: 0px;
 	margin-bottom: 20px;
 	background: url('../images/select_icon.svg') no-repeat 95% 50%;
 }
@@ -1122,15 +1115,11 @@ div.search_table_wrap {
 	width: 94.2%;
 }
 
-
 .table_m_title th {
 	padding: 0px 0 0 18px;
 	font-size: 15px;
 	font-weight: 500;
-
 }
-
-
 
 .search_table_wrap .category_01 tbody tr td p {
 	margin: 0px;
@@ -1143,18 +1132,18 @@ div.search_table_wrap {
 }
 
 .search_title {
-	background-color: #e6e6e6;
 	width: 152px;
-	padding: 0px 18px;
-	font-weight: 500;
-	font-size: 15px;
 	line-height: 24px;
+	padding: 0px 18px;
+	background-color: #e6e6e6;
+	font-size: 15px;
+	font-weight: 500;
 	letter-spacing: -0.01em;
 	color: #000000;
 }
 
 .search_condition {
-	width: 200px
+	width: 200px;
 }
 
 .search_condition > select {
