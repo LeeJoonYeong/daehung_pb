@@ -1,0 +1,316 @@
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<title>제품 카테고리 등록 및 수정</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script defer src="../js/ui.js"></script>
+</head>
+<body>
+	<div>
+		<header class="GNB">
+			<div class="GNB_area">
+				<div class="GNB_logo">
+					<img src="../images/logo.svg">
+				</div>
+				<div class="GNB_menu">
+					<ul class="GNB_list">
+						<li>
+							<a>메인</a>
+						</li>
+						<li>
+							<a>제품</a>
+						</li>
+						<li>
+							<a>회사소개</a>
+						</li>
+						<li>
+							<a>고객지원</a>
+						</li>
+						<li>
+							<a>카테고리 관리</a>
+						</li>
+					</ul>
+				</div>
+				<div class="GNB_info">
+					<div class="login_text">
+						<div>운영자님,</div>
+						<div>안녕하세요</div>
+					</div>
+					<div class="shortcut">
+						<div class="website_link">
+							<a>홈페이지</a>
+							<img src="../images/svg01.svg">
+						</div>
+						<a href="#" class="log_out">로그아웃</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="wrap">
+				<nav class="LNB">
+					<div class="LNB_title">
+						<h2>카테고리 관리</h2>
+					</div>
+					<ul>
+						<li class="selected">
+							<a>제품 카테고리</a>
+						</li>
+						<li>
+							<a>고객사 카테고리</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="content">
+					<div class="page_title">
+						<h1>제품 카테고리 등록</h1>
+					</div>
+					<div class="info_path">
+						<ul>
+							<li>
+								<a>카테고리 관리</a>
+							</li>
+							<span>
+								<img src="../images/next_icon.svg">
+							</span>
+							<li>
+								<a>제품 카테고리</a>
+							</li>
+						</ul>
+					</div>
+					<form name="pruduct" action="/admin/add_pruduct" method="post">
+						<div class="category_subtitle">
+							<h2>1차 제품 카테고리</h2>
+							<p>
+								<strong>*</strong>
+								필수 입력
+							</p>
+						</div>
+						<div class="table_wrap">
+							<table class="category_02">
+								<tbody>
+									<tr>
+										<th scope="row" class="table_whether">노출여부</th>
+										<th class="input_area  w35">
+											<input class="magic_radio" type="radio" name="stepOne_isExposure" id="stepOne_exposure" value="exposure" checked>
+											<label for="stepOne_exposure" class="magic_radio_label">노출</label>
+											<input class="magic_radio" type="radio" name="stepOne_isExposure" id="stepOne_hide" value="hide">
+											<label for="stepOne_hide" class="magic_radio_label">노출안함</label>
+										</th>
+										<th scope="row" class="table_date">등록일</th>
+										<th class="input_area none w35"></th>
+									</tr>
+									<tr>
+										<td scope="row" class="table_name" rowspan="2">
+											카테고리명
+											<strong>*</strong>
+										</td>
+										<td class="text_input_1line h58" colspan="3">
+											<label for="ko_stepOne_categoryName">한글</label>
+											<input type="text" name="ko_stepOne_categoryName" id="ko_stepOne_categoryName" title="한글 카테고리명">
+										</td>
+									</tr>
+									<tr>
+										<td class="text_input_1line h58" colspan="3">
+											<label for="en_stepOne_categoryName">영어</label>
+											<input type="text" name="en_stepOne_categoryName" id="en_stepOne_categoryName" title="영문 카테고리명">
+										</td>
+									</tr>
+									<tr>
+										<td scope="row" class="table_description" rowspan="2">
+											카테고리 설명
+											<strong>*</strong>
+										</td>
+										<td class="text_input_2line" colspan="3">
+											<p>한글</p>
+											<textarea name="ko_stepOne_categoryDesc" cols="40" rows="5" title="한글 카테고리설명" class="textarea_type01"></textarea>
+										</td>
+									</tr>
+									<tr>
+										<td class="text_input_2line" colspan="3">
+											<p>영어</p>
+											<textarea name="en_stepOne_categoryDesc" cols="40" rows="5" title="영문 카테고리설명" class="textarea_type01"></textarea>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" class="table_register">
+											이미지 등록
+											<strong>*</strong>
+										</th>
+										<td class="p_l18" colspan="3">
+											<div class="g-browser-icons">
+												<!-- 제품 리스트 상단 비주얼 테이블 -->
+												<table class="category_03 mg_b0">
+													<thead>
+														<tr>
+															<th colspan="2">제품 리스트 상단 비주얼</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="td_title h108">PC 이미지</td>
+															<td class="btn_attach_area">
+																<div class="int_btn">
+																	<input class="upload-name w100" value="파일첨부" disabled="disabled">
+																	<label for="pc_topImg" class="btn_text l0">파일첨부</label>
+																	<input type="file" id="pc_topImg" name="pc_topImg" class="upload-hidden">
+																</div>
+																<p>ⓘ 권장 이미지 사이즈: 가로 1920px * 세로 590px로 리사이징 됩니다.</p>
+																<p class="pl_0">- 등록 파일: 1M 이하 / png</p>
+															</td>
+														</tr>
+
+														<tr>
+															<td class="td_title h108">
+																Mobile 이미지
+															</td>
+															<td class="btn_attach_area">
+																<div class="int_btn">
+																	<input class="upload-name w100" value="파일첨부" disabled="disabled">
+																	<label for="m_topImg" class="btn_text l0">파일첨부</label>
+																	<input type="file" id="m_topImg" name="m_topImg" class="upload-hidden">
+																</div>
+																<p>ⓘ 권장 이미지 사이즈: 가로 360px * 세로 456px로 리사이징 됩니다.</p>
+																<p class="pl_0">- 등록 파일: 1M 이하 / png</p>
+															</td>
+														</tr>
+
+													</tbody>
+												</table>
+												<!-- 메인 주요 제품군 테이블 -->
+												<table class="category_03 mg0">
+													<thead>
+														<tr>
+															<th colspan="2">메인 주요 제품군</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="td_title h108">이미지</td>
+															<td class="btn_attach_area">
+																<div class="int_btn"><input class="upload-name w100" value="파일첨부" disabled="disabled">
+																	<label for="mainImg" class="btn_text l0">파일첨부</label>
+																	<input type="file" id="mainImg" name="mainImg" class="upload-hidden">
+																</div>
+																<p class="pl_0">ⓘ 권장 이미지 사이즈(PC): 가로 420px * 세로 460px로 리사이징 됩니다.</p>
+																<p class="p_00010">Mobile 이미지: 가로 280px * 세로 306px로 리사이징 됩니다.</p>
+																<p class="pl_0">- 등록 파일: 1M 이하 / png</p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												<!-- 메인 서브 제품군 테이블 -->
+												<table class="category_03 mgupdown10">
+													<thead>
+														<tr>
+															<th colspan="2">메인 서브 제품군</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="td_title h108">이미지</td>
+															<td class="btn_attach_area">
+																<div class="int_btn"><input class="upload-name w100" value="파일첨부" disabled="disabled">
+																	<label for="subImg" class="btn_text l0">파일첨부</label>
+																	<input type="file" id="subImg" name="subImg" class="upload-hidden">
+																</div>
+																<p>ⓘ 권장 이미지 사이즈(PC): 가로 210px * 세로 280px로 리사이징 됩니다.</p>
+																<p class="p_00010">Mobile 이미지: 가로 280px * 세로 306px로 리사이징 됩니다.</p>
+																<p class="pl_0">- 등록 파일: 1M 이하 / png</p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="category_subtitle">
+							<h2>2차 제품 카테고리</h2>
+							<p>
+								<strong>*</strong>
+								필수 입력
+							</p>
+						</div>
+						<div class="table_wrap mg_b0">
+							<table class="category_03">
+								<tbody>
+									<tr class="b_b1 h58">
+										<th class="left_title" scope="row">사용여부</th>
+										<td class="p_l18">
+											<input class="magic_radio" type="radio" name="stepTwo_isUsing" id="stepTwo_use" value="use" checked>
+											<label for="stepTwo_use" class="magic_radio_label">사용</label>
+											<input class="magic_radio" type="radio" name="stepTwo_isUsing" id="stepTwo_unUse" value="unUse">
+											<label for="stepTwo_unUse" class="magic_radio_label">사용안함</label>
+										</td>
+									</tr>
+									<tr class="b_b1 h58 stepTwo_table_wrap active">
+										<th class="left_title" scope="row">2차 카테고리</th>
+										<td class="p_l18">
+											<table class="category_03 mg_b0">
+												<thead>
+													<tr>
+														<th colspan="4">
+															<h3 class="i_b" data-stepTwoCategory="title">2차 카테고리 1</h3>
+															<button class="btn_add">
+																<img src="../images/plus_icon.svg">
+																추가
+															</button>
+														</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="b_b1">
+														<td class="td_title h_a">노출여부</td>
+														<td class="exposure_area">
+															<input class="magic_radio" type="radio" name="stepTwo_isExposure1" id="stepTwo_exposure1" value="exposure" data-stepTwoCategory="exposure" checked>
+															<label for="stepTwo_exposure1" class="magic_radio_label">노출</label>
+															<input class="magic_radio" type="radio" name="stepTwo_isExposure1" id="stepTwo_hide1" value="option1" data-stepTwoCategory="hide">
+															<label for="stepTwo_hide1" class="magic_radio_label">노출안함</label>
+														</td>
+														<td class="exposure_num_area">노출순서</td>
+														<td class="w19">
+															<input class="num_input" type="number" name="stepTwo_Exposure1_order" value="1" data-stepTwoCategory="exposureOrder">
+														</td>
+													</tr>
+													<tr>
+														<td class="td_title h115" rowspan="2">
+															카테고리명
+															<strong>*</strong>
+														</td>
+														<td class="link_attach_area" colspan="3">
+															<label for="ko_stepTwo_categoryName1">한글</label>
+															<input class="file_input w376px" title="한글 카테고리 명" placeholder=""
+																id="ko_stepTwo_categoryName1" name="ko_stepTwo_categoryName1" type="text"
+																data-stepTwoCategory="KoName">
+														</td>
+													</tr>
+													<tr>
+														<td class="link_attach_area" colspan="3">
+															<label for="en_stepTwo_categoryName1">영어</label>
+															<input class="file_input w376px" title="영문 카테고리 명" id="en_stepTwo_categoryName1"
+																name="en_stepTwo_categoryName1" type="text" data-stepTwoCategory="EnName">
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="category_btn_wrap">
+							<button class="category_btn_del">취소</button>
+							<button class="category_btn_regist">저장</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

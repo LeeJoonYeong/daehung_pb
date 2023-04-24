@@ -200,7 +200,7 @@ function addStepTwoCategory() {
 
 	// thead > tr > th > button > img 생성 및 설정
 	let img = document.createElement('img');
-	img.setAttribute('src', '../img/minus_icon.svg');
+	img.setAttribute('src', '../images/minus_icon.svg');
 	button.prepend(img);
 
 	// tbody > tr 생성 및 설정
