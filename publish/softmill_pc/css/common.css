@@ -819,20 +819,24 @@ input::placeholder {
 .reward_list li {
 	float: left;
 	width: 428px;
-	margin: 0 18px 130px 0;
+	margin: 0 18px 100px 0;
 }
 
 .reward_list li:nth-child(3n) {
-	margin: 0 0 130px 0;
+	margin: 0 0 100px 0;
 }
 
 .reward_list li .list_img {
+	position: relative;
 	width: 428px;
 	height: 300px;
+	overflow: hidden;
 }
 
 .reward_list li .list_img img {
-	width: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 	height: 100%;
 }
 
@@ -850,18 +854,17 @@ input::placeholder {
 }
 
 .reward_list li .title {
-	font-size: 22px;
-	font-weight: 500;
-	line-height: 35px;
-	color: #000000;
-	height: 70px;
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
-	overflow: hidden;
-	text-overflow: ellipsis;
+	line-height: 35px;
 	margin-bottom: 15px;
+	font-size: 22px;
+	font-weight: 500;
+	color: #000000;
 	letter-spacing: -0.01em;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 .reward_list li .bcopy {
