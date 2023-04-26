@@ -1134,7 +1134,7 @@
 	display: block;
 	position: relative;
 	padding: 10px 0;
-	width: 264px;
+	width: max-content;
 	margin: 40px auto 0;
 }
 
@@ -1145,17 +1145,32 @@
 
 .paging .pre {
 	float: left;
+	display: none;
 	width: 32px;
+}
+
+.paging .pre.active {
+	display: block;
 }
 
 .paging .next {
 	float: left;
+	display: none;
 	width: 32px;
+}
+
+.paging .next.active {
+	display: block;
+}
+
+.paging .pre > a,
+.paging .next > a {
+	display: block;
 }
 
 .paging .number {
 	float: left;
-	width: 200px;
+	/* width: 200px; */
 	padding-top: 4px;
 	text-align: center;
 }

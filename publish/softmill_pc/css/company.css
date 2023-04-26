@@ -1249,16 +1249,21 @@
 }
 
 .paging {
-	display: block;
 	position: relative;
+	display: block;
+	width: max-content;
 	padding: 10px 0;
-	width: 264px;
 	margin: 130px auto 0;
 }
 
 .paging .pre {
 	float: left;
+	display: none;
 	width: 32px;
+}
+
+.paging .pre.active {
+	display: block;
 }
 
 .paging img {
@@ -1268,12 +1273,21 @@
 
 .paging .next {
 	float: left;
+	display: none;
 	width: 32px;
+}
+
+.paging .next.active {
+	display: block;
+}
+
+.paging .pre > a,
+.paging .next > a {
+	display: block;
 }
 
 .paging .number {
 	float: left;
-	width: 200px;
 	padding-top: 4px;
 	text-align: center;
 }
@@ -1417,3 +1431,9 @@
 	width: 260px;
 	height: 120px;
 }
+
+/* 설치사례 내용 (editor) 스타일 */
+#editor_wrap img {
+	width: 100% !important;
+}
+/* //설치사례 내용 (editor) 스타일 */
