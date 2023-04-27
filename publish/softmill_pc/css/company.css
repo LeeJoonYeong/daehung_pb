@@ -1436,4 +1436,21 @@
 #editor_wrap img {
 	width: 100% !important;
 }
+
+#editor_wrap > div,
+#editor_wrap > p,
+#editor_wrap td > p {
+	line-height: 2 !important;
+}
+
+#editor_wrap table {
+	border: 1px solid #444444;
+	border-collapse: collapse;
+}
+
+#editor_wrap th, 
+#editor_wrap td {
+	border: 1px solid #444444;
+}
+
 /* //설치사례 내용 (editor) 스타일 */

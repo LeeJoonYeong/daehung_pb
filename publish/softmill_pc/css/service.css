@@ -444,7 +444,7 @@ input#chk_top:checked+label:before {
 }
 
 .pop_product {
-	height: 367px;
+	height: 368px;
 	overflow-y: scroll;
 	margin-bottom: 30px;
 	position: relative;
@@ -656,3 +656,32 @@ input#chk_top:checked+label:before {
 	line-height: 43px;
 }
 /* //견적 문의 - 각 label 스타일 */
+
+/* 설치사례 "데이터 없음" 스타일 */
+.reward_list.no_data {
+	padding-top: 130px;
+	margin-top: 0;
+	margin-bottom: 0;
+	border: none;
+}
+
+.reward_list .no_data_wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 272px;
+}
+
+.reward_list .no_data_wrap > img {
+	width: 70px;
+}
+
+.reward_list .no_data_wrap > span {
+	margin-top: 18px;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: -0.01em;
+	color: #000;
+}
+/* //설치사례 "데이터 없음" 스타일 */

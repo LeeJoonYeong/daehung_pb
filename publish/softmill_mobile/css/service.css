@@ -23,7 +23,7 @@
 }
 
 .en .custo_Wrap .heading {
-	max-width: 44%;
+	max-width: 100%;
 	font-size: 22px;
 	font-weight: 500;
 }
@@ -39,15 +39,17 @@
 }
 
 .en .custo_Wrap .title .desc {
-	position: absolute;
-	top: 50%;
-	right: 0;
-	transform: translateY(-50%);
-	max-width: 56%;
-	line-height: 27px;
-	font-size: 13px;
-	color: #4a4a4a;
-	text-align: left;
+	position: relative;
+    top: 0;
+    right: 0;
+    transform: translateY(0%);
+    max-width: 100%;
+    line-height: 1.4;
+    font-size: 13px;
+    color: #4a4a4a;
+    text-align: left;
+    padding: 6px 0 0 0;
+    left: 0;
 }
 
 .custo_Wrap .title em {
@@ -789,3 +791,32 @@ input#chk_top:checked+label:before {
 	background-image: url('../images/icon/arrow_up_type01.svg');
 }
 /* //설치 사례 상세 - 유형 & 설치제품 스타일 */
+
+/* 설치사례 "데이터 없음" 스타일 */
+.reward_list.no_data {
+	padding-top: 80px;
+	margin-top: 0;
+	margin-bottom: 0;
+	border: none;
+}
+
+.reward_list .no_data_wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 113px;
+}
+
+.reward_list .no_data_wrap > img {
+	width: 50px;
+}
+
+.reward_list .no_data_wrap > span {
+	margin-top: 18px;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: -0.01em;
+	color: #000;
+}
+/* //설치사례 "데이터 없음" 스타일 */

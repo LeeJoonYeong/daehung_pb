@@ -1715,6 +1715,8 @@ body.bot .contact_link_wrap.moving {
 	border-radius: 30px;
 	background: #f6f6f6 url('../images/icon/top_move_btn_02.svg') no-repeat center / 15px 18px;
 	filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.2));
+	backdrop-filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.2));
+	-webkit-backdrop-filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.2));
 }
 
 .topwrap .topBtn a:active,
