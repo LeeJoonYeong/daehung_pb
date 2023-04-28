@@ -1312,4 +1312,8 @@
 #editor_wrap td {
 	border: 1px solid #444444;
 }
+
+#editor_wrap .se-component-content {
+	padding: 0 !important;
+}
 /* //설치사례 내용 (editor) 스타일 */

@@ -692,7 +692,7 @@ div.tabmenus_Wrap::after {
 	padding: 0 20px;
 }
 
-.detail_reward .rtitle > h3{
+.detail_reward .rtitle > h3 {
 	font-weight: 500;
 }
 
@@ -733,7 +733,7 @@ div.tabmenus_Wrap::after {
 
 .detail_reward_list li .tag {
 	line-height: 16px;
-	margin: 40px 0 8px 0;
+	margin: 20px 0 12px 0;
 	font-size: 12px;
 	font-weight: 500;
 	color: #FF782D;

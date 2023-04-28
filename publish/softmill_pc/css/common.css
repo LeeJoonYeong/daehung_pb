@@ -886,8 +886,8 @@ input::placeholder {
 
 .view_title li {
 	position: relative;
+	display: flow-root;
 	padding: 20px;
-	height: 66px;
 	border-bottom: 1px solid #E6E6E6;
 }
 

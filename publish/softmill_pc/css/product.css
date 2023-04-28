@@ -752,20 +752,20 @@
 	font-size: 13px;
 	color: #FF5F00;
 	line-height: 20px;
-	margin: 40px 0 8px 0;
+	margin: 40px 0 6px 0;
 }
 
 .detail_reward_list li .title {
-	font-size: 22px;
-	line-height: 35px;
-	color: #000000;
-	height: 70px;
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
-	overflow: hidden;
+	max-height: 70px;
+	line-height: 35px;
+	margin-bottom: 24px;
+	font-size: 22px;
+	color: #000000;
 	text-overflow: ellipsis;
-	margin-bottom: 15px;
+	overflow: hidden;
 }
 
 .detail_reward_list li .bcopy {
