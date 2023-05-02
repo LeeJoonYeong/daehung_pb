@@ -903,10 +903,10 @@ input::placeholder {
 .board_title.flex_style {
 	display: flex;
 	align-items: center;
-	height: 126px;
 	max-height: initial;
-	margin-top: 20px;
+	margin-top: 47px;
 	font-weight: 500;
+	word-break: break-all;
 }
 
 .reward_list {
