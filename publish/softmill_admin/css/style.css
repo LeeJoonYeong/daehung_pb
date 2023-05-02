@@ -179,7 +179,7 @@ input#file-upload-button {
 /* //파일 첨부 시 이미지 링크 */
 
 .int_btn .upload-name {
-	width: 94.2%;
+	width: 94.1%;
 	height: 38px;
 	line-height: 1;
 	padding: 8px 15px 8px 128px;
@@ -1236,7 +1236,7 @@ div.search_table_wrap {
 }
 
 .btn_attach_area div.int_btn input.upload-name {
-	width: 94.2%;
+	width: 94.1%;
 }
 
 .table_m_title th {
