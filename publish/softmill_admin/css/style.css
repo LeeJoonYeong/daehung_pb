@@ -176,6 +176,9 @@ input#file-upload-button {
 	background: url(../images/file_upload_close.svg);
 }
 
+table.category_03.type02 .int_btn > a {
+	font-size: 13px;
+}
 /* //파일 첨부 시 이미지 링크 */
 
 .int_btn .upload-name {
@@ -1058,6 +1061,10 @@ div.search_table_wrap table.category_01 tbody tr td a {
 
 .p_0 {
 	padding: 0 !important;
+}
+
+.pr_0 {
+	padding-right: 0 !important;
 }
 
 .r_0 {
@@ -3186,6 +3193,14 @@ table.category_03.type02 tbody tr td.input_area select {
 	height: 38px;
 	padding-left: 18px;
 	background: url("../images/select_icon.svg") no-repeat right 8px center / 32px;
+}
+
+.fixed_desc_table {
+	display: none;
+}
+
+.fixed_desc_table.active {
+	display: table-row;
 }
 
 /* summernote 스타일 초기화 */
