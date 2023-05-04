@@ -1299,17 +1299,18 @@ select::-ms-expand {
 	display: none;
 }
 
-.search_area>input {
-	box-sizing: border-box;
-	width: 97%;
+.search_area > input {
+	top: 166px;
 	flex-direction: row;
 	align-items: flex-start;
-	padding: 9px 18px;
+	width: 97%;
 	height: 38px;
-	top: 166px;
-	background: #ffffff;
+	padding: 9px 18px;
 	margin: 0px 20px 0px 0px;
 	border: 1px solid #000000;
+	background: #ffffff;
+	font-size: 14px;
+	box-sizing: border-box;
 }
 
 .search_btn {

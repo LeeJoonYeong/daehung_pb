@@ -977,13 +977,18 @@
 }
 
 .board_box .poto {
+	position: relative;
 	float: left;
 	width: 600px;
 	height: 380px;
+	overflow: hidden;
 }
 
 .board_box .poto img {
-	width: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100%;
 }
 
 .board_box .list {
