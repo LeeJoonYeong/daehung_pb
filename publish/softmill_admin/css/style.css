@@ -1564,6 +1564,7 @@ table.category_03 tbody tr td.td_title div {
 
 .btn_del img {
 	margin-right: 5px;
+	pointer-events: none;
 }
 
 .h115 {
@@ -3252,7 +3253,8 @@ table.category_03 tbody tr td input.input_style02 {
 	border: 1px solid #000;
 }
 
-.btn_add.style_02 {
+.btn_add.style_02,
+.btn_del.style_02 {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
