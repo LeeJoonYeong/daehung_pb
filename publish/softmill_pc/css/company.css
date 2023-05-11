@@ -841,8 +841,10 @@
 }
 
 .edu_list li .list_img {
+	position: relative;
 	width: 428px;
 	height: 300px;
+	overflow: hidden;
 }
 
 .edu_list li .bcopy {
@@ -860,7 +862,9 @@
 }
 
 .edu_list li .list_img img {
-	width: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 	height: 100%;
 }
 

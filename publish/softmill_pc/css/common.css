@@ -1831,5 +1831,15 @@ input::placeholder {
 	font-weight: bold;
 	line-height: 40px;
 }
-
 /* //설치사례 상세보기 전용 스타일 */
+
+
+/* 명장기술교육원 교육성과 셀렉트 박스 스타일 */
+#education_list_wrap {
+	pointer-events: none;
+}
+
+#education_list_wrap > .optionItem {
+	pointer-events: auto;
+}
+/* //명장기술교육원 교육성과 셀렉트 박스 스타일 */
