@@ -552,14 +552,13 @@
 
 .ci_wrap .logo .log_box {
 	position: relative;
-	padding: 60px 0;
-	height: 150px;
+	padding: 45px 0;
+	background-color: #f9f9f9;
 	text-align: center;
-	background-color: #FBFBFB;
 }
 
 .ci_wrap .logo .log_box img {
-	height: 30px;
+	height: 60px;
 }
 
 .ci_wrap .logo .watermark {
@@ -591,14 +590,14 @@
 	height: 150px;
 	padding: 59px 0;
 	text-align: center;
-	background-color: #FBFBFB;
+	background-color: #f9f9f9;
 }
 
 .ci_wrap .logo .watermark li .breadth {
 	height: 150px;
 	padding: 46px 0;
 	text-align: center;
-	background-color: #FBFBFB;
+	background-color: #f9f9f9;
 }
 
 .ci_wrap .logo .watermark li:last-child {
@@ -648,10 +647,17 @@
 	padding: 0 20px;
 }
 
+.ci_wrap .color_box .red {
+	width: 100%;
+	background-color: #E60012;
+	padding: 24px 20px;
+	float: left;
+}
+
 .ci_wrap .color_box .orn {
 	width: 100%;
-	background-color: #FF5F00;
-	padding: 25px 30px;
+	background-color: #F08200;
+	padding: 24px 20px;
 	float: left;
 }
 
@@ -659,21 +665,21 @@
 	width: 50%;
 	background-color: #ffffff;
 	border: 1px solid #E6E6E6;
-	padding: 25px 20px;
+	padding: 24px 20px;
 	float: left;
 }
 
 .ci_wrap .color_box .bla {
 	width: 50%;
-	background-color: #000000;
-	border: 1px solid #000000;
-	padding: 25px 20px;
+	background-color: #231815;
+	border: 1px solid #231815;
+	padding: 24px 20px;
 	float: left;
 }
 
 .ci_wrap .color_box .title {
 	line-height: 22px;
-	margin-bottom: 33px;
+	margin-bottom: 16px;
 	font-size: 14px;
 	font-weight: 500;
 	color: #ffffff;

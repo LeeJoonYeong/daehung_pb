@@ -617,13 +617,13 @@
 
 .ci_wrap .logo .log_box {
 	position: relative;
-	padding: 110px 0 130px;
-	text-align: center;
+	padding: 84px 0;
 	background-color: #f9f9f9;
+	text-align: center;
 }
 
 .ci_wrap .logo .log_box img {
-	height: 64px;
+	height: 132px;
 }
 
 .ci_wrap .logo .watermark {
@@ -705,15 +705,22 @@
 	position: relative;
 }
 
+.ci_wrap .color_box .red {
+	width: 440px;
+	background-color: #E60012;
+	padding: 30px 32px 34px 32px;
+	float: left;
+}
+
 .ci_wrap .color_box .orn {
-	width: 660px;
-	background-color: #FF5F00;
+	width: 440px;
+	background-color: #F08200;
 	padding: 30px 32px 34px 32px;
 	float: left;
 }
 
 .ci_wrap .color_box .whi {
-	width: 330px;
+	width: 220px;
 	background-color: #ffffff;
 	border: 1px solid #E6E6E6;
 	padding: 30px 32px 34px 32px;
@@ -721,8 +728,8 @@
 }
 
 .ci_wrap .color_box .bla {
-	width: 330px;
-	background-color: #000000;
+	width: 220px;
+	background-color: #231815;
 	padding: 30px 32px 34px 32px;
 	float: left;
 }
