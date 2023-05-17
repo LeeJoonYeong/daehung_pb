@@ -366,6 +366,10 @@ input::placeholder {
 	height: auto !important;
 }
 
+.p_0 {
+	padding: 0 !important;
+}
+
 .pt10 {
 	padding-top: 10px;
 }
@@ -384,6 +388,10 @@ input::placeholder {
 
 .pl70 {
 	padding-left: 70px;
+}
+
+.bb_n {
+	border-bottom: none !important;
 }
 
 .mt0 {
@@ -412,6 +420,10 @@ input::placeholder {
 
 .mt60 {
 	margin-top: 60px !important
+}
+
+.mt92 {
+	margin-top: 92px !important
 }
 
 .mt100 {
@@ -1253,6 +1265,10 @@ input::placeholder {
 	overflow: hidden;
 }
 
+.board_list_L li .empty.type02 .title {
+	width: 100%;
+}
+
 .en .board_list_L li .title {
 	width: 50%;
 }
@@ -1313,7 +1329,10 @@ input::placeholder {
 
 .empty.type02 {
 	border: none;
-	margin-top: 54px;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 50px;
+	margin-bottom: 0;
 }
 
 .empty .bg_img {

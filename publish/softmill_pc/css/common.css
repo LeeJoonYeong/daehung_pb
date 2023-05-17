@@ -1843,3 +1843,9 @@ input::placeholder {
 	pointer-events: auto;
 }
 /* //명장기술교육원 교육성과 셀렉트 박스 스타일 */
+
+/* 검색 폼 스타일 */
+.search_form {
+	padding-top: 20px;
+}
+/* //검색 폼 스타일 */

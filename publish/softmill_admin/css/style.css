@@ -1630,6 +1630,11 @@ table.category_02 tbody tr td textarea.textarea_type01 {
 	width: 94.5%;
 }
 
+table.category_02 tbody tr td textarea.textarea_type02 {
+	width: 93%;
+	height: 138px;
+}
+
 table.category_02 tbody tr th {
 	user-select: auto;
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -2054,6 +2059,10 @@ table.category_03 tbody tr td .file_input {
 	top: 0.5;
 	width: 92.7%;
 	/*margin-left: 14px;*/
+}
+
+table.category_03 tbody tr td .file_input.input_text_type01 {
+	width: 92.6%;
 }
 
 table.category_02 tbody tr .input_area .tel_input {
