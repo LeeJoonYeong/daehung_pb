@@ -671,7 +671,7 @@ thead.table_style_01 tr th:nth-child(4) {
 }
 
 thead.table_style_01 tr th:nth-child(5) {
-	width: 17%;
+	width: 18%;
 }
 
 thead.table_style_01 tr th:nth-child(6) {
@@ -1633,6 +1633,11 @@ table.category_02 tbody tr td textarea.textarea_type01 {
 table.category_02 tbody tr td textarea.textarea_type02 {
 	width: 93%;
 	height: 138px;
+}
+
+table.category_02 tbody tr td textarea.textarea_type03 {
+	width: 93%;
+	height: 78px;
 }
 
 table.category_02 tbody tr th {
