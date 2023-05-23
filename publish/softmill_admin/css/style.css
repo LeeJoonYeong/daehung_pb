@@ -1427,7 +1427,8 @@ table.category_01 thead {
 	font-weight: 500;
 }
 
-.btn_search {
+.btn_search,
+.btn_search_addr {
 	align-items: center;
 	padding: 10px 34px;
 	gap: 10px;
@@ -1558,7 +1559,7 @@ table.category_03 tbody tr td.td_title {
 }
 
 table.category_03 tbody tr td.td_title div {
-	width: 47px;
+	width: 49px;
 	line-height: 25px;
 }
 
