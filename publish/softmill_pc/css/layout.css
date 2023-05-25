@@ -1104,8 +1104,9 @@
 /*********** main_Wrap *********/
 .menubanner_txt {
 	position: absolute;
-	top: 382px;
+	top: 350px;
 	left: 80px;
+	width: 446px;
 	text-align: left;
 }
 
@@ -1115,11 +1116,6 @@
 	color: #000;
 	margin-bottom: 20px;
 	animation: fadein_trans 0.6s ease-in-out;
-}
-
-.en .menus_title {
-	width: 440px;
-	line-height: 1.4;
 }
 
 .menus_btitle {
@@ -1138,13 +1134,13 @@
 }
 
 .gotos {
-	width: 134px;
-	height: 40px;
+	position: absolute;
+	bottom: 325px;
+	left: 80px;
 	line-height: 19px;
 	padding: 10px 46px 10px 34px;
 	font-size: 16px;
 	color: #fff;
-	/* background: #FF5C00; */
 	background: url('../images/icon/arrow_right_type04.svg') right 22px center / 20px no-repeat #ff5C00;
 	animation: fadein_trans 2s ease-in-out;
 }
