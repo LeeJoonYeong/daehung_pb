@@ -1705,11 +1705,11 @@ table.category_02 tbody tr td.text_input_2line {
 	position: relative;
 }
 
-table.category_02 tbody tr td.text_input_2line p {
-	display: inline-block;
+table.category_02 tbody tr td.text_input_2line label {
 	vertical-align: top;
-	font-weight: 500;
-	margin-right: 17px;
+	padding: 0px 16px 0 0;
+	position: relative;
+	top: 7px;
 }
 
 .text_input_2line label {
@@ -2572,23 +2572,27 @@ table.category_02 tbody tr .input_area .tel_input {
 	margin: 5px 0px;
 }
 
-.info_path>ul>li {
+.info_path > ul > li {
 	display: inline-block;
-
+	line-height: 27px;
+	padding-right: 30px;
+	background: url('../images/next_icon.svg') right 13px center / 7px 12px no-repeat;
 	font-weight: 500;
 	font-size: 12px;
-	line-height: 27px;
-	/* identical to box height, or 225% */
+	color: #929292;
 	letter-spacing: -0.01em;
-	/* gr/50_929292 */
+}
+
+.info_path > ul > li:last-child {
+	padding-right: 0;
+	background: none;
+}
+
+.info_path > ul > li > span {
 	color: #929292;
 }
 
-.info_path>ul>li>a {
-	color: #929292;
-}
-
-.info_path>ul>li:last-child>a {
+.info_path > ul > li:last-child > span {
 	color: #000000;
 }
 
@@ -2891,10 +2895,6 @@ hr {
 	margin-top: 20px;
 }
 
-/* address {
-  
-} */
-
 blockquote {
 	margin: 0 0 20px 0;
 	font-size: 1.25rem;
@@ -2928,7 +2928,6 @@ pre {
 	color: #666;
 	-moz-tab-size: 4;
 	tab-size: 4;
-	/* 1 */
 	overflow: auto;
 	padding: 10px;
 	border: 1px solid #e5e5e5;
@@ -3074,14 +3073,12 @@ table.category_02 tbody tr .input_area .tel_input:focus {
 .stepTwo_table_wrap.active {
 	display: table-row;
 }
-
 /* //2차 제품 카테고리 인터렉션*/
 
 /* 에디터 스타일 */
 .note-editable {
 	height: 300px;
 }
-
 /* //에디터 스타일 */
 
 /* p 스타일 */
@@ -3092,7 +3089,6 @@ table.category_02 tbody tr .input_area .tel_input:focus {
 	margin: 0;
 	font-size: 10px;
 }
-
 /* //p 스타일 */
 
 .stepTwo_table_wrap .category_03 {
@@ -3132,14 +3128,12 @@ td.two_step_empty>input[onclick='return false;'] {
 td.two_step_empty>input[onclick='return false;']+label {
 	color: #bbb;
 }
-
-/* 2차 제품 카테고리 스타일*/
+/* //2차 제품 카테고리 스타일*/
 
 /* td 스타일*/
 .td_type01 {
 	width: 18.12%;
 }
-
 /* //td 스타일*/
 
 /* 페이저네이션 스타일*/
@@ -3152,7 +3146,6 @@ td.two_step_empty>input[onclick='return false;']+label {
 .board_nav_next.active {
 	display: inline;
 }
-
 /* //페이저네이션 스타일*/
 
 /* 유저 첨부파일 스타일*/
@@ -3164,7 +3157,6 @@ td.two_step_empty>input[onclick='return false;']+label {
 .user_file~.user_file {
 	padding-top: 0;
 }
-
 /* //유저 첨부파일 스타일*/
 
 /* 제품 선택 태그 스타일 (in 설치사례) */
