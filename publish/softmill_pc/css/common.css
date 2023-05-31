@@ -1917,3 +1917,18 @@ input::placeholder {
 	text-align: center;
 }
 /* 지도 핀 스타일 */
+
+/* 네이버 지도 박스 반응형 */
+@media screen and (max-height: 1080px) {
+
+	.map_Wrap .map_tab {
+		height: 100vh;
+	}
+
+	.map_Wrap .maps, 
+	.map_Wrap .naver_map {
+		height: 100vh;
+	}
+
+}
+/* //네이버 지도 박스 반응형 */

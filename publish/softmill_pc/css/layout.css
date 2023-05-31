@@ -556,10 +556,15 @@
 
 /*********** footer *********/
 #footer {
+	display: none;
 	background: #F1EFEE;
 	margin-top: 130px;
 	color: #6f6f6f;
 	min-width: 1360px;
+}
+
+#footer.active {
+	display: block;
 }
 
 .footer_wrap {
