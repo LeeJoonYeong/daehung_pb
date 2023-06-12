@@ -672,11 +672,6 @@ input::placeholder {
 	z-index: 9999;
 }
 
-.service_popup .pop_close_btn {
-	right: 32px;
-	top: 32px;
-}
-
 .pop_close_btn .btn_close {
 	display: block;
 	background: url('../images/icon/bt_layer_close.png')no-repeat 0 0;
@@ -1686,7 +1681,6 @@ input::placeholder {
 	background: url('../images/icon/arrow_up.png') no-repeat 100% 50%;
 }
 
-
 .selectBox .label {
 	align-items: center;
 	display: flex;
@@ -1764,34 +1758,103 @@ input::placeholder {
 
 /* 팝업 - 고객센터 (임시) */
 .service_popup {
-	width: 357px;
-	height: 207px;
-	padding: 50px 50px 50px 50px;
+	padding: 50px;
 	position: fixed;
-	top: calc(50% - 40px);
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	width: 700px;
 	background: #fff;
-	margin: 40px auto;
 }
 
-.service_popup_text_wrap {
+.en .service_popup {
+	width: 400px;
+}
+
+.service_popup .pop_close_btn {
+	right: 50px;
+	top: 60.5px;
+}
+
+.service_popup .link_wrap {
+	width: 100%;
+	padding-bottom: 40px;
+}
+
+.en .service_popup .link_wrap {
+	padding-bottom: 0;
+}
+
+.service_popup .link_wrap .service_popup_text_wrap {
 	padding-top: 24px;
 }
 
-.service_popup_text_wrap div {
-	width: 200px;
+.service_popup .link_wrap .service_popup_text_wrap > a,
+.service_popup .link_wrap .service_popup_text_wrap > div {
+	padding-left: 26px;
+	background: url('../images/icon/channel_icon.svg') left top / 20px no-repeat;
 	font-size: 14px;
+	font-weight: 400;
 	line-height: 22px;
 	letter-spacing: -0.01em;
 	color: #313131;
-	margin-bottom: 5px;
 }
 
-.service_popup_text_wrap div img {
-	width: 20px;
-	margin-right: 7px;
-	padding-top: 3px;
+.service_popup .link_wrap .service_popup_text_wrap > div {
+	margin-top: 10px;
+	background-image: url('../images/icon/callCenter_icon.svg');
+}
+
+.service_popup .service_wrap {
+	width: 100%;
+	padding: 24px 0 40px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.en .service_popup .service_wrap {
+	display: none;
+}
+
+.service_popup .service_wrap ul {
+	padding-left: 23px;
+	margin-top: 20px;
+}
+
+.service_popup .service_wrap ul li {
+	list-style-type: disc;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: -0.01em;
+	color: #313131;
+}
+
+.service_popup .procedure_wrap {
+	padding-top: 24px;
+}
+
+.en .service_popup .procedure_wrap {
+	display: none;
+}
+
+.service_popup .procedure_wrap > span {
+	display: inline-block;
+	margin-top: 20px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: -0.01em;
+	color: #313131;
+}
+
+.service_popup .procedure_wrap > .img_box {
+	width: 100%;
+	margin-top: 12px;
+}
+
+.service_popup .procedure_wrap > .img_box img {
+	width: 100%;
 }
 /* //팝업 - 고객센터 (임시) */
 

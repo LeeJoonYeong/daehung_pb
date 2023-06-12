@@ -5,6 +5,59 @@
 	margin: 0 auto;
 }
 
+.main_attributes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 160px 0 200px;
+}
+
+.main_attributes h3 {
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 47px;
+	color: #000;
+	letter-spacing: -0.01em;
+	text-align: center;
+}
+
+.main_attributes ul {
+	display: flex;
+	margin-top: 60px;
+}
+
+.main_attributes ul li {
+	width: 380px;
+	border-top: 1px solid #bbb;
+}
+
+.main_attributes ul li ~ li {
+	margin-left: 90px;
+}
+
+.main_attributes ul li h4 {
+	margin-top: 24px;
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 34px;
+	color: #000;
+	letter-spacing: -0.01em;
+}
+
+.main_attributes ul li span {
+	display: inline-block;
+	margin-top: 14px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #4A4A4A;
+	letter-spacing: -0.01em;
+}
+
+.main_attributes ul li .flood_text {
+	width: 385px;
+}
+
 .skill_Wrap {
 	position: relative;
 	margin-top: 200px;

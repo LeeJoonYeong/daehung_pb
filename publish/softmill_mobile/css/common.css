@@ -771,12 +771,7 @@ input::placeholder {
 }
 
 .pop_close_btn .btn_close {
-	position: absolute;
-	display: block;
-	top: -4px;
-	right: 0;
-	background: url('../images/icon/bt_layer_close.png')no-repeat 0 0;
-	background-size: 100% 100%;
+	background: url('../images/icon/bt_layer_close.png') center / 100% no-repeat;
 	width: 14px;
 	height: 14px;
 }
@@ -2039,57 +2034,146 @@ body.bot .topwrap {
 
 /* 팝업 - 고객센터 (임시) */
 .service_popup {
-	width: 357px;
-	height: 207px;
-	padding: 50px 50px 50px 50px;
 	position: fixed;
-	top: calc(40% - 40px);
+	bottom: 0;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, 0);
+	width: 100%;
+	height: calc(100% - 110px);
 	background: #fff;
-	margin: 40px auto;
+	overflow: hidden;
 	z-index: 9999;
 }
 
-.service_popup .pop_close_btn{
-	display: inline-block;
+.en .service_popup {
+	top: 50%;
+	bottom: initial;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	max-width: 360px;
+	height: auto;
+}
+
+.service_popup .pop_close_btn {
 	position: absolute;
-	right: 32px;
-	top: 32px;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 24px 20px;
+	background-color: #fff;
 	z-index: 9999;
 }
 
-.service_popup_text_wrap {
-	padding-top: 24px;
+.service_popup .pop_close_btn::after {
+	display: none;
+}
+
+.service_popup .pop_close_btn > span {
+	line-height: 25px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000;
+	letter-spacing: -0.01em;
+}
+
+.service_popup .content_wrap {
+	overflow-y: scroll;
+	height: 100%;
+	padding: 84px 20px 24px;
+}
+
+.en .service_popup .content_wrap {
+	padding: 50px;
 }
 
 .service_popup .alert_title {
-	position: relative;
-	font-size: 22px;
-	line-height: 35px;
-	color: #000;
-	margin: 0px;
+	margin: 0;
+	letter-spacing: -0.01em;
 }
 
-.service_popup_text_wrap {
+.service_popup .content_wrap .link_wrap {
+	width: 100%;
+	padding-bottom: 40px;
+}
+
+.en .service_popup .content_wrap .link_wrap {
+	padding-bottom: 0;
+}
+
+.service_popup .content_wrap .link_wrap .service_popup_text_wrap {
 	padding-top: 24px;
 }
 
-.service_popup_text_wrap div {
-	width: 200px;
+.service_popup .content_wrap .link_wrap .service_popup_text_wrap > a,
+.service_popup .content_wrap .link_wrap .service_popup_text_wrap > div {
+	display: block;
+	padding-left: 26px;
+	background: url('../../images/icon/channel_icon.svg') left 1px / 20px no-repeat;
 	font-size: 14px;
+	font-weight: 400;
 	line-height: 22px;
 	letter-spacing: -0.01em;
 	color: #313131;
-	margin-bottom: 5px;
 }
 
-.service_popup_text_wrap div img {
-	width: 20px;
-	margin-right: 7px;
-	padding-top: 3px;
+.service_popup .content_wrap .link_wrap .service_popup_text_wrap > div {
+	margin-top: 6px;
+	background-image: url('../../images/icon/callCenter_icon.svg');
 }
 
+.service_popup .content_wrap .service_wrap {
+	width: 100%;
+	padding: 30px 0;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.en .service_popup .content_wrap .service_wrap {
+	display: none;
+}
+
+.service_popup .content_wrap .service_wrap ul {
+	padding-left: 22px;
+	margin-top: 24px;
+}
+
+.service_popup .content_wrap .service_wrap ul li {
+	list-style-type: disc;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: -0.01em;
+	color: #313131;
+}
+
+.service_popup .content_wrap .procedure_wrap {
+	padding-top: 30px;
+}
+
+.en .service_popup .content_wrap .procedure_wrap {
+	display: none;
+}
+
+.service_popup .content_wrap .procedure_wrap > span {
+	display: inline-block;
+	margin-top: 24px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: -0.01em;
+	color: #313131;
+}
+
+.service_popup .content_wrap .procedure_wrap > .img_box {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.service_popup .content_wrap .procedure_wrap > .img_box img {
+	width: 100%;
+}
 /* //팝업 - 고객센터 (임시) */
 
 /* 설치사례 상세보기 전용 스타일*/

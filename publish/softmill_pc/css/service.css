@@ -537,6 +537,7 @@ input#chk_top:checked+label:before {
 	font-size: 22px;
 	font-weight: 500;
 	color: #000;
+	letter-spacing: -0.01em;
 }
 
 .alert_title span {
